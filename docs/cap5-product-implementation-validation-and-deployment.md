@@ -212,13 +212,13 @@ El Sprint 1 tiene como objetivo principal la implementación y despliegue de la 
 
 Para el Sprint 1, los aspectos de trabajo se organizan en torno a las secciones del Landing Page y la configuración del entorno de desarrollo y despliegue. Cada aspecto cuenta con un líder responsable de liderar la implementación y uno o más colaboradores de apoyo.
 
-| Team Member | GitHub Username | Hero & Navbar | Plans Section | Features Section | Contact Form | Deployment & Config |
-|:---|:---|:---:|:---:|:---:|:---:|:---:|
-| Cabrera Sotelo, Camila Celeste | *(username)* | L | C | | | C |
-| Conde Huashuayo, Sebasthian Alex | *(username)* | C | | L | C | C |
-| Diaz De La Cruz, Sebastian Gabriel | *(username)* | C | | C | L | |
-| Montes Chang, Piero Francisco | *(username)* | | L | C | | C |
-| Pancorbo Amorós, Italo Raul | *(username)* | | C | C | | L |
+| Team Member | GitHub Username            | Hero & Navbar | Plans Section | Features Section | Contact Form | Deployment & Config |
+|:---|:---------------------------|:---:|:---:|:---:|:---:|:---:|
+| Cabrera Sotelo, Camila Celeste | *(username)*               | L | C | | | C |
+| Conde Huashuayo, Sebasthian Alex | *SebasthianCH*             | C | | L | C | C |
+| Diaz De La Cruz, Sebastian Gabriel | *(username)*               | C | | C | L | |
+| Montes Chang, Piero Francisco | *(username)*               | | L | C | | C |
+| Pancorbo Amorós, Italo Raul | *(username)*               | | C | C | | L |
 
 *L = Líder | C = Colaborador*
 
@@ -230,9 +230,9 @@ El objetivo principal de este Sprint es implementar y desplegar la primera versi
 
 A continuación, se presenta el tablero de control del Sprint 1:
 
-> 📋 **URL del Board en Trello:** *(insertar URL pública del tablero Trello)*
+> 📋 **URL del Board en Trello:** https://trello.com/invite/b/6aaaf893146da1803fa7c582/ATTI953be54ae0a00d9a1f783b712cdcda28CEA7DD62/roadwatch-os-sprint-1
 
-*(Insertar screenshot del tablero Trello aquí)*
+*![Trello.png](../assets/images/chapter5/Trello-Sprint%201.png)*
 
 | Sprint # | Sprint 1 |
 |:---|:---|
@@ -268,8 +268,6 @@ Durante el Sprint 1 se implementó la primera versión del Landing Page de RoadW
 | DA-Open-Source-1ASI0729-2620-7729/RoadWatch-LandingPage | feature/contact-form | *(hash)* | feat(landing): add contact form with field validation | Implement lead capture form with client-side validation and confirmation message | 2026-08-31 |
 | DA-Open-Source-1ASI0729-2620-7729/RoadWatch-LandingPage | main | *(hash)* | chore: configure GitHub Pages deployment | Enable GitHub Pages from main branch, verify production URL | 2026-09-01 |
 | DA-Open-Source-1ASI0729-2620-7729/RoadWatch-LandingPage | main | *(hash)* | fix(landing): fix mobile responsiveness on plans section | Adjust grid layout breakpoints for correct display on mobile devices | 2026-09-02 |
-
-> **Nota:** Reemplazar los valores `*(hash)*` con los IDs de commit reales del repositorio una vez realizados los merges correspondientes.
 
 ---
 
