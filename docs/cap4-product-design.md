@@ -524,329 +524,271 @@ De esta manera, la propuesta mantiene una identidad visual consistente y facilit
 ## 4.4. Web Applications UX/UI Design.
 <a id="4-4-web-applications-ux-ui-design"></a>
 
+En esta sección se presenta el diseño de experiencia e interfaz de la aplicación web de RoadWatch OS para sus dos segmentos objetivo. Cada pantalla se deriva de las User Stories del capítulo III y de los entregables definidos en los Impact Maps:
+
+| Segmento | Persona | Módulo | Pantallas | User Stories |
+| :--- | :--- | :--- | :--- | :--- |
+| Empresas Constructoras Viales | Carlos Mendoza | Operativo | Login, Dashboard, Alertas, Kanban de incidencias, Detalle de incidencia, Registrar medición, Puntos de monitoreo | US01, US09, US11–US17, US20, US21, US29, US41, US43, US46, US47, US50–US52 |
+| Empresas Supervisoras / Consultoras | Gisela Chávez | Fiscalización | Login, Portafolio (tarjetas y lista), Incidencias críticas, Historial de mediciones, Reporte de auditoría, Documentos normativos, Configuración | US10, US13, US18, US19, US22, US23, US33, US35, US36, US44, US45, US49, US50, US53–US57 |
+
+Todas las pantallas aplican la guía de estilos del apartado 4.1: paleta Verde Esmeralda `#23A277`, Azul Pizarra `#1E3844`, Crema `#F6F5EE` y Mostaza `#E5A93C`; tipografía Rubik; tarjetas con bordes redondeados y el código de riesgo Óptimo / Advertencia / Crítico acompañado siempre de ícono y texto.
 
 ### 4.4.1. Web Applications Wireframes.
 <a id="4-4-1-web-applications-wireframes"></a>
 
-**Web applications** 
+Los wireframes definen la estructura y jerarquía de cada pantalla antes de aplicar la identidad visual. Los mapas, gráficos y fotografías se representan como bloques de reemplazo para concentrar la evaluación en la distribución del contenido.
 
- Wireframe - Team Chat Hub (Desktop) 
+**Web applications**
 
+Wireframe - Login (Desktop)
 
-Wireframe - Quick Reports (Desktop)
+![Wireframe - Login Desktop](../assets/images/chapter4/webapp/wireframes/login.png)
 
+Wireframe - Dashboard Operativo (Desktop)
 
-Wireframe - Profile & Settings (Desktop)
+![Wireframe - Dashboard Operativo Desktop](../assets/images/chapter4/webapp/wireframes/c-dashboard.png)
 
+Wireframe - Centro de Alertas (Desktop)
 
-Wireframe - My Projects (Desktop)
+![Wireframe - Centro de Alertas Desktop](../assets/images/chapter4/webapp/wireframes/c-alertas.png)
 
+Wireframe - Tablero Kanban de Incidencias (Desktop)
 
-Wireframe - Home Leader Hub (Desktop)
+![Wireframe - Kanban de Incidencias Desktop](../assets/images/chapter4/webapp/wireframes/c-incidencias.png)
 
+Wireframe - Detalle de Incidencia (Desktop)
 
-Wireframe - Team Board (Desktop)
+![Wireframe - Detalle de Incidencia Desktop](../assets/images/chapter4/webapp/wireframes/c-incidencia-detalle.png)
 
+Wireframe - Registrar Medición (Desktop)
 
-Wireframe - Meetings & Agreements (Desktop)
+![Wireframe - Registrar Medición Desktop](../assets/images/chapter4/webapp/wireframes/c-registrar-medicion.png)
 
+Wireframe - Puntos de Monitoreo (Desktop)
 
-Wireframe - Profile (Desktop)
+![Wireframe - Puntos de Monitoreo Desktop](../assets/images/chapter4/webapp/wireframes/c-puntos.png)
 
+Wireframe - Portafolio en Tarjetas (Desktop)
 
-Wireframe - Resource Planning (Desktop)
+![Wireframe - Portafolio Tarjetas Desktop](../assets/images/chapter4/webapp/wireframes/s-portafolio.png)
 
+Wireframe - Portafolio en Lista (Desktop)
 
-Wireframe - Risk & Compliance (Desktop)
+![Wireframe - Portafolio Lista Desktop](../assets/images/chapter4/webapp/wireframes/s-portafolio-lista.png)
 
+Wireframe - Incidencias Críticas (Desktop)
 
-Wireframe - Advanced Analytics (Desktop)
+![Wireframe - Incidencias Críticas Desktop](../assets/images/chapter4/webapp/wireframes/s-criticas.png)
 
+Wireframe - Historial de Mediciones (Desktop)
 
-Wireframe - Settings (Desktop)
+![Wireframe - Historial de Mediciones Desktop](../assets/images/chapter4/webapp/wireframes/s-historial.png)
 
+Wireframe - Reporte de Auditoría (Desktop)
 
-Wireframe - Portfolio Master (Desktop)
+![Wireframe - Reporte de Auditoría Desktop](../assets/images/chapter4/webapp/wireframes/s-reporte.png)
 
+Wireframe - Documentos Normativos (Desktop)
 
-Wireframe - Home Leader Hub (Desktop)
+![Wireframe - Documentos Normativos Desktop](../assets/images/chapter4/webapp/wireframes/s-documentos.png)
 
+Wireframe - Configuración de Cuenta (Desktop)
 
-**Web applications mobil** 
+![Wireframe - Configuración Desktop](../assets/images/chapter4/webapp/wireframes/s-configuracion.png)
 
-Wireframe - Team Chat Hub (Mobile)
+**Web applications mobile**
 
+| Login | Dashboard Operativo | Alertas | Registrar Evidencia |
+| :---: | :---: | :---: | :---: |
+| ![Wireframe - Login Mobile](../assets/images/chapter4/webapp/wireframes/m-login.png) | ![Wireframe - Dashboard Mobile](../assets/images/chapter4/webapp/wireframes/m-c-dashboard.png) | ![Wireframe - Alertas Mobile](../assets/images/chapter4/webapp/wireframes/m-c-alertas.png) | ![Wireframe - Evidencia Mobile](../assets/images/chapter4/webapp/wireframes/m-c-evidencia.png) |
 
-Wireframe - Quick Reports (Mobile)
-
-
-Wireframe - My Projects (Mobile)
-
-
-Wireframe - Profile & Settings (Mobile)
-
-
-Wireframe - Leader Hub Home (Mobile)
-
-
-Wireframe - Team Board (Mobile)
-
-
-Wireframe - Meetings & Agreements (Mobile)
-
-
-Wireframe - Admin & System (Mobile)
-
-
-Wireframe - Portfolio Master (Mobile)
-
-
-Wireframe - Resource Planning (Mobile)
-
-
-Wireframe - Risk & Compliance (Mobile)
-
-
-Wireframe - Advanced Analytics (Mobile)
-
-
-Wireframe - Admin Settings (Mobile)
-
-
-Wireframe - Executive Profile (Mobile)
+| Nueva Medición | Portafolio | Mediciones | Reporte |
+| :---: | :---: | :---: | :---: |
+| ![Wireframe - Medición Mobile](../assets/images/chapter4/webapp/wireframes/m-c-medicion.png) | ![Wireframe - Portafolio Mobile](../assets/images/chapter4/webapp/wireframes/m-s-portafolio.png) | ![Wireframe - Mediciones Mobile](../assets/images/chapter4/webapp/wireframes/m-s-historial.png) | ![Wireframe - Reporte Mobile](../assets/images/chapter4/webapp/wireframes/m-s-reporte.png) |
 
 
 ## 4.4.2. Web Applications Wireflow Diagrams.
 <a id="4-4-2-web-applications-wireflow-diagrams"></a>
 
+Los wireflows combinan los wireframes con las interacciones que conectan una pantalla con otra. Cada flecha indica la acción del usuario (botón, enlace o pestaña) y las flechas rojas representan transiciones automáticas del sistema, como la alerta generada cuando una medición supera el 90 % del LMP.
+
+**Segmento 1: Empresas Constructoras Viales — Web**
+
+**El usuario inicia sesión, revisa el dashboard, abre la alerta, atiende el ticket y lo mueve a revisión; desde el dashboard también registra mediciones y edita puntos de monitoreo**
+
+![Wireflow - Constructora Web](../assets/images/chapter4/webapp/wireflows/wireflow-constructora-web.png)
+
+**Segmento 1: Empresas Constructoras Viales — Mobile**
+
+**En campo, el usuario atiende la alerta desde su celular, registra la evidencia fotográfica y envía el ticket a revisión, o registra una medición manual**
+
+![Wireflow - Constructora Mobile](../assets/images/chapter4/webapp/wireflows/wireflow-constructora-mobile.png)
+
+**Segmento 2: Empresas Supervisoras / Consultoras — Web**
+
+**El usuario revisa el portafolio, prioriza el proyecto crítico, valida la mitigación, consulta el historial y genera el expediente de auditoría; si falta un documento obligatorio, lo gestiona en Documentos normativos**
+
+![Wireflow - Supervisora Web](../assets/images/chapter4/webapp/wireflows/wireflow-supervisora-web.png)
+
+**Segmento 2: Empresas Supervisoras / Consultoras — Mobile**
+
+**El usuario consulta el portafolio, revisa las mediciones del periodo y comparte el reporte desde su celular**
+
+![Wireflow - Supervisora Mobile](../assets/images/chapter4/webapp/wireflows/wireflow-supervisora-mobile.png)
+
 
 ## 4.4.3. Web Applications Mock-ups.
 <a id="4-4-3-web-applications-mock-ups"></a>
 
-**Versión Desktop Mockups - Líderes y Jefes de Gestión de Proyectos** 
+Los mock-ups representan la versión de alta fidelidad de cada pantalla, con la paleta, tipografía, iconografía y componentes definidos en la guía de estilos.
 
-**El usuario inicia con el Login correspondiente colocando sus datos**
-![Mockup - Login Desktop](/assets/images/desktop/Login.png)
+**Versión Desktop Mockups - Empresas Constructoras Viales (Carlos Mendoza)**
 
-**El usuario entra y lo primero que se observa es el Home de la aplicación web**
-![Mockup - Workspace Selection Desktop](/assets/images/desktop/workspace-selection.png)
+**El usuario inicia con el Login correspondiente colocando su correo corporativo y contraseña (US01, US21)**
 
-**El usuario despliega la sección Reports donde puede exportar diferentes proyectos**
-![Mockup - Funciones Desktop](/assets/images/desktop/Funcion.png)
+![Mockup - Login Desktop](../assets/images/chapter4/webapp/mockups/login.png)
 
-**El usuario despliega la sección ChatHub donde puede ver los canales de sus compañeros**
-![Mockup - Compañeros Desktop](/assets/images/desktop/Parners.png)
+**El usuario entra y lo primero que observa es el Dashboard operativo: KPIs de cumplimiento, mapa de nodos IoT con semáforo de riesgo, alertas recientes, salud del tramo, clima en obra y la tendencia del indicador (US12, US13, US15, US17, US50, US51)**
 
-**El usuario despliega la sección My Projects donde puede contemplar sus diversos proyectos**
-![Mockup - Lista-Proyecto Desktop](/assets/images/desktop/Lista-Proyecto.png)
+![Mockup - Dashboard Operativo Desktop](../assets/images/chapter4/webapp/mockups/c-dashboard.png)
 
-**El usuario accede al formulario de registro de un nuevo residente, completando datos personales, de verificación, contacto, ubicación y contacto de emergencia**
+**El usuario abre el Centro de alertas, donde distingue alertas críticas, preventivas (≥ 90 % del LMP), incidencias estancadas y nodos sin conexión (US17, US46, US47)**
 
-![Mockup - New Resident Desktop](/assets/images/desktop/new-resident.png)
+![Mockup - Centro de Alertas Desktop](../assets/images/chapter4/webapp/mockups/c-alertas.png)
 
-**El usuario visualiza la lista de residentes registrados, donde puede asignar habitación, ver detalles, otorgar acceso a familiares y ver medicaciones**
+**El usuario abre el ticket creado automáticamente por el motor normativo, adjunta evidencias fotográficas georreferenciadas, conversa con el residente de campo y revisa el historial de estados (US14, US16, US43, US52)**
 
-![Mockup - Residents List Desktop](/assets/images/desktop/residents-list.png)
+![Mockup - Detalle de Incidencia Desktop](../assets/images/chapter4/webapp/mockups/c-incidencia-detalle.png)
 
-**El usuario selecciona un residente específico de la lista para gestionar sus acciones asociadas**
+**El usuario mueve la incidencia en el tablero Kanban entre las columnas Abierta, En revisión y Resuelta (US11, US29)**
 
-![Mockup - Resident Selected Desktop](/assets/images/desktop/resident-selected.png)
+![Mockup - Kanban de Incidencias Desktop](../assets/images/chapter4/webapp/mockups/c-incidencias.png)
 
-**El usuario accede a la sección Assign Room para seleccionar una habitación disponible para el residente**
+**El usuario registra una medición manual; el formulario valida los campos y deshabilita el botón Guardar si el valor está fuera de rango (US09)**
 
-![Mockup - Assign Room Empty Desktop](/assets/images/desktop/assign-room-empty.png)
+![Mockup - Registrar Medición Desktop](../assets/images/chapter4/webapp/mockups/c-registrar-medicion.png)
 
-**El usuario selecciona la habitación disponible del listado desplegable**
+**El usuario revisa los puntos de monitoreo y edita la ubicación o el umbral normativo de un punto sin recargar la página (US20, US38, US41)**
 
-![Mockup - Assign Room Selected Desktop](/assets/images/desktop/assign-room-selected.png)
+![Mockup - Puntos de Monitoreo Desktop](../assets/images/chapter4/webapp/mockups/c-puntos.png)
 
-**El usuario regresa a la lista de residentes y verifica que la habitación fue asignada correctamente**
+**Versión Desktop Mockups - Empresas Supervisoras / Consultoras (Gisela Chávez)**
 
-![Mockup - Residents List Updated Desktop](/assets/images/desktop/residents-list-updated.png)
+**El usuario entra al Portafolio y ve la salud ambiental global y una tarjeta por proyecto con su semáforo de estado (US10, US33, US44, US50)**
 
-**El usuario accede a la sección Staff y edita la información de un miembro del personal, incluyendo datos personales, de verificación, contacto, ubicación y contactos de emergencia**
+![Mockup - Portafolio Tarjetas Desktop](../assets/images/chapter4/webapp/mockups/s-portafolio.png)
 
-![Mockup - Edit Staff Member Desktop](/assets/images/desktop/edit-staff-member.png)
+**El usuario cambia a la vista de lista para revisar más proyectos en una sola pantalla (US22, US48, US55)**
 
-**Versión Mobile Mockups - Líderes y Jefes de Gestión de Proyectos** 
+![Mockup - Portafolio Lista Desktop](../assets/images/chapter4/webapp/mockups/s-portafolio-lista.png)
 
-**El usuario inicia con el Login correspondiente colocando sus datos**
+**El usuario revisa la tabla de incidencias críticas con filas resaltadas, consulta la bitácora y valida u observa la mitigación de la constructora (US18, US33, US52)**
 
-**El siguiente paso es escoger el workspace que se adapta mejor al usuario**
+![Mockup - Incidencias Críticas Desktop](../assets/images/chapter4/webapp/mockups/s-criticas.png)
 
-**El usuario puede olvidar su contraseña y decide cambiar su contraseña**
+**El usuario filtra el historial de mediciones por indicador y rango de fechas; las lecturas son de solo lectura y muestran su hash de integridad (US13, US19, US49)**
 
-**El usuario desplega la sección Board en la cual se observa la función Operativa**
+![Mockup - Historial de Mediciones Desktop](../assets/images/chapter4/webapp/mockups/s-historial.png)
 
-**El usuario puede añadir una nueva tarea si el lo desea**
+**El usuario configura y genera el expediente de auditoría en PDF con vista previa (US35, US36, US45)**
 
-**El usuario se dirige a la sección de Meetings y puede acceder a múltiples funcionalidades**
+![Mockup - Reporte de Auditoría Desktop](../assets/images/chapter4/webapp/mockups/s-reporte.png)
 
-**En la sección Log el usuario puede elaborar una nota rápida del registro para un proyecto**
+**El usuario gestiona los documentos normativos del hito de auditoría y su historial de versiones; el hito no se puede cerrar si falta un documento requerido (US54, US56)**
 
-**El usuario puede acceder a Calendar donde se puede apreciar mejor el calendario del equipo**
+![Mockup - Documentos Normativos Desktop](../assets/images/chapter4/webapp/mockups/s-documentos.png)
 
-**El usuario se dirige a la sección de Chat donde puede acceder a la funcionalidad de Chat Hub**
+**El usuario administra los usuarios y roles de su cuenta, su plan de suscripción y el color de marca (US23, US42, US53, US57)**
 
-**El usuario al presionar Attach Files puede subir archivos de manera adjunta**
+![Mockup - Configuración Desktop](../assets/images/chapter4/webapp/mockups/s-configuracion.png)
 
-**El usuario al desplegar la sección Reports puede realizar un generador de reportes**
+**Versión Mobile Mockups - Empresas Constructoras Viales (Carlos Mendoza)**
 
-**El usuario puede seleccionar un proyecto de la lista en donde puede seleccionar un proyecto de la lista**
+| El usuario inicia sesión | El usuario ve la alerta crítica en su Dashboard | El usuario revisa sus alertas | El usuario registra la evidencia del ticket | El usuario registra una medición |
+| :---: | :---: | :---: | :---: | :---: |
+| ![Mockup - Login Mobile](../assets/images/chapter4/webapp/mockups/m-login.png) | ![Mockup - Dashboard Mobile](../assets/images/chapter4/webapp/mockups/m-c-dashboard.png) | ![Mockup - Alertas Mobile](../assets/images/chapter4/webapp/mockups/m-c-alertas.png) | ![Mockup - Evidencia Mobile](../assets/images/chapter4/webapp/mockups/m-c-evidencia.png) | ![Mockup - Medición Mobile](../assets/images/chapter4/webapp/mockups/m-c-medicion.png) |
 
-**El usuario puede descargar el reporte en formato PDF**
+**Versión Mobile Mockups - Empresas Supervisoras / Consultoras (Gisela Chávez)**
 
-**El usuario se dirige a la sección de su perfil y puede gestionar su información**
-
-**El usuario puede dirigirse a la sección de Security y ver el tema de la autenticación**
-
-**El usuario puede ver los detalles en su cuenta y a la vez puede gestionarlos**
-
-**El usuario se dirige a Notifications Preferences para ver si quiere o no recibir estas mismas**
-
-**El usuario despliega la opción de ver sus proyectos donde se aprecia mejor su organización**
-
-**El usuario al entrar en la sección Calendar puede ver el calendario del equipo**
-
-**El usuario entra y lo primero que se observa es el Home de la aplicación mobile**
+| El usuario revisa los proyectos que requieren atención | El usuario consulta las mediciones del periodo | El usuario genera y comparte el reporte |
+| :---: | :---: | :---: |
+| ![Mockup - Portafolio Mobile](../assets/images/chapter4/webapp/mockups/m-s-portafolio.png) | ![Mockup - Mediciones Mobile](../assets/images/chapter4/webapp/mockups/m-s-historial.png) | ![Mockup - Reporte Mobile](../assets/images/chapter4/webapp/mockups/m-s-reporte.png) |
 
 
-**Versión Mobile Mockups - Empresas Medianas y Grandes con Múltiples Portafolios** 
-
-**El usuario inicia con el Login correspondiente colocando sus datos**
-
-**El siguiente paso es escoger el workspace que se adapta mejor al usuario**
-
-**El usuario puede olvidar su contraseña y decide cambiar su contraseña**
-
-**El usuario puede dirigirse a la sección del Portfolio Govemance**
-
-**El usuario se dirige a la sección de Admin & Systems Control**
-
-**El usuario puede añadir una entidad para dicho portafolio que seleccione**
-
-**El usuario se dirige a la función de Advanced Analytics**
-
-**En base a lo que el usuario selecciono se genera un pronóstico**
-
-**El usuario se dirige a la sección de Resources y va a la planificación de recursos**
-
-**El usuario selecciona la sección de Risks y selecciona la función Risk & Compliance**
-
-**El usuario por otro lado puede iniciar una auditoría para los proyectos**
-
-**El usuario se dirige a la sección de Strategy y puede seleccionar la función del informe de la estrategia de contratación**
-
-**El usuario visita su cuenta mobile y selecciona Account Settings**
-
-**El usuario puede apreciar mejor su perfil y gestionarlo**
-
-**El usuario puede visualizar a los Team Members de cada proyecto**
-
-**El usuario se dirige a la sección Integrations de los proyectos**
-
-
-<div style="text-align: left; max-width: 900px; margin: 0 auto;">
-
-# 4.4.4. Web Applications User Flow Diagrams.
+## 4.4.4. Web Applications User Flow Diagrams.
 <a id="4-4-4-web-applications-user-flow-diagrams"></a>
 
-## Segmento 1: Líderes y Jefes de Gestión de Proyectos
-**User Flow Web**<br>
+Los user flows describen, paso a paso, el recorrido que sigue cada persona para cumplir su objetivo principal, incluyendo los puntos de decisión y los caminos alternos.
 
-**El usuario valida sus credenciales al ingresar a Vantage PMO**
+**Segmento 1: Empresas Constructoras Viales**
 
-**El usuario escoge su espacio de trabajo a su comodidad**
+**User Flow Web — Atender una alerta de sobrepaso**<br>
 
-**El usuario puede ir a su perfil para gestionar alguna característica**
+**El usuario inicia sesión; si las credenciales no son válidas, el sistema muestra un error y le permite reintentar**
 
-**El usuario puede acceder a la sección del Team Board y sus funciones**
+**El usuario revisa el Dashboard y ve la alerta; si es crítica, abre el ticket creado por el motor normativo; si es preventiva, la atiende y abre un ticket**
 
-**El usuario accede tanto al Chat Hub de los proyectos y Team Headmap**
+**El usuario registra la acción de mitigación y sube la evidencia fotográfica georreferenciada**
 
-**El usuario puede ver sus proyectos activos y a detalle**
+**Si la evidencia está completa, el usuario mueve el ticket a “En revisión” y espera la validación de la supervisora**
 
-**El usuario accede a las secciones tanto de Quick Reports y Budgets**
+![User Flow - Constructora Web](../assets/images/chapter4/webapp/userflows/userflow-constructora-web.png)
 
-**El usuario puede acceder a la sección de Meetings & Agreements**
+**User Flow Mobile — Registrar medición y evidencia en campo**<br>
 
-**También puede optar por presionar el botón Schedule Meeting**
+**El usuario ingresa con huella o contraseña y ve la alerta en el Dashboard**
 
+**Si necesita medir, registra una nueva medición; si el valor alcanza el 90 % del LMP, el sistema emite una alerta y crea un ticket**
 
-**User Flow Mobile**<br>
+**Si necesita mitigar, abre el ticket asignado, toma la foto con coordenadas y lo envía a revisión**
 
-**El usuario valida sus credenciales al ingresar a Vantage PMO**
+![User Flow - Constructora Mobile](../assets/images/chapter4/webapp/userflows/userflow-constructora-mobile.png)
 
-**El usuario escoge su espacio de trabajo a su comodidad**
+**Segmento 2: Empresas Supervisoras / Consultoras**
 
-**Este es el menú para el usuario donde aparecen múltiples opciones**
+**User Flow Web — Fiscalizar y generar el expediente de auditoría**<br>
 
-**Aquí el usuario accede a la sección Board la cual permite añadir tareas**
+**El usuario inicia sesión y revisa la salud del portafolio**
 
-**El usuario puede acceder a la sección del chat y visita su perfil**
+**El usuario abre las incidencias críticas; si la mitigación tiene evidencia, la valida; si no, emite una observación a la constructora**
 
-**El usuario accede a algunas opciones del System Settings**
+**El usuario filtra el historial por indicador y fechas y configura el reporte de auditoría**
 
-**El usuario presiona Notification Preferences, otra función de System Settings**
+**Si los documentos obligatorios están completos, genera y descarga el PDF; si no, sube o solicita el documento faltante**
 
-**El usuario puede acceder a la sección de Reports donde hay diversas funcionalidades**
+![User Flow - Supervisora Web](../assets/images/chapter4/webapp/userflows/userflow-supervisora-web.png)
 
-**El usuario accede a la sección Projects donde se observa el Team Bandwidth**
+**User Flow Mobile — Consultar el portafolio y compartir el reporte**<br>
 
-**El usuario puede acceder a la sección Meetings & Agreements**
+**El usuario inicia sesión y revisa los proyectos que requieren atención**
 
-**El usuario puede acceder a la sección Log Quick Note y Attach Files**
+**Si hay un proyecto crítico, consulta sus mediciones, genera el reporte en PDF y lo comparte con el ente fiscalizador**
 
-**El usuario puede acceder a la sección Schedule New junto con la de Projects**
-
-
-## Segmento 2: Empresas Medianas y Grandes con Múltiples Portafolios
-**User Flow Web**<br>
-
-**El usuario valida sus credenciales al ingresar a Vantage PMO**
-
-**El usuario escoge su espacio de trabajo a su comodidad y aparece la pantalla principal**
-
-**El usuario puede acceder a la sección de Resource Planning**
-
-**El usuario puede acceder a la sección Account y el usuario puede compartir su perfil**
-
-**El usuario puede acceder a la sección de Settings**
-
-**El usuario puede acceder a más funciones de la sección Settings**
-
-**El usuario puede acceder a la sección de Analysis y se dirige a su Portafolio**
-
-**El usuario puede acceder a la sección Projects**
-
-**El usuario puede acceder a la sección Risk & Compliance, el usuario accede a más funciones**
-
-
-**User Flow Mobile**<br>
-
-**El usuario valida sus credenciales al ingresar a Vantage PMO**
-
-**El usuario escoge su espacio de trabajo a su comodidad**
-
-**El usuario se encuentra en la pantalla de inicio**
-
-**El usuario puede acceder a la sección Healthy, también a otras funciones**
-
-**El usuario al presionar Add Entity, continua con las Advanced Analytics**
-
-**El usuario puede seleccionar Generate Forecast**
-
-**El usuario puede acceder a Capacity & Bandwidth Analysis**
-
-**El usuario presiona Initiate Audit y se va a Hiring Strategy Report**
-
-**El usuario se dirige a la configuración de la cuenta, para seleccionar su información**
-
-**El usuario puede ver a los Team Members, tambien el architect de si mismo**
+![User Flow - Supervisora Mobile](../assets/images/chapter4/webapp/userflows/userflow-supervisora-mobile.png)
 
 ## 4.5. Web Applications Prototyping.
 <a id="4-5-web-applications-prototyping"></a>
 
+A partir de los mock-ups se elaboró un prototipo navegable que conecta todas las pantallas mediante zonas clicables (botones, menú lateral, pestañas y tarjetas), de modo que se pueden recorrer los flujos principales de ambos segmentos tanto en Desktop como en Mobile. El prototipo se encuentra en la carpeta [`prototype/`](../prototype/index.html) del repositorio; al abrir `prototype/index.html` se elige el recorrido y, con la opción **“Mostrar zonas clicables”**, se resaltan los puntos de interacción.
+
+| Recorrido | Pantallas conectadas |
+| :--- | :--- |
+| Constructora · Web | Login → Dashboard → Alertas → Detalle de incidencia → Kanban → Registrar medición → Puntos de monitoreo |
+| Supervisora · Web | Login → Portafolio → Incidencias críticas → Historial → Reporte de auditoría → Documentos → Configuración |
+| Constructora · Mobile | Login → Dashboard → Registrar evidencia → Alertas → Nueva medición |
+| Supervisora · Mobile | Login → Portafolio → Mediciones → Reporte |
+
+**Prototipo · Empresas Constructoras Viales (Web)**
+
+![Prototipo - Constructora Web](../assets/images/chapter4/webapp/prototype/prototipo-constructora-web.gif)
+
+**Prototipo · Empresas Supervisoras / Consultoras (Web)**
+
+![Prototipo - Supervisora Web](../assets/images/chapter4/webapp/prototype/prototipo-supervisora-web.gif)
+
+| Prototipo · Constructora (Mobile) | Prototipo · Supervisora (Mobile) |
+| :---: | :---: |
+| ![Prototipo - Constructora Mobile](../assets/images/chapter4/webapp/prototype/prototipo-constructora-mobile.gif) | ![Prototipo - Supervisora Mobile](../assets/images/chapter4/webapp/prototype/prototipo-supervisora-mobile.gif) |
 
 
 ## 4.6. Domain-Driven Software Architecture.
