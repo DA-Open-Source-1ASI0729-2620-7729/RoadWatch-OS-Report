@@ -416,46 +416,50 @@ Los mock-ups representan la propuesta visual de alta fidelidad de la Landing Pag
 
 La versión Web mantiene la estructura definida previamente en los wireframes y aplica la identidad visual final del producto.
 
-**Barra de Navegación**:  
-Mantiene una estructura clara y consistente con el Design System.
+![Landing Page Mock-up Web](../assets/images/chapter4/landing/landing-web.png)
 
-**Título Principal**:  
-Utiliza la jerarquía tipográfica establecida para destacar la propuesta de valor.
+**Figura X. Mock-up de la Landing Page – Desktop Web Browser.**
 
-**Cuerpo de Texto**:  
-Presenta una composición legible y mantiene un adecuado contraste con el fondo.
+**Barra de Navegación**:
+Logotipo de RoadWatch OS, enlaces a Inicio, Cómo funciona, Beneficios, Planes, Equipo y Contacto, y los accesos "Iniciar sesión" y "Solicitar demo".
 
-**Llamados a la Acción**:  
-Utilizan los estilos y colores definidos para diferenciar acciones principales y secundarias.
+**Hero Section**:
+Titular "Detecta la desviación ambiental antes de la multa.", texto de apoyo sobre sensores neutrales, alertas preventivas y auditoría inalterable, y dos llamados a la acción diferenciados por segmento: "Soy constructora · Gestiona tu cartera" (US05) y "Soy consultora · Monitorea tu proyecto" (US04). A la derecha se muestra la demo del tablero geolocalizado con nodos y lecturas (US02).
 
-**Elemento Visual Principal**:  
-Refuerza la identidad de la solución dentro del Hero Section.
+**Acerca del Proyecto**:
+Presenta la problemática del monitoreo manual y reactivo en obras viales, respaldada por cifras de las entrevistas y del mercado (RNCA).
 
-**Sección de Pilares de Gestión**:
-- **Pilar 1**: Primer eje principal de la propuesta.
-- **Pilar 2**: Segundo eje de gestión.
-- **Pilar 3**: Tercer eje de gestión.
+**Pilares de Gestión**:
+- **Monitoreo continuo:** nodos IoT neutrales para aire, ruido y agua.
+- **Mitigación preventiva:** alertas al 90 % del límite y tickets automáticos.
+- **Auditoría inalterable:** lecturas selladas y expedientes normativos en minutos.
 
-**Sección de Transformación y Beneficios**:
-- **01. Control**
-- **02. Alineación**
-- **03. Comunicación**
-- **04. Datos**
+**Beneficios Enumerados**:
+- **01. Control en tiempo real**
+- **02. Menos multas y paralizaciones**
+- **03. Colaboración sin conflicto**
+- **04. Reportes en minutos**
 
-**Testimonios**:  
-Refuerzan la confianza y validación de la propuesta.
+**Funcionalidades**:
+Tablero geolocalizado, alertas tempranas, tickets de mitigación y reportes normativos, acompañados de una vista del dashboard.
 
-**Logotipos**:  
-Representan organizaciones, tecnologías o entidades relacionadas con la solución.
+**Cómo Funciona**:
+Cuatro pasos: instalación de nodos, monitoreo en vivo, atención oportuna y auditoría con un clic.
 
-**Cierre**:  
-Presenta nuevamente la propuesta de valor y un llamado a la acción.
+**Impacto y Testimonio**:
+Caso ilustrativo del usuario tipo y las metas de impacto definidas en los Impact Maps (−30 % en tiempo de respuesta y −40 % en tiempo de elaboración de expedientes) (US06).
 
-**Newsletter**:  
-Permite registrar información de contacto de usuarios interesados.
+**Planes**:
+Comparación de los planes Base, Profesional y Enterprise, con el hardware incluido en la suscripción (US03).
 
-**Pie de Página**:  
-Organiza enlaces secundarios, información de contacto y elementos legales.
+**Equipo**:
+Integrantes de VíaNexo con su rol en el proyecto.
+
+**Contacto**:
+Formulario de contacto comercial con nombre, empresa, correo y tipo de empresa (US08).
+
+**Pie de Página**:
+Enlaces de producto, empresa y legales, incluido el Libro de Reclamaciones.
 
 ---
 
@@ -463,50 +467,43 @@ Organiza enlaces secundarios, información de contacto y elementos legales.
 
 La versión Mobile conserva la identidad visual y los componentes establecidos para Desktop, adaptando su distribución a dispositivos de menor tamaño.
 
-![Landing Page Mock-up Mobile](../assets/images/LandingMockupMobile.png)
+![Landing Page Mock-up Mobile](../assets/images/chapter4/landing/landing-mobile.png)
 
-**Figura X. Mock-up de la Landing Page – Mobile Web Browser.**  
+**Figura X. Mock-up de la Landing Page – Mobile Web Browser.**
 
-**Header y Navegación**:  
-Se utiliza una navegación simplificada y adaptada al espacio disponible.
+**Header y Navegación**:
+Logotipo y menú tipo hamburguesa.
 
-**Título (H1)**:  
-Mantiene la jerarquía principal, adaptando el tamaño tipográfico al dispositivo.
+**Título (H1)**:
+Mantiene la jerarquía principal, adaptando el tamaño tipográfico al ancho de pantalla.
 
-**Texto**:  
-Se ajusta para favorecer la lectura en pantallas pequeñas.
+**Llamados a la Acción**:
+Los botones de cada segmento se apilan a ancho completo para facilitar la interacción táctil.
 
-**Opciones**:  
-Los elementos interactivos mantienen suficiente separación para facilitar la interacción táctil.
-
-**Elemento Visual**:  
-Se adapta proporcionalmente al ancho disponible.
+**Elemento Visual**:
+La demo del tablero geolocalizado se adapta proporcionalmente al ancho disponible.
 
 **Cuerpo de Contenidos**:
 
-1. **Pilares de Gestión**: Se presentan verticalmente.
-2. **Beneficios Enumerados (01-04)**: Mantienen una lectura secuencial.
-3. **Autoridad y Respaldo**: Refuerza la confianza hacia la solución.
+1. **Acerca del proyecto:** las cifras se presentan una debajo de otra.
+2. **Pilares de Gestión:** tarjetas verticales.
+3. **Beneficios Enumerados (01-04):** lectura secuencial.
+4. **Funcionalidades y Cómo funciona:** tarjetas apiladas en orden.
 
-**Onboarding en Pasos**:  
-Los pasos se muestran uno debajo del otro, respetando el orden del flujo.
+**Impacto y Testimonio**:
+Bloque oscuro con la cita y las metas de impacto.
 
-**Testimonios**:  
-Se adaptan a componentes compatibles con navegación móvil.
+**Planes**:
+Las tres tarjetas se apilan, destacando el plan Profesional.
 
-**Logos de Respaldo**:  
-Mantienen una correcta visualización dentro del ancho disponible.
+**Equipo**:
+Cuadrícula de dos columnas.
 
-**Cierre**:  
-Incluye el mensaje final y el llamado a la acción principal.
-
-**Newsletter**:  
-Presenta campos y botones adaptados a interacción táctil.
-
-**Footer Organizado**:  
-Los contenidos se reorganizan verticalmente para mantener una lectura clara.
+**Contacto y Footer**:
+Formulario con campos a ancho completo y enlaces organizados verticalmente.
 
 ---
+
 
 #### Aplicación del Design System
 
