@@ -104,49 +104,53 @@ Sabremos que tenemos éxito cuando veamos los siguientes comportamientos medible
 
 ##### A. Business Assumptions
 
-1. **Nuestros clientes necesitan:** un entorno de seguimiento ambiental automatizado, con garantía de inalterabilidad, que evite la adquisición directa y el mantenimiento complejo de equipos de medición.
-2. **Estas necesidades se satisfacen con:** una plataforma HaaS/SaaS que provee la red de sensores IoT, procesa los parámetros en tiempo real, alerta sobre tendencias de riesgo y presenta la información en tableros geolocalizados.
-3. **Nuestros usuarios iniciales serán:** ingenieros residentes de obra, responsables de SST/MA en constructoras y jefes de supervisión en consultoras ambientales acreditadas.
-4. **Valor clave esperado:** para la constructora, contar con un mecanismo de mitigación previa a la infracción; para la supervisora, auditar con datos transparentes recolectados de forma remota.
-5. **Beneficios complementarios:** reducción de tiempos de elaboración de informes oficiales, trazabilidad histórica completa y mejora del perfil de cumplimiento de la empresa ejecutora.
-6. **Estrategia de captación:** acuerdos con gremios de la construcción, prospección sobre empresas registradas en el RNCA y difusión orientada a gerentes de operaciones e inspectores de obra.
-7. **Estructura de ingresos:** cobro de suscripciones periódicas diferenciadas (HaaS/SaaS) para constructoras y supervisoras bajo planes escalables (Base, Profesional, Enterprise).
-8. **Competidores directos:** comercializadores de hardware de medición sin capa de gestión integrada, plataformas de monitoreo pasivo de parámetros y registros tradicionales en hojas de cálculo.
-9. **Ventaja competitiva:** provisión de hardware bajo modelo HaaS actuando como tercero neutral; motor de gestión preventiva (tickets de mitigación) y arquitectura con aislamiento estricto de datos (Bounded Contexts) para cada segmento.
-10. **Riesgos del producto:** dificultades logísticas en el mantenimiento de sensores en zonas remotas o la percepción de parcialidad en el flujo de información.
-11. **Estrategias de mitigación:** implementación de controles de acceso estricto por roles (RBAC), bloqueo de edición sobre el histórico de datos e historial público de calibración de los nodos IoT.
+Creemos que la industria de construcción vial necesita un entorno de seguimiento ambiental automatizado y neutral que elimine la compra costosa de hardware  y asegure la inalterabilidad de los datos.
+
+Creemos que podemos monetizar esta necesidad eficientemente mediante una plataforma HaaS/SaaS de doble monetización , cobrando suscripciones independientes y escalables (Base, Profesional, Enterprise) tanto a la constructora como a la supervisora del mismo proyecto.
+
+Creemos que nuestra ventaja competitiva frente a los visores pasivos tradicionales radica en actuar como un tercero neutral, integrando la entrega de hardware en comodato con un motor de gestión preventiva (tickets de mitigación).
+
+Creemos que los canales de captación más efectivos serán los acuerdos estratégicos con gremios (ej. CAPECO), la prospección directa del padrón del RNCA y las referencias cruzadas entre contratistas y auditores de una misma concesión.
 
 ##### B. User Assumptions
 
-* **¿Quién es el usuario?** Dos perfiles operativos: (1) El responsable de mitigación ambiental de la empresa constructora; y (2) El auditor / consultor ambiental de la firma supervisora.
-* **¿Dónde encaja el producto?** En el flujo operativo diario de control de frentes de obra (constructora) y en la rutina de verificación periódica de expedientes normativos (supervisora).
-* **Problema a resolver:** La incertidumbre sobre la validez de las mediciones de campo y el desfase temporal en la detección de incidentes ambientales.
-* **Uso típico:** Atención de alertas de riesgo, carga de evidencias fotográficas para el cierre de acciones correctivas (constructora); revisión del histórico de mediciones y exportación de expedientes de fiscalización (supervisora).
-* **Funcionalidades críticas:** Ingesta continua vía IoT, clasificación automática de riesgo (verde/amarillo/rojo), tableros cartográficos interactivos y generación de reportes en PDF/Excel adaptados a formatos normativos.
-* **Experiencia visual (Look & Feel):** Interfaz limpia tipo *dashboard* empresarial con código de colores preventivo, optimizada para su visualización en pantallas de gabinete y dispositivos móviles en campo.
+* Creemos que alcanzaremos el éxito comercial cuando veamos un crecimiento sostenido en la adopción del modelo de doble suscripción (constructora + supervisora) operando activamente sobre un mismo proyecto vial.
+
+* Creemos que aumentaremos el Ingreso Mensual Recurrente (MRR) al lograr una alta tasa de renovación de licencias cuando las constructoras trasladen nuestra plataforma a nuevos frentes de obra.
+
+* Creemos que nuestra Definition of Done (DoD) a nivel de negocio se cumplirá cuando un cliente logre operar el ecosistema completo (nodos IoT en campo + plataforma) evidenciando una reducción medible (ej. 50%) en su tiempo medio de cierre de incidencias ambientales.
+
+* Creemos que reduciremos nuestro Costo de Adquisición de Clientes (CAC) al aprovechar la obligatoriedad normativa, logrando que las empresas supervisoras recomienden el uso de nuestro estándar a otras constructoras.
 
 ##### C. User Outcome & Benefit Assumptions
 
-* El equipo operativo de la constructora soluciona desviaciones ambientales antes de incurrir en infracciones normativas gracias a la detección temprana.
-* La empresa contratista optimiza su presupuesto al evitar la compra definitiva de instrumental de laboratorio o sensores de alta gama.
-* La consultora ambiental reduce la frecuencia de inspecciones presenciales al contar con datos continuos y confiables recolectados de forma remota.
-* El equipo auditor compila expedientes normativos en menor tiempo y con respaldo técnico inalterable.
+* Creemos que nuestro usuario principal del "Segmento 1" está compuesto por ingenieros residentes de obra y responsables de mitigación en constructoras, quienes sufren por el desfase temporal en la detección de incidentes y necesitan reaccionar rápidamente en campo.
+
+* Creemos que nuestro usuario del "Segmento 2" está compuesto por auditores y consultores ambientales de firmas supervisoras, cuyo problema principal es la incertidumbre sobre la validez de los datos de campo y el alto costo de viajar físicamente a la obra.
+
+* Creemos que ambos perfiles operan en contextos de alta presión normativa y utilizarán la plataforma de maneras distintas: la constructora mediante alertas y tickets diarios (móvil/web), y la supervisora mediante auditorías y extracción de expedientes (gabinete).
 
 ##### D. Business Outcome Assumptions
 
-* Crecimiento en la adopción del modelo de doble suscripción activa (constructora + supervisora) sobre un mismo proyecto vial.
-* Reducción en el tiempo medio de atención y cierre de incidencias ambientales en los proyectos registrados.
-* Incremento en la tasa de renovación de licencias al término de los periodos contractuales de obra.
-* Reutilización eficiente del parque de nodos sensores IoT en nuevos proyectos al concluir las etapas de obra previa.
+* Creemos que los ingenieros de la constructora lograrán su principal objetivo (evitar multas y paralizaciones) al recibir alertas tempranas que les permitan mitigar desviaciones antes de que se conviertan en infracciones formales.
+
+* Creemos que las empresas contratistas obtendrán el beneficio de optimizar su presupuesto operativo al no tener que invertir en la compra y mantenimiento complejo de instrumental de medición (modelo HaaS).
+
+* Creemos que los auditores ambientales lograrán su objetivo de emitir dictámenes más rápidos y seguros al reducir drásticamente las visitas presenciales a campo, basándose en telemetría continua y remota.
+
+* Creemos que las firmas supervisoras obtendrán el beneficio de la tranquilidad profesional al compilar expedientes normativos respaldados por datos técnicamente inalterables y neutrales.
 
 ##### E. Feature Assumptions
 
-1. **Red de Nodos IoT (HaaS):** Kits integrados de sensores ambientales suministrados, instalados y mantenidos por VíaNexo dentro de la tarifa del servicio.
-2. **Motor de Clasificación de Riesgo:** Algoritmo en el backend que evalúa las lecturas contra los parámetros normativos e identifica condiciones óptimas, de advertencia o críticas.
-3. **Módulo Operativo de Mitigación (Constructora):** Dashboard geolocalizado para la atención de alertas, apertura automática de tickets y registro de evidencias foto/georeferenciadas.
-4. **Módulo de Fiscalización Digital (Supervisora):** Panel de auditoría multitramo con lecturas históricas protegidas contra edición y generador automatizado de reportes normativos.
-5. **Control de Accesos por Bounded Contexts (RBAC):** Separación lógica completa de los datos para garantizar que las operaciones internas de la constructora no comprometan la independencia de la supervisora.
+* Creemos que una Red de Nodos IoT bajo modelo HaaS resolverá el problema de la captura manual, proveyendo parámetros en tiempo real sin requerir que el usuario adquiera o mantenga el hardware.
 
+* Creemos que un Motor de Clasificación de Riesgo Automatizado permitirá comparar las lecturas ambientales contra la normativa vigente (LMP) y detonar alertas preventivas inmediatas.
+
+* Creemos que un Módulo Operativo de Mitigación (Dashboard para Constructora) facilitará la resolución de incidentes mediante la generación de tickets y el registro de evidencias fotográficas y georreferenciadas.
+
+* Creemos que un Módulo de Fiscalización Digital (Panel para Supervisora) permitirá automatizar el trabajo de gabinete mediante reportes normativos exportables y un registro histórico protegido contra ediciones.
+
+* Creemos que un sistema de Control de Accesos por Bounded Contexts (RBAC) garantizará la transparencia del sistema, separando lógicamente la gestión interna de la constructora de la visualización auditable de la supervisora.
 ---
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
