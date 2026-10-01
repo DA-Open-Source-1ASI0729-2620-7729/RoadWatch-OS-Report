@@ -153,24 +153,70 @@ Creemos que los canales de captación más efectivos serán los acuerdos estrat�
 * Creemos que un sistema de Control de Accesos por Bounded Contexts (RBAC) garantizará la transparencia del sistema, separando lógicamente la gestión interna de la constructora de la visualización auditable de la supervisora.
 ---
 
+#### 1.2.2.2. Lean UX Assumptions
+
+##### A. Business Assumptions
+1. **Creemos que** la industria de construcción vial necesita un entorno de seguimiento ambiental automatizado y neutral que elimine la compra costosa de hardware (CapEx) y asegure la inalterabilidad de los datos.
+2. **Creemos que** podemos monetizar esta necesidad eficientemente mediante una plataforma HaaS/SaaS de doble monetización (Dual Revenue), cobrando suscripciones independientes y escalables (Base, Profesional, Enterprise) tanto a la constructora como a la supervisora del mismo proyecto.
+3. **Creemos que** nuestra ventaja competitiva frente a los visores pasivos tradicionales radica en actuar como un tercero neutral, integrando la entrega de hardware en comodato con un motor de gestión preventiva (tickets de mitigación).
+4. **Creemos que** los canales de captación más efectivos serán los acuerdos estratégicos con gremios (ej. CAPECO), la prospección directa del padrón del RNCA y las referencias cruzadas entre contratistas y auditores de una misma concesión.
+
+##### B. Business Outcome Assumptions
+1. **Creemos que** alcanzaremos el éxito comercial cuando veamos un crecimiento sostenido en la adopción del modelo de doble suscripción (constructora + supervisora) operando activamente sobre un mismo proyecto vial.
+2. **Creemos que** aumentaremos el Ingreso Mensual Recurrente (MRR) al lograr una alta tasa de renovación de licencias cuando las constructoras trasladen nuestra plataforma a nuevos frentes de obra.
+3. **Creemos que** nuestra Definition of Done (DoD) a nivel de negocio se cumplirá cuando un cliente logre operar el ecosistema completo (nodos IoT en campo + plataforma) evidenciando una reducción medible del 50% en su tiempo medio de cierre de incidencias ambientales.
+4. **Creemos que** reduciremos nuestro Costo de Adquisición de Clientes (CAC) al aprovechar la obligatoriedad normativa, logrando que las empresas supervisoras recomienden el uso de nuestro estándar a otras constructoras.
+
+##### C. User Assumptions
+1. **Creemos que** nuestro usuario principal del Segmento 1 está compuesto por ingenieros residentes de obra y responsables de mitigación en constructoras, quienes sufren por el desfase temporal en la detección de incidentes y necesitan reaccionar rápidamente en campo.
+2. **Creemos que** nuestro usuario del Segmento 2 está compuesto por auditores y consultores ambientales de firmas supervisoras, cuyo problema principal es la incertidumbre sobre la validez de los datos de campo y el alto costo de viajar físicamente a la obra.
+3. **Creemos que** ambos perfiles operan en contextos de alta presión normativa y utilizarán la plataforma de maneras distintas: la constructora mediante alertas y tickets diarios (móvil/web), y la supervisora mediante auditorías y extracción de expedientes (gabinete).
+
+##### D. User Outcome & Benefit Assumptions
+1. **Creemos que** los ingenieros de la constructora lograrán su principal objetivo (evitar multas y paralizaciones) al recibir alertas tempranas que les permitan mitigar desviaciones antes de que se conviertan en infracciones formales.
+2. **Creemos que** las empresas contratistas obtendrán el beneficio de optimizar su presupuesto operativo al no tener que invertir en la compra y mantenimiento complejo de instrumental de medición (modelo HaaS).
+3. **Creemos que** los auditores ambientales lograrán su objetivo de emitir dictámenes más rápidos y seguros al reducir drásticamente las visitas presenciales a campo, basándose en telemetría continua y remota.
+4. **Creemos que** las firmas supervisoras obtendrán el beneficio de la tranquilidad profesional al compilar expedientes normativos respaldados por datos técnicamente inalterables y neutrales.
+
+##### E. Feature Assumptions
+1. **Creemos que** una **Red de Nodos IoT bajo modelo HaaS** resolverá el problema de la captura manual, proveyendo parámetros en tiempo real sin requerir que el usuario adquiera o mantenga el hardware.
+2. **Creemos que** un **Motor de Clasificación de Riesgo Automatizado** permitirá comparar las lecturas ambientales contra la normativa vigente (LMP) y detonar alertas preventivas inmediatas.
+3. **Creemos que** un **Módulo Operativo de Mitigación (Dashboard para Constructora)** facilitará la resolución de incidentes mediante la generación de tickets y el registro de evidencias fotográficas y georreferenciadas.
+4. **Creemos que** un **Módulo de Fiscalización Digital (Panel para Supervisora)** permitirá automatizar el trabajo de gabinete mediante reportes normativos exportables y un registro histórico protegido contra ediciones.
+5. **Creemos que** un sistema de **Control de Accesos por Bounded Contexts (RBAC)** garantizará la transparencia del sistema, separando lógicamente la gestión interna de la constructora de la visualización auditable de la supervisora.
+
+---
+
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
-##### Transparencia mediante Datos Inalterables
+* **Hipótesis 1 (Red de Nodos IoT):**
+  * **We believe we will achieve:** Un crecimiento sostenido en la adopción del modelo de suscripción y recurrencia de clientes (Business Outcome).
+  * **If:** Las empresas constructoras y supervisoras (Users).
+  * **Attain:** El beneficio de optimizar su presupuesto operativo al evitar la compra y mantenimiento complejo de instrumental de medición (User Outcome).
+  * **With:** Una Red de Nodos IoT suministrada bajo el modelo HaaS (Hardware as a Service) (Feature).
 
-Creemos que incrementaremos la tasa de adopción por parte de las empresas supervisoras si la plataforma les provee acceso a un registro continuo capturado por nodos IoT neutrales e imposibles de alterar por la empresa constructora, integrando un módulo de fiscalización remota de datos inalterables.
+* **Hipótesis 2 (Motor de Clasificación de Riesgo):**
+  * **We believe we will achieve:** Una reducción del 50% en el tiempo medio de atención y cierre de incidencias ambientales cumpliendo nuestra Definition of Done (Business Outcome).
+  * **If:** Los ingenieros residentes de obra y responsables de mitigación (Users).
+  * **Attain:** El objetivo de reaccionar rápidamente y mitigar desviaciones antes de que se conviertan en multas o paralizaciones (User Outcome).
+  * **With:** Un Motor de Clasificación de Riesgo Automatizado que compara lecturas con los LMP y detona alertas preventivas (Feature).
 
-##### Mitigación Preventiva vs. Monitoreo Pasivo
+* **Hipótesis 3 (Módulo Operativo de Mitigación):**
+  * **We believe we will achieve:** Un aumento en el Ingreso Mensual Recurrente (MRR) por altas tasas de renovación de licencias al trasladarse a nuevos frentes de obra (Business Outcome).
+  * **If:** El equipo operativo de mitigación ambiental de la empresa constructora (Users).
+  * **Attain:** El beneficio de resolver incidentes de forma ordenada en campo, dejando constancia para evitar sanciones (User Outcome).
+  * **With:** Un Módulo Operativo de Mitigación que centraliza alertas, abre tickets automáticos y permite el registro de evidencias fotográficas georreferenciadas (Feature).
 
-Creemos que reduciremos el riesgo de multas y paralizaciones de obra para las constructoras si el sistema las notifica ante tendencias atípicas (Nivel de Advertencia) en lugar de advertir únicamente el sobrepaso consumado, mediante un motor de gestión preventiva que despacha tickets de atención inmediata.
+* **Hipótesis 4 (Módulo de Fiscalización Digital):**
+  * **We believe we will achieve:** Una reducción en nuestro Costo de Adquisición de Clientes (CAC) al lograr que las entidades de auditoría recomienden el software como estándar (Business Outcome).
+  * **If:** Los auditores y consultores ambientales de las firmas supervisoras (Users).
+  * **Attain:** El objetivo de emitir dictámenes más rápidos reduciendo drásticamente las costosas visitas presenciales a campo (User Outcome).
+  * **With:** Un Módulo de Fiscalización Digital que provee historiales inalterables y un generador automatizado de reportes normativos (Feature).
 
-##### Automatización de Expedientes de Auditoría
-
-Creemos que disminuiremos el tiempo de preparación de auditorías ambientales si la supervisora dispone de un módulo que compile automáticamente el historial de parámetros e incidencias en formatos oficiales exportables, mediante un generador automatizado de reportes normativos.
-
-##### Gestión Consolidada Multi-Proyecto
-
-Creemos que facilitaremos la supervisión a nivel corporativo si los gerentes de operaciones y jefes de fiscalización pueden monitorear múltiples frentes viales en una sola interfaz cartográfica, mediante un dashboard de control geolocalizado multi-tramo.
-
+* **Hipótesis 5 (Control de Accesos por Bounded Contexts):**
+  * **We believe we will achieve:** El éxito comercial derivado de la doble monetización activa (Dual Revenue) sobre un mismo proyecto vial (Business Outcome).
+  * **If:** Las firmas supervisoras y las empresas ejecutoras que intervienen en la misma obra (Users).
+  * **Attain:** La tranquilidad profesional de interactuar en un entorno de datos neutral, transparente y protegido contra manipulaciones (User Outcome).
 ---
 
 #### 1.2.2.4. Lean UX Canvas
