@@ -88,13 +88,15 @@ El modelo de ingresos opera mediante **suscripciones independientes (dual revenu
 
 ### 1.2.2 Lean UX Process
 
-#### 1.2.2.1. Lean UX Problem Statements
+El estado actual de la gestión y supervisión ambiental en proyectos de infraestructura vial se ha enfocado principalmente en empresas constructoras y firmas consultoras que dependen de flujos de trabajo manuales, visitas presenciales esporádicas y registros documentales discontinuos. Estos métodos tradicionales generan puntos de dolor críticos: reacciones tardías ante sobrepasos en los límites máximos permisibles (LMP), exposición a paralizaciones y multas regulatorias, y altos costos logísticos derivados de la fiscalización física en campo.
 
-El estado actual de **la supervisión ambiental en proyectos de infraestructura vial** se caracteriza por **el registro discontinuo, manual y desarticulado de los indicadores normativos, careciendo de mecanismos de análisis preventivo, interfaces geolocalizadas unificadas e inalterabilidad de los datos en campo**, lo que ocasiona **reacciones tardías ante incidentes ambientales, exposición a procesos sancionatorios, elevados costos de fiscalización presencial y desconfianza en la validez de los reportes presentados.** Esta problemática afecta directamente a **las empresas constructoras y a las firmas supervisoras/consultoras ambientales**, quienes deben basar sus decisiones y auditorías en documentación procesada de forma extemporánea.
+Lo que los productos y servicios existentes en el mercado no logran resolver es la integración de una captura automatizada sin exigir costosas inversiones de capital (CapEx) en hardware, fallando al actuar solo como visores pasivos de telemetría. Las soluciones actuales no ofrecen un flujo de trabajo colaborativo y neutral que separe la gestión operativa inmediata de los riesgos, de la fiscalización formal inalterable.
 
-Las soluciones existentes en el mercado no resuelven la **captura automatizada y neutral de datos en campo acoplada a un flujo de trabajo que separe la gestión operativa de mitigación de la fiscalización formal**. Nuestro producto, **RoadWatch OS**, abordará este vacío mediante un ecosistema HaaS/SaaS que despliega sensores IoT propios, clasifica los niveles de riesgo normativo, habilita alertas preventivas y ofrece paneles de control con Bounded Contexts totalmente independientes.
+Nuestro producto, RoadWatch OS, abordará esta brecha mediante una estrategia de modelo HaaS/SaaS (Dual Revenue) que provee hardware IoT en comodato y un software centralizado. Este enfoque permitirá detectar riesgos ambientales en tiempo real, generar tickets de mitigación automáticos para los contratistas, y proporcionar un entorno con datos inalterables para las auditorías de los supervisores.
 
-Dirigiremos nuestro enfoque inicial a **empresas constructoras de infraestructura vial y consultoras ambientales registradas en el RNCA que operan en el mercado nacional**. Consideraremos que la propuesta es exitosa al verificar una reducción cuantitativa en los tiempos de respuesta ante desviaciones ambientales, un incremento en la resolución de incidencias antes de inspecciones externas y una disminución en las horas de gabinete requeridas para estructurar expedientes de auditoría.
+Nuestro enfoque inicial serán las empresas constructoras de carreteras de mediana a gran escala, y las empresas supervisoras y consultoras ambientales (registradas en el RNCA) que operan en el mercado peruano.
+
+Sabremos que tenemos éxito cuando veamos los siguientes comportamientos medibles en nuestra audiencia objetivo: los ingenieros residentes resolviendo los tickets de mitigación en la plataforma antes de que deriven en infracciones oficiales, los auditores descargando directamente los reportes normativos del sistema en lugar de desplazarse a la obra, y ambas partes renovando sus suscripciones (retención) debido a la confiabilidad y neutralidad de los datos compartidos.
 
 ---
 
