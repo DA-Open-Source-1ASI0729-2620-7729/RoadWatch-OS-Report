@@ -373,52 +373,51 @@ Para el Segmento 1 (Empresas Constructoras Viales / Módulo Operativo) se elabor
 Para el Segmento 2 (Empresas Supervisoras Ambientales / Consultoras - Módulo de Fiscalización) se elaboró el User Persona Gisela Chavez. Se consideraron factores como su rol de Directora de Operaciones en una consultora ambiental, su vasta experiencia liderando auditorías y fiscalizaciones de proyectos de transporte a nivel nacional, y su necesidad de auditar el cumplimiento regulatorio de múltiples frentes de obra de forma transparente e imparcial. Sus principales frustraciones se relacionan con la falta de visibilidad centralizada por la dispersión de informes fragmentados provenientes de distintas constructoras, la pérdida de tiempo administrativo al navegar entre correos o reportes estáticos y la fricción que se genera al existir discrepancias de datos sobre posibles incumplimientos ambientales. Asimismo, se tomó en cuenta su alto nivel de competencias en gestión y planificación, y su necesidad de una plataforma SaaS que permita unificar los datos de cumplimiento en tiempo real, automatizar la generación de reportes oficiales respaldados por datos inalterables y priorizar la atención de auditorías mediante métricas claras de riesgo.
 
 ![User Persona - Gisela Chavez](../assets/images/chapter2/GiselaUserPerson.jpeg)
-
 ### 2.3.2. User Task Matrix
 <a id="2-3-2-user-task-matrix"></a>
 
-En esta sección se desarrolla el User Task Matrix, en el cual se identifican las principales actividades que realizan los User Personas de **RoadWatch**: los **Administradores de Flotas Logísticas** (Segmento 1) y los **Operadores de Centros de Control de Tráfico** (Segmento 2). 
+El User Task Matrix permite identificar y comparar las principales tareas que realizan los User Personas de los dos segmentos objetivo de RoadWatch OS para cumplir sus responsabilidades actuales.
 
-Estas tareas corresponden a acciones habituales dentro de su dinámica operativa, necesarias para alcanzar sus objetivos de movilidad y seguridad, sin depender necesariamente de una solución digital unificada. Este análisis nos permite comprender cómo monitorean y gestionan las vías actualmente, así como detectar ineficiencias y oportunidades donde RoadWatch puede generar valor.
+Las tareas descritas corresponden a actividades que existen independientemente de la solución propuesta. Por lo tanto, no representan funcionalidades de RoadWatch OS, sino acciones propias del trabajo cotidiano de los usuarios dentro de los procesos de gestión y supervisión ambiental de proyectos viales.
 
-**Segmento 1: Administradores de Flotas Logísticas (ej. Carlos)**
+Los User Personas considerados son:
 
-| Task | Frequency | Importance |
-|---|---|---|
-| Seguimiento en tiempo real de la ubicación de las unidades | Daily | Critical |
-| Planificación y reasignación de rutas por tráfico pesado | Daily | High |
-| Evaluación de tiempos de llegada para cumplir con clientes | Daily | Critical |
-| Revisión de historial de rutas y tiempos muertos | Weekly | Medium |
-| Coordinación con conductores (avisos de peligros en la vía) | Daily | High |
-| Gestión de contingencias (averías, accidentes de la flota) | Occasionally | High |
-| Reporte de cumplimiento de entregas y eficiencia de ruta | Weekly | Medium |
-| Actualización manual del estado de las vías (grupos de chat) | Constant | High |
+- **Carlos Mendoza:** representante del Segmento 1, correspondiente a empresas constructoras viales.
+- **Gisela Chavez:** representante del Segmento 2, correspondiente a empresas supervisoras y consultoras ambientales.
 
-**Análisis**
+Para cada tarea se evalúa su frecuencia y nivel de importancia dentro de las actividades de cada User Persona.
 
-- **Foco en la Optimización de Tiempos:** La alta frecuencia y criticidad del seguimiento diario y la reasignación de rutas confirman que el éxito operativo del Administrador de Flotas depende de la visibilidad constante sobre las condiciones del tráfico para evitar retrasos.
-- **Conflicto de Eficiencia:** Existe una clara contradicción entre la necesidad de "garantizar entregas a tiempo" y la dependencia de la actualización manual (vía WhatsApp o radio) con los conductores. Esta última tarea actúa como un cuello de botella que consume tiempo y no permite anticiparse al tráfico.
-- **Prioridad Estratégica:** La matriz revela que su valor principal no es solo logístico, sino comercial y financiero: alinear la eficiencia de la ruta con la satisfacción del cliente final y la reducción de costos operativos (combustible y horas hombre).
+| Task | Carlos Mendoza - Frequency | Carlos Mendoza - Importance | Gisela Chavez - Frequency | Gisela Chavez - Importance |
+|---|---|---|---|---|
+| Revisar el estado ambiental de los proyectos o frentes de obra | Daily | Critical | Daily | Critical |
+| Revisar mediciones ambientales registradas en campo | Daily | Critical | Weekly | High |
+| Coordinar con responsables ambientales y personal de campo | Daily | High | Daily | High |
+| Verificar el cumplimiento de compromisos y requisitos ambientales | Daily | Critical | Daily | Critical |
+| Identificar posibles desviaciones o incumplimientos ambientales | Daily | Critical | Daily | Critical |
+| Solicitar o recopilar evidencias de las actividades realizadas | Daily | High | Daily | High |
+| Revisar fotografías, documentos y registros asociados a incidencias | Daily | High | Daily | High |
+| Coordinar acciones correctivas o de mitigación | When required | Critical | When required | High |
+| Realizar seguimiento a acciones correctivas pendientes | Daily | High | Daily | Critical |
+| Organizar información por proyecto, tramo o punto de monitoreo | Daily | High | Daily | Critical |
+| Consultar información histórica de mediciones e incidencias | Weekly | Medium | Weekly | High |
+| Consolidar información proveniente de diferentes fuentes | Weekly | High | Daily | Critical |
+| Preparar reportes de seguimiento ambiental | Weekly | High | Weekly | Critical |
+| Preparar documentación para supervisiones, auditorías o fiscalizaciones | Monthly | Critical | Monthly | Critical |
+| Comunicar observaciones o incidencias a los responsables correspondientes | When required | High | When required | Critical |
+| Verificar el cierre de observaciones o incidencias | When required | High | When required | Critical |
+| Supervisar varios proyectos o frentes de manera simultánea | Daily | High | Daily | Critical |
 
----
+#### Análisis del User Task Matrix
 
-**Segmento 2: Operadores de Centros de Control de Tráfico (ej. Elena)**
+La matriz evidencia que ambos User Personas comparten varias actividades relacionadas con el seguimiento ambiental, revisión de mediciones, gestión de evidencias, identificación de incidencias y verificación del cumplimiento de requisitos ambientales.
 
-| Task | Frequency | Importance |
-|---|---|---|
-| Monitorear el estado de la red vial en múltiples sectores | Constant | Critical |
-| Detectar y verificar incidentes graves (accidentes, bloqueos) | Daily | Critical |
-| Coordinar con servicios de emergencia y patrullas de campo | Constant | High |
-| Supervisar el impacto de obras viales o eventos masivos | Weekly | Medium |
-| Consolidar información de congestión para toma de decisiones | Biweekly | High |
-| Emitir alertas preventivas sobre vías cerradas o peligros | Daily | Critical |
-| Revisar reportes ciudadanos o de otras fuentes fragmentadas | Constant | High |
+Para **Carlos Mendoza**, las tareas con mayor frecuencia e importancia están relacionadas con la operación diaria de los frentes de obra. Entre ellas destacan la revisión de mediciones ambientales, la coordinación con el personal de campo, la identificación de posibles desviaciones y la ejecución o seguimiento de medidas correctivas. Su trabajo requiere reaccionar rápidamente ante situaciones que puedan afectar la continuidad de la obra o generar observaciones ambientales.
 
-**Análisis**
+Para **Gisela Chavez**, además de revisar el cumplimiento ambiental, adquieren especial importancia las tareas relacionadas con la consolidación de información proveniente de distintos proyectos, el seguimiento de observaciones pendientes y la preparación de documentación para auditorías, fiscalizaciones o reportes de cumplimiento. Debido a que supervisa múltiples proyectos, necesita mantener una visión global y organizada de la información recibida.
 
-- **De la Reacción a la Estrategia:** Las tareas con frecuencia Constante/Diaria e importancia Crítica (Monitoreo, Detección de Incidentes y Alertas) mantienen al operador en un estado "reactivo". Centralizar y automatizar la detección de incidentes en RoadWatch permitirá que pasen de ser "apagadores de incendios" a estrategas preventivos de la movilidad.
-- **Vacío Tecnológico Peligroso:** El hecho de que la "Detección de incidentes" sea crítica, pero muchas veces dependa de fuentes fragmentadas o cámaras no integradas, revela un punto de dolor enorme. Las alertas geolocalizadas y automáticas son la funcionalidad "gancho" que asegura la adopción indispensable de la plataforma.
-- **Desconexión entre Detección y Acción:** Existe una brecha entre la detección del incidente y la coordinación con emergencias. Al utilizar sistemas separados (mapas en una pantalla, radios/teléfonos en otra), el reporte histórico de la ciudad nunca refleja con exactitud los tiempos reales de respuesta. Integrar esto es clave para RoadWatch.
+Las principales coincidencias entre ambos perfiles se encuentran en la necesidad de revisar información ambiental, identificar problemas, coordinar con responsables y mantener evidencias de las acciones realizadas. Sin embargo, mientras Carlos concentra su actividad en la gestión operativa de los frentes de obra, Gisela tiene una mayor responsabilidad sobre la supervisión, consolidación y validación de información proveniente de varios proyectos.
+
+Estas diferencias permiten comprender las necesidades particulares de cada segmento sin asociarlas todavía a funcionalidades específicas de RoadWatch OS.
 
 ### 2.3.3. User Journey Mapping
 <a id="2-3-3-user-journey-mapping"></a>
