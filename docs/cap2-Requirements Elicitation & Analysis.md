@@ -165,187 +165,83 @@ A diferencia de plataformas generales de gestión de construcción, RoadWatch OS
 ### 2.2.2 Registro de Entrevistas
 <a id="2-2-2-registro-de-entrevistas"></a>
 
-### Segmento 1:
+Las entrevistas se realizaron a representantes de los dos segmentos objetivo definidos para RoadWatch OS. Para cada participante se registró información demográfica y profesional, evidencia audiovisual, duración de la entrevista y un resumen de los principales hallazgos obtenidos.
 
+La información recopilada permitirá identificar características objetivas y subjetivas de cada segmento, incluyendo experiencia profesional, responsabilidades, herramientas utilizadas, dispositivos, canales digitales, objetivos, frustraciones, hábitos de trabajo y principales dificultades relacionadas con la gestión y supervisión ambiental.
 
-<br>
-<table>
-<thead>
-  <tr>
-    <th colspan="2">Entrevista #1</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>Nombre</td>
-    <td>Keler Martín</td>
-  </tr>
-  <tr>
-    <td>Apellidos</td>
-    <td>Panduro Perez</td>
-  </tr>
-  <tr>
-    <td>Edad</td>
-    <td>26</td>
-  </tr>
-  <tr>
-    <td>Distrito</td>
-    <td>Santiago de Surco</td>
-  </tr>
-  <tr>
-    <td>Evidencia</td>
-    <td><img src="../assets/images/chapter2/EvidenciaKeler.jpeg" alt="Evidencia entrevista Keler" width="400"></td>
-  </tr>
-  <tr>
-    <tr>
-  <td>Link</td>
-  <td><a href="https://1drv.ms/v/c/113B281D1AF386CE/IQCjOQL_AoaeSZHjG8hdwrqxAaD3T-ASMCIQkltoW0Mx8QI?e=tux0nT" target="_blank">Ver video</a></td>
-</tr>
-  </tr>
-  <tr>
-    <td>Duración</td>
-    <td>0:00-6:23</td>
-  </tr>
-  <tr>
-    <td>Resumen</td>
-    <td>Keler es un residente de obra y jefe de gestión ambiental en una empresa constructora vial, encargado de supervisar el cumplimiento del Plan de Manejo Ambiental en múltiples frentes de trabajo simultáneos. Para el registro de indicadores (como polvo y ruido), las coordinaciones en campo y el envío de evidencias, utiliza una combinación de herramientas fragmentadas que incluyen hojas de Excel, archivos de Word, mensajes de WhatsApp, carpetas compartidas y reportes manuales diferidos. Busca garantizar la continuidad de la obra sin paralizaciones ni sanciones y mantener al día la documentación socioambiental. Sin embargo, enfrenta serias dificultades debido a la falta de visibilidad en tiempo real de lo que ocurre en cada tramo; al depender de mediciones manuales o informes periódicos de laboratorio, suele enterarse tarde de la superación de límites permisibles, muchas veces cuando ya existen quejas de las comunidades o penalizaciones de la supervisión. Además, la dispersión de la información le exige invertir un tiempo excesivo buscando fotos y documentos no etiquetados para consolidar a última hora los expedientes requeridos en auditorías o fiscalizaciones de organismos como el MTC o el OEFA. Keler considera que contar con una plataforma centralizada y conectada a sensores IoT telemáticos que envíen alertas preventivas en tiempo real, tendría un impacto sumamente positivo, ya que le permitiría aplicar medidas de mitigación inmediatas, evitar multas y automatizar la trazabilidad de sus operaciones en campo.</td>
-  </tr>
-</tbody>
-</table>
+### Segmento 1: Empresas Constructoras Viales
 
-<table>
-<thead>
-  <tr>
-    <th colspan="2">Entrevista #2</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>Nombre</td>
-    <td>Becker</td>
-  </tr>
-  <tr>
-    <td>Apellidos</td>
-    <td>Junior Caisahuana</td>
-  </tr>
-  <tr>
-    <td>Edad</td>
-    <td>23</td>
-  </tr>
-  <tr>
-    <td>Distrito</td>
-    <td>Rímac</td>
-  </tr>
-  <tr>
-    <td>Evidencia</td>
-    <td><img src="../assets/images/chapter2/EvidenciaBecker.jpg" alt="Evidencia entrevista Becker" width="400"></td>
-  </tr>
-  <tr>
-    <td>Link</td>
-    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202412462_upc_edu_pe/IQA9cO_PRBJ_Sq6Tgr_t7IVSAVcPJytqUE5tl3gnlsr-RjE?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=mWKUwf" target="_blank">Ver video</a></td>
-  </tr>
-  <tr>
-    <td>Duración</td>
-    <td>0:00 - 2:31</td>
-  </tr>
-  <tr>
-    <td>Resumen</td>
-    <td>Becker es jefe de proyectos en una empresa constructora y se encarga de coordinar diferentes frentes de obra, revisar avances y asegurar el cumplimiento de los requerimientos técnicos y ambientales de los proyectos. Para realizar el seguimiento de indicadores ambientales como ruido, polvo y calidad del agua, su equipo efectúa mediciones en campo y registra los resultados mediante hojas de Excel, informes, fotografías, correos electrónicos, carpetas compartidas y mensajes de WhatsApp. Sin embargo, al gestionar varios frentes de manera simultánea, enfrenta dificultades para mantener toda la información organizada y localizar rápidamente las evidencias necesarias, debido a que los datos se encuentran dispersos en diferentes canales y formatos. Asimismo, la identificación de riesgos ambientales depende en gran medida de que el personal responsable detecte oportunamente una posible superación de los límites permitidos y la comunique al equipo, lo que puede retrasar la aplicación de medidas preventivas. Becker considera que contar con sensores y alertas automáticas permitiría anticiparse a situaciones críticas y ejecutar acciones de mitigación antes de que ocurra un incumplimiento o una observación por parte de la supervisión. Además, destaca la necesidad de contar con una plataforma centralizada en la que pueda visualizar el estado de cada frente de obra, sus mediciones, alertas, incidencias, acciones pendientes y evidencias, facilitando una respuesta más rápida y una mejor organización de la información ante futuras supervisiones.</td>
-  </tr>
-</tbody>
-</table>
+Los participantes de este segmento corresponden a profesionales involucrados en la gestión de proyectos viales y en actividades relacionadas con el seguimiento y cumplimiento ambiental de las obras.
 
-<table>
-<thead>
-  <tr>
-    <th colspan="2">Entrevista #3</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>Nombre</td>
-    <td>Jaime</td>
-  </tr>
-  <tr>
-    <td>Apellidos</td>
-    <td>Ronceros</td>
-  </tr>
-  <tr>
-    <td>Edad</td>
-    <td>38</td>
-  </tr>
-  <tr>
-    <td>Distrito</td>
-    <td>Chorrillos</td>
-  </tr>
-  <tr>
-    <td>Evidencia</td>
-    <td><img src="../assets/images/chapter2/EvidenciaJaime.jpg" alt="Evidencia entrevista Jaime" width="400"></td>
-  </tr>
-  <tr>
-    <td>Link</td>
-    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410421_upc_edu_pe/IQDMrm1dTpBKQIp0LJuhOQPqAcATYsKr9jOZ-jhzBrSptDA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=nC841P" target="_blank">Ver video</a></td>
-  </tr>
-  <tr>
-    <td>Duración</td>
-    <td>0:00 - 4:38</td>
-  </tr>
-  <tr>
-    <td>Resumen</td>
-    <td>Jaime participa en la gestión y seguimiento ambiental de proyectos de construcción vial, donde es necesario supervisar simultáneamente distintos frentes de obra y verificar el cumplimiento de los indicadores ambientales establecidos para cada proyecto. Actualmente, las mediciones relacionadas con factores como calidad del aire, ruido y agua se realizan en campo y posteriormente son registradas en hojas de cálculo, formatos e informes, mientras que las evidencias y coordinaciones se distribuyen entre herramientas como Excel, correo electrónico, WhatsApp y carpetas compartidas. Esta forma de trabajo genera dificultades para mantener la información organizada, actualizada y asociada correctamente a cada tramo, fecha y punto de monitoreo, especialmente cuando se gestionan varios frentes al mismo tiempo. Ante la detección de valores cercanos o superiores a los límites ambientales permitidos, el personal responsable debe comunicar la incidencia y coordinar medidas de mitigación, como incrementar el riego de las vías, controlar la velocidad de los vehículos, modificar horarios de actividades o identificar equipos que estén generando niveles elevados de ruido. Sin embargo, este proceso depende principalmente de la detección y comunicación oportuna por parte del personal. Jaime considera que una plataforma centralizada permitiría visualizar en un solo lugar las mediciones, incidencias, responsables, acciones de mitigación y evidencias de todos los frentes de obra. Asimismo, considera beneficioso incorporar sensores y alertas automáticas que permitan identificar anticipadamente cuándo un indicador se aproxima a un límite normativo, facilitando una respuesta preventiva antes de que se produzca un incumplimiento. También destaca la importancia de conocer el valor actual de cada indicador, el límite permitido, su evolución, la ubicación del punto de monitoreo y las incidencias pendientes con sus respectivos responsables, lo que contribuiría a mejorar la toma de decisiones y reducir el riesgo de observaciones, sanciones o paralizaciones.</td>
-  </tr>
-</tbody>
-</table>
+#### Entrevista #1
 
-<br>
+| Campo | Información |
+|---|---|
+| Nombres | Pendiente |
+| Apellidos | Pendiente |
+| Edad | Pendiente |
+| Distrito | Pendiente |
+| Cargo | Pendiente |
+| Años de experiencia | Pendiente |
+| Evidencia | Pendiente |
+| Enlace de video | Pendiente |
+| Inicio de entrevista | Pendiente |
+| Duración | Pendiente |
+| Resumen | Pendiente de actualización con la nueva entrevista. |
 
-### Segmento 2:
+#### Entrevista #2
 
-<br>
+| Campo | Información |
+|---|---|
+| Nombres | Pendiente |
+| Apellidos | Pendiente |
+| Edad | Pendiente |
+| Distrito | Pendiente |
+| Cargo | Pendiente |
+| Años de experiencia | Pendiente |
+| Evidencia | Pendiente |
+| Enlace de video | Pendiente |
+| Inicio de entrevista | Pendiente |
+| Duración | Pendiente |
+| Resumen | Pendiente de actualización con la nueva entrevista. |
 
-<table>
-<thead>
-  <tr>
-    <th colspan="2">Entrevista #1</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>Nombre</td>
-    <td>Angiela</td>
-  </tr>
-  <tr>
-    <td>Apellidos</td>
-    <td>Fuentes Alvarez</td>
-  </tr>
-  <tr>
-    <td>Edad</td>
-    <td>24</td>
-  </tr>
-  <tr>
-    <td>Distrito</td>
-    <td>San Juan de Lurigancho</td>
-  </tr>
- <tr>
-  <td>Evidencia</td>
-  <td><img src="../assets/images/chapter2/EvidenciaAngiela.jpeg" alt="Evidencia entrevista Angiela" width="400"></td>
-</tr>
-  <tr>
-    <tr>
-  <td>Link</td>
-  <td><a href="https://1drv.ms/v/c/113B281D1AF386CE/IQDGziSKN-XBRKO401eqvDWJARuiheeZ5hj3WNWlq3t0GE8?e=MV9WvJ" target="_blank">Ver video</a></td>
-</tr>
-  </tr>
-  <tr>
-    <td>Duración</td>
-    <td>0:00 - 4:23</td>
-  </tr>
-  <tr>
-    <td>Resumen</td>
-    <td>Angiela es una supervisora y consultora ambiental encargada de monitorear los indicadores de aire, ruido y agua en múltiples proyectos simultáneos. Para el control, seguimiento y recepción de evidencias, utiliza un conjunto de herramientas fragmentadas que incluyen Excel, correos electrónicos, WhatsApp, carpetas compartidas y documentos físicos. Busca garantizar el cumplimiento ambiental de todos los proyectos y agilizar la preparación de informes para auditorías o fiscalizaciones. Sin embargo, enfrenta grandes dificultades debido a la falta de centralización de la información; al manejar distintos formatos y canales por cada proyecto, se ve obligada a invertir demasiado tiempo en consolidar datos y rastrear evidencias. Esta desorganización le impide tener una visión global clara sobre qué proyectos tienen incidencias abiertas o están próximos a un incumplimiento. Angiela considera que contar con una plataforma centralizada —integrada con sensores IoT para recibir alertas en tiempo real— tendría un impacto sumamente positivo, ya que automatizaría su trabajo y mejoraría el éxito ambiental de sus proyectos.</td>
-  </tr>
-</tbody>
-</table>
+#### Entrevista #3
+
+| Campo | Información |
+|---|---|
+| Nombres | Pendiente |
+| Apellidos | Pendiente |
+| Edad | Pendiente |
+| Distrito | Pendiente |
+| Cargo | Pendiente |
+| Años de experiencia | Pendiente |
+| Evidencia | Pendiente |
+| Enlace de video | Pendiente |
+| Inicio de entrevista | Pendiente |
+| Duración | Pendiente |
+| Resumen | Pendiente de actualización con la nueva entrevista. |
+
+### Segmento 2: Empresas Supervisoras y Consultoras Ambientales
+
+Los participantes de este segmento corresponden a profesionales responsables de actividades de supervisión, consultoría, auditoría o seguimiento ambiental de uno o varios proyectos.
+
+#### Entrevista #1
+
+| Campo | Información |
+|---|---|
+| Nombres | Pendiente |
+| Apellidos | Pendiente |
+| Edad | Pendiente |
+| Distrito | Pendiente |
+| Cargo | Pendiente |
+| Años de experiencia | Pendiente |
+| Evidencia | Pendiente |
+| Enlace de video | Pendiente |
+| Inicio de entrevista | Pendiente |
+| Duración | Pendiente |
+| Resumen | Pendiente de actualización con la nueva entrevista. |
+
+#### Entrevista #2
 
 <table>
 <thead>
@@ -376,7 +272,7 @@ A diferencia de plataformas generales de gestión de construcción, RoadWatch OS
   </tr>
   <tr>
     <td>Link</td>
-    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410421_upc_edu_pe/IQAzGWBr_180TaX5r2Ce2iHmAa0uzBUXWMWKYnJheWzFmdM?e=lzPTKe&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" target="_blank">Ver video</a></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410421_upc_edu_pe/IQAzGWBr_180TaX5r2Ce2iHmAa0uzBUXWMWKYnJheWzFmdM?e=lzPTKe&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJWaWV3IiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" target="_blank">Ver video</a></td>
   </tr>
   <tr>
     <td>Duración</td>
@@ -389,47 +285,21 @@ A diferencia de plataformas generales de gestión de construcción, RoadWatch OS
 </tbody>
 </table>
 
-<table>
-<thead>
-  <tr>
-    <th colspan="2">Entrevista #3</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>Nombre</td>
-    <td>Guillermo</td>
-  </tr>
-  <tr>
-    <td>Apellidos</td>
-    <td>Llanos</td>
-  </tr>
-  <tr>
-    <td>Edad</td>
-    <td>28</td>
-  </tr>
-  <tr>
-    <td>Distrito</td>
-    <td>Santiago de Surco</td>
-  </tr>
-  <tr>
-    <td>Evidencia</td>
-    <td><img src="../assets/images/chapter2/EvidenciaGuillermo.jpg" alt="Evidencia entrevista Guillermo" width="400"></td>
-  </tr>
-  <tr>
-    <td>Link</td>
-    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410421_upc_edu_pe/IQAa6Wi1mjFZT5H0oqBz-c7bASPxmtXKCORbRvL66ru_8GA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Cpf84c" target="_blank">Ver video</a></td>
-  </tr>
-  <tr>
-    <td>Duración</td>
-    <td>0:00 - 5:36</td>
-  </tr>
-  <tr>
-    <td>Resumen</td>
-    <td>Guillermo participa en actividades relacionadas con la supervisión y seguimiento ambiental de diferentes proyectos, donde es necesario revisar mediciones, informes, evidencias y observaciones para verificar el cumplimiento de los compromisos ambientales establecidos. Actualmente, el seguimiento de indicadores como calidad del aire, ruido y agua se realiza mediante los registros generados por cada proyecto, complementados con informes de los responsables ambientales y verificaciones realizadas en campo. Para gestionar esta información se utilizan principalmente hojas de Excel, correos electrónicos, documentos PDF, carpetas compartidas y aplicaciones de mensajería como WhatsApp. Sin embargo, al supervisar varios proyectos simultáneamente, la información puede encontrarse distribuida en diferentes formatos y ubicaciones, lo que dificulta mantener un historial organizado y obtener rápidamente una visión general del estado ambiental de cada proyecto. Cuando se identifica una medición que podría representar un incumplimiento, se verifica su correspondencia con el punto de monitoreo y periodo evaluado, se compara con los límites aplicables y, de ser necesario, se comunica la observación al responsable para solicitar la implementación de medidas correctivas. El seguimiento de estas acciones suele realizarse manualmente mediante matrices, correos, reuniones y evidencias como fotografías, documentos o nuevas mediciones. Guillermo considera que centralizar la información en una sola plataforma permitiría consultar las mediciones actuales e históricas, incidencias, acciones correctivas y evidencias de diferentes proyectos de una manera más eficiente. Asimismo, considera útil obtener información directamente desde sensores para contar con una visión más continua de los indicadores ambientales, siempre que se garantice la calibración de los equipos, la confiabilidad de los datos y su trazabilidad. Además, destaca la importancia de visualizar la ubicación de los puntos de monitoreo, los valores permitidos, la evolución de los indicadores y el estado de las observaciones pendientes, facilitando así la fiscalización, la elaboración de informes y la toma de decisiones durante la supervisión ambiental.</td>
-  </tr>
-</tbody>
-</table>
+#### Entrevista #3
+
+| Campo | Información |
+|---|---|
+| Nombres | Pendiente |
+| Apellidos | Pendiente |
+| Edad | Pendiente |
+| Distrito | Pendiente |
+| Cargo | Pendiente |
+| Años de experiencia | Pendiente |
+| Evidencia | Pendiente |
+| Enlace de video | Pendiente |
+| Inicio de entrevista | Pendiente |
+| Duración | Pendiente |
+| Resumen | Pendiente de actualización con la nueva entrevista. |
 
 ### 2.2.3 Análisis de Entrevistas
 
