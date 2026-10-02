@@ -424,12 +424,17 @@ Estas diferencias permiten comprender las necesidades particulares de cada segme
 
 **Segmento 1**
 
-El recorrido de Carlos Mendoza abarca una perspectiva operativa y de gestión ambiental en proyectos viales, dividida en: 1. Planificación del frente de obra y definición de límites normativos ambientales, 2. Registro diario de mediciones en campo, 3. Detección de alertas por posibles excedencias de ruido o polvo, 4. Ejecución de acciones correctivas o de mitigación, 5. Consolidación del reporte mensual, y 6. Auditoría y cierre ante la supervisión.
+El User Journey Map de Carlos Mendoza representa el recorrido actual que sigue durante la gestión ambiental de un proyecto vial. El análisis se centra en las actividades, dificultades y puntos de dolor que forman parte de su proceso de trabajo actual, previo a la implementación de RoadWatch OS.
 
-El mayor cuello de botella en el viaje de Carlos se concentra en las etapas 2, 3 y 5. Debido a la dispersión de información en WhatsApp, Excel, fotos y reportes manuales, el registro de datos de campo no se realiza de forma centralizada ni en tiempo real. Esto dificulta detectar excedencias ambientales antes de que se conviertan en observaciones o sanciones, y además vuelve lenta la consolidación del expediente mensual. Como consecuencia, Carlos queda expuesto a demoras operativas, pérdida de trazabilidad y riesgo de multas o paralizaciones por falta de evidencia ordenada y oportuna.
+El recorrido comprende las siguientes etapas: 1. Planificación del frente de obra y revisión de requisitos ambientales, 2. Registro de mediciones y evidencias en campo, 3. Identificación de posibles desviaciones o excedencias ambientales, 4. Coordinación y ejecución de acciones correctivas o de mitigación, 5. Consolidación de información para reportes periódicos y 6. Preparación de documentación para supervisiones o auditorías.
+
+Los principales puntos de dificultad se presentan durante el registro de información, la identificación oportuna de desviaciones y la consolidación de evidencias. Actualmente, las mediciones, fotografías, reportes y comunicaciones pueden encontrarse distribuidos entre hojas de cálculo, aplicaciones de mensajería, correos electrónicos y documentos compartidos.
+
+Esta dispersión obliga a Carlos y a su equipo a revisar manualmente distintas fuentes para conocer el estado ambiental de los frentes de obra. Cuando la información no está disponible oportunamente, existe el riesgo de identificar una desviación después de que esta ya haya ocurrido.
+
+Durante la preparación de reportes, supervisiones o auditorías también es necesario localizar y organizar evidencias provenientes de diferentes responsables y momentos del proyecto, incrementando el tiempo dedicado a tareas administrativas y dificultando la trazabilidad de las acciones realizadas.
 
 ![User Journey Map - Carlos Mendoza](../assets/images/chapter2/CarlosJourneyMap.jpeg)
-
 **Segmento 2**
 
 El recorrido de Gisela abarca una perspectiva directiva y de fiscalización macro, dividida en: 1. Incorporación y onboarding de un nuevo proyecto vial a la cartera, 2. Supervisión periódica y seguimiento multisitio, 3. Solicitud de reportes de cumplimiento a las constructoras, y 4. Consolidación de informes oficiales para la gerencia y entidades de control (MTC/SENACE).
