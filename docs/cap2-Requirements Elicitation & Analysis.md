@@ -32,16 +32,64 @@
 ### 2.1.2. Estrategias y tácticas frente a competidores
 <a id="2-1-2-estrategias-y-tacticas-frente-a-competidores"></a>
 
-Para posicionar a RoadWatch frente a la competencia de aplicaciones de navegación de consumo masivo (como Waze o Google Maps) y plataformas tradicionales de analítica de tráfico corporativo (como INRIX o TomTom Enterprise), se implementan las siguientes estrategias y tácticas competitivas:
+A partir del análisis competitivo realizado, VíaNexo identifica oportunidades para diferenciar RoadWatch OS frente a plataformas especializadas en monitoreo ambiental, proveedores de instrumentación y suites generales de gestión de proyectos de construcción.
 
-Estrategia de Accesibilidad y Datos Integrados (Modelo SaaS / DaaS): A diferencia de los costosos sistemas de gestión de tráfico que exigen la instalación de infraestructura propia (sensores físicos) o licencias corporativas prohibitivas, RoadWatch ofrece un modelo flexible basado en la nube (Software as a Service / Data as a Service). Al combinar inteligencia colectiva (crowdsourcing) con la integración de datos abiertos e IoT, se elimina la barrera financiera de entrada para empresas de logística medianas, operadores de transporte y municipalidades, democratizando el acceso a la analítica de movilidad avanzada.
+Las estrategias y tácticas propuestas buscan aprovechar las fortalezas identificadas en el análisis SWOT y responder a las principales brechas observadas en las alternativas evaluadas.
 
-Enfoque Operativo y de Seguridad (Más allá de la Navegación Pasiva): Mientras que las aplicaciones de consumo masivo actúan meramente como visores pasivos que sugieren rutas al conductor individual, RoadWatch integra el monitoreo vial directamente con un flujo completo de respuesta operativa para organizaciones: detección de incidente o congestión severa → alerta automática a la central → creación de ticket de contingencia → asignación de ruta alternativa para la flota (o aviso a servicios de emergencia) → registro del evento y normalización de la vía.
+#### Estrategia 1: Integración del monitoreo ambiental y la gestión operativa
 
-Gestión Multi-Flota y Control Zonal Centralizado: Se despliega una arquitectura pensada para que las autoridades de tránsito, administradores de flotas logísticas y operadores de emergencias gestionen múltiples rutas, unidades vehiculares o sectores urbanos simultáneamente. Todo esto se realiza desde una única cuenta centralizada y un dashboard geolocalizado unificado, optimizando el control y la toma de decisiones rápidas de los supervisores de ruta y despachadores.
+Mientras algunas soluciones se concentran principalmente en la captura o visualización de mediciones ambientales, RoadWatch OS plantea integrar en un mismo entorno el monitoreo, la identificación de incidencias, la asignación de acciones de mitigación, el seguimiento de responsables y el almacenamiento de evidencias.
 
-Estrategia Comercial B2B / B2G Dirigida: La prospección se enfoca directamente en gerentes de logística, directores de operaciones de transporte y autoridades de movilidad urbana. Esta estrategia se apoya en alianzas clave con gremios de transporte (cámaras de comercio, gremios de carga) y entidades gubernamentales (como el MTC, ATU o SUTRAN), demostrando con datos una reducción directa en los costos operativos por tiempos muertos, mejora en los tiempos de respuesta ante emergencias y disminución de los riesgos de siniestralidad vial.
+**Tácticas:**
 
+- Centralizar las mediciones ambientales de los diferentes frentes de obra.
+- Relacionar las alertas e incidencias con responsables, acciones correctivas y evidencias.
+- Mantener un historial de los eventos ambientales ocurridos en cada proyecto o tramo.
+- Facilitar el seguimiento de las acciones de mitigación desde su identificación hasta su cierre.
+
+#### Estrategia 2: Orientación preventiva frente al cumplimiento ambiental
+
+RoadWatch OS busca diferenciarse de los procesos de supervisión principalmente reactivos mediante la identificación oportuna de situaciones que puedan aproximarse a los límites ambientales establecidos.
+
+**Tácticas:**
+
+- Incorporar alertas asociadas a los valores registrados en los puntos de monitoreo.
+- Facilitar la visualización de tendencias e información histórica.
+- Permitir que los responsables identifiquen rápidamente proyectos o frentes que requieren atención.
+- Apoyar la toma de decisiones antes de que una situación derive en una observación o posible incumplimiento.
+
+#### Estrategia 3: Centralización y trazabilidad de la evidencia ambiental
+
+Frente al uso fragmentado de hojas de cálculo, correos electrónicos, documentos y aplicaciones de mensajería, RoadWatch OS plantea mantener la información ambiental relacionada dentro de una única plataforma.
+
+**Tácticas:**
+
+- Asociar mediciones, fotografías, incidencias y acciones correctivas al proyecto y punto de monitoreo correspondiente.
+- Mantener registros históricos que permitan reconstruir los eventos ocurridos.
+- Facilitar la consulta de información necesaria para supervisiones, auditorías y fiscalizaciones.
+- Reducir el esfuerzo requerido para localizar y consolidar evidencias provenientes de diferentes fuentes.
+
+#### Estrategia 4: Modelo de servicio accesible para empresas del sector vial
+
+RoadWatch OS plantea un modelo de servicio que permita a las organizaciones acceder a capacidades de monitoreo ambiental sin depender necesariamente de grandes inversiones iniciales en infraestructura tecnológica propia.
+
+**Tácticas:**
+
+- Ofrecer planes de servicio adaptados a la cantidad de proyectos, frentes de obra o puntos de monitoreo.
+- Integrar dentro de la propuesta el uso de dispositivos de monitoreo y la plataforma digital.
+- Orientar la oferta comercial a empresas constructoras viales y empresas supervisoras o consultoras ambientales.
+- Facilitar una adopción progresiva de la plataforma de acuerdo con las necesidades de cada organización.
+
+#### Estrategia 5: Especialización en procesos de gestión ambiental de proyectos viales
+
+A diferencia de plataformas generales de gestión de construcción, RoadWatch OS se orienta específicamente a las actividades de monitoreo, seguimiento y supervisión ambiental asociadas a proyectos de infraestructura vial.
+
+**Tácticas:**
+
+- Utilizar conceptos y flujos propios del dominio de gestión ambiental vial.
+- Organizar la información por proyecto, tramo, frente de obra y punto de monitoreo.
+- Priorizar funcionalidades vinculadas con mediciones ambientales, incidencias, acciones de mitigación y evidencias.
+- Diseñar la experiencia considerando las necesidades diferenciadas de empresas constructoras y empresas supervisoras o consultoras ambientales.
 
 ## 2.2 Entrevistas
 <a id="2-2-entrevistas"></a>
