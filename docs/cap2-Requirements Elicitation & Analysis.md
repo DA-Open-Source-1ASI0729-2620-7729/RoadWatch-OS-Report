@@ -566,23 +566,34 @@ La organización cronológica de los eventos permitió identificar que varias de
 ## 2.5. Ubiquitous Language
 <a id="2-5-ubiquitous-language"></a>
 
-Con el propósito de mantener una comunicación transparente, estandarizada y libre de ambigüedades entre todos los miembros del equipo técnico, de producto y los stakeholders, se establece el siguiente glosario de términos y conceptos propios del dominio de negocio, fundamentado en los principios de Domain-Driven Design (DDD) de Eric Evans. Mantener un Ubiquitous Language completo y actualizado asegura que tanto los desarrolladores como los expertos de dominio compartan el mismo modelo mental y conceptual dentro de **RoadWatch OS**.
+Con el propósito de mantener una comunicación clara y consistente entre los integrantes del equipo y los stakeholders, se establece el siguiente glosario de términos propios del dominio de gestión y supervisión ambiental en proyectos viales.
 
-A continuación, se detallan los términos clave del dominio socioambiental vial definidos para nuestros segmentos objetivo (*Empresas Constructoras Viales* y *Empresas de Mantenimiento y Rehabilitación Vial*):
+Los términos se presentan en inglés, acompañados por su equivalente en español entre paréntesis. Las definiciones se desarrollan en español y se enfocan únicamente en conceptos propios del dominio, evitando términos técnicos de ingeniería de software.
 
-* **Environmental Monitoring (Monitoreo Ambiental):** Proceso sistemático de medición, registro y evaluación en tiempo real de variables críticas de impacto ambiental (como nivel de presión sonora dB(A), material particulado PM10/PM2.5, calidad de agua y vibraciones) capturadas mediante nodos telemáticos IoT desplegados en los tramos y frentes de obra vial.
+* **Environmental Monitoring (Monitoreo Ambiental):** Proceso de observación, medición y seguimiento de variables ambientales relevantes dentro de un proyecto vial, como ruido, material particulado, calidad del aire o calidad del agua.
 
-* **Road Construction Company (Empresa Constructora Vial):** Organización ejecutora responsable de la construcción de nuevas vías y carreteras, encargada de la gestión operativa, del cumplimiento de las obligaciones ambientales y del despliegue de medidas de mitigación en sus frentes de trabajo.
+* **Road Construction Company (Empresa Constructora Vial):** Organización responsable de ejecutar obras de infraestructura vial y de cumplir con las obligaciones ambientales asociadas al proyecto.
 
-* **Road Maintenance and Rehabilitation Company (Empresa de Mantenimiento y Rehabilitación Vial):** Organización contratista responsable de la conservación, mantenimiento periódico y rehabilitación de infraestructura vial existente, con la obligación de controlar y mitigar los impactos socioambientales continuos generados por el tránsito pesado y la maquinaria de obra en carreteras abiertas.
+* **Environmental Supervisor (Supervisor Ambiental):** Profesional encargado de revisar y verificar el cumplimiento de los compromisos y requisitos ambientales durante la ejecución de un proyecto.
 
-* **Site Resident (Residente de Obra / Residente de Mantenimiento):** Profesional técnico desplegado en campo, responsable directo de la ejecución del proyecto o de las labores de conservación vial. Es el encargado de supervisar el cumplimiento de la normativa socioambiental, gestionar los recursos en terreno y coordinar la atención inmediata de incidencias ambientales.
+* **Environmental Consultant (Consultor Ambiental):** Profesional o empresa especializada que brinda asesoría, evaluación y soporte técnico en temas relacionados con la gestión y cumplimiento ambiental.
 
-* **Regulatory Audit (Auditoría Regulatoria / Fiscalización):** Proceso formal de inspección y revisión documental llevado a cabo por entidades fiscalizadoras oficiales (como el OEFA o el MTC) para verificar la conformidad legal de los registros históricos telemáticos y el cumplimiento de los compromisos ambientales de la obra.
+* **Monitoring Point (Punto de Monitoreo):** Ubicación definida dentro del proyecto donde se realizan mediciones o controles de una determinada variable ambiental.
 
-* **Threshold Deviation (Desvío de Umbral / Excedencia):** Evento detectado automáticamente por los nodos IoT de RoadWatch OS cuando una lectura de parámetro ambiental supera los Estándares de Calidad Ambiental (ECA) o los Límites Máximos Permisibles (LMP) configurados para un tramo vial específico.
+* **Environmental Measurement (Medición Ambiental):** Registro obtenido durante la evaluación de una variable ambiental en un punto y momento determinados.
 
-* **Environmental Incident (Incidencia Ambiental):** Situación de riesgo o incumplimiento originada tras un desvío de umbral o reporte manual en campo. Requiere la apertura de un ticket de acción correctiva dentro de la plataforma, la asignación de un responsable y el registro de evidencias inalterables para su subsanación.
+* **Environmental Threshold (Umbral Ambiental):** Valor de referencia utilizado para evaluar si una determinada medición ambiental se encuentra dentro de los límites considerados aceptables.
 
-* **Compliance Report (Reporte de Cumplimiento):** Expediente consolidado y generado de forma automatizada por RoadWatch OS que recopila la telemetría histórica, la trazabilidad de alertas, el estado de las incidencias e imprecisión nula de datos, diseñado para ser presentado ante la supervisión y auditorías externas.
+* **Threshold Deviation (Desviación de Umbral):** Situación en la que una medición ambiental se aproxima, alcanza o supera un valor de referencia establecido.
 
+* **Environmental Incident (Incidencia Ambiental):** Situación relacionada con una condición ambiental que requiere revisión, seguimiento o atención por parte de los responsables del proyecto.
+
+* **Mitigation Measure (Medida de Mitigación):** Acción ejecutada con el objetivo de reducir, controlar o corregir un impacto ambiental identificado durante el desarrollo del proyecto.
+
+* **Corrective Action (Acción Correctiva):** Acción realizada para atender una observación o problema ambiental identificado y evitar que continúe o vuelva a producirse.
+
+* **Environmental Evidence (Evidencia Ambiental):** Información que permite sustentar una medición, actividad, incidencia o acción realizada, como fotografías, registros, documentos o informes.
+
+* **Environmental Report (Reporte Ambiental):** Documento que reúne información relacionada con mediciones, observaciones, incidencias, acciones realizadas y resultados del seguimiento ambiental.
+
+* **Regulatory Audit (Fiscalización / Auditoría Regulatoria):** Proceso de revisión realizado por una entidad competente o responsable de supervisión para verificar el cumplimiento de los compromisos y obligaciones ambientales de un proyecto.
