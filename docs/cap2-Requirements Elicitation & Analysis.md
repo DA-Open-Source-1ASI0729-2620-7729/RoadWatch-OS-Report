@@ -492,23 +492,76 @@ Gisela espera poder tener la información mejor organizada, revisar con mayor fa
 ## 2.4. Big Picture EventStorming
 <a id="2-4-big-picture-eventstorming"></a>
 
-### Step 1 – Unstructured Exploration
+### Paso 1 – Exploración no estructurada
 
-En esta etapa preliminar, el equipo realizó un taller de ideación abierta sobre un lienzo digital interactivo con el fin de explorar de manera integral el contexto operativo del proyecto. El propósito fue capturar, sin limitaciones estructurales, la totalidad de interacciones, actores, flujos de trabajo y eventos críticos involucrados en la gestión del monitoreo socioambiental vial. Este ejercicio libre permitió poner en evidencia los principales cuellos de botella del modelo actual, destacando la ineficiencia del levantamiento manual de información, la falta de canales de comunicación centralizados y la sobrecarga administrativa al consolidar expedientes para las entidades fiscalizadoras.
+En esta primera etapa, el equipo realizó una exploración abierta del dominio relacionado con la gestión y supervisión ambiental de proyectos viales.
 
-![Step 1 - Unstructured Exploration](../assets/images/chapter2/Step1RoadWatch.jpeg)
+El objetivo fue identificar los principales eventos que ocurren durante el seguimiento ambiental de una obra, considerando las actividades realizadas por empresas constructoras, supervisores, consultores ambientales y demás responsables involucrados.
 
-### Step 2 – Timelines
+Durante esta exploración se identificaron eventos como la asignación de nuevos tramos viales, la definición de puntos de monitoreo ambiental, el registro de niveles de ruido y material particulado, la identificación de excedencias, la revisión de medidas de mitigación y la preparación de documentación para supervisiones o fiscalizaciones.
 
-Posteriormente a la sesión de ideación abierta, el equipo organizó los eventos de dominio en una secuencia temporal lineal de izquierda a derecha. Para otorgar estructura metodológica al flujo, los acontecimientos se agruparon en cinco etapas secuenciales que reflejan la dinámica real de la supervisión ambiental en proyectos de infraestructura:
+También se reconocieron situaciones problemáticas dentro del proceso actual, como discrepancias entre reportes de la constructora y la supervisión, riesgo de incumplimientos ambientales, actualización manual de registros y consolidación tardía de documentación.
 
-* **Setup & Baseline:** Comprende los hitos iniciales de asignación de tramos viales y la instalación del equipamiento telemático en el terreno.
-* **Field Execution & Monitoring:** Integra el seguimiento continuo de variables normativas (ruido y aire) junto con la detección automática de alertas en áreas de impacto.
-* **Contingency & Reporting:** Refleja la gestión de incidentes y la identificación de incongruencias de información que exponen al proyecto a multas regulatorias.
-* **Consolidation & Analysis:** Agrupa las tareas administrativas complejas vinculadas al procesamiento tardío de datos y la estructuración de expedientes de cumplimiento.
-* **Fiscalization & Audit:** Enmarca la fase final ante inspecciones estatales no programadas, la validación de respuestas correctivas y la entrega formal de información histórica a los organismos de control.
+Los eventos identificados en esta primera etapa se colocaron sin seguir inicialmente un orden cronológico, con la finalidad de obtener una visión amplia de las situaciones que forman parte del dominio.
 
-![Step 2 - Timelines](../assets/images/chapter2/Step2RoadWatch.jpeg)
+![Paso 1 - Exploración no estructurada](../assets/images/chapter2/Step1RoadWatch.jpeg)
+
+### Paso 2 – Línea de tiempo
+
+Luego de identificar los principales eventos del dominio, el equipo los organizó en una línea de tiempo para representar de manera más clara cómo se desarrolla el proceso de gestión y supervisión ambiental de un proyecto vial.
+
+Los eventos fueron agrupados en cinco etapas principales:
+
+**1. Preparación**
+
+En esta etapa se inicia el proceso con la asignación de un nuevo tramo vial a la empresa constructora y la definición de los puntos de monitoreo ambiental que serán considerados durante el proyecto.
+
+Eventos principales:
+
+- Nuevo tramo vial asignado a la empresa constructora.
+- Puntos de monitoreo ambiental definidos.
+
+**2. Monitoreo en campo**
+
+Durante la ejecución de las actividades se realizan registros de las principales variables ambientales y se identifican posibles desviaciones respecto de los valores establecidos.
+
+Eventos principales:
+
+- Niveles de ruido y material particulado registrados.
+- Umbral de ruido excedido en tramo urbano.
+
+**3. Identificación del problema**
+
+Cuando se detecta una situación que requiere atención, se revisa la información disponible y se identifican posibles diferencias entre los registros de los distintos participantes del proyecto.
+
+Eventos principales:
+
+- Discrepancia encontrada entre reportes de la constructora y la supervisión.
+- Riesgo de incumplimiento ambiental identificado por la supervisión.
+
+**4. Seguimiento y consolidación**
+
+Después de identificar el problema, se revisan las medidas de mitigación aplicadas, se actualizan los registros ambientales y se organiza la documentación necesaria para sustentar las acciones realizadas.
+
+Eventos principales:
+
+- Medidas de mitigación ambiental revisadas.
+- Registros ambientales actualizados en hojas de cálculo.
+- Documentación de cumplimiento consolidada a último momento.
+
+**5. Supervisión y fiscalización**
+
+Finalmente, la información recopilada y organizada es utilizada durante procesos de supervisión o fiscalización, donde se revisa el cumplimiento ambiental del proyecto y se pueden solicitar antecedentes adicionales.
+
+Eventos principales:
+
+- Fiscalizadores realizan una inspección no programada.
+- Reporte regulatorio presentado a la supervisión.
+- Información histórica de cumplimiento solicitada por SENACE.
+
+La organización cronológica de los eventos permitió identificar que varias de las dificultades del proceso se relacionan con la disponibilidad de información, la coordinación entre responsables, la existencia de registros distribuidos y el tiempo necesario para consolidar evidencias antes de una supervisión o fiscalización.
+
+![Paso 2 - Línea de tiempo](../assets/images/chapter2/Step2RoadWatch.jpeg)
 
 ## 2.5. Ubiquitous Language
 <a id="2-5-ubiquitous-language"></a>
