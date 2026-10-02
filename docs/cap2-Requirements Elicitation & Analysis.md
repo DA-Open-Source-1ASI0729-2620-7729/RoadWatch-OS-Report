@@ -473,7 +473,19 @@ Carlos espera poder trabajar con información más organizada, reducir el tiempo
 
 **Segmento 2**
 
-En este mapa se analizó a Gisela Chávez, una jefa de supervisión ambiental y consultora senior encargada de fiscalizar, consolidar y auditar múltiples proyectos viales a nivel institucional. Ella piensa que la consultora está expuesta a sanciones graves debido a la asimetría de datos de los contratistas y se siente abrumada por la falta de una vista unificada y la pesada carga de análisis manual. Escucha exigencias rigurosas de cumplimiento normativo por parte de entidades como el MTC y el SENACE, presiones directas de la alta gerencia sobre plazos fatales y excusas recurrentes de los ingenieros de campo sobre retrasos en el envío de información. En su entorno observa una oficina corporativa digitalizada pero caótica, un laberinto de bandejas de correo repleta de archivos estáticos (PDFs y Word) enviadas fuera de plazo y hojas de cálculo en Excel llenas de pestañas interminables y fórmulas complejas. Gisela suele expresar la necesidad de contar con una plataforma centralizada que permita monitorear todos los frentes en tiempo real y manifiesta su frustración porque la información de campo siempre llega tarde o incompleta. En su actuar diario envía correos masivos de seguimiento, pasa horas intentando unificar bases de datos fragmentadas enviadas por terceros y trabaja hasta altas horas de la noche redactando los expedientes regulatorios oficiales. Su dolor principal es la ausencia de visibilidad centralizada en tiempo real, la alta dependencia de reportes manuales y el riesgo de cometer errores humanos al cruzar datos, mientras que su ganancia esperada es disponer de un panel gerencial (dashboard) multisitio que unifique la información con datos trazables e inalterables, automatice la generación de informes oficiales y le otorgue mayor control estratégico y tranquilidad.
+Para el Empathy Mapping del Segmento 2 se tomó como referencia a Gisela Chavez, quien representa a los responsables de supervisión y consultoría ambiental que trabajan con varios proyectos al mismo tiempo.
+
+Gisela debe revisar información proveniente de distintas empresas y responsables, verificar el cumplimiento ambiental de los proyectos y hacer seguimiento a observaciones, incidencias y acciones correctivas. Parte importante de su trabajo consiste en revisar reportes, documentos, fotografías y mediciones antes de preparar informes o responder a una fiscalización.
+
+En su día a día recibe información por correo, Excel, documentos PDF, carpetas compartidas y aplicaciones de mensajería. Al manejar varios proyectos de manera simultánea, muchas veces necesita revisar diferentes fuentes para conocer el estado de una observación o confirmar si una acción pendiente ya fue atendida.
+
+Gisela escucha solicitudes de gerencia, comunicaciones de los responsables de los proyectos y observaciones relacionadas con el cumplimiento ambiental. También debe coordinar con diferentes personas cuando falta información o cuando necesita aclarar algún dato antes de incluirlo en un informe.
+
+Una de sus principales preocupaciones es no contar a tiempo con toda la información necesaria para revisar correctamente un proyecto. También le genera frustración tener que consolidar manualmente documentos provenientes de diferentes fuentes y volver a solicitar información cuando esta llega incompleta o desordenada.
+
+Entre sus principales dificultades se encuentran la dispersión de la información, el seguimiento manual de observaciones, la cantidad de documentos que debe revisar y el tiempo que toma consolidar información de varios proyectos.
+
+Gisela espera poder tener la información mejor organizada, revisar con mayor facilidad el estado de cada proyecto y reducir el tiempo que dedica a buscar, validar y consolidar documentos para reportes, auditorías o fiscalizaciones.
 
 ![Empathy Map - Gisela Chavez](../assets/images/chapter2/GiselaEmpathyMap.jpeg)
 
