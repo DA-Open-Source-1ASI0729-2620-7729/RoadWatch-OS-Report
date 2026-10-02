@@ -435,11 +435,18 @@ Esta dispersión obliga a Carlos y a su equipo a revisar manualmente distintas f
 Durante la preparación de reportes, supervisiones o auditorías también es necesario localizar y organizar evidencias provenientes de diferentes responsables y momentos del proyecto, incrementando el tiempo dedicado a tareas administrativas y dificultando la trazabilidad de las acciones realizadas.
 
 ![User Journey Map - Carlos Mendoza](../assets/images/chapter2/CarlosJourneyMap.jpeg)
+
 **Segmento 2**
 
-El recorrido de Gisela abarca una perspectiva directiva y de fiscalización macro, dividida en: 1. Incorporación y onboarding de un nuevo proyecto vial a la cartera, 2. Supervisión periódica y seguimiento multisitio, 3. Solicitud de reportes de cumplimiento a las constructoras, y 4. Consolidación de informes oficiales para la gerencia y entidades de control (MTC/SENACE).
+El User Journey Map de Gisela Chavez representa el recorrido actual que sigue durante la supervisión ambiental de múltiples proyectos. El análisis se centra en las actividades, dificultades y puntos de dolor que forman parte de su proceso de trabajo actual, previo a la implementación de RoadWatch OS.
 
-El mayor cuello de botella en el viaje de Gisela se concentra en las etapas 2 y 3. Debido a la asimetría de información y a la falta de una plataforma centralizada, recopilar y unificar los reportes de múltiples proyectos al mismo tiempo le demanda cruzar correos y llamadas de forma constante. Esto la expone a demoras operativas y a un alto riesgo reputacional si algún problema ambiental pasa desapercibido por la falta de visibilidad en tiempo real.
+El recorrido comprende las siguientes etapas: 1. Incorporación de un nuevo proyecto a la cartera de supervisión, 2. Revisión periódica del estado ambiental de los proyectos, 3. Solicitud y revisión de mediciones, informes y evidencias, 4. Identificación y comunicación de observaciones, 5. Seguimiento de acciones correctivas y 6. Consolidación de información para reportes y fiscalizaciones.
+
+Los principales puntos de dificultad se presentan durante la revisión simultánea de varios proyectos y la recopilación de información proveniente de diferentes empresas y responsables.
+
+Actualmente, Gisela debe consultar correos electrónicos, documentos, hojas de cálculo, carpetas compartidas y otros canales para verificar el estado de las observaciones y acciones pendientes. Esta fragmentación dificulta obtener rápidamente una visión general de la situación ambiental de cada proyecto.
+
+Además, durante la elaboración de reportes o procesos de fiscalización, debe consolidar manualmente mediciones, documentos y evidencias generadas en distintos momentos, lo que incrementa el tiempo requerido para validar la información y mantener la trazabilidad de las observaciones realizadas.
 
 ![User Journey Map - Gisela Chavez](../assets/images/chapter2/GiselaJourneyMap.jpeg)
 
