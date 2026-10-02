@@ -512,8 +512,6 @@ Posteriormente a la sesión de ideación abierta, el equipo organizó los evento
 
 ## 2.5. Ubiquitous Language
 <a id="2-5-ubiquitous-language"></a>
-## 2.5. Ubiquitous Language
-<a id="2-5-ubiquitous-language"></a>
 
 Con el propósito de mantener una comunicación transparente, estandarizada y libre de ambigüedades entre todos los miembros del equipo técnico, de producto y los stakeholders, se establece el siguiente glosario de términos y conceptos propios del dominio de negocio, fundamentado en los principios de Domain-Driven Design (DDD) de Eric Evans. Mantener un Ubiquitous Language completo y actualizado asegura que tanto los desarrolladores como los expertos de dominio compartan el mismo modelo mental y conceptual dentro de **RoadWatch OS**.
 
