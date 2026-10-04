@@ -48,6 +48,78 @@ Consolidarse como la plataforma tecnológica de referencia en América Latina pa
 
 **RoadWatch OS** es una solución informática integral distribuida como un servicio híbrido (**HaaS/SaaS**), diseñada para articular el monitoreo, la gestión de alertas preventivas, la mitigación operativa y la auditoría formal en proyectos de construcción vial. Mediante el despliegue de nodos sensores (calidad del aire, partículas en suspensión, sonometría y parámetros fisicoquímicos en agua/suelo), el sistema habilita dos módulos de trabajo aislados: un tablero operativo para la constructora destinado a la resolución de incidencias en campo, y un tablero de fiscalización para la supervisora respaldado por registros inalterables y generación automatizada de informes normativos.
 
+#### Propuesta de valor
+
+RoadWatch OS es una plataforma pensada para apoyar la gestión y supervisión ambiental en proyectos viales. La propuesta busca resolver un problema que se repite en este tipo de proyectos: la información suele estar repartida entre hojas de cálculo, fotografías, correos, reportes y diferentes canales de comunicación.
+
+La idea es reunir esa información en un solo lugar para que sea más fácil revisar mediciones, incidencias, evidencias y acciones correctivas, y así tener una visión más clara de lo que está ocurriendo en cada proyecto.
+
+La propuesta considera los dos segmentos objetivo definidos para RoadWatch OS:
+
+| Segmento | Problema principal | Propuesta de valor | Resultado esperado |
+| :--- | :--- | :--- | :--- |
+| **Empresas Constructoras Viales** | La información ambiental de la obra se encuentra distribuida entre distintos documentos y canales, lo que dificulta hacer seguimiento a mediciones, incidencias y acciones correctivas. | Centralizar mediciones ambientales, puntos de monitoreo, incidencias, evidencias y alertas dentro de una misma plataforma. | Facilitar el seguimiento ambiental de la obra, detectar posibles desviaciones con mayor anticipación y mantener mejor organizada la evidencia. |
+| **Empresas Supervisoras y Consultoras Ambientales** | La supervisión de uno o varios proyectos implica recopilar y revisar información proveniente de distintos responsables y fuentes. | Contar con una vista organizada del estado ambiental de los proyectos, sus mediciones, incidencias, evidencias, historial y reportes. | Reducir el tiempo empleado en recopilar información y facilitar la supervisión, elaboración de reportes y procesos de fiscalización. |
+
+#### Alcance del producto
+
+RoadWatch OS se plantea como una plataforma web para apoyar la gestión y supervisión ambiental de proyectos viales.
+
+Para mantener un alcance realista durante el desarrollo del proyecto, el MVP considera las siguientes funcionalidades:
+
+**Incluido en el alcance del MVP:**
+
+- Landing Page responsiva para presentar RoadWatch OS, su propuesta de valor y sus principales características.
+- Aplicación web responsiva para la gestión y supervisión ambiental.
+- Inicio de sesión y control de acceso según el tipo de usuario.
+- Registro y consulta de proyectos viales.
+- Registro y consulta de puntos de monitoreo ambiental.
+- Registro de mediciones ambientales.
+- Visualización del estado ambiental de los proyectos mediante indicadores.
+- Identificación de valores que se acerquen o superen los umbrales establecidos.
+- Registro y seguimiento de incidencias ambientales.
+- Registro de evidencias relacionadas con mediciones o incidencias.
+- Seguimiento de acciones correctivas o medidas de mitigación.
+- Consulta del historial de mediciones e incidencias.
+- Visualización de información consolidada para la supervisión de varios proyectos.
+- Generación y consulta de reportes de seguimiento.
+- Búsqueda y filtrado de información por proyecto, fecha, tipo de indicador u otros criterios relacionados.
+
+Entre las variables ambientales consideradas se encuentran:
+
+- Calidad del aire, mediante registros de material particulado.
+- Nivel de ruido.
+- Parámetros básicos relacionados con la calidad del agua.
+
+**Fuera del alcance del MVP:**
+
+- Desarrollo o fabricación de dispositivos físicos de monitoreo ambiental.
+- Aplicaciones móviles nativas para Android o iOS.
+- Integración directa con sistemas de entidades públicas.
+- Uso de inteligencia artificial o modelos predictivos avanzados.
+- Automatización completa de procesos oficiales de fiscalización.
+- Pasarelas de pago reales.
+- Certificación oficial de documentos o firmas digitales.
+
+Como posible evolución del producto, se podrá considerar una integración directa con dispositivos de monitoreo ambiental. Para el MVP, los registros necesarios para validar el funcionamiento de la plataforma podrán ser ingresados mediante los servicios desarrollados por el sistema.
+
+El alcance será evaluado principalmente por la capacidad de organizar la información ambiental, facilitar el seguimiento de incidencias y reducir el tiempo necesario para encontrar y consolidar información de los proyectos.
+
+#### Componente innovador
+
+El componente innovador de RoadWatch OS se encuentra en reunir dentro de una sola plataforma distintas actividades que actualmente pueden realizarse de manera separada usando hojas de cálculo, documentos, fotografías, correos y otros medios.
+
+La propuesta no se centra únicamente en registrar información, sino también en facilitar el seguimiento preventivo de situaciones ambientales y mantener relacionada la información de cada proyecto.
+
+| Componente | ¿En qué consiste? | Valor aportado |
+| :--- | :--- | :--- |
+| **Monitoreo ambiental centralizado** | Las mediciones, puntos de monitoreo, incidencias y evidencias se organizan dentro de una misma plataforma. | Ayuda a reducir la dispersión de información y facilita su consulta. |
+| **Seguimiento preventivo de indicadores** | Los valores ambientales pueden compararse con los umbrales establecidos para identificar situaciones que necesiten atención. | Permite actuar con mayor anticipación frente a posibles desviaciones. |
+| **Gestión de incidencias ambientales** | Las observaciones o problemas detectados pueden registrarse y mantenerse asociados al proyecto correspondiente. | Facilita el seguimiento de los pendientes y de las acciones realizadas. |
+| **Trazabilidad de información** | Las mediciones, incidencias, evidencias y acciones quedan relacionadas dentro del historial del proyecto. | Permite revisar con mayor facilidad lo ocurrido durante el desarrollo del proyecto. |
+| **Supervisión de múltiples proyectos** | Los responsables de supervisión pueden revisar información de distintos proyectos desde un mismo espacio. | Facilita la comparación y seguimiento del estado ambiental de varios proyectos. |
+| **Integración de evidencias y reportes** | Fotografías, registros y documentos pueden relacionarse con las actividades ambientales correspondientes. | Facilita la preparación de reportes y la revisión de información durante supervisiones o fiscalizaciones. |
+
 ---
 
 ### 1.2.1 Antecedentes y Problemática
