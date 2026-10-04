@@ -1,803 +1,637 @@
 # Product Design
+
 ## 4.1. Style Guidelines.
 <a id="4-1-style-guidelines"></a>
 
-El diseño se enfoca en una interfaz intuitiva que garantiza la seguridad y escalabilidad del sistema siendo capaz de manejar múltiples proyectos con alta disponibilidad y un control de acceso estrictamente definido por roles.
+Los lineamientos visuales de RoadWatch OS buscan mantener una interfaz clara, ordenada y consistente para los usuarios que realizan actividades de gestión y supervisión ambiental en proyectos viales.
+
+El diseño considera que la plataforma será utilizada tanto desde computadoras como desde dispositivos móviles mediante una interfaz web responsiva. Por ello, se prioriza la legibilidad de la información, la facilidad de navegación y la identificación rápida de mediciones, alertas e incidencias.
 
 ### 4.1.1. General Style Guidelines.
 <a id="4-1-1-general-style-guidelines"></a>
 
-En este apartado se detallan las decisiones de estilo que definen la identidad visual de RoadWatch OS, una plataforma web y móvil orientada al monitoreo ambiental y la gestión de proyectos de infraestructura. Las decisiones relacionadas con branding, paleta cromática, tipografía, espaciado y lenguaje buscan transmitir precisión técnica, sostenibilidad, claridad operativa y confianza.
+En esta sección se definen los principales elementos visuales utilizados en RoadWatch OS, incluyendo colores, tipografía, identidad visual, espaciado y tono de comunicación.
 
-### Colores:
+Las decisiones de diseño buscan transmitir orden, confianza y relación con el monitoreo ambiental, manteniendo una apariencia sencilla que permita trabajar con información técnica sin sobrecargar la pantalla.
 
-![Colours - RoadWatch OS](/assets/images/Colours.png)
-La paleta de colores de RoadWatch OS fue seleccionada para reflejar la integración entre el desarrollo de infraestructura vial y la preservación ambiental, garantizando legibilidad y jerarquía visual:
+### Colores
 
-Verde Esmeralda Primario (#23A277): Simboliza sostenibilidad, cumplimiento ambiental y estados óptimos. Se utiliza en acciones primarias (botones de confirmación, accesos directos), estados activos e indicadores de éxito.
+![Colores - RoadWatch OS](/assets/images/Colours.png)
 
-Azul Pizarra Oscuro (#1E3844): Transmite solidez, control técnico e infraestructura. Se aplica en contenedores destacados, tarjetas de información principal, encabezados oscuros y textos de alta jerarquía.
+La paleta de colores de RoadWatch OS combina tonos relacionados con el ambiente y la infraestructura vial:
 
-Fondo Crema Suave (#F6F5EE): Utilizado como fondo general de la aplicación. Sustituye al blanco puro para reducir la fatiga visual durante jornadas extensas de trabajo de campo o monitoreo continuo.
+- **Verde esmeralda (`#23A277`)**: se utiliza como color principal y representa estados favorables, acciones de confirmación y elementos destacados de la interfaz.
+- **Azul pizarra oscuro (`#1E3844`)**: se utiliza principalmente en encabezados, textos de mayor jerarquía y elementos de navegación.
+- **Crema suave (`#F6F5EE`)**: se utiliza como fondo general para reducir el contraste excesivo y facilitar la lectura durante periodos prolongados.
+- **Amarillo mostaza (`#E5A93C`)**: se utiliza para advertencias y situaciones que requieren atención.
+- **Rojo (`#D64545`)**: se reserva para estados críticos, errores o valores que superen los parámetros establecidos.
+- **Grises (`#E2E8F0` y `#64748B`)**: se utilizan en bordes, separadores, textos secundarios y elementos de apoyo visual.
 
-Mostaza / Amarillo Acento (#E5A93C): Aporta contraste e indicación de estado. Se emplea en etiquetas de categoría (badges como OUR PLATFORM), advertencias preventivas y llamadas de atención moderadas.
+El color no será el único recurso utilizado para comunicar el estado de un indicador. Las alertas también estarán acompañadas por etiquetas e íconos que permitan interpretar la información con mayor facilidad.
 
-Gris Neutro y Bordes (#E2E8F0 / #64748B): Se utiliza en divisores, contornos de tarjetas, campos de texto de formularios y texto secundario para estructurar el contenido sin recargar la interfaz.
+### Tipografía
 
-### Tipografía:
+Se utiliza **Rubik** como tipografía principal por su legibilidad en pantallas y por mantener una apariencia moderna y sencilla.
 
+La jerarquía visual se establece mediante diferentes tamaños y pesos tipográficos. Los títulos y valores principales utilizan un mayor peso, mientras que las descripciones, etiquetas y datos secundarios utilizan tamaños menores.
 
-Se seleccionó la tipografía Rubik como fuente principal para toda la plataforma debido a sus trazos redondeados, estética moderna y alta legibilidad en pantallas de distintas resoluciones.
+### Branding
 
-La jerarquía tipográfica se estructura mediante variaciones de peso (Regular, Medium, Bold) y tamaño: los títulos y métricas principales emplean pesos Bold para captar la atención de inmediato, mientras que las etiquetas secundarias y textos de lectura utilizan pesos Regular y Medium con interlineado amplio.
+La identidad visual de RoadWatch OS busca relacionar la tecnología con la gestión ambiental de proyectos viales.
 
-### Branding:
-El branding de RoadWatch OS refleja la supervisión limpia y moderna de activos viales. El logotipo y los componentes de interfaz adoptan un enfoque minimalista con bordes marcadamente suavizados, transmitiendo cercanía, orden y rigurosidad técnica.
+El diseño utiliza formas simples, componentes ordenados y una paleta relacionada con sostenibilidad e infraestructura. Estos elementos se mantienen de manera consistente en la Landing Page y en la aplicación web.
 
-### Espaciado y Layout:
-La interfaz utiliza un sistema basado en tarjetas independientes (cards) apiladas sobre el fondo crema. Se prioriza el uso de espacio negativo (whitespace) para evitar la saturación visual de datos ambientales complejos. Las tarjetas y botones cuentan con esquinas redondeadas (border-radius pronunciado) y márgenes padding consistentes para garantizar una experiencia limpia y responsiva en dispositivos móviles y de escritorio.
+### Espaciado y distribución
 
-### Tono de comunicación y lenguaje aplicado:
+La interfaz utiliza espacios suficientes entre componentes para evitar la saturación de información.
 
-El tono de voz en RoadWatch OS es profesional, preventivo y directo. Combina precisión técnica para el registro de métricas de telemetría con un lenguaje accesible que facilita la respuesta rápida de los oficiales ambientales ante alertas e incidentes en obra.
+Los principales datos se presentan mediante tarjetas, tablas, formularios y bloques de contenido organizados de acuerdo con su importancia. En las vistas de escritorio se aprovecha el espacio horizontal, mientras que en dispositivos móviles los componentes se reorganizan verticalmente.
 
+### Tono de comunicación y lenguaje aplicado
 
-Además, se han considerado los siguientes aspectos clave en el diseño de RoadWatch OS:
+El tono de RoadWatch OS es profesional, claro y directo.
 
-**Consistencia:**
+Los mensajes buscan explicar al usuario qué está ocurriendo y qué acciones puede realizar, evitando términos innecesariamente complejos cuando exista una alternativa más sencilla.
 
-Todos los módulos de la plataforma (Landing Page, Módulo Operativo de la constructora y Módulo de Fiscalización de la supervisora) comparten la misma paleta, tipografía, componentes y código de colores de riesgo. Un indicador en estado crítico se ve igual en el mapa, en la tarjeta de KPI, en la tabla de incidencias y en el reporte PDF, de modo que el usuario reconoce el significado de cada elemento sin volver a aprenderlo en cada pantalla.
+La comunicación mantiene un carácter serio y respetuoso, adecuado para usuarios relacionados con la gestión, supervisión y seguimiento ambiental.
 
-**Navegación:**
+### Consistencia
 
-La navegación se organiza alrededor de las tareas reales de cada rol: el responsable ambiental de la constructora accede en uno o dos clics al Dashboard, las Alertas y las Incidencias para atender desviaciones; el auditor de la supervisora accede al Portafolio, al Historial de mediciones y a Reportes para fiscalizar. El menú lateral muestra únicamente las secciones que corresponden al rol autenticado.
+Los diferentes módulos mantienen los mismos colores, tipografía, estilos de botones, campos de formulario, tablas y estados visuales.
 
-**Accesibilidad:**
+Por ejemplo, una advertencia utiliza el mismo tratamiento visual cuando aparece en el panel principal, en una lista de mediciones o dentro del detalle de una incidencia.
 
-La plataforma se diseña para usarse tanto en gabinete (monitores de escritorio) como en campo (celulares a pleno sol). Por ello se emplean contrastes que cumplen el nivel AA de WCAG 2.1, zonas táctiles mínimas de 44 × 44 px, textos base de 14–16 px y un código de riesgo que **no depende solo del color**: cada estado se acompaña de un ícono y una etiqueta textual (Óptimo, Advertencia, Crítico).
+### Navegación
 
-**Elementos de Diseño:**
+La navegación se organiza de acuerdo con las tareas de cada tipo de usuario.
 
-Además de los lineamientos de color, tipografía y branding, el diseño visual de RoadWatch OS aplica los elementos fundamentales del diseño gráfico para presentar datos ambientales complejos de forma clara.
+Los usuarios relacionados con empresas constructoras pueden acceder a las funciones necesarias para revisar proyectos, puntos de monitoreo, mediciones, alertas e incidencias.
 
-La **línea** se utiliza con moderación para separar filas de tablas de mediciones, dividir secciones de formularios de evidencia y delimitar tarjetas, sin recargar la interfaz. El **color** cumple una función crítica de comunicación: el verde esmeralda indica estados óptimos y acciones principales, la mostaza señala advertencias preventivas y el rojo se reserva exclusivamente para sobrepasos de los Límites Máximos Permisibles (LMP), lo que evita la fatiga de alertas.
+Los usuarios de empresas supervisoras y consultoras ambientales pueden consultar el estado de los proyectos, revisar mediciones, incidencias, evidencias e información necesaria para el seguimiento ambiental.
 
-El **tamaño** se aplica de manera jerárquica: los valores de los KPIs (PM10, dB, pH) y el índice de salud ambiental del proyecto usan tipografía grande y en negrita, mientras que las unidades, fechas y metadatos usan tamaños menores. En cuanto a la **textura**, se opta por fondos planos color crema y mapas cartográficos simplificados para que los nodos de monitoreo destaquen sobre el trazado de la vía.
+### Accesibilidad
 
-El **espacio** negativo separa las tarjetas del dashboard y agrupa la información relacionada, evitando la saturación típica de los paneles técnicos. Finalmente, las **formas** son geométricas y con bordes redondeados (8–16 px) en botones, tarjetas y badges, lo que refuerza una imagen moderna, ordenada y confiable.
+RoadWatch OS considera criterios de accesibilidad para facilitar el uso de la plataforma en distintos dispositivos.
 
-**Principios de Diseño:**
+Se utilizan textos legibles, contraste suficiente entre los elementos de la interfaz y áreas de interacción adecuadas para dispositivos táctiles.
 
-El **contraste** destaca los elementos que requieren acción inmediata, como una alerta crítica, un ticket vencido o el botón de "Registrar evidencia". La **repetición** del sistema de semáforo (verde / mostaza / rojo) y de la iconografía de indicadores (aire, ruido, agua) genera consistencia en toda la plataforma.
+Los estados ambientales no se comunican únicamente mediante colores, sino también mediante texto e iconografía. De esta manera, por ejemplo, los estados **Óptimo**, **Advertencia** y **Crítico** pueden distinguirse sin depender únicamente del color.
 
-La **alineación** organiza tablas de mediciones, listas de incidencias y formularios en una retícula de 12 columnas, mientras que la **proximidad** agrupa los datos que se leen juntos: el valor medido con su LMP y su tendencia, o la incidencia con su responsable, su plazo y su evidencia.
+### Elementos de diseño
 
-Estos principios integran un sistema de diseño funcional orientado al objetivo central de RoadWatch OS: que la constructora detecte y mitigue desviaciones ambientales a tiempo y que la supervisora audite con información confiable, clara e inalterable.
+La interfaz utiliza líneas y bordes suaves para separar contenidos sin generar una cantidad excesiva de divisiones visuales.
 
+El tamaño de los elementos permite establecer jerarquía entre títulos, indicadores, datos secundarios y acciones disponibles.
+
+El espacio entre componentes facilita la lectura y permite agrupar información relacionada, mientras que las formas geométricas y los bordes redondeados mantienen una apariencia uniforme en botones, tarjetas y campos.
+
+### Principios de diseño
+
+El diseño de RoadWatch OS considera principios como contraste, repetición, alineación y proximidad.
+
+El **contraste** permite destacar alertas, indicadores y acciones importantes.
+
+La **repetición** mantiene patrones visuales consistentes en toda la plataforma.
+
+La **alineación** facilita la lectura de tablas, formularios y tarjetas.
+
+La **proximidad** permite agrupar información relacionada, como una medición con su fecha, indicador, valor y estado.
+
+Estos principios buscan que la información ambiental pueda revisarse de manera rápida y ordenada.
 
 ### 4.1.2. Web Style Guidelines.
 <a id="4-1-2-web-style-guidelines"></a>
 
-Los lineamientos web aterrizan la guía general en reglas concretas para la Landing Page y la aplicación web responsiva de RoadWatch OS.
+Los lineamientos para la experiencia web se basan en los principios de **Material Design**, considerando además el uso de **Angular Material** para mantener consistencia entre los componentes utilizados en la aplicación.
 
-**Retícula y breakpoints**
+La interfaz es responsiva y adapta la distribución de sus elementos según el tamaño de la pantalla.
 
-| Dispositivo | Ancho de referencia | Retícula | Márgenes / gutter |
+### Retícula y tamaños de referencia
+
+| Dispositivo | Ancho de referencia | Retícula | Márgenes |
 | :--- | :--- | :--- | :--- |
-| Desktop | 1440 px | 12 columnas | 80 px / 24 px |
-| Tablet | 768 px | 8 columnas | 32 px / 16 px |
-| Mobile | 390 px | 4 columnas | 16 px / 16 px |
+| Desktop | 1440 px | 12 columnas | 80 px |
+| Tablet | 768 px | 8 columnas | 32 px |
+| Mobile | 390 px | 4 columnas | 16 px |
 
-En Desktop la aplicación usa un menú lateral fijo de 248 px y un área de contenido con tarjetas; en Mobile el menú lateral se convierte en una barra de navegación inferior con las cuatro secciones más usadas del rol.
+En escritorio se utiliza un menú lateral junto con el área principal de contenido. En dispositivos móviles, la navegación y los componentes se reorganizan para aprovechar mejor el espacio disponible.
 
-**Escala tipográfica (Rubik)**
+### Escala tipográfica
 
 | Estilo | Tamaño / interlineado | Peso | Uso |
 | :--- | :--- | :--- | :--- |
-| H1 | 40 / 48 px | Bold | Títulos de la Landing Page |
-| H2 | 28 / 36 px | Bold | Título de pantalla |
-| H3 | 20 / 28 px | Medium | Títulos de tarjetas y secciones |
-| KPI | 32 / 40 px | Bold | Valores de indicadores |
+| H1 | 40 / 48 px | Bold | Títulos principales |
+| H2 | 28 / 36 px | Bold | Títulos de pantalla |
+| H3 | 20 / 28 px | Medium | Secciones y tarjetas |
+| KPI | 32 / 40 px | Bold | Indicadores principales |
 | Body | 16 / 24 px | Regular | Texto general |
-| Small | 14 / 20 px | Regular | Tablas, metadatos |
-| Caption | 12 / 16 px | Medium | Etiquetas, unidades, badges |
+| Small | 14 / 20 px | Regular | Datos secundarios |
+| Caption | 12 / 16 px | Medium | Etiquetas y unidades |
 
-**Colores funcionales**
+### Colores funcionales
 
-| Token | Hex | Uso |
+| Elemento | Hexadecimal | Uso |
 | :--- | :--- | :--- |
-| Primary | `#23A277` | Botones principales, estado Óptimo, enlaces activos |
-| Secondary | `#1E3844` | Menú lateral, encabezados, texto de alta jerarquía |
-| Tertiary / Warning | `#E5A93C` | Estado Advertencia, badges, alertas preventivas |
-| Critical | `#D64545` | Estado Crítico (sobrepaso de LMP), errores |
-| Background | `#F6F5EE` | Fondo general de la aplicación |
-| Surface | `#FFFFFF` | Tarjetas, tablas, modales |
-| Border | `#E2E8F0` | Bordes y divisores |
-| Neutral | `#64748B` | Texto secundario, íconos inactivos |
+| Principal | `#23A277` | Botones principales, elementos activos y estados favorables |
+| Secundario | `#1E3844` | Navegación, encabezados y texto principal |
+| Advertencia | `#E5A93C` | Estados que requieren atención |
+| Crítico | `#D64545` | Errores o situaciones críticas |
+| Fondo | `#F6F5EE` | Fondo general |
+| Superficie | `#FFFFFF` | Tarjetas, tablas y cuadros de diálogo |
+| Borde | `#E2E8F0` | Separadores y bordes |
+| Neutro | `#64748B` | Texto secundario e íconos inactivos |
 
-**Componentes**
+### Componentes
 
-- **Botones:** primario (fondo `#23A277`, texto blanco), secundario (borde `#1E3844`), terciario (solo texto). Alto de 40 px en Desktop y 48 px en Mobile, radio de 8 px. Estados: normal, hover (10 % más oscuro), foco (anillo de 2 px), deshabilitado (40 % de opacidad).
-- **Tarjetas de KPI:** fondo blanco, radio de 16 px, ícono del indicador, valor en estilo KPI, LMP de referencia y badge de estado.
-- **Badges de riesgo:** Óptimo (verde), Advertencia (mostaza), Crítico (rojo); siempre con ícono y texto.
-- **Tablas:** encabezado en `#1E3844` al 5 %, filas de 48 px, paginación inferior y filtros sobre la tabla.
-- **Formularios:** campos de 44 px, etiqueta superior, mensaje de ayuda y de error debajo del campo.
-- **Mapa:** marcadores circulares por nodo con el color de su estado y tooltip con la última lectura.
-- **Gráficos:** línea de tendencia del indicador con una banda horizontal que marca el LMP.
+- **Botones:** se diferencian entre acciones principales, secundarias y acciones de texto.
+- **Tarjetas:** agrupan indicadores, alertas y datos relevantes de los proyectos.
+- **Etiquetas de estado:** muestran estados como Óptimo, Advertencia y Crítico mediante texto, color e ícono.
+- **Tablas:** permiten consultar mediciones, incidencias y otros registros de manera ordenada.
+- **Formularios:** utilizan etiquetas visibles, mensajes de ayuda y validaciones.
+- **Mapas:** permiten ubicar proyectos y puntos de monitoreo.
+- **Gráficos:** presentan la evolución de indicadores ambientales y facilitan la comparación de valores.
 
-**Iconografía:** íconos lineales de 24 px (conjunto Lucide) con trazo de 2 px. Cada tipo de indicador tiene un ícono fijo: aire (viento), ruido (onda de sonido), agua (gota).
-
-**Microcopy:** botones con verbos en infinitivo ("Registrar evidencia", "Generar reporte"), mensajes de error que indican cómo resolver el problema y fechas en formato `dd/mm/aaaa hh:mm`.
-
+Los componentes mantienen un comportamiento visual consistente en sus estados normal, seleccionado, deshabilitado, error y foco.
 
 ## 4.2. Information Architecture.
 <a id="4-2-information-architecture"></a>
-La arquitectura de información de RoadWatch OS parte de una premisa: el estado ambiental de la obra (alertas activas, indicadores fuera de rango e incidencias pendientes) debe ser siempre el punto de partida de la navegación, y cada rol debe ver únicamente la información que le corresponde.
+
+La arquitectura de información de RoadWatch OS organiza el contenido de manera que los usuarios puedan encontrar rápidamente los proyectos, mediciones, incidencias, evidencias y reportes que necesitan.
+
+La organización considera los dos segmentos definidos para el proyecto: **Empresas Constructoras Viales** y **Empresas Supervisoras y Consultoras Ambientales**.
+
+Cada tipo de usuario accede a las funciones relacionadas con sus actividades, evitando mostrar información innecesaria y facilitando el recorrido dentro de la plataforma.
 
 ### 4.2.1. Organization Systems.
 <a id="4-2-1-organization-systems"></a>
-RoadWatch OS emplea principalmente una **organización jerárquica** para destacar la información crítica: el índice de salud ambiental del proyecto, las alertas activas y los indicadores que se acercan o superan su LMP se presentan con mayor jerarquía visual en el dashboard y en el mapa de nodos. Así, el usuario identifica de inmediato qué frente de obra requiere atención.
 
-Se aplica una **organización secuencial** en los procesos que necesitan una guía paso a paso: la atención de un ticket de mitigación (revisar alerta → asignar responsable → registrar evidencia → cerrar incidencia), el alta de un nuevo punto de monitoreo y la generación del expediente de auditoría (seleccionar proyecto → rango de fechas → indicadores → exportar PDF).
+RoadWatch OS utiliza una **organización jerárquica** para destacar la información más importante.
 
-En cuanto a los esquemas de categorización, se utiliza una **organización cronológica** para el historial de mediciones, el historial de estados de cada incidencia y el registro de evidencias; una **organización por tipo de indicador** (aire, ruido, agua) en los filtros y gráficos; y una **organización por audiencia**, ya que la constructora, la supervisora y el administrador Enterprise acceden a módulos y vistas distintas según su rol.
+En las pantallas principales se priorizan los proyectos que requieren atención, las alertas activas, las incidencias pendientes y los indicadores ambientales relevantes.
+
+También se utiliza una **organización secuencial** en tareas que necesitan completar varios pasos, como registrar una medición, registrar una evidencia o dar seguimiento a una incidencia.
+
+La información histórica se organiza de forma **cronológica**, permitiendo consultar mediciones, incidencias y evidencias según la fecha en la que fueron registradas.
+
+Además, la información puede organizarse por **tipo de indicador ambiental**, como calidad del aire, ruido o parámetros relacionados con la calidad del agua.
+
+Finalmente, se utiliza una organización según la **audiencia**, ya que las empresas constructoras y las empresas supervisoras o consultoras ambientales realizan tareas diferentes dentro de la plataforma.
 
 ### 4.2.2. Labeling Systems.
 <a id="4-2-2-labeling-systems"></a>
 
-El sistema de etiquetado utiliza términos cortos, precisos y alineados al lenguaje de la gestión ambiental de obras viales, que son los términos que emplearon los entrevistados:
+El sistema de etiquetado utiliza nombres breves y fáciles de reconocer para representar las principales secciones de RoadWatch OS.
 
 **Landing Page**
 
-- **Inicio:** presentación de RoadWatch OS y su propuesta de valor.
-- **Cómo funciona:** los pasos del servicio (instalación de nodos, monitoreo, alertas, auditoría).
-- **Beneficios:** ventajas para constructoras y supervisoras.
-- **Planes:** comparación de los planes Base, Profesional y Enterprise.
-- **Equipo:** integrantes de VíaNexo.
-- **Contacto:** formulario de contacto comercial o solicitud de demo.
+- **Inicio:** presentación general de RoadWatch OS.
+- **Solución:** explicación de las principales funciones de la plataforma.
+- **Beneficios:** ventajas para empresas constructoras y empresas supervisoras o consultoras ambientales.
+- **Equipo:** presentación de VíaNexo y sus integrantes.
+- **Contacto:** medio para solicitar información sobre RoadWatch OS.
 
-**Módulo Operativo – Constructora**
+**Empresa Constructora Vial**
 
-- **Dashboard:** mapa de nodos, KPIs ambientales y alertas activas del proyecto.
-- **Alertas:** notificaciones preventivas (Advertencia) y críticas (sobrepaso de LMP).
-- **Incidencias:** tablero Kanban de tickets de mitigación (Abierta, En revisión, Resuelta).
-- **Evidencias:** fotos georreferenciadas asociadas a cada incidencia.
-- **Proyectos:** tramos viales asignados y su estado de cumplimiento.
-- **Configuración:** perfil, notificaciones y preferencias.
+- **Panel:** resumen del estado ambiental de los proyectos.
+- **Proyectos:** listado y detalle de proyectos viales.
+- **Puntos de monitoreo:** lugares donde se registran mediciones ambientales.
+- **Mediciones:** consulta y registro de valores ambientales.
+- **Alertas:** situaciones que requieren atención.
+- **Incidencias:** problemas ambientales registrados y su seguimiento.
+- **Evidencias:** fotografías o documentos relacionados con una incidencia.
+- **Configuración:** opciones relacionadas con la cuenta y preferencias del usuario.
 
-**Módulo de Fiscalización – Supervisora**
+**Empresa Supervisora o Consultora Ambiental**
 
-- **Portafolio:** salud ambiental de todos los proyectos supervisados.
-- **Mediciones:** historial de lecturas de solo lectura, con filtros por indicador y fecha.
-- **Incidencias críticas:** sobrepasos registrados y estado de su mitigación.
-- **Reportes:** generación y descarga de expedientes de auditoría en PDF.
-- **Configuración:** perfil, usuarios y plan de suscripción.
+- **Portafolio:** vista general de los proyectos supervisados.
+- **Mediciones:** consulta del historial de registros ambientales.
+- **Incidencias:** revisión de situaciones ambientales detectadas.
+- **Evidencias:** consulta de documentos y registros relacionados.
+- **Reportes:** información consolidada para el seguimiento ambiental.
+- **Configuración:** opciones de cuenta y preferencias del usuario.
 
 ### 4.2.3. SEO Tags and Meta Tags.
 <a id="4-2-3-seo-tags-meta-tags"></a>
 
-Para que la Landing Page de RoadWatch OS sea indexable y tenga un buen posicionamiento orgánico, se configuran los siguientes meta tags:
+Los SEO Tags y Meta Tags permiten identificar correctamente las principales páginas de RoadWatch OS y facilitar su indexación en buscadores.
 
-Title Tag:
-`<title>RoadWatch OS | Monitoreo ambiental IoT para obras viales</title>`
+De acuerdo con la configuración de internacionalización del producto, el idioma predeterminado de la experiencia será inglés (`en_US`) y también se contará con soporte para español latinoamericano (`es_419`).
 
-Description:
-`<meta name="description" content="Monitoreo continuo de aire, ruido y agua en obras viales con sensores IoT neutrales, alertas preventivas y reportes de auditoría inalterables para constructoras y supervisoras.">`
+Para la Landing Page se consideran como mínimo los siguientes elementos:
 
-Keywords:
-`<meta name="keywords" content="RoadWatch OS, monitoreo ambiental, obras viales, IoT, límites máximos permisibles, fiscalización ambiental, supervisión ambiental, OEFA, MTC">`
+**Title**
 
-Open Graph:
+```html
+<title>RoadWatch OS | Environmental Monitoring for Road Projects</title>
+```
 
-`<meta property="og:title" content="RoadWatch OS: cumplimiento ambiental en tiempo real para obras viales">`
+**Description**
 
-`<meta property="og:description" content="Detecta desviaciones antes de la multa y audita con datos inalterables. Sensores incluidos en tu suscripción.">`
+```html
+<meta
+  name="description"
+  content="RoadWatch OS centralizes environmental monitoring, incidents and evidence for road construction projects."
+>
+```
 
-`<meta property="og:image" content="https://roadwatch-os.com/assets/og-preview.png">`
+**Keywords**
 
-`<meta property="og:url" content="https://roadwatch-os.com">`
+```html
+<meta
+  name="keywords"
+  content="RoadWatch OS, environmental monitoring, road projects, environmental supervision, incidents, environmental evidence"
+>
+```
 
-Robots:
-`<meta name="robots" content="index, follow">`
+**Author**
 
-Idioma y viewport:
-`<html lang="es">` y `<meta name="viewport" content="width=device-width, initial-scale=1">`
+```html
+<meta name="author" content="VíaNexo">
+```
+
+Para la aplicación web se utilizarán valores relacionados con el contenido de cada vista. Por ejemplo:
+
+```html
+<title>Projects | RoadWatch OS</title>
+
+<meta
+  name="description"
+  content="Manage and monitor environmental information for road projects in RoadWatch OS."
+>
+
+<meta name="author" content="VíaNexo">
+```
+
+También se considera la configuración necesaria para una correcta visualización en diferentes dispositivos:
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1">
+```
+
+Las versiones localizadas de la plataforma podrán adaptar los títulos y descripciones de acuerdo con el idioma seleccionado por el usuario.
 
 ### 4.2.4. Searching Systems.
 <a id="4-2-4-searching-systems"></a>
 
-El sistema de búsqueda reduce el tiempo necesario para ubicar proyectos, puntos de monitoreo e incidencias:
+RoadWatch OS incorpora herramientas de búsqueda y filtrado para facilitar la consulta de información, especialmente cuando aumenta la cantidad de proyectos, mediciones e incidencias registradas.
 
-**Búsqueda global:** ubicada en la barra superior de la aplicación. Permite buscar por nombre o código de proyecto, código de punto de monitoreo (por ejemplo, `N-03`), código de incidencia (por ejemplo, `INC-0142`) o responsable asignado.
+La búsqueda permitirá localizar información utilizando datos como:
 
-**Filtros en Mediciones e Incidencias:**
+- Nombre o código del proyecto.
+- Punto de monitoreo.
+- Código de incidencia.
+- Responsable.
+- Tipo de indicador ambiental.
 
-- **Tipo de indicador:** aire (PM10 / PM2.5), ruido (dB), agua (pH, turbidez).
-- **Estado de riesgo:** Óptimo, Advertencia, Crítico.
-- **Rango de fechas:** selector de fecha inicial y final.
-- **Proyecto y tramo:** para cuentas con varios frentes de obra.
-- **Estado de la incidencia:** Abierta, En revisión, Resuelta, Estancada (sin seguimiento en 72 h).
+Las secciones que contienen una mayor cantidad de registros podrán utilizar filtros como:
 
-**Búsqueda documental:** en Reportes, la supervisora puede localizar expedientes generados anteriormente por proyecto, periodo o palabra clave.
+- Tipo de indicador ambiental.
+- Estado de la incidencia.
+- Estado de riesgo.
+- Proyecto.
+- Rango de fechas.
+
+Después de realizar una búsqueda o aplicar filtros, los resultados se mostrarán mediante tablas o listas ordenadas, manteniendo visible la información principal de cada registro.
+
+De esta manera, los usuarios podrán encontrar información específica sin tener que recorrer manualmente grandes cantidades de registros.
 
 ### 4.2.5. Navigation Systems.
 <a id="4-2-5-navigation-systems"></a>
 
-La navegación se estructura para que el usuario nunca esté a más de tres clics de la información que necesita:
+La navegación de RoadWatch OS busca mantener un recorrido sencillo y predecible entre las diferentes secciones de la plataforma.
 
-**Navegación global:** menú lateral persistente en Desktop (barra inferior en Mobile) con las secciones del rol autenticado. Constructora: Dashboard, Alertas, Incidencias, Proyectos. Supervisora: Portafolio, Mediciones, Incidencias críticas, Reportes.
+En dispositivos de escritorio, la aplicación utiliza un menú principal desde el cual se puede acceder a las funciones disponibles según el tipo de usuario.
 
-**Navegación contextual:** migas de pan que ubican al usuario dentro de la jerarquía, por ejemplo: *Proyectos › Carretera Central Tramo 2 › Nodo N-03 › INC-0142*.
+En dispositivos móviles, la navegación se adapta al espacio disponible y mantiene accesibles las opciones utilizadas con mayor frecuencia.
 
-**Navegación local:** pestañas dentro de cada sección, por ejemplo en el detalle de una incidencia: *Resumen · Evidencias · Comentarios · Historial*.
+La plataforma considera los siguientes tipos de navegación:
 
-**Acciones rápidas:** botón flotante "Registrar evidencia" en Mobile para la constructora y botón "Generar reporte" siempre visible en el Portafolio de la supervisora, condicionados por los permisos del rol.
+- **Navegación global:** permite acceder a las principales secciones de la aplicación.
+- **Navegación contextual:** permite pasar desde un proyecto hacia sus mediciones, incidencias, evidencias u otra información relacionada.
+- **Navegación local:** utiliza pestañas o secciones internas cuando una pantalla contiene distintos grupos de información.
+- **Acciones rápidas:** facilitan tareas frecuentes como registrar una medición, agregar evidencia o consultar una incidencia.
 
+La estructura de navegación se mantiene consistente entre las diferentes vistas para que el usuario pueda identificar con facilidad dónde se encuentra, qué acciones tiene disponibles y cómo regresar a secciones anteriores.
 
 ## 4.3. Landing Page UI Design.
 <a id="4-3-landing-page-ui-design"></a>
 
-En esta sección se presenta la propuesta de diseño de interfaz de usuario de la Landing Page, desarrollada a partir de la arquitectura de información previamente definida y de las necesidades identificadas en los usuarios.
+En esta sección se presenta la propuesta de interfaz de usuario para la Landing Page de RoadWatch OS. La organización del contenido parte de la arquitectura de información definida previamente y busca comunicar de manera clara el propósito de la solución para los dos segmentos objetivo.
 
-La propuesta busca ofrecer una experiencia clara, intuitiva y accesible, organizando la información de acuerdo con su nivel de importancia. Para ello, se consideran principios de jerarquía visual, consistencia, proximidad, simplicidad y diseño inclusivo.
-
-Asimismo, se han desarrollado versiones para **Desktop Web Browser** y **Mobile Web Browser**, adaptando la distribución de los componentes de acuerdo con el tamaño de pantalla.
-
----
+Se desarrollaron versiones para **Desktop Web Browser** y **Mobile Web Browser**, manteniendo una estructura consistente y adaptando la distribución de los elementos según el tamaño de pantalla.
 
 ### 4.3.1. Landing Page Wireframe.
 <a id="4-3-1-landing-page-wireframe"></a>
 
-Los wireframes permiten definir la estructura, distribución y jerarquía de los principales elementos de la Landing Page antes de incorporar los estilos visuales finales.
+Los wireframes permiten definir la estructura, jerarquía y distribución de los contenidos antes de aplicar la identidad visual final.
 
-La propuesta ha sido desarrollada para versiones Desktop y Mobile, manteniendo la misma arquitectura de información y adaptando la disposición de los elementos según el dispositivo utilizado.
+#### Landing Page Web
 
-#### LANDING PAGE WEB
-
-La versión Desktop aprovecha el espacio horizontal disponible para presentar los contenidos de manera amplia y ordenada.
-
-**Barra de Navegación**:  
-Ubicada en la parte superior de la interfaz, permite acceder a las principales secciones de la Landing Page.
-
-**Título Principal**:  
-Presenta la propuesta de valor principal del producto mediante un mensaje breve y de alta jerarquía visual.
-
-**Texto**:  
-Complementa el título principal explicando de forma resumida el propósito de la solución.
-
-**Llamados a la Acción**:  
-Orientan al usuario hacia las principales acciones disponibles dentro de la plataforma.
-
-**Elemento Visual**:  
-Refuerza visualmente la propuesta de valor presentada en el Hero Section.
+La versión Desktop organiza la información en bloques claramente diferenciados para facilitar un recorrido progresivo desde la presentación del producto hasta las opciones de contacto.
 
 ![Wireframe Hero Desktop](../assets/images/heroDesktop.png)
 
-**Figura X. Wireframe del Hero Section – Desktop Web Browser.**  
+**Figura X. Wireframe del Hero Section – Desktop Web Browser.**
 
----
-
-**Sección de Pilares de Gestión**:
-
-Los pilares permiten comunicar los principales aspectos que sustentan la propuesta del producto.
-
-- **Pilar 1**: Presenta el primer aspecto clave de la solución.
-- **Pilar 2**: Representa el segundo eje de valor.
-- **Pilar 3**: Completa la propuesta mediante el tercer eje de gestión.
-
-**Contenido**:  
-Cada pilar se organiza mediante bloques visuales diferenciados, facilitando su comprensión.
+La primera sección presenta el nombre del producto, su propuesta general y los principales llamados a la acción.
 
 ![Wireframe Funcionalidades Desktop](../assets/images/funcionalidadesDesktop.png)
 
-**Figura X. Wireframe de funcionalidades – Desktop Web Browser.**  
+**Figura X. Wireframe de funcionalidades – Desktop Web Browser.**
 
----
-
-**Planes**:
-
-La sección de planes presenta las distintas opciones disponibles dentro del producto y facilita la comparación de sus principales características.
+Las funcionalidades se presentan en bloques independientes para facilitar la comprensión de los principales componentes de RoadWatch OS.
 
 ![Wireframe Planes Desktop](../assets/images/planesDesktop.png)
 
-**Figura X. Wireframe de planes – Desktop Web Browser.**  
+**Figura X. Wireframe de opciones comerciales – Desktop Web Browser.**
 
----
-
-**Equipo**:
-
-La sección de equipo permite presentar a los integrantes vinculados con el proyecto y reforzar la confianza hacia la solución.
+Esta sección presenta las opciones comerciales consideradas en el diseño de la Landing Page. Su contenido podrá ajustarse de acuerdo con el modelo de negocio finalmente validado por el equipo.
 
 ![Wireframe Equipo Desktop](../assets/images/equipo.png)
 
-**Figura X. Wireframe de equipo – Desktop Web Browser.**  
+**Figura X. Wireframe de equipo – Desktop Web Browser.**
 
----
+La sección de equipo presenta a los integrantes de VíaNexo y permite reforzar la identificación del startup responsable del producto.
 
-#### LANDING PAGE MOBILE
+#### Landing Page Mobile
 
-La versión Mobile conserva la arquitectura de información definida para Desktop, pero reorganiza los componentes principalmente en una disposición vertical.
-
-**Cabecera y Navegación**:  
-La navegación se simplifica para adaptarse al espacio disponible en dispositivos móviles.
-
-**Headline**:  
-El título principal mantiene su jerarquía visual, adaptando su tamaño al ancho de pantalla.
-
-**Imagen de Soporte**:  
-El recurso visual se adapta proporcionalmente al dispositivo móvil.
+La versión Mobile mantiene la misma arquitectura general y reorganiza los componentes principalmente en sentido vertical.
 
 ![Wireframe Hero Mobile](../assets/images/hero.png)
 
-**Figura X. Wireframe del Hero Section – Mobile Web Browser.**  
-
----
-
-**Acerca del Proyecto**:
-
-Esta sección presenta de forma resumida el propósito del proyecto y la necesidad que busca resolver.
+**Figura X. Wireframe del Hero Section – Mobile Web Browser.**
 
 ![Wireframe Acerca del Proyecto](../assets/images/AcercaDelProyecto.png)
 
-**Figura X. Wireframe de Acerca del Proyecto – Mobile Web Browser.**  
-
----
-
-**Beneficios y Pilares de Gestión**:
-
-Los beneficios y pilares se organizan verticalmente para facilitar la lectura y mantener una estructura clara.
+**Figura X. Wireframe de Acerca del Proyecto – Mobile Web Browser.**
 
 ![Wireframe Beneficios Mobile](../assets/images/beneficios.png)
 
-**Figura X. Wireframe de beneficios – Mobile Web Browser.**  
-
----
-
-**Funcionalidades**:
-
-Las funcionalidades principales se presentan mediante componentes independientes y distribuidos verticalmente.
+**Figura X. Wireframe de beneficios – Mobile Web Browser.**
 
 ![Wireframe Funcionalidades Mobile](../assets/images/funcionalidades.png)
 
-**Figura X. Wireframe de funcionalidades – Mobile Web Browser.**  
-
----
-
-**Cómo Funciona**:
-
-Esta sección presenta de manera secuencial el proceso de uso de la solución, facilitando la comprensión del flujo de usuario.
+**Figura X. Wireframe de funcionalidades – Mobile Web Browser.**
 
 ![Wireframe Cómo Funciona Mobile](../assets/images/ComoFunciona.png)
 
-**Figura X. Wireframe de Cómo Funciona – Mobile Web Browser.**  
----
-
-**Equipo y Planes**:
-
-Las secciones de equipo y planes se adaptan a una estructura vertical, permitiendo revisar cada bloque de contenido de manera independiente.
+**Figura X. Wireframe de Cómo Funciona – Mobile Web Browser.**
 
 ![Wireframe Equipo y Planes Mobile](../assets/images/equipo%20y%20planes.png)
 
-**Figura X. Wireframe de Equipo y Planes – Mobile Web Browser.**  
+**Figura X. Wireframe de Equipo y opciones comerciales – Mobile Web Browser.**
 
----
-
-#### Principios de Diseño Aplicados
-
-La propuesta aplica jerarquía visual, proximidad, consistencia y simplicidad para facilitar la comprensión de la información y mantener patrones reconocibles durante la navegación.
-
-Desde la perspectiva del diseño inclusivo, se consideran tamaños adecuados para elementos interactivos, separación entre componentes, organización visual clara y una estructura que no depende únicamente del color para transmitir información.
-
----
-
-#### Arquitectura de Información
-
-La información se organiza siguiendo un recorrido progresivo:
-
-1. Hero Section.
-2. Acerca del Proyecto.
-3. Pilares de Gestión.
-4. Beneficios.
-5. Funcionalidades.
-6. Cómo Funciona.
-7. Planes.
-8. Equipo.
-
-Este orden permite presentar la información de lo general a lo específico y facilitar una navegación intuitiva.
-
----
+La propuesta aplica jerarquía visual, proximidad, consistencia y simplicidad. También considera tamaños adecuados para elementos interactivos, separación suficiente entre componentes y una organización que no depende únicamente del color para transmitir información.
 
 ### 4.3.2. Landing Page Mock-up.
 <a id="4-3-2-landing-page-mock-up"></a>
 
-Los mock-ups representan la propuesta visual de alta fidelidad de la Landing Page. En esta etapa se incorporan colores, tipografías, iconografía, componentes, espaciados y demás elementos establecidos dentro del Design System.
+Los mock-ups representan la propuesta visual de alta fidelidad de la Landing Page e incorporan la paleta, tipografía, iconografía y componentes definidos en los lineamientos de estilo.
 
-#### LANDING PAGE MOCK-UP WEB
-
-La versión Web mantiene la estructura definida previamente en los wireframes y aplica la identidad visual final del producto.
+#### Landing Page Mock-up Web
 
 ![Landing Page Mock-up Web](../assets/images/chapter4/landing/landing-web.png)
 
 **Figura X. Mock-up de la Landing Page – Desktop Web Browser.**
 
-**Barra de Navegación**:
-Logotipo de RoadWatch OS, enlaces a Inicio, Cómo funciona, Beneficios, Planes, Equipo y Contacto, y los accesos "Iniciar sesión" y "Solicitar demo".
+La versión Web presenta una navegación principal, un bloque inicial con la propuesta de valor de RoadWatch OS, información sobre el problema que se busca resolver, beneficios, funcionalidades, explicación general del funcionamiento, información del equipo y medios de contacto.
 
-**Hero Section**:
-Titular "Detecta la desviación ambiental antes de la multa.", texto de apoyo sobre sensores neutrales, alertas preventivas y auditoría inalterable, y dos llamados a la acción diferenciados por segmento: "Soy constructora · Gestiona tu cartera" (US05) y "Soy consultora · Monitorea tu proyecto" (US04). A la derecha se muestra la demo del tablero geolocalizado con nodos y lecturas (US02).
+La comunicación se orienta a los dos segmentos objetivo del proyecto: empresas constructoras viales y empresas supervisoras o consultoras ambientales.
 
-**Acerca del Proyecto**:
-Presenta la problemática del monitoreo manual y reactivo en obras viales, respaldada por cifras de las entrevistas y del mercado (RNCA).
-
-**Pilares de Gestión**:
-- **Monitoreo continuo:** nodos IoT neutrales para aire, ruido y agua.
-- **Mitigación preventiva:** alertas al 90 % del límite y tickets automáticos.
-- **Auditoría inalterable:** lecturas selladas y expedientes normativos en minutos.
-
-**Beneficios Enumerados**:
-- **01. Control en tiempo real**
-- **02. Menos multas y paralizaciones**
-- **03. Colaboración sin conflicto**
-- **04. Reportes en minutos**
-
-**Funcionalidades**:
-Tablero geolocalizado, alertas tempranas, tickets de mitigación y reportes normativos, acompañados de una vista del dashboard.
-
-**Cómo Funciona**:
-Cuatro pasos: instalación de nodos, monitoreo en vivo, atención oportuna y auditoría con un clic.
-
-**Impacto y Testimonio**:
-Caso ilustrativo del usuario tipo y las metas de impacto definidas en los Impact Maps (−30 % en tiempo de respuesta y −40 % en tiempo de elaboración de expedientes) (US06).
-
-**Planes**:
-Comparación de los planes Base, Profesional y Enterprise, con el hardware incluido en la suscripción (US03).
-
-**Equipo**:
-Integrantes de VíaNexo con su rol en el proyecto.
-
-**Contacto**:
-Formulario de contacto comercial con nombre, empresa, correo y tipo de empresa (US08).
-
-**Pie de Página**:
-Enlaces de producto, empresa y legales, incluido el Libro de Reclamaciones.
-
----
-
-#### LANDING PAGE MOCK-UP MOBILE
-
-La versión Mobile conserva la identidad visual y los componentes establecidos para Desktop, adaptando su distribución a dispositivos de menor tamaño.
+#### Landing Page Mock-up Mobile
 
 ![Landing Page Mock-up Mobile](../assets/images/chapter4/landing/landing-mobile.png)
 
 **Figura X. Mock-up de la Landing Page – Mobile Web Browser.**
 
-**Header y Navegación**:
-Logotipo y menú tipo hamburguesa.
+La versión Mobile conserva la misma identidad visual, pero adapta los componentes a una lectura vertical y a interacciones táctiles. Los botones, tarjetas, textos e imágenes se ajustan al espacio disponible para mantener la claridad de la información.
 
-**Título (H1)**:
-Mantiene la jerarquía principal, adaptando el tamaño tipográfico al ancho de pantalla.
+Los mock-ups mantienen la misma estructura visual entre ambas versiones y aplican los criterios definidos en el sistema de diseño.
 
-**Llamados a la Acción**:
-Los botones de cada segmento se apilan a ancho completo para facilitar la interacción táctil.
-
-**Elemento Visual**:
-La demo del tablero geolocalizado se adapta proporcionalmente al ancho disponible.
-
-**Cuerpo de Contenidos**:
-
-1. **Acerca del proyecto:** las cifras se presentan una debajo de otra.
-2. **Pilares de Gestión:** tarjetas verticales.
-3. **Beneficios Enumerados (01-04):** lectura secuencial.
-4. **Funcionalidades y Cómo funciona:** tarjetas apiladas en orden.
-
-**Impacto y Testimonio**:
-Bloque oscuro con la cita y las metas de impacto.
-
-**Planes**:
-Las tres tarjetas se apilan, destacando el plan Profesional.
-
-**Equipo**:
-Cuadrícula de dos columnas.
-
-**Contacto y Footer**:
-Formulario con campos a ancho completo y enlaces organizados verticalmente.
-
----
-
-
-#### Aplicación del Design System
-
-Los mock-ups aplican los criterios definidos dentro del Design System para mantener consistencia visual entre las diferentes secciones y dispositivos.
-
-Se consideran:
-
-- Paleta cromática definida para el producto.
-- Jerarquía tipográfica para títulos, subtítulos y textos.
-- Estilos consistentes para botones.
-- Uso uniforme de iconografía.
-- Espaciados y márgenes coherentes.
-- Componentes reutilizables.
-- Adaptación responsive.
-
-De esta manera, la propuesta mantiene una identidad visual consistente y facilita una experiencia uniforme tanto en Desktop como en Mobile.
+> **Nota de revisión:** si las imágenes actuales de los mock-ups todavía muestran expresiones como “sensores neutrales”, “auditoría inalterable”, “hardware incluido” o presentan un tercer segmento, dichas frases deben actualizarse también en Figma para mantener consistencia con el alcance actual del proyecto.
 
 ## 4.4. Web Applications UX/UI Design.
 <a id="4-4-web-applications-ux-ui-design"></a>
 
-En esta sección se presenta el diseño de experiencia e interfaz de la aplicación web de RoadWatch OS para sus dos segmentos objetivo. Cada pantalla se deriva de las User Stories del capítulo III y de los entregables definidos en los Impact Maps:
+En esta sección se presenta la propuesta visual y de interacción de la aplicación web de RoadWatch OS para los dos segmentos objetivo del proyecto.
 
-| Segmento | Persona | Módulo | Pantallas | User Stories |
-| :--- | :--- | :--- | :--- | :--- |
-| Empresas Constructoras Viales | Carlos Mendoza | Operativo | Login, Dashboard, Alertas, Kanban de incidencias, Detalle de incidencia, Registrar medición, Puntos de monitoreo | US01, US09, US11–US17, US20, US21, US29, US41, US43, US46, US47, US50–US52 |
-| Empresas Supervisoras / Consultoras | Gisela Chávez | Fiscalización | Login, Portafolio (tarjetas y lista), Incidencias críticas, Historial de mediciones, Reporte de auditoría, Documentos normativos, Configuración | US10, US13, US18, US19, US22, US23, US33, US35, US36, US44, US45, US49, US50, US53–US57 |
+| Segmento | Persona | Principales tareas representadas |
+| :--- | :--- | :--- |
+| Empresas Constructoras Viales | Carlos Mendoza | Consultar el estado ambiental, revisar alertas e incidencias, registrar mediciones y evidencias y consultar puntos de monitoreo. |
+| Empresas Supervisoras y Consultoras Ambientales | Gisela Chávez | Consultar proyectos supervisados, revisar mediciones e incidencias, validar evidencias y consultar o generar reportes. |
 
-Todas las pantallas aplican la guía de estilos del apartado 4.1: paleta Verde Esmeralda `#23A277`, Azul Pizarra `#1E3844`, Crema `#F6F5EE` y Mostaza `#E5A93C`; tipografía Rubik; tarjetas con bordes redondeados y el código de riesgo Óptimo / Advertencia / Crítico acompañado siempre de ícono y texto.
+Las pantallas siguen los lineamientos visuales definidos previamente y mantienen consistencia entre las versiones Desktop y Mobile.
 
 ### 4.4.1. Web Applications Wireframes.
 <a id="4-4-1-web-applications-wireframes"></a>
 
-Los wireframes definen la estructura y jerarquía de cada pantalla antes de aplicar la identidad visual. Los mapas, gráficos y fotografías se representan como bloques de reemplazo para concentrar la evaluación en la distribución del contenido.
+Los wireframes definen la estructura y jerarquía de cada pantalla antes de aplicar la identidad visual de alta fidelidad.
 
-**Web applications**
-
-Wireframe - Login (Desktop)
+#### Empresas Constructoras Viales – Desktop
 
 ![Wireframe - Login Desktop](../assets/images/chapter4/webapp/wireframes/login.png)
 
-Wireframe - Dashboard Operativo (Desktop)
-
 ![Wireframe - Dashboard Operativo Desktop](../assets/images/chapter4/webapp/wireframes/c-dashboard.png)
-
-Wireframe - Centro de Alertas (Desktop)
 
 ![Wireframe - Centro de Alertas Desktop](../assets/images/chapter4/webapp/wireframes/c-alertas.png)
 
-Wireframe - Tablero Kanban de Incidencias (Desktop)
-
 ![Wireframe - Kanban de Incidencias Desktop](../assets/images/chapter4/webapp/wireframes/c-incidencias.png)
-
-Wireframe - Detalle de Incidencia (Desktop)
 
 ![Wireframe - Detalle de Incidencia Desktop](../assets/images/chapter4/webapp/wireframes/c-incidencia-detalle.png)
 
-Wireframe - Registrar Medición (Desktop)
-
 ![Wireframe - Registrar Medición Desktop](../assets/images/chapter4/webapp/wireframes/c-registrar-medicion.png)
-
-Wireframe - Puntos de Monitoreo (Desktop)
 
 ![Wireframe - Puntos de Monitoreo Desktop](../assets/images/chapter4/webapp/wireframes/c-puntos.png)
 
-Wireframe - Portafolio en Tarjetas (Desktop)
+#### Empresas Supervisoras y Consultoras Ambientales – Desktop
 
 ![Wireframe - Portafolio Tarjetas Desktop](../assets/images/chapter4/webapp/wireframes/s-portafolio.png)
 
-Wireframe - Portafolio en Lista (Desktop)
-
 ![Wireframe - Portafolio Lista Desktop](../assets/images/chapter4/webapp/wireframes/s-portafolio-lista.png)
-
-Wireframe - Incidencias Críticas (Desktop)
 
 ![Wireframe - Incidencias Críticas Desktop](../assets/images/chapter4/webapp/wireframes/s-criticas.png)
 
-Wireframe - Historial de Mediciones (Desktop)
-
 ![Wireframe - Historial de Mediciones Desktop](../assets/images/chapter4/webapp/wireframes/s-historial.png)
-
-Wireframe - Reporte de Auditoría (Desktop)
 
 ![Wireframe - Reporte de Auditoría Desktop](../assets/images/chapter4/webapp/wireframes/s-reporte.png)
 
-Wireframe - Documentos Normativos (Desktop)
-
 ![Wireframe - Documentos Normativos Desktop](../assets/images/chapter4/webapp/wireframes/s-documentos.png)
-
-Wireframe - Configuración de Cuenta (Desktop)
 
 ![Wireframe - Configuración Desktop](../assets/images/chapter4/webapp/wireframes/s-configuracion.png)
 
-**Web applications mobile**
+#### Web Applications Mobile
 
-| Login | Dashboard Operativo | Alertas | Registrar Evidencia |
+| Login | Dashboard | Alertas | Evidencia |
 | :---: | :---: | :---: | :---: |
 | ![Wireframe - Login Mobile](../assets/images/chapter4/webapp/wireframes/m-login.png) | ![Wireframe - Dashboard Mobile](../assets/images/chapter4/webapp/wireframes/m-c-dashboard.png) | ![Wireframe - Alertas Mobile](../assets/images/chapter4/webapp/wireframes/m-c-alertas.png) | ![Wireframe - Evidencia Mobile](../assets/images/chapter4/webapp/wireframes/m-c-evidencia.png) |
 
-| Nueva Medición | Portafolio | Mediciones | Reporte |
+| Medición | Portafolio | Historial | Reporte |
 | :---: | :---: | :---: | :---: |
 | ![Wireframe - Medición Mobile](../assets/images/chapter4/webapp/wireframes/m-c-medicion.png) | ![Wireframe - Portafolio Mobile](../assets/images/chapter4/webapp/wireframes/m-s-portafolio.png) | ![Wireframe - Mediciones Mobile](../assets/images/chapter4/webapp/wireframes/m-s-historial.png) | ![Wireframe - Reporte Mobile](../assets/images/chapter4/webapp/wireframes/m-s-reporte.png) |
 
-
-## 4.4.2. Web Applications Wireflow Diagrams.
+### 4.4.2. Web Applications Wireflow Diagrams.
 <a id="4-4-2-web-applications-wireflow-diagrams"></a>
 
-Los wireflows combinan los wireframes con las interacciones que conectan una pantalla con otra. Cada flecha indica la acción del usuario (botón, enlace o pestaña) y las flechas rojas representan transiciones automáticas del sistema, como la alerta generada cuando una medición supera el 90 % del LMP.
+Los Wireflow Diagrams relacionan los wireframes con las acciones realizadas por el usuario durante un flujo determinado.
 
-**Segmento 1: Empresas Constructoras Viales — Web**
+#### Empresas Constructoras Viales – Web
 
-**El usuario inicia sesión, revisa el dashboard, abre la alerta, atiende el ticket y lo mueve a revisión; desde el dashboard también registra mediciones y edita puntos de monitoreo**
+**User goal:** revisar una alerta ambiental y realizar su seguimiento.
 
 ![Wireflow - Constructora Web](../assets/images/chapter4/webapp/wireflows/wireflow-constructora-web.png)
 
-**Segmento 1: Empresas Constructoras Viales — Mobile**
+El flujo representa el ingreso del usuario, la consulta del panel principal, la revisión de una alerta o incidencia y las acciones necesarias para continuar su seguimiento.
 
-**En campo, el usuario atiende la alerta desde su celular, registra la evidencia fotográfica y envía el ticket a revisión, o registra una medición manual**
+#### Empresas Constructoras Viales – Mobile
+
+**User goal:** registrar información ambiental y evidencias desde campo.
 
 ![Wireflow - Constructora Mobile](../assets/images/chapter4/webapp/wireflows/wireflow-constructora-mobile.png)
 
-**Segmento 2: Empresas Supervisoras / Consultoras — Web**
+La versión móvil prioriza tareas que pueden realizarse durante el trabajo de campo, como revisar alertas, registrar mediciones y adjuntar evidencia.
 
-**El usuario revisa el portafolio, prioriza el proyecto crítico, valida la mitigación, consulta el historial y genera el expediente de auditoría; si falta un documento obligatorio, lo gestiona en Documentos normativos**
+#### Empresas Supervisoras y Consultoras Ambientales – Web
+
+**User goal:** revisar el estado de un proyecto y consultar la información necesaria para su supervisión.
 
 ![Wireflow - Supervisora Web](../assets/images/chapter4/webapp/wireflows/wireflow-supervisora-web.png)
 
-**Segmento 2: Empresas Supervisoras / Consultoras — Mobile**
+El flujo permite revisar el portafolio, consultar incidencias y mediciones y acceder a la información necesaria para elaborar o consultar reportes.
 
-**El usuario consulta el portafolio, revisa las mediciones del periodo y comparte el reporte desde su celular**
+#### Empresas Supervisoras y Consultoras Ambientales – Mobile
+
+**User goal:** consultar rápidamente el estado de los proyectos supervisados.
 
 ![Wireflow - Supervisora Mobile](../assets/images/chapter4/webapp/wireflows/wireflow-supervisora-mobile.png)
 
+El flujo móvil facilita la consulta del portafolio, las mediciones recientes y los reportes disponibles.
 
-## 4.4.3. Web Applications Mock-ups.
+### 4.4.3. Web Applications Mock-ups.
 <a id="4-4-3-web-applications-mock-ups"></a>
 
-Los mock-ups representan la versión de alta fidelidad de cada pantalla, con la paleta, tipografía, iconografía y componentes definidos en la guía de estilos.
+Los mock-ups representan la versión de alta fidelidad de las pantallas y aplican los lineamientos visuales definidos para RoadWatch OS.
 
-**Versión Desktop Mockups - Empresas Constructoras Viales (Carlos Mendoza)**
-
-**El usuario inicia con el Login correspondiente colocando su correo corporativo y contraseña (US01, US21)**
+#### Empresas Constructoras Viales – Desktop
 
 ![Mockup - Login Desktop](../assets/images/chapter4/webapp/mockups/login.png)
 
-**El usuario entra y lo primero que observa es el Dashboard operativo: KPIs de cumplimiento, mapa de nodos IoT con semáforo de riesgo, alertas recientes, salud del tramo, clima en obra y la tendencia del indicador (US12, US13, US15, US17, US50, US51)**
-
 ![Mockup - Dashboard Operativo Desktop](../assets/images/chapter4/webapp/mockups/c-dashboard.png)
-
-**El usuario abre el Centro de alertas, donde distingue alertas críticas, preventivas (≥ 90 % del LMP), incidencias estancadas y nodos sin conexión (US17, US46, US47)**
 
 ![Mockup - Centro de Alertas Desktop](../assets/images/chapter4/webapp/mockups/c-alertas.png)
 
-**El usuario abre el ticket creado automáticamente por el motor normativo, adjunta evidencias fotográficas georreferenciadas, conversa con el residente de campo y revisa el historial de estados (US14, US16, US43, US52)**
-
 ![Mockup - Detalle de Incidencia Desktop](../assets/images/chapter4/webapp/mockups/c-incidencia-detalle.png)
-
-**El usuario mueve la incidencia en el tablero Kanban entre las columnas Abierta, En revisión y Resuelta (US11, US29)**
 
 ![Mockup - Kanban de Incidencias Desktop](../assets/images/chapter4/webapp/mockups/c-incidencias.png)
 
-**El usuario registra una medición manual; el formulario valida los campos y deshabilita el botón Guardar si el valor está fuera de rango (US09)**
-
 ![Mockup - Registrar Medición Desktop](../assets/images/chapter4/webapp/mockups/c-registrar-medicion.png)
-
-**El usuario revisa los puntos de monitoreo y edita la ubicación o el umbral normativo de un punto sin recargar la página (US20, US38, US41)**
 
 ![Mockup - Puntos de Monitoreo Desktop](../assets/images/chapter4/webapp/mockups/c-puntos.png)
 
-**Versión Desktop Mockups - Empresas Supervisoras / Consultoras (Gisela Chávez)**
+Estas vistas permiten al usuario consultar el estado de sus proyectos, revisar alertas e incidencias, registrar información ambiental y mantener evidencias relacionadas con el seguimiento realizado.
 
-**El usuario entra al Portafolio y ve la salud ambiental global y una tarjeta por proyecto con su semáforo de estado (US10, US33, US44, US50)**
+#### Empresas Supervisoras y Consultoras Ambientales – Desktop
 
 ![Mockup - Portafolio Tarjetas Desktop](../assets/images/chapter4/webapp/mockups/s-portafolio.png)
 
-**El usuario cambia a la vista de lista para revisar más proyectos en una sola pantalla (US22, US48, US55)**
-
 ![Mockup - Portafolio Lista Desktop](../assets/images/chapter4/webapp/mockups/s-portafolio-lista.png)
-
-**El usuario revisa la tabla de incidencias críticas con filas resaltadas, consulta la bitácora y valida u observa la mitigación de la constructora (US18, US33, US52)**
 
 ![Mockup - Incidencias Críticas Desktop](../assets/images/chapter4/webapp/mockups/s-criticas.png)
 
-**El usuario filtra el historial de mediciones por indicador y rango de fechas; las lecturas son de solo lectura y muestran su hash de integridad (US13, US19, US49)**
-
 ![Mockup - Historial de Mediciones Desktop](../assets/images/chapter4/webapp/mockups/s-historial.png)
 
-**El usuario configura y genera el expediente de auditoría en PDF con vista previa (US35, US36, US45)**
+![Mockup - Reporte Desktop](../assets/images/chapter4/webapp/mockups/s-reporte.png)
 
-![Mockup - Reporte de Auditoría Desktop](../assets/images/chapter4/webapp/mockups/s-reporte.png)
-
-**El usuario gestiona los documentos normativos del hito de auditoría y su historial de versiones; el hito no se puede cerrar si falta un documento requerido (US54, US56)**
-
-![Mockup - Documentos Normativos Desktop](../assets/images/chapter4/webapp/mockups/s-documentos.png)
-
-**El usuario administra los usuarios y roles de su cuenta, su plan de suscripción y el color de marca (US23, US42, US53, US57)**
+![Mockup - Documentos Desktop](../assets/images/chapter4/webapp/mockups/s-documentos.png)
 
 ![Mockup - Configuración Desktop](../assets/images/chapter4/webapp/mockups/s-configuracion.png)
 
-**Versión Mobile Mockups - Empresas Constructoras Viales (Carlos Mendoza)**
+Estas vistas permiten revisar el estado de los proyectos supervisados, consultar mediciones e incidencias, revisar evidencias y acceder a información de seguimiento y reportes.
 
-| El usuario inicia sesión | El usuario ve la alerta crítica en su Dashboard | El usuario revisa sus alertas | El usuario registra la evidencia del ticket | El usuario registra una medición |
+#### Mobile – Empresas Constructoras Viales
+
+| Login | Dashboard | Alertas | Evidencia | Medición |
 | :---: | :---: | :---: | :---: | :---: |
 | ![Mockup - Login Mobile](../assets/images/chapter4/webapp/mockups/m-login.png) | ![Mockup - Dashboard Mobile](../assets/images/chapter4/webapp/mockups/m-c-dashboard.png) | ![Mockup - Alertas Mobile](../assets/images/chapter4/webapp/mockups/m-c-alertas.png) | ![Mockup - Evidencia Mobile](../assets/images/chapter4/webapp/mockups/m-c-evidencia.png) | ![Mockup - Medición Mobile](../assets/images/chapter4/webapp/mockups/m-c-medicion.png) |
 
-**Versión Mobile Mockups - Empresas Supervisoras / Consultoras (Gisela Chávez)**
+#### Mobile – Empresas Supervisoras y Consultoras Ambientales
 
-| El usuario revisa los proyectos que requieren atención | El usuario consulta las mediciones del periodo | El usuario genera y comparte el reporte |
+| Portafolio | Mediciones | Reporte |
 | :---: | :---: | :---: |
 | ![Mockup - Portafolio Mobile](../assets/images/chapter4/webapp/mockups/m-s-portafolio.png) | ![Mockup - Mediciones Mobile](../assets/images/chapter4/webapp/mockups/m-s-historial.png) | ![Mockup - Reporte Mobile](../assets/images/chapter4/webapp/mockups/m-s-reporte.png) |
 
+> **Nota de revisión:** los mock-ups deben conservar únicamente funciones coherentes con el alcance actual de RoadWatch OS. Si alguna imagen todavía muestra planes de suscripción, un tercer segmento, hardware incluido, datos “inalterables” o funcionalidades que ya no forman parte del alcance, la imagen debe actualizarse en Figma.
 
-## 4.4.4. Web Applications User Flow Diagrams.
+### 4.4.4. Web Applications User Flow Diagrams.
 <a id="4-4-4-web-applications-user-flow-diagrams"></a>
 
-Los user flows describen, paso a paso, el recorrido que sigue cada persona para cumplir su objetivo principal, incluyendo los puntos de decisión y los caminos alternos.
+Los User Flow Diagrams representan los recorridos que siguen los usuarios para alcanzar objetivos concretos e incluyen tanto el flujo esperado como las decisiones y rutas alternativas relevantes.
 
-**Segmento 1: Empresas Constructoras Viales**
+#### Empresas Constructoras Viales
 
-**User Flow Web — Atender una alerta de sobrepaso**<br>
-
-**El usuario inicia sesión; si las credenciales no son válidas, el sistema muestra un error y le permite reintentar**
-
-**El usuario revisa el Dashboard y ve la alerta; si es crítica, abre el ticket creado por el motor normativo; si es preventiva, la atiende y abre un ticket**
-
-**El usuario registra la acción de mitigación y sube la evidencia fotográfica georreferenciada**
-
-**Si la evidencia está completa, el usuario mueve el ticket a “En revisión” y espera la validación de la supervisora**
+**User goal Web:** revisar una alerta o incidencia y realizar el seguimiento correspondiente.
 
 ![User Flow - Constructora Web](../assets/images/chapter4/webapp/userflows/userflow-constructora-web.png)
 
-**User Flow Mobile — Registrar medición y evidencia en campo**<br>
-
-**El usuario ingresa con huella o contraseña y ve la alerta en el Dashboard**
-
-**Si necesita medir, registra una nueva medición; si el valor alcanza el 90 % del LMP, el sistema emite una alerta y crea un ticket**
-
-**Si necesita mitigar, abre el ticket asignado, toma la foto con coordenadas y lo envía a revisión**
+**User goal Mobile:** registrar una medición o evidencia desde campo y comprobar que la información fue registrada.
 
 ![User Flow - Constructora Mobile](../assets/images/chapter4/webapp/userflows/userflow-constructora-mobile.png)
 
-**Segmento 2: Empresas Supervisoras / Consultoras**
+#### Empresas Supervisoras y Consultoras Ambientales
 
-**User Flow Web — Fiscalizar y generar el expediente de auditoría**<br>
-
-**El usuario inicia sesión y revisa la salud del portafolio**
-
-**El usuario abre las incidencias críticas; si la mitigación tiene evidencia, la valida; si no, emite una observación a la constructora**
-
-**El usuario filtra el historial por indicador y fechas y configura el reporte de auditoría**
-
-**Si los documentos obligatorios están completos, genera y descarga el PDF; si no, sube o solicita el documento faltante**
+**User goal Web:** revisar un proyecto supervisado, consultar sus incidencias y mediciones y acceder al reporte correspondiente.
 
 ![User Flow - Supervisora Web](../assets/images/chapter4/webapp/userflows/userflow-supervisora-web.png)
 
-**User Flow Mobile — Consultar el portafolio y compartir el reporte**<br>
-
-**El usuario inicia sesión y revisa los proyectos que requieren atención**
-
-**Si hay un proyecto crítico, consulta sus mediciones, genera el reporte en PDF y lo comparte con el ente fiscalizador**
+**User goal Mobile:** consultar los proyectos que requieren atención y acceder rápidamente a sus mediciones y reportes.
 
 ![User Flow - Supervisora Mobile](../assets/images/chapter4/webapp/userflows/userflow-supervisora-mobile.png)
+
+Los User Flows deben mantenerse consistentes con los Wireflows y con las pantallas incluidas en los mock-ups.
 
 ## 4.5. Web Applications Prototyping.
 <a id="4-5-web-applications-prototyping"></a>
 
-A partir de los mock-ups se elaboró un prototipo navegable que conecta todas las pantallas mediante zonas clicables (botones, menú lateral, pestañas y tarjetas), de modo que se pueden recorrer los flujos principales de ambos segmentos tanto en Desktop como en Mobile. El prototipo se encuentra en la carpeta [`prototype/`](../prototype/index.html) del repositorio; al abrir `prototype/index.html` se elige el recorrido y, con la opción **“Mostrar zonas clicables”**, se resaltan los puntos de interacción.
+A partir de los wireframes, mock-ups y User Flow Diagrams se elaboraron los prototipos navegables de RoadWatch OS para Desktop y Mobile Web Browser.
 
-| Recorrido | Pantallas conectadas |
+Los prototipos permiten recorrer los principales flujos correspondientes a los dos segmentos objetivo: **Empresas Constructoras Viales** y **Empresas Supervisoras y Consultoras Ambientales**.
+
+El diseño y prototipo interactivo fueron elaborados en Figma y se encuentran disponibles en el siguiente enlace:
+
+**Figma - RoadWatch OS:**  
+https://www.figma.com/design/eGXyMXIHk0qbEQibxcmCCk/roadwatch?node-id=0-1&p=f&t=ALQpv7sHj6sM9D94-0
+
+| Recorrido | Principales pantallas |
 | :--- | :--- |
-| Constructora · Web | Login → Dashboard → Alertas → Detalle de incidencia → Kanban → Registrar medición → Puntos de monitoreo |
-| Supervisora · Web | Login → Portafolio → Incidencias críticas → Historial → Reporte de auditoría → Documentos → Configuración |
-| Constructora · Mobile | Login → Dashboard → Registrar evidencia → Alertas → Nueva medición |
-| Supervisora · Mobile | Login → Portafolio → Mediciones → Reporte |
+| Constructora · Web | Login → Panel → Alertas → Incidencias → Medición → Puntos de monitoreo |
+| Supervisora / Consultora · Web | Login → Portafolio → Incidencias → Historial → Reporte → Configuración |
+| Constructora · Mobile | Login → Panel → Alertas → Evidencia → Medición |
+| Supervisora / Consultora · Mobile | Login → Portafolio → Mediciones → Reporte |
 
 **Prototipo · Empresas Constructoras Viales (Web)**
 
 ![Prototipo - Constructora Web](../assets/images/chapter4/webapp/prototype/prototipo-constructora-web.gif)
 
-**Prototipo · Empresas Supervisoras / Consultoras (Web)**
+**Prototipo · Empresas Supervisoras y Consultoras Ambientales (Web)**
 
 ![Prototipo - Supervisora Web](../assets/images/chapter4/webapp/prototype/prototipo-supervisora-web.gif)
 
-| Prototipo · Constructora (Mobile) | Prototipo · Supervisora (Mobile) |
+| Prototipo · Constructora (Mobile) | Prototipo · Supervisora / Consultora (Mobile) |
 | :---: | :---: |
 | ![Prototipo - Constructora Mobile](../assets/images/chapter4/webapp/prototype/prototipo-constructora-mobile.gif) | ![Prototipo - Supervisora Mobile](../assets/images/chapter4/webapp/prototype/prototipo-supervisora-mobile.gif) |
 
+Para completar esta sección de acuerdo con el enunciado del proyecto, se debe añadir para cada aplicación una captura del video de demostración y el enlace correspondiente al video publicado en Microsoft Stream.
 
 ## 4.6. Domain-Driven Software Architecture.
 <a id="4-6-domain-driven-software-architecture"></a>
 
+La arquitectura de software de RoadWatch OS se plantea a partir del dominio identificado durante el proceso de EventStorming y de las responsabilidades principales que requiere la solución.
+
+La propuesta busca separar las responsabilidades del sistema en contextos coherentes y mantener una relación clara entre el dominio, los servicios de aplicación y los componentes de infraestructura.
+
 ### 4.6.1. Design-Level EventStorming.
 <a id="4-6-1-design-level-eventstorming"></a>
 
-En esta sesión de Design-Level EventStorming, el equipo profundizó en la arquitectura orientada a eventos de **RoadWatch**. Se identificaron los límites transaccionales exactos (Bounded Contexts) que modularizan el sistema SaaS y el flujo IoT, mapeando la coreografía de eventos que automatiza la respuesta ante infracciones ambientales.
+El Design-Level EventStorming permite profundizar el modelo identificado previamente en el Big Picture Event Storming y reconocer actores, comandos, eventos, políticas, consultas y posibles Bounded Contexts.
 
 **Global EventStorming Map**
 
@@ -805,301 +639,217 @@ En esta sesión de Design-Level EventStorming, el equipo profundizó en la arqui
   <img src="../assets/images/EventStorming.jpg" alt="RoadWatch Global Event Storming">
 </div>
 
-*Leyenda de Elementos Aplicados*
-<table align="center">
-  <tr>
-    <td align="center" style="background-color: #FDE181; color: #000;">
-      <b>User / Actor (Amarillo)</b><br>Quien ejecuta la acción
-    </td>
-    <td align="center" style="background-color: #8CD2F5; color: #000;">
-      <b>Command (Azul)</b><br>La intención o acción a ejecutar
-    </td>
-    <td align="center" style="background-color: #F9A454; color: #000;">
-      <b>Domain Event (Naranja)</b><br>Hecho relevante ocurrido
-    </td>
-  </tr>
-  <tr>
-    <td align="center" style="background-color: #C7ACF3; color: #000;">
-      <b>Policy (Morado)</b><br>Regla de negocio o automatización
-    </td>
-    <td align="center" style="background-color: #8BE78B; color: #000;">
-      <b>Read Model / View (Verde)</b><br>Datos proyectados para el usuario
-    </td>
-    <td align="center">
-      <b>Flujo Externo (Flechas)</b><br>Coreografía entre contextos
-    </td>
-  </tr>
-</table>
+Durante el refinamiento se identifican responsabilidades relacionadas con:
 
-#### Bounded Contexts Identificados
+- Gestión de identidad y acceso.
+- Gestión de proyectos viales.
+- Gestión de puntos de monitoreo.
+- Registro y consulta de mediciones ambientales.
+- Gestión de alertas e incidencias.
+- Seguimiento de acciones correctivas o medidas de mitigación.
+- Gestión de evidencias.
+- Generación y consulta de reportes.
 
+Los nombres de los Bounded Contexts deben mantenerse consistentes con el Ubiquitous Language definido en el Capítulo II y con los diagramas de clases y base de datos presentados posteriormente.
 
-**1. Subscriptions & Payment Management**
-Gestiona el ciclo de vida comercial del cliente (constructoras o consultoras). Se encarga de la selección de planes SaaS (Base, Pro, Enterprise), validación de pagos y la activación de la suscripción, liberando las políticas de acceso para el uso de la plataforma.
-
-**2. Identity & Access Management (IAM)**
-Administra la seguridad, el onboarding de empresas y el control de acceso basado en roles (RBAC). Asegura que solo ingenieros, técnicos o administradores autorizados puedan interactuar con los proyectos y sensores correspondientes.
-
-**3. Project Management**
-Contexto core para la creación y delimitación de los proyectos viales. Aquí los Project Managers definen las coordenadas geográficas de la obra, establecen las líneas base ambientales y determinan los puntos exactos donde se instalará el hardware de monitoreo.
-
-**4. Device & Asset Management (IoT Fleet)**
-Controla el ciclo de vida del hardware físico desplegado en campo. Los técnicos registran, instalan y calibran los sensores. Este módulo detecta caídas de conexión (offline) y expiraciones de calibración, garantizando la fiabilidad de los datos recolectados.
-
-**5. Environmental Monitoring**
-El motor telemétrico principal de RoadWatch. Recibe el flujo continuo de datos de calidad del aire y ruido desde los sensores IoT, normaliza la data y la evalúa contra los umbrales normativos vigentes. Si se excede un límite crítico, emite eventos de alerta inmediatos.
-
-**Device and Asset Mgmt**
-
-**6. Incident & Mitigation Management**
-Módulo de reacción automatizada. Escucha los eventos críticos del monitoreo ambiental y dispara políticas de creación automática de tickets de incidencia. Gestiona el flujo de trabajo (workflow) para que los responsables ambientales ejecuten y registren las acciones de mitigación correspondientes.
-
-**7. Document & Evidence Management**
-Actúa como la bóveda digital y trazabilidad legal. Exige y almacena la evidencia fotográfica y los formularios firmados tras la mitigación de una incidencia, aplicando políticas de retención y escaneo de seguridad (virus scan) para mantener un *audit trail* inmutable.
-
-**8. Reports & Compliance**
-Consolida la información de todo el sistema para fines de auditoría. Agrega los datos telemétricos crudos y el historial de incidencias cerradas para generar reportes normativos automatizados en PDF y permitir la integración con APIs gubernamentales.
-
-#### Arquitectura de Eventos y Coreografía (Relaciones Externas)
-Para que RoadWatch funcione de manera autónoma, los microservicios se comunican asíncronamente mediante *Domain Events*:
-* **Provisioning:** El evento `Subscription Activated` (C1) habilita la `Subscription Limit Policy` en Proyectos (C3). A su vez, `Roles Assigned` (C2) autoriza las interacciones técnicas en el sistema.
-* **IoT Setup:** El evento `Monitoring Points Defined` (C3) es prerrequisito para ejecutar el comando `Install Sensor on Site` (C4), conectando la definición lógica del proyecto con la instalación física.
-* **Motor Reactivo:** El hardware instalado (`Sensor Installed`) inicia la transmisión telemétrica (C5). Cuando el motor detecta una infracción y emite el evento `Critical Normative Limit Exceeded` (C5), este dispara directamente la `Auto-Ticket Generation Policy` en Incidencias (C6), eliminando el factor de error humano.
-* **Trazabilidad Normativa:** El registro de una acción correctiva (`Mitigation Action Logged`, C6) bloquea el cierre del ticket hasta que se cumpla el comando `Upload Photographic Evidence` (C7). Finalmente, el cierre formal alimenta la `Data Aggregation Policy` (C8) para las auditorías.
-
-
-<div style="text-align: left; max-width: 900px; margin: 0 auto;">
+> **Importante:** si el diagrama actual de EventStorming todavía contiene contextos de pagos, planes Enterprise, hardware IoT como producto propio, auditoría inalterable u otras funciones retiradas del alcance, debe actualizarse para que represente la versión vigente de RoadWatch OS.
 
 ### 4.6.2. Software Architecture Context Diagram.
-El Diagrama de Contexto representa la vista de más alto nivel de RoadWatch, detallando cómo el sistema interactúa con los usuarios y sistemas externos sin profundizar en detalles técnicos.
 <a id="4-6-2-software-architecture-context-diagram"></a>
 
-#### Sistema Central
+El Context Diagram representa a RoadWatch OS como sistema central y muestra a los usuarios y sistemas externos con los que interactúa.
 
+#### Sistema central
 
-
-* **RoadWatch**: Solución integral para la gestión y monitoreo ambiental de proyectos de infraestructura vial, orientada a centralizar la información, detectar riesgos ambientales y facilitar el cumplimiento de las normativas.
+**RoadWatch OS** es una plataforma orientada a centralizar la información de monitoreo ambiental de proyectos viales, facilitar el seguimiento de incidencias y evidencias y apoyar la supervisión ambiental.
 
 #### Usuarios
 
-##### Segmento A: Empresas Constructoras Viales
+**Empresas Constructoras Viales**
 
+- Consultan el estado ambiental de sus proyectos.
+- Registran o revisan mediciones ambientales.
+- Atienden alertas e incidencias.
+- Registran evidencias y acciones relacionadas con el seguimiento ambiental.
 
-* Gestionan proyectos de construcción y mantenimiento de carreteras.
-* Supervisan las condiciones ambientales de sus proyectos.
-* Identifican y atienden riesgos e incidentes ambientales.
-* Realizan seguimiento de medidas de mitigación y cumplimiento normativo.
+**Empresas Supervisoras y Consultoras Ambientales**
 
-##### Segmento B: Consultoras y Supervisoras Ambientales
+- Supervisan uno o varios proyectos.
+- Consultan mediciones, incidencias y evidencias.
+- Revisan el historial de seguimiento.
+- Consultan o generan reportes ambientales.
 
+#### Sistemas externos
 
-
-* Supervisan el cumplimiento ambiental de múltiples proyectos.
-* Realizan inspecciones y monitoreo de indicadores ambientales.
-* Validan evidencias y acciones de mitigación.
-* Elaboran reportes y dan seguimiento a las incidencias detectadas.
-
-#### Sistemas Externos
-
-
-
-* **Servicio de Mapas y Geolocalización**
-  Permite visualizar proyectos, puntos de monitoreo e incidencias ambientales mediante información geográfica.
-
-* **Servicio Meteorológico**
-  Proporciona información climática que permite relacionar las condiciones ambientales con posibles riesgos dentro de los proyectos.
-
-* **Servicio de Notificaciones**
-  Permite enviar alertas automáticas a los responsables cuando se detectan riesgos, incidencias o condiciones que requieren atención.
-
-#### Resumen de Interacción
-
-
-
-* Los usuarios (Segmento A y B) interactúan directamente con **RoadWatch**.
-* **RoadWatch** centraliza la información ambiental y gestiona:
-
-  * Monitoreo de indicadores ambientales.
-  * Registro y seguimiento de incidencias.
-  * Acciones de mitigación y responsables.
-  * Evidencias y trazabilidad de las actividades.
-* **RoadWatch** integra servicios externos para:
-
-  * Geolocalización mediante servicios de mapas.
-  * Consulta de condiciones meteorológicas.
-  * Envío de notificaciones y alertas.
-* Los dispositivos **IoT** pueden enviar datos de sensores ambientales a RoadWatch, permitiendo detectar automáticamente condiciones fuera de los parámetros establecidos y generar alertas o incidencias para su atención.
+Los servicios externos utilizados por la solución deben corresponder únicamente a integraciones realmente consideradas en el alcance del proyecto. Entre ellos pueden encontrarse servicios de mapas, notificaciones u otros servicios de apoyo que hayan sido definidos por el equipo.
 
 ![Diagrama de Contexto C4 - RoadWatch OS](/assets/images/ContextDiagram.png)
 
-
 ### 4.6.3. Software Architecture Container Diagrams.
-Este nivel desglosa el sistema RoadWatch en aplicaciones y componentes independientes, especificando las tecnologías y responsabilidades principales de cada contenedor que conforma la solución.
+<a id="4-6-3-software-architecture-container-diagrams"></a>
 
-Web Application
+El Container Diagram muestra las principales unidades de despliegue de RoadWatch OS, las responsabilidades de cada una y las tecnologías seleccionadas para su implementación.
 
+#### Web Application
 
-Aplicación web desarrollada con Vue.js, encargada de proporcionar una interfaz interactiva para empresas constructoras viales y consultoras ambientales.
+La aplicación web se desarrollará utilizando **Angular Framework**, con **TypeScript**, HTML5 y CSS3. Para la interfaz se utilizará **Angular Material**, siguiendo los lineamientos de Material Design definidos para el proyecto.
 
-Permite:
+La aplicación permitirá:
 
-Visualizar dashboards de monitoreo ambiental.
-Gestionar proyectos y puntos de monitoreo.
-Consultar incidencias y alertas.
-Registrar y supervisar acciones de mitigación.
-Visualizar información geolocalizada.
-Consultar evidencias y generar reportes.
+- Consultar proyectos y puntos de monitoreo.
+- Registrar y consultar mediciones ambientales.
+- Revisar alertas e incidencias.
+- Registrar y consultar evidencias.
+- Consultar información de seguimiento y reportes.
 
-La aplicación se comunica con el backend mediante peticiones HTTPS hacia la API RESTful.
+La Web Application se comunicará con los servicios backend mediante peticiones HTTPS hacia una API RESTful.
 
-API Application
+#### RESTful API
 
+Los servicios backend se desarrollarán utilizando **Java** con **Spring Boot** y **Spring Data JPA**, siguiendo el estilo arquitectónico RESTful definido para el proyecto.
 
-Construida en C# utilizando ASP.NET Core, constituye el núcleo de RoadWatch y centraliza la lógica de negocio y el procesamiento de la información ambiental.
+La API será responsable de:
 
-Este componente se encarga de:
+- Gestionar los datos de proyectos y puntos de monitoreo.
+- Gestionar mediciones ambientales.
+- Evaluar información frente a los parámetros definidos por el negocio.
+- Gestionar alertas e incidencias.
+- Gestionar acciones de seguimiento y evidencias.
+- Proporcionar la información necesaria para los reportes.
+- Gestionar autenticación y autorización según los requerimientos definidos.
 
-Gestionar proyectos y puntos de monitoreo.
-Procesar información proveniente de los dispositivos IoT.
-Analizar los valores de los indicadores ambientales.
-Comparar los datos recibidos con umbrales configurados.
-Generar automáticamente alertas e incidencias.
-Gestionar acciones de mitigación y responsables.
-Exponer endpoints RESTful para la Web Application.
-Integrarse con servicios externos de mapas, clima y notificaciones.
-IoT Monitoring
+#### Database
 
+RoadWatch OS utiliza una base de datos relacional para almacenar de forma persistente la información del sistema.
 
-Componente encargado de recibir y gestionar los datos provenientes de sensores ambientales instalados en los proyectos viales.
+La base de datos mantiene información relacionada con:
 
-Los dispositivos IoT pueden monitorear variables como:
+- Usuarios.
+- Proyectos.
+- Puntos de monitoreo.
+- Mediciones.
+- Alertas e incidencias.
+- Acciones de seguimiento.
+- Evidencias.
+- Reportes y datos relacionados.
 
-Calidad del aire.
-Nivel de ruido.
-Temperatura.
-Humedad.
-Calidad del agua.
-
-Los datos recopilados son enviados hacia la API Application, donde son procesados y evaluados según los parámetros ambientales establecidos. Cuando se detecta un valor fuera del rango permitido, RoadWatch puede generar automáticamente una alerta e incidencia para su atención.
-
-Database
-
-
-Motor de base de datos relacional basado en MySQL, responsable de almacenar de forma persistente la información generada por RoadWatch.
-
-Garantiza:
-
-Integridad de la información de los proyectos.
-Persistencia de los datos de monitoreo ambiental.
-Registro histórico de incidencias y alertas.
-Trazabilidad de las acciones de mitigación.
-Almacenamiento de responsables, evidencias y estados.
-Consulta histórica para la generación de reportes.
-
-La API Application es responsable de gestionar las operaciones de lectura y escritura sobre la base de datos, evitando que la Web Application acceda directamente a ella.
+La Web Application no accede directamente a la base de datos. Las operaciones de lectura y escritura se realizan a través de la RESTful API.
 
 ![Diagrama de Contenedores C4 - RoadWatch OS](/assets/images/ContainerDiagram.png)
 
+> **Nota de revisión:** el diagrama de contenedores también debe mostrar Angular para la Web Application y Spring Boot / Java para los Web Services. Si la imagen actual todavía indica Vue.js, C# o ASP.NET Core, debe ser actualizada.
 
 ### 4.6.4. Software Architecture Components Diagrams.
 <a id="4-6-4-software-architecture-components-diagrams"></a>
 
-En el nivel de componentes se detalla la descomposición interna de los contenedores de RoadWatch, mostrando los bloques estructurales que conforman la solución y las relaciones entre ellos. Debido a que la Web Application y la Database pueden ser complementadas mediante diagramas específicos de frontend y base de datos, esta sección pone especial énfasis en el contenedor API Application, donde se concentra la lógica de negocio y el procesamiento de la información ambiental.
+Los Component Diagrams muestran la descomposición interna de cada Container e identifican los principales componentes, sus responsabilidades y sus interacciones.
 
-El diagrama de componentes de la API Application organiza la arquitectura interna de RoadWatch de acuerdo con los principales contextos funcionales del dominio. Cada módulo backend representa un componente encargado de una responsabilidad específica:
+Para el backend, los componentes deben representar las responsabilidades principales del dominio, tales como:
 
-Project Management Backend: administra los proyectos viales, sus datos generales, ubicaciones, estados y puntos de monitoreo asociados. Permite crear, consultar, actualizar y gestionar la información de los proyectos.
-Environmental Monitoring Backend: procesa y administra los indicadores ambientales registrados en los proyectos, permitiendo consultar mediciones históricas y actuales de variables como calidad del aire, ruido, temperatura, humedad y calidad del agua.
-IoT Integration Backend: gestiona la comunicación entre RoadWatch y los dispositivos IoT instalados en los proyectos. Recibe los datos provenientes de los sensores, valida las mediciones y las incorpora al sistema para su posterior análisis.
-Risk & Incident Backend: analiza las mediciones ambientales y las compara con los parámetros establecidos. Cuando identifica condiciones que superan los límites permitidos, genera alertas e incidencias ambientales de manera automática.
-Mitigation Backend: administra las acciones correctivas y medidas de mitigación asociadas a las incidencias. Permite asignar responsables, establecer fechas límite, actualizar estados y realizar el seguimiento hasta la resolución del problema.
-Evidence Backend: gestiona las evidencias relacionadas con inspecciones, incidencias y acciones de mitigación, permitiendo registrar fotografías, documentos y otros archivos que respalden las actividades realizadas.
-Reports Backend: centraliza la generación de reportes ambientales y de cumplimiento, utilizando la información almacenada de proyectos, mediciones, incidencias, acciones y evidencias.
-Geolocation Backend: administra la información geográfica de proyectos, puntos de monitoreo e incidencias, integrándose con el servicio externo de mapas y geolocalización para representar visualmente la información.
-Weather Backend: obtiene información meteorológica mediante el servicio externo correspondiente, permitiendo complementar el análisis de las condiciones ambientales y riesgos asociados a cada proyecto.
-Notification Backend: gestiona el envío de alertas y notificaciones a los responsables cuando se generan incidencias, se detectan valores fuera de los parámetros establecidos o existen acciones de mitigación pendientes.
-Shared Backend: proporciona componentes comunes, utilidades, validaciones, clases base, manejo de errores y mecanismos de infraestructura reutilizados por los demás módulos de la API.
+- Gestión de identidad y acceso.
+- Gestión de proyectos.
+- Gestión de puntos de monitoreo.
+- Monitoreo ambiental.
+- Gestión de alertas e incidencias.
+- Gestión de acciones de mitigación o seguimiento.
+- Gestión de evidencias.
+- Gestión de reportes.
 
-En el diagrama se refleja cómo:
-
-La Web Application consume los servicios expuestos por los componentes de la API Application mediante endpoints RESTful, permitiendo gestionar proyectos, monitoreo, incidencias, acciones de mitigación, evidencias y reportes.
-El IoT Integration Backend recibe las mediciones provenientes del IoT Monitoring, validando y procesando los datos antes de almacenarlos.
-El Environmental Monitoring Backend administra las mediciones ambientales y trabaja junto con el Risk & Incident Backend para identificar valores que excedan los umbrales establecidos.
-El Risk & Incident Backend genera incidencias automáticamente cuando se detectan condiciones ambientales fuera de los parámetros permitidos y comunica estos eventos al Notification Backend.
-El Mitigation Backend gestiona las acciones necesarias para resolver las incidencias, mientras que el Evidence Backend permite registrar evidencias que demuestren el cumplimiento de dichas acciones.
-El Project Management Backend, Environmental Monitoring Backend, Risk & Incident Backend, Mitigation Backend, Evidence Backend y Reports Backend acceden a la Database para leer y escribir la información correspondiente a sus responsabilidades.
-El Geolocation Backend se integra con el Servicio de Mapas y Geolocalización para obtener información geográfica y representar proyectos, puntos de monitoreo e incidencias.
-El Weather Backend se comunica con el Servicio Meteorológico para obtener información climática utilizada como complemento para el monitoreo y análisis de riesgos.
-El Notification Backend se integra con el Servicio de Notificaciones para enviar alertas a los responsables de los proyectos.
-Todos los componentes backend pueden reutilizar las capacidades proporcionadas por el Shared Backend, favoreciendo la consistencia, reutilización de código y reducción de duplicidad.
-
-De esta manera, el Component Diagram complementa los diagramas de clases y de base de datos de RoadWatch, mostrando cómo la API Application se divide en componentes coherentes con las funcionalidades principales del dominio y cómo estos colaboran entre sí para implementar el monitoreo ambiental, la detección de riesgos, la gestión de incidencias y las acciones de mitigación dentro de los proyectos viales.
+Cada componente debe mantener una responsabilidad definida y comunicarse con los demás únicamente cuando sea necesario para completar un caso de uso.
 
 ![Diagrama de Componentes C4 - RoadWatch OS](/assets/images/ComponentDiagram.png)
 
-
+> **Nota de revisión:** el enunciado solicita Component Diagrams para cada Container considerado. Si actualmente solo existe el diagrama de componentes del backend, se deben agregar los diagramas correspondientes a los demás Containers cuando aplique.
 
 ## 4.7. Software Object-Oriented Design.
 <a id="4-7-software-object-oriented-design"></a>
 
+Esta sección presenta los diagramas de clases utilizados para representar con mayor detalle la estructura de los principales contextos de RoadWatch OS.
+
+Los diagramas deben mantener consistencia con los Bounded Contexts definidos en la arquitectura y representar las clases, interfaces, enumeraciones, atributos, métodos, visibilidad, relaciones y multiplicidades correspondientes.
+
 ### 4.7.1. Class Diagrams.
 <a id="4-7-1-class-diagrams"></a>
 
-Se centra en la definición de diagramas de clases, la interacción entre objetos y la aplicación de principios.
+Actualmente el repositorio contiene los siguientes diagramas:
 
-### Bounded Context 1 - Suscriptions and Payment:
-![Class Diagram - RoadWatch OS](/assets/images/CD-Suscriptions%20and%20Payment.png)
-### Bounded Context 2 - Identity and Access:
-![Class Diagram - RoadWatch OS](/assets/images/CD-IdentityandAccess.png)
-### Bounded Context 3 - Project Mangement:
-![Class Diagram - RoadWatch OS](/assets/images/CD-ProjectManagement.png)
-### Bounded Context 4 - Device and Asset Mgmt:
-![Class Diagram - RoadWatch OS](/assets/images/CD-DeviceandAssetMgmt.png)
-### Bounded Context 5 - Environmental Monitoring:
-![Class Diagram - RoadWatch OS](/assets/images/CD-EnvironmentalMonitoring.png)
-### Bounded Context 6 - Incident and mitigation:
-![Class Diagram - RoadWatch OS](/assets/images/CD-IncidentandMitigation.png)
-### Bounded Context 7 - Document and Evidence:
-![Class Diagram - RoadWatch OS](/assets/images/CD-DocumentandEvidence.png)
-### Bounded Context 8 - Reports and Compliance:
-![Class Diagram - RoadWatch OS](/assets/images/CD-ReportsandCompliance.png)
+### Bounded Context - Identity and Access
 
+![Class Diagram - Identity and Access](/assets/images/CD-IdentityandAccess.png)
 
+### Bounded Context - Project Management
+
+![Class Diagram - Project Management](/assets/images/CD-ProjectManagement.png)
+
+### Bounded Context - Environmental Monitoring
+
+![Class Diagram - Environmental Monitoring](/assets/images/CD-EnvironmentalMonitoring.png)
+
+### Bounded Context - Incident and Mitigation
+
+![Class Diagram - Incident and Mitigation](/assets/images/CD-IncidentandMitigation.png)
+
+### Bounded Context - Document and Evidence
+
+![Class Diagram - Document and Evidence](/assets/images/CD-DocumentandEvidence.png)
+
+### Bounded Context - Reports and Compliance
+
+![Class Diagram - Reports and Compliance](/assets/images/CD-ReportsandCompliance.png)
+
+Los diagramas deben revisarse para comprobar que sus clases y relaciones correspondan a las funcionalidades actuales del producto.
+
+> **Nota de revisión:** los diagramas `Subscriptions and Payment` y `Device and Asset Management` solo deben mantenerse si esos contextos continúan formando parte del alcance acordado por el equipo. Si ya no forman parte del MVP o contradicen el Capítulo I, deben retirarse o rediseñarse.
 
 ## 4.8. Database Design.
 <a id="4-8-database-design"></a>
-El diseño de la base de datos relacional (MySQL) para RoadWatch OS adopta un enfoque de aislamiento por Bounded Context dentro del Monolito Modular, garantizando que cada módulo mantenga la propiedad exclusiva de su esquema y desacoplando persistencias mediante referencias por identificadores UUID.
 
-Características Principales de la Base de Datos
+El diseño de base de datos de RoadWatch OS se organiza de acuerdo con las responsabilidades de los Bounded Contexts definidos para la solución.
 
-Aislamiento de Módulos: Esquema lógico separado por Bounded Context donde las tablas pertenecientes a un contexto solo son accedidas mediante su propio módulo.
+La persistencia debe mantener la integridad de los datos y permitir el registro histórico necesario para el seguimiento ambiental de los proyectos.
 
-Identificadores Únicos (UUID): Uso de VARCHAR(36) para Primary Keys (PK) y Foreign Keys (FK), evitando dependencias por secuencias numéricas y facilitando integración entre módulos.
+Entre los principales grupos de información se encuentran:
 
-Integridad Referencial y 3NF: Aplicación de Tercera Forma Normal (3NF) con restricciones explícitas (PK, FK, UNIQUE, NOT NULL) para asegurar consistencia transaccional.
+- Usuarios y permisos.
+- Proyectos viales.
+- Puntos de monitoreo.
+- Mediciones ambientales.
+- Alertas e incidencias.
+- Acciones de seguimiento o mitigación.
+- Evidencias.
+- Reportes.
 
-Campos de Auditoría Estandarizados: Todas las tablas incluyen created_at, updated_at y banderas de estado (status / is_deleted) para trazabilidad legal y soporte de auditorías ambientales.
+El diseño relacional debe aplicar claves primarias y foráneas, restricciones de integridad y relaciones consistentes con el modelo de dominio.
 
 ### 4.8.1. Database Diagrams.
 <a id="4-8-1-database-diagrams"></a>
 
+Los Database Diagrams representan las entidades persistentes, sus atributos y las relaciones correspondientes para cada Bounded Context.
 
-### Bounded Context 1 - Suscriptions and Payment:
-![Class Diagram - RoadWatch OS](/assets/images/BC1ERD.jpeg)
-### Bounded Context 2 - Identity and Access:
-![Class Diagram - RoadWatch OS](/assets/images/BC2ERD.jpeg)
-### Bounded Context 3 - Project Mangement:
-![Class Diagram - RoadWatch OS](/assets/images/BC3ERD.jpeg)
-### Bounded Context 4 - Device and Asset Mgmt:
-![Class Diagram - RoadWatch OS](/assets/images/BC4ERD.jpeg)
-### Bounded Context 5 - Environmental Monitoring:
-![Class Diagram - RoadWatch OS](/assets/images/BC5ERD.jpeg)
-### Bounded Context 6 - Incident and mitigation:
-![Class Diagram - RoadWatch OS](/assets/images/BC6ERD.jpeg)
-### Bounded Context 7 - Document and Evidence:
-![Class Diagram - RoadWatch OS](/assets/images/BC7ERD.jpeg)
-### Bounded Context 8 - Reports and Compliance:
-![Class Diagram - RoadWatch OS](/assets/images/BC8ERD.jpeg)
+### Bounded Context - Identity and Access
 
+![Database Diagram - Identity and Access](/assets/images/BC2ERD.jpeg)
 
+### Bounded Context - Project Management
 
+![Database Diagram - Project Management](/assets/images/BC3ERD.jpeg)
+
+### Bounded Context - Environmental Monitoring
+
+![Database Diagram - Environmental Monitoring](/assets/images/BC5ERD.jpeg)
+
+### Bounded Context - Incident and Mitigation
+
+![Database Diagram - Incident and Mitigation](/assets/images/BC6ERD.jpeg)
+
+### Bounded Context - Document and Evidence
+
+![Database Diagram - Document and Evidence](/assets/images/BC7ERD.jpeg)
+
+### Bounded Context - Reports and Compliance
+
+![Database Diagram - Reports and Compliance](/assets/images/BC8ERD.jpeg)
+
+Cada diagrama debe mantener correspondencia con los Class Diagrams y con los Bounded Contexts vigentes.
+
+> **Nota de revisión:** los diagramas de `Subscriptions and Payment` y `Device and Asset Management` deben conservarse únicamente si esos contextos siguen dentro del alcance final. Si el equipo los retira del modelo de dominio, también deben retirarse sus diagramas de base de datos.
