@@ -393,35 +393,57 @@ Los participantes de este segmento corresponden a profesionales responsables de 
 </tbody>
 </table>
 
-#### Entrevista #3
+#### Entrevista #4
 
-
-
-| Campo | Información |
-
-|---|---|
-
-| Nombres | Pendiente |
-
-| Apellidos | Pendiente |
-
-| Edad | Pendiente |
-
-| Distrito | Pendiente |
-
-| Cargo | Pendiente |
-
-| Años de experiencia | Pendiente |
-
-| Evidencia | Pendiente |
-
-| Enlace de video | Pendiente |
-
-| Inicio de entrevista | Pendiente |
-
-| Duración | Pendiente |
-
-| Resumen | Pendiente de actualización con la nueva entrevista. |
+<table>
+<thead>
+  <tr>
+    <th colspan="2">Entrevista #4</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Nombres</td>
+    <td>Rosa Mariel</td>
+  </tr>
+  <tr>
+    <td>Apellidos</td>
+    <td>Montes Chang</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>23</td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>Santa, Chimbote</td>
+  </tr>
+  <tr>
+    <td>Cargo</td>
+    <td>Ingeniera de Proyectos</td>
+  </tr>
+  <tr>
+    <td>Años de experiencia</td>
+    <td>3 años</td>
+  </tr>
+  <tr>
+    <td>Evidencia</td>
+    <td><img src="../assets/images/chapter2/evidenciaentrevistapieromontes2.png" alt="Evidencia entrevista Rosa Mariel" width="400"></td>
+  </tr>
+  <tr>
+    <td>Link</td>
+    <td><a href="https://upcedupe-my.sharepoint.com/personal/u20241g031_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20241g031%5Fupc%5Fedu%5Fpe%2FDocuments%2Fentrevistas%2Ddesarrollo%2Daplicaciones%2Dopen%2Dsource%2FEntrevista%2Dperfil%2Dlideres%2DRoadWatch%2DOpenSource%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eb5cd6cb2%2D0f53%2D4451%2Da02b%2D58162b06b645" target="_blank">Ver video</a></td>
+  </tr>
+  <tr>
+    <td>Duración</td>
+    <td>0:00 - 13:56</td>
+  </tr>
+  <tr>
+    <td>Resumen</td>
+    <td>Rosa Mariel, de 23 años, es Ingeniera de Proyectos con 3 años de experiencia trabajando en empresas del rubro pesquero, naval y metalmecánico. En su rol, supervisa hasta 10 proyectos de manera simultánea durante temporada alta, compartiendo funciones administrativas, de oficina y de campo, tales como el control de cronogramas y estándares de calidad y seguridad. En el ámbito ambiental, su principal dificultad es el proceso de registro de datos, específicamente con los formatos físicos (en papel) para la segregación de residuos. Rosa indica que, debido a la falta de practicidad y el apuro diario, estos documentos muchas veces no se llenan, lo cual es un riesgo grave ante auditorías inopinadas de entidades reguladoras como la OEFA, pudiendo derivar en multas o sanciones. Actualmente, la comunicación interna se apoya en WhatsApp para el envío de fotografías, y herramientas como Power BI o Looker Studio para presentar reportes al cliente, pero el acceso a esta información desde el celular es limitado y poco práctico cuando está en campo. Para mejorar el proceso, Rosa considera crucial la implementación de una plataforma digital o aplicación propia que agilice la fase de registro, eliminando la dependencia del papel y asegurando que toda la documentación ambiental esté siempre consolidada, accesible y lista para cualquier fiscalización.</td>
+  </tr>
+</tbody>
+</table>
 
 ### 2.2.3 Análisis de Entrevistas
 
