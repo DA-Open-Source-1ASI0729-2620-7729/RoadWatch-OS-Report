@@ -180,6 +180,20 @@ Se considerará que la propuesta genera valor cuando los usuarios puedan encontr
 
 ---
 
+#### 1.2.2.1 Lean UX Problem Statements
+
+Actualmente, la gestión y supervisión ambiental en proyectos de infraestructura vial presenta dificultades relacionadas con la dispersión de información entre distintos medios, como hojas de cálculo, documentos, fotografías, correos y reportes independientes. Esta situación dificulta mantener una visión actualizada y organizada de las mediciones ambientales, incidencias, evidencias y acciones realizadas durante la ejecución de un proyecto.
+
+Este problema afecta principalmente a las empresas constructoras viales y a las empresas supervisoras o consultoras ambientales. En el caso de las constructoras, los responsables de gestión ambiental necesitan registrar y revisar información de manera oportuna para identificar situaciones que requieran atención y realizar seguimiento a las acciones de mitigación. Por otro lado, las empresas supervisoras o consultoras requieren acceder a información consolidada de uno o varios proyectos para revisar antecedentes, verificar el seguimiento realizado y preparar reportes.
+
+La falta de centralización de la información puede generar demoras en la consulta de registros, dificultades para relacionar mediciones con incidencias y evidencias, pérdida de tiempo durante la consolidación de información y menor trazabilidad de las acciones realizadas.
+
+RoadWatch OS busca abordar esta problemática mediante una plataforma web que centraliza la información ambiental de los proyectos viales. La solución permite registrar proyectos, puntos de monitoreo y mediciones ambientales, comparar los valores con los umbrales establecidos, gestionar alertas e incidencias, asociar evidencias y acciones de mitigación, y consultar información histórica y reportes.
+
+El objetivo es facilitar el seguimiento ambiental de los proyectos y permitir que los usuarios encuentren, relacionen y consulten la información necesaria de manera más ordenada, reduciendo la dependencia de múltiples fuentes y herramientas separadas.
+
+---
+
 #### 1.2.2.2 Lean UX Assumptions
 
 ##### A. Business Assumptions
