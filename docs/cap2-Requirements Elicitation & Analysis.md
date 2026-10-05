@@ -177,17 +177,17 @@ Los participantes de este segmento corresponden a profesionales involucrados en 
 
 | Campo | Información |
 |---|---|
-| Nombres | Pendiente |
-| Apellidos | Pendiente |
-| Edad | Pendiente |
-| Distrito | Pendiente |
-| Cargo | Pendiente |
-| Años de experiencia | Pendiente |
-| Evidencia | Pendiente |
-| Enlace de video | Pendiente |
-| Inicio de entrevista | Pendiente |
-| Duración | Pendiente |
-| Resumen | Pendiente de actualización con la nueva entrevista. |
+| Nombres | Luis Alfonso |
+| Apellidos | Chávez Madueño|
+| Edad | 52 |
+| Distrito | Magdalena |
+| Cargo | Lider de gestión de proyectos viales |
+| Años de experiencia | 10 |
+| Evidencia |<img src="../assets/images/chapter2/EnvidenciaAlfonso.jpeg" alt="Evidencia entrevista Guadalupe" width="400">  |
+| Enlace de video | [Ver Grabación de la Presentación (OneDrive)](https://1drv.ms/v/c/113B281D1AF386CE/IQDx5UhtJiBUSYA9sO9lyRGlAVH-haEompaIjEUPeiuyzSk?e=Md1ybO) |
+| Inicio de entrevista | 0:00|
+| Duración | 17:54 |
+| Resumen |Alfonso es un ingeniero industrial que lleva trabajando 10 años en el puesto de Lider de gestión de proyectos viales. Esto conforma la construcción de proyectos viales tanto terrestre y via férrea, su principal función es asegurarse con su equipo que los proyectos que se están llevando a cabo tengan los cumplimientos y normativas correctas. Comenta que lo máximo que se puede administrar son poco mas de 3 proyectos, de los cuales la prioridad suele ir enfocado a 1 de ellos, o al que tenga algún momento crítico o importante a tratarse. En cuanto a la comuniación, se maneja lo clásico, para la formalidad del caso se utiliza el correo y para consultas de información se emplea el uso de WhatsApp. Para su trabajo más que nada utiliza dispositivos portátiles (celular y laptop) para mantenrse al tanto de las situaciones en los disitintos proyectos. Nos comenta que mantener organizado el proyecto en general, tonmando en cuenta fotografías, mediciones e información, no es complicado, mas si duraedero al momento de utilizar softwares llamados Porject y Primavera. Lo que más le suele tomar tiempo para la realización de estos proyectos es la planificación, ya que es donde se tienen que tomar muchas medidas previas para evitar problemas de gestión o ambiental, ya que eso los haría perder presupuesto, tiempo y reputación.  |
 
 #### Entrevista #2
 
