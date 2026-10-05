@@ -633,20 +633,18 @@ El Design-Level EventStorming permite profundizar el modelo identificado previam
   <img src="../assets/images/EventStorming.jpg" alt="RoadWatch Global Event Storming">
 </div>
 
-Durante el refinamiento se identifican responsabilidades relacionadas con:
+Durante el refinamiento del Design-Level EventStorming se identificaron siete Bounded Contexts principales para RoadWatch OS:
 
-- Gestión de identidad y acceso.
-- Gestión de proyectos viales.
-- Gestión de puntos de monitoreo.
-- Registro y consulta de mediciones ambientales.
-- Gestión de alertas e incidencias.
-- Seguimiento de acciones correctivas o medidas de mitigación.
-- Gestión de evidencias.
-- Generación y consulta de reportes.
+- **Identity & Access Management**, responsable de la autenticación, usuarios, roles y permisos.
+- **Subscription Management**, responsable de los planes, suscripciones y límites operativos.
+- **Project Management**, responsable de los proyectos viales y sus puntos de monitoreo.
+- **Environmental Monitoring**, responsable del registro de mediciones, evaluación de umbrales y generación de alertas ambientales.
+- **Incident & Mitigation Management**, responsable del seguimiento de incidencias y acciones de mitigación.
+- **Document & Evidence Management**, responsable de evidencias, documentos normativos y sus versiones.
+- **Reports & Compliance Management**, responsable de reportes, indicadores y evaluación del cumplimiento ambiental.
 
-Los nombres de los Bounded Contexts deben mantenerse consistentes con el Ubiquitous Language definido en el Capítulo II y con los diagramas de clases y base de datos presentados posteriormente.
+Estos Bounded Contexts sirven como base para mantener consistencia entre el modelo de dominio, la arquitectura de software, los Class Diagrams y los Database Diagrams.
 
-> **Importante:** si el diagrama actual de EventStorming todavía contiene contextos de pagos, planes Enterprise, hardware IoT como producto propio, auditoría inalterable u otras funciones retiradas del alcance, debe actualizarse para que represente la versión vigente de RoadWatch OS.
 
 ### 4.6.2. Software Architecture Context Diagram.
 <a id="4-6-2-software-architecture-context-diagram"></a>
@@ -735,20 +733,19 @@ La Web Application no accede directamente a la base de datos. Las operaciones de
 ### 4.6.4. Software Architecture Components Diagrams.
 <a id="4-6-4-software-architecture-components-diagrams"></a>
 
-Los Component Diagrams muestran la descomposición interna de cada Container e identifican los principales componentes, sus responsabilidades y sus interacciones.
+El Component Diagram representa la descomposición interna del RESTful API de RoadWatch OS. La organización del backend sigue los Bounded Contexts identificados durante el modelado del dominio:
 
-Para el backend, los componentes deben representar las responsabilidades principales del dominio, tales como:
+- **Identity & Access Management**
+- **Subscription Management**
+- **Project Management**
+- **Environmental Monitoring**
+- **Incident & Mitigation Management**
+- **Document & Evidence Management**
+- **Reports & Compliance Management**
 
-- Gestión de identidad y acceso.
-- Gestión de proyectos.
-- Gestión de puntos de monitoreo.
-- Monitoreo ambiental.
-- Gestión de alertas e incidencias.
-- Gestión de acciones de mitigación o seguimiento.
-- Gestión de evidencias.
-- Gestión de reportes.
+Cada componente mantiene una responsabilidad específica dentro del dominio y se comunica con otros componentes únicamente cuando un caso de uso requiere información o acciones pertenecientes a otro contexto.
 
-Cada componente debe mantener una responsabilidad definida y comunicarse con los demás únicamente cuando sea necesario para completar un caso de uso.
+La Web Application consume los servicios expuestos por el RESTful API mediante HTTPS/JSON, mientras que los componentes backend utilizan la capa de persistencia para almacenar y consultar la información correspondiente.
 
 ![Diagrama de Componentes C4 - RoadWatch OS](/assets/images/ComponentDiagram.png)
 
@@ -762,11 +759,15 @@ Los diagramas deben mantener consistencia con los Bounded Contexts definidos en 
 ### 4.7.1. Class Diagrams.
 <a id="4-7-1-class-diagrams"></a>
 
-Actualmente el repositorio contiene los siguientes diagramas:
+A continuación se presentan los Class Diagrams correspondientes a los Bounded Contexts definidos para RoadWatch OS. Estos diagramas detallan las principales clases, interfaces, enumeraciones, atributos, métodos y relaciones que permiten representar las responsabilidades de cada contexto.
 
-### Bounded Context - Identity and Access
+### Bounded Context - Identity & Access Management
 
 ![Class Diagram - Identity and Access](/assets/images/CD-IdentityandAccess.png)
+
+### Bounded Context - Subscription Management
+
+![Class Diagram - Subscription Management](/assets/images/CD-SubscriptionManagement.png)
 
 ### Bounded Context - Project Management
 
@@ -776,66 +777,64 @@ Actualmente el repositorio contiene los siguientes diagramas:
 
 ![Class Diagram - Environmental Monitoring](/assets/images/CD-EnvironmentalMonitoring.png)
 
-### Bounded Context - Incident and Mitigation
+### Bounded Context - Incident & Mitigation Management
 
 ![Class Diagram - Incident and Mitigation](/assets/images/CD-IncidentandMitigation.png)
 
-### Bounded Context - Document and Evidence
+### Bounded Context - Document & Evidence Management
 
 ![Class Diagram - Document and Evidence](/assets/images/CD-DocumentandEvidence.png)
 
-### Bounded Context - Reports and Compliance
+### Bounded Context - Reports & Compliance Management
 
 ![Class Diagram - Reports and Compliance](/assets/images/CD-ReportsandCompliance.png)
-
-Los diagramas deben revisarse para comprobar que sus clases y relaciones correspondan a las funcionalidades actuales del producto.
 
 ## 4.8. Database Design.
 <a id="4-8-database-design"></a>
 
-El diseño de base de datos de RoadWatch OS se organiza de acuerdo con las responsabilidades de los Bounded Contexts definidos para la solución.
+El diseño de base de datos de RoadWatch OS se organiza de acuerdo con los siete Bounded Contexts definidos para la solución, manteniendo la integridad de los datos y el registro histórico necesario para el seguimiento ambiental de los proyectos:
 
-La persistencia debe mantener la integridad de los datos y permitir el registro histórico necesario para el seguimiento ambiental de los proyectos.
+La persistencia se organiza de acuerdo con los siete Bounded Contexts definidos para RoadWatch OS:
 
-Entre los principales grupos de información se encuentran:
-
-- Usuarios y permisos.
-- Proyectos viales.
-- Puntos de monitoreo.
-- Mediciones ambientales.
-- Alertas e incidencias.
-- Acciones de seguimiento o mitigación.
-- Evidencias.
-- Reportes.
+- Identity & Access Management.
+- Subscription Management.
+- Project Management.
+- Environmental Monitoring.
+- Incident & Mitigation Management.
+- Document & Evidence Management.
+- Reports & Compliance Management.
 
 El diseño relacional debe aplicar claves primarias y foráneas, restricciones de integridad y relaciones consistentes con el modelo de dominio.
 
 ### 4.8.1. Database Diagrams.
 <a id="4-8-1-database-diagrams"></a>
 
-Los Database Diagrams representan las entidades persistentes, sus atributos y las relaciones correspondientes para cada Bounded Context.
+Los Database Diagrams representan las estructuras persistentes correspondientes a cada Bounded Context. En ellos se especifican las tablas, columnas, claves primarias, claves foráneas, restricciones y relaciones necesarias para mantener la integridad de la información de RoadWatch OS.
 
-### Bounded Context - Identity and Access
+### Bounded Context - Identity & Access Management
 
-![Database Diagram - Identity and Access](/assets/images/BC2ERD.jpeg)
+![Database Diagram - Identity and Access](/assets/images/BC1ERD.png)
+
+### Bounded Context - Subscription Management
+
+![Database Diagram - Subscription Management](/assets/images/BC2ERD.png)
 
 ### Bounded Context - Project Management
 
-![Database Diagram - Project Management](/assets/images/BC3ERD.jpeg)
+![Database Diagram - Project Management](/assets/images/BC3ERD.png)
 
 ### Bounded Context - Environmental Monitoring
 
-![Database Diagram - Environmental Monitoring](/assets/images/BC5ERD.jpeg)
+![Database Diagram - Environmental Monitoring](/assets/images/BC4ERD.png)
 
-### Bounded Context - Incident and Mitigation
+### Bounded Context - Incident & Mitigation Management
 
-![Database Diagram - Incident and Mitigation](/assets/images/BC6ERD.jpeg)
+![Database Diagram - Incident and Mitigation](/assets/images/BC5ERD.png)
 
-### Bounded Context - Document and Evidence
+### Bounded Context - Document & Evidence Management
 
-![Database Diagram - Document and Evidence](/assets/images/BC7ERD.jpeg)
+![Database Diagram - Document and Evidence](/assets/images/BC6ERD.png)
 
-### Bounded Context - Reports and Compliance
+### Bounded Context - Reports & Compliance Management
 
-![Database Diagram - Reports and Compliance](/assets/images/BC8ERD.jpeg)
-
+![Database Diagram - Reports and Compliance](/assets/images/BC7ERD.png)
