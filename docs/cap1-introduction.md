@@ -250,83 +250,49 @@ El objetivo es facilitar el seguimiento ambiental de los proyectos y permitir qu
    
 ---
 
-#### 1.2.2.2. Lean UX Assumptions
-
-##### A. Business Assumptions
-1. **Creemos que** la industria de construcción vial necesita un entorno de seguimiento ambiental automatizado y neutral que elimine la compra costosa de hardware (CapEx) y asegure la inalterabilidad de los datos.
-2. **Creemos que** podemos monetizar esta necesidad eficientemente mediante una plataforma HaaS/SaaS de doble monetización (Dual Revenue), cobrando suscripciones independientes y escalables (Base, Profesional, Enterprise) tanto a la constructora como a la supervisora del mismo proyecto.
-3. **Creemos que** nuestra ventaja competitiva frente a los visores pasivos tradicionales radica en actuar como un tercero neutral, integrando la entrega de hardware en comodato con un motor de gestión preventiva (tickets de mitigación).
-4. **Creemos que** los canales de captación más efectivos serán los acuerdos estratégicos con gremios (ej. CAPECO), la prospección directa del padrón del RNCA y las referencias cruzadas entre contratistas y auditores de una misma concesión.
-
-##### B. Business Outcome Assumptions
-1. **Creemos que** alcanzaremos el éxito comercial cuando veamos un crecimiento sostenido en la adopción del modelo de doble suscripción (constructora + supervisora) operando activamente sobre un mismo proyecto vial.
-2. **Creemos que** aumentaremos el Ingreso Mensual Recurrente (MRR) al lograr una alta tasa de renovación de licencias cuando las constructoras trasladen nuestra plataforma a nuevos frentes de obra.
-3. **Creemos que** nuestra Definition of Done (DoD) a nivel de negocio se cumplirá cuando un cliente logre operar el ecosistema completo (nodos IoT en campo + plataforma) evidenciando una reducción medible del 50% en su tiempo medio de cierre de incidencias ambientales.
-4. **Creemos que** reduciremos nuestro Costo de Adquisición de Clientes (CAC) al aprovechar la obligatoriedad normativa, logrando que las empresas supervisoras recomienden el uso de nuestro estándar a otras constructoras.
-
-##### C. User Assumptions
-1. **Creemos que** nuestro usuario principal del Segmento 1 está compuesto por ingenieros residentes de obra y responsables de mitigación en constructoras, quienes sufren por el desfase temporal en la detección de incidentes y necesitan reaccionar rápidamente en campo.
-2. **Creemos que** nuestro usuario del Segmento 2 está compuesto por auditores y consultores ambientales de firmas supervisoras, cuyo problema principal es la incertidumbre sobre la validez de los datos de campo y el alto costo de viajar físicamente a la obra.
-3. **Creemos que** ambos perfiles operan en contextos de alta presión normativa y utilizarán la plataforma de maneras distintas: la constructora mediante alertas y tickets diarios (móvil/web), y la supervisora mediante auditorías y extracción de expedientes (gabinete).
-
-##### D. User Outcome & Benefit Assumptions
-1. **Creemos que** los ingenieros de la constructora lograrán su principal objetivo (evitar multas y paralizaciones) al recibir alertas tempranas que les permitan mitigar desviaciones antes de que se conviertan en infracciones formales.
-2. **Creemos que** las empresas contratistas obtendrán el beneficio de optimizar su presupuesto operativo al no tener que invertir en la compra y mantenimiento complejo de instrumental de medición (modelo HaaS).
-3. **Creemos que** los auditores ambientales lograrán su objetivo de emitir dictámenes más rápidos y seguros al reducir drásticamente las visitas presenciales a campo, basándose en telemetría continua y remota.
-4. **Creemos que** las firmas supervisoras obtendrán el beneficio de la tranquilidad profesional al compilar expedientes normativos respaldados por datos técnicamente inalterables y neutrales.
-
-##### E. Feature Assumptions
-1. **Creemos que** una **Red de Nodos IoT bajo modelo HaaS** resolverá el problema de la captura manual, proveyendo parámetros en tiempo real sin requerir que el usuario adquiera o mantenga el hardware.
-2. **Creemos que** un **Motor de Clasificación de Riesgo Automatizado** permitirá comparar las lecturas ambientales contra la normativa vigente (LMP) y detonar alertas preventivas inmediatas.
-3. **Creemos que** un **Módulo Operativo de Mitigación (Dashboard para Constructora)** facilitará la resolución de incidentes mediante la generación de tickets y el registro de evidencias fotográficas y georreferenciadas.
-4. **Creemos que** un **Módulo de Fiscalización Digital (Panel para Supervisora)** permitirá automatizar el trabajo de gabinete mediante reportes normativos exportables y un registro histórico protegido contra ediciones.
-5. **Creemos que** un sistema de **Control de Accesos por Bounded Contexts (RBAC)** garantizará la transparencia del sistema, separando lógicamente la gestión interna de la constructora de la visualización auditable de la supervisora.
-
----
-
 #### 1.2.2.3 Lean UX Hypothesis Statements
 
 ##### Hipótesis 1: Centralización de información ambiental
 
-- **We believe we will achieve:** una reducción en el tiempo empleado para localizar y consolidar información ambiental de los proyectos.
-- **If:** los responsables ambientales de empresas constructoras y supervisoras utilizan RoadWatch OS de manera frecuente.
-- **Attain:** una mejor organización y acceso a la información relacionada con proyectos, mediciones, incidencias, evidencias y reportes.
-- **With:** una plataforma web que centraliza la información ambiental dentro de un mismo entorno.
+- **Creemos que lograremos:** una reducción en el tiempo empleado para localizar y consolidar información ambiental de los proyectos.
+- **Si:** los responsables ambientales de empresas constructoras y supervisoras utilizan RoadWatch OS de manera frecuente.
+- **Alcanzar:** una mejor organización y acceso a la información relacionada con proyectos, mediciones, incidencias, evidencias y reportes.
+- **Mediante:** una plataforma web que centraliza la información ambiental dentro de un mismo entorno.
 
 ##### Hipótesis 2: Seguimiento preventivo de mediciones
 
-- **We believe we will achieve:** una identificación más oportuna de situaciones que requieran atención ambiental.
-- **If:** los responsables de gestión ambiental registran y revisan periódicamente las mediciones de sus proyectos.
-- **Attain:** la capacidad de detectar valores cercanos o superiores a los umbrales establecidos.
-- **With:** un sistema que compara las mediciones ambientales con los límites configurados y genera alertas cuando corresponde.
+- **Creemos que lograremos:** una identificación más oportuna de situaciones que requieran atención ambiental.
+- **Si:** los responsables de gestión ambiental registran y revisan periódicamente las mediciones de sus proyectos.
+- **Alcanzar:** la capacidad de detectar valores cercanos o superiores a los umbrales establecidos.
+- **Mediante:** un sistema que compara las mediciones ambientales con los límites configurados y genera alertas cuando corresponde.
 
 ##### Hipótesis 3: Gestión de incidencias y acciones de mitigación
 
-- **We believe we will achieve:** una mejora en el seguimiento de las incidencias ambientales y de las acciones realizadas para atenderlas.
-- **If:** los responsables ambientales de las empresas constructoras registran y actualizan las incidencias dentro de la plataforma.
-- **Attain:** una mejor trazabilidad de las situaciones detectadas, las acciones de mitigación realizadas y las evidencias asociadas.
-- **With:** un módulo de gestión de incidencias, acciones de mitigación y evidencias.
+- **Creemos que lograremos:** una mejora en el seguimiento de las incidencias ambientales y de las acciones realizadas para atenderlas.
+- **Si:** los responsables ambientales de las empresas constructoras registran y actualizan las incidencias dentro de la plataforma.
+- **Alcanzar:** una mejor trazabilidad de las situaciones detectadas, las acciones de mitigación realizadas y las evidencias asociadas.
+- **Mediante:** un módulo de gestión de incidencias, acciones de mitigación y evidencias.
 
 ##### Hipótesis 4: Supervisión de múltiples proyectos
 
-- **We believe we will achieve:** una reducción en el tiempo necesario para revisar el estado ambiental de varios proyectos.
-- **If:** los usuarios de empresas supervisoras o consultoras ambientales utilizan la plataforma para consultar la información consolidada de los proyectos bajo su responsabilidad.
-- **Attain:** una visión más clara del estado de las mediciones, incidencias, evidencias y reportes de cada proyecto.
-- **With:** un panel de supervisión que permite consultar y comparar información de múltiples proyectos.
+- **Creemos que lograremos:** una reducción en el tiempo necesario para revisar el estado ambiental de varios proyectos.
+- **Si:** los usuarios de empresas supervisoras o consultoras ambientales utilizan la plataforma para consultar la información consolidada de los proyectos bajo su responsabilidad.
+- **Alcanzar:** una visión más clara del estado de las mediciones, incidencias, evidencias y reportes de cada proyecto.
+- **Mediante:** un panel de supervisión que permite consultar y comparar información de múltiples proyectos.
 
 ##### Hipótesis 5: Generación y consulta de reportes
 
-- **We believe we will achieve:** una mayor eficiencia en la preparación de información para procesos de seguimiento y supervisión ambiental.
-- **If:** los usuarios utilizan RoadWatch OS para registrar y mantener actualizada la información de sus proyectos.
-- **Attain:** la posibilidad de consultar información histórica y consolidada de manera más rápida.
-- **With:** funcionalidades de generación, consulta y descarga de reportes ambientales.
+- **Creemos que lograremos:** una mayor eficiencia en la preparación de información para procesos de seguimiento y supervisión ambiental.
+- **Si:** los usuarios utilizan RoadWatch OS para registrar y mantener actualizada la información de sus proyectos.
+- **Alcanzar:** la posibilidad de consultar información histórica y consolidada de manera más rápida.
+- **Mediante:** funcionalidades de generación, consulta y descarga de reportes ambientales.
 
 ##### Hipótesis 6: Modelo de suscripción
 
-- **We believe we will achieve:** una mayor sostenibilidad del modelo de negocio de RoadWatch OS.
-- **If:** las organizaciones perciben valor en las funcionalidades ofrecidas por la plataforma.
-- **Attain:** un uso recurrente de RoadWatch OS de acuerdo con las necesidades de cada organización.
-- **With:** distintos niveles de suscripción asociados a funcionalidades y capacidades de uso de la plataforma.
+- **Creemos que lograremos:** una mayor sostenibilidad del modelo de negocio de RoadWatch OS.
+- **Si:** las organizaciones perciben valor en las funcionalidades ofrecidas por la plataforma.
+- **Alcanzar:** un uso recurrente de RoadWatch OS de acuerdo con las necesidades de cada organización.
+- **Mediante:** distintos niveles de suscripción asociados a funcionalidades y capacidades de uso de la plataforma.
   
 ---
 
