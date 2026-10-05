@@ -48,7 +48,11 @@ Consolidarse como una startup tecnológica reconocida por ofrecer soluciones dig
 
 ## 1.2 Solution Profile
 
-**RoadWatch OS** es una solución informática integral distribuida como un servicio híbrido (**HaaS/SaaS**), diseñada para articular el monitoreo, la gestión de alertas preventivas, la mitigación operativa y la auditoría formal en proyectos de construcción vial. Mediante el despliegue de nodos sensores (calidad del aire, partículas en suspensión, sonometría y parámetros fisicoquímicos en agua/suelo), el sistema habilita dos módulos de trabajo aislados: un tablero operativo para la constructora destinado a la resolución de incidencias en campo, y un tablero de fiscalización para la supervisora respaldado por registros inalterables y generación automatizada de informes normativos.
+**RoadWatch OS** es una plataforma web orientada a apoyar la gestión y supervisión ambiental en proyectos de infraestructura vial. La solución permite centralizar información relacionada con proyectos, puntos de monitoreo, mediciones ambientales, alertas, incidencias, evidencias, acciones de mitigación y reportes dentro de un mismo entorno digital.
+
+La plataforma está dirigida a dos segmentos principales: empresas constructoras viales y empresas supervisoras o consultoras ambientales. Cada segmento accede a funcionalidades relacionadas con sus responsabilidades dentro del proceso de seguimiento ambiental, manteniendo una experiencia adaptada a sus necesidades.
+
+RoadWatch OS busca facilitar la consulta y trazabilidad de la información ambiental, reducir la dispersión de registros entre diferentes medios y permitir una atención más ordenada de las situaciones que requieran seguimiento. En el MVP, las mediciones pueden registrarse mediante los servicios de la plataforma, mientras que la integración directa con dispositivos de monitoreo ambiental se considera como una posible evolución futura del producto.
 
 #### Propuesta de valor
 
