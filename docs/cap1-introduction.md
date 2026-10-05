@@ -334,10 +334,18 @@ Se considerará que la propuesta genera valor cuando los usuarios puedan encontr
 
 ## 1.3 Segmentos Objetivos
 
-### Segmento 1: Empresas Constructoras Viales (Módulo Operativo)
+### Segmento 1: Empresas Constructoras Viales
 
-Compañías contratistas dedicadas a la ejecución física de obras de infraestructura vial, representadas por sus ingenieros residentes, jefes de producción y responsables de mitigación ambiental. Utilizan **RoadWatch OS** como una herramienta de control interno: reciben notificaciones preventivas ante incrementos atípicos en los niveles de emisión o contaminación (aire, ruido, agua) y gestionan la mitigación en tiempo real. La plataforma les permite documentar acciones correctivas con imágenes y coordenadas geográficas para prevenir la imposición de multas o la paralización de frentes de trabajo. La recuperación de la inversión en obra pública y concesiones viales en el país (CAPECO, 2025) sostiene una demanda continua de soluciones tecnológicas de control operativo para este segmento.
+Este segmento está conformado por empresas encargadas de la ejecución de proyectos de infraestructura vial, representadas principalmente por responsables de gestión ambiental, jefes de proyecto, ingenieros residentes y otros profesionales relacionados con el seguimiento ambiental de la obra.
 
-### Segmento 2: Empresas Supervisoras Ambientales / Consultoras (Módulo de Fiscalización)
+Estos usuarios utilizarán **RoadWatch OS** para registrar y consultar proyectos, puntos de monitoreo y mediciones ambientales, revisar alertas, gestionar incidencias, registrar evidencias y dar seguimiento a acciones de mitigación. La plataforma busca facilitar la organización de la información ambiental y permitir que los responsables identifiquen con mayor rapidez las situaciones que requieren atención.
 
-Firmas independientes de ingeniería y consultoría ambiental —contratadas por entidades del Estado o concesionarias— encargadas de auditar la ejecución de los planes de manejo ambiental en proyectos viales. Utilizan **RoadWatch OS** para digitalizar la fiscalización, acceder a lecturas continuas e inalterables generadas por la red de nodos IoT de VíaNexo y estructurar informes normativos sin requerir desplazamientos diarios a campo. Considerando la fiscalización ejercida por la Dirección de Gestión Ambiental del MTC (SPDA, 2024) y la presencia de más de 1,200 consultoras inscritas en el Registro Nacional de Consultoras Ambientales (SENACE, 2024), este segmento representa un mercado clave para la adopción de herramientas de auditoría remota multi-proyecto.
+El principal beneficio para este segmento es contar con un entorno centralizado que permita mantener relacionadas las mediciones, incidencias, evidencias y acciones realizadas durante la ejecución del proyecto, reduciendo la dispersión de información entre diferentes documentos y herramientas.
+
+### Segmento 2: Empresas Supervisoras y Consultoras Ambientales
+
+Este segmento está conformado por empresas y profesionales responsables de supervisar, revisar y analizar la información ambiental generada durante el desarrollo de proyectos viales.
+
+Los usuarios de este segmento utilizarán **RoadWatch OS** para consultar el estado de los proyectos bajo su supervisión, revisar mediciones ambientales, incidencias, evidencias e historiales, así como acceder a información consolidada y reportes que faciliten sus actividades de seguimiento.
+
+El principal beneficio para este segmento es disponer de una visión organizada de uno o varios proyectos, facilitando la revisión de antecedentes, la identificación de situaciones relevantes y la consolidación de información necesaria para los procesos de supervisión y elaboración de reportes.
