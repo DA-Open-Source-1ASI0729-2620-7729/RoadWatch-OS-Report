@@ -850,6 +850,3 @@ Los Database Diagrams representan las entidades persistentes, sus atributos y la
 
 ![Database Diagram - Reports and Compliance](/assets/images/BC8ERD.jpeg)
 
-Cada diagrama debe mantener correspondencia con los Class Diagrams y con los Bounded Contexts vigentes.
-
-> **Nota de revisión:** los diagramas de `Subscriptions and Payment` y `Device and Asset Management` deben conservarse únicamente si esos contextos siguen dentro del alcance final. Si el equipo los retira del modelo de dominio, también deben retirarse sus diagramas de base de datos.
