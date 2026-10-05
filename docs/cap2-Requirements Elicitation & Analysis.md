@@ -316,7 +316,7 @@ Los participantes de este segmento corresponden a profesionales involucrados en 
   </tr>
   <tr>
     <td>Link</td>
-    <td><a href="https://upcedupe-my.sharepoint.com/personal/u20241g031_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20241g031%5Fupc%5Fedu%5Fpe%2FDocuments%2Fentrevistas%2Ddesarrollo%2Daplicaciones%2Dopen%2Dsource%2FEntrevista%2Dperfil%2Dsupervisores%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E99833c1d%2Db04d%2D4205%2Da038%2D5a6c1378e9b6" target="_blank">Ver video</a></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241g031_upc_edu_pe/IQCMhQ7MolsyRKtp8PIvyZf8AYI-jf1wqdwDhOm84XWl-X8" target="_blank">Ver video</a></td>
   </tr>
   <tr>
     <td>Duración</td>
@@ -432,7 +432,7 @@ Los participantes de este segmento corresponden a profesionales responsables de 
   </tr>
   <tr>
     <td>Link</td>
-    <td><a href="https://upcedupe-my.sharepoint.com/personal/u20241g031_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20241g031%5Fupc%5Fedu%5Fpe%2FDocuments%2Fentrevistas%2Ddesarrollo%2Daplicaciones%2Dopen%2Dsource%2FEntrevista%2Dperfil%2Dlideres%2DRoadWatch%2DOpenSource%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eb5cd6cb2%2D0f53%2D4451%2Da02b%2D58162b06b645" target="_blank">Ver video</a></td>
+    <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241g031_upc_edu_pe/IQDGfGytNgvfQ4rcVobTw5pWAZyAVgsiLJHVdPOQr6odWDw" target="_blank">Ver video</a></td>
   </tr>
   <tr>
     <td>Duración</td>
