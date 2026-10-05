@@ -170,15 +170,13 @@ Dentro del MVP no se contempla la implementación de una pasarela de pago real. 
 
 ### 1.2.2 Lean UX Process
 
-El estado actual de la gestión y supervisión ambiental en proyectos de infraestructura vial se ha enfocado principalmente en empresas constructoras y firmas consultoras que dependen de flujos de trabajo manuales, visitas presenciales esporádicas y registros documentales discontinuos. Estos métodos tradicionales generan puntos de dolor críticos: reacciones tardías ante sobrepasos en los límites máximos permisibles (LMP), exposición a paralizaciones y multas regulatorias, y altos costos logísticos derivados de la fiscalización física en campo.
+Actualmente, la gestión y supervisión ambiental en proyectos de infraestructura vial puede involucrar el uso de hojas de cálculo, documentos, fotografías, correos y otros medios separados para registrar y consultar información. Esta forma de trabajo dificulta mantener una visión consolidada de las mediciones, incidencias, evidencias y acciones realizadas durante el desarrollo de un proyecto.
 
-Lo que los productos y servicios existentes en el mercado no logran resolver es la integración de una captura automatizada sin exigir costosas inversiones de capital (CapEx) en hardware, fallando al actuar solo como visores pasivos de telemetría. Las soluciones actuales no ofrecen un flujo de trabajo colaborativo y neutral que separe la gestión operativa inmediata de los riesgos, de la fiscalización formal inalterable.
+RoadWatch OS busca atender esta problemática mediante una plataforma web que centralice la información ambiental y facilite su seguimiento. La solución permitirá registrar mediciones, identificar valores cercanos o superiores a los umbrales establecidos, gestionar incidencias, asociar evidencias, realizar seguimiento a acciones de mitigación y consultar reportes relacionados con el estado ambiental de los proyectos.
 
-Nuestro producto, RoadWatch OS, abordará esta brecha mediante una estrategia de modelo HaaS/SaaS (Dual Revenue) que provee hardware IoT en comodato y un software centralizado. Este enfoque permitirá detectar riesgos ambientales en tiempo real, generar tickets de mitigación automáticos para los contratistas, y proporcionar un entorno con datos inalterables para las auditorías de los supervisores.
+El producto está orientado principalmente a dos segmentos: las empresas constructoras viales, responsables de gestionar y atender las situaciones ambientales que se presentan durante la ejecución de las obras, y las empresas supervisoras o consultoras ambientales, encargadas de revisar la información, realizar seguimiento y elaborar reportes sobre los proyectos bajo su supervisión.
 
-Nuestro enfoque inicial serán las empresas constructoras de carreteras de mediana a gran escala, y las empresas supervisoras y consultoras ambientales (registradas en el RNCA) que operan en el mercado peruano.
-
-Sabremos que tenemos éxito cuando veamos los siguientes comportamientos medibles en nuestra audiencia objetivo: los ingenieros residentes resolviendo los tickets de mitigación en la plataforma antes de que deriven en infracciones oficiales, los auditores descargando directamente los reportes normativos del sistema en lugar de desplazarse a la obra, y ambas partes renovando sus suscripciones (retención) debido a la confiabilidad y neutralidad de los datos compartidos.
+Se considerará que la propuesta genera valor cuando los usuarios puedan encontrar y revisar la información ambiental con mayor facilidad, identificar situaciones que requieran atención, mantener un historial organizado de las acciones realizadas y reducir el tiempo necesario para consolidar información para la supervisión y elaboración de reportes.
 
 ---
 
