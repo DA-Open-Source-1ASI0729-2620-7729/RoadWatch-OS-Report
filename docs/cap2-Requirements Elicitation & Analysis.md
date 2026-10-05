@@ -279,19 +279,55 @@ Los participantes de este segmento corresponden a profesionales involucrados en 
 
 #### Entrevista #3
 
-| Campo | Información |
-|---|---|
-| Nombres | Pendiente |
-| Apellidos | Pendiente |
-| Edad | Pendiente |
-| Distrito | Pendiente |
-| Cargo | Pendiente |
-| Años de experiencia | Pendiente |
-| Evidencia | Pendiente |
-| Enlace de video | Pendiente |
-| Inicio de entrevista | Pendiente |
-| Duración | Pendiente |
-| Resumen | Pendiente de actualización con la nueva entrevista. |
+<table>
+<thead>
+  <tr>
+    <th colspan="2">Entrevista #3</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Nombres</td>
+    <td>José Luis</td>
+  </tr>
+  <tr>
+    <td>Apellidos</td>
+    <td>Pérez Ramírez</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>28</td>
+  </tr>
+  <tr>
+    <td>Ciudad</td>
+    <td>Piura</td>
+  </tr>
+  <tr>
+    <td>Cargo</td>
+    <td>Gestor Ambiental de Proyectos</td>
+  </tr>
+  <tr>
+    <td>Años de experiencia</td>
+    <td>7 años (2 en empresa privada y 5 en la municipalidad)</td>
+  </tr>
+  <tr>
+    <td>Evidencia</td>
+    <td><img src="../assets/images/chapter2/evidenciaentrevistapieromontes.png" alt="Evidencia entrevista José Luis" width="400"></td>
+  </tr>
+  <tr>
+    <td>Link</td>
+    <td><a href="https://upcedupe-my.sharepoint.com/personal/u20241g031_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu20241g031%5Fupc%5Fedu%5Fpe%2FDocuments%2Fentrevistas%2Ddesarrollo%2Daplicaciones%2Dopen%2Dsource%2FEntrevista%2Dperfil%2Dsupervisores%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E99833c1d%2Db04d%2D4205%2Da038%2D5a6c1378e9b6" target="_blank">Ver video</a></td>
+  </tr>
+  <tr>
+    <td>Duración</td>
+    <td>0:00 - 8:52</td>
+  </tr>
+  <tr>
+    <td>Resumen</td>
+    <td>José Luis, un Gestor Ambiental de Proyectos en Piura con 7 años de experiencia, supervisa actualmente de 10 a 30 proyectos de construcción y áreas verdes de forma simultánea. Las principales dificultades en su trabajo radican en la recolección y centralización de datos ambientales, los cuales recibe principalmente a través de WhatsApp en forma de mensajes, fotos e informes, los que posteriormente él mismo debe vaciar y organizar en tablas de Excel. A José Luis le frustra la falta de herramientas modernas, ya que los métodos tradicionales que emplea resultan lentos y dependen de su presencia física o la impresión de documentos para acceder a la información cuando no está en su oficina. Su objetivo principal es asegurar que los proyectos cumplan con la normativa y los estándares medioambientales planificados. Para mejorar su labor, propone la implementación de una herramienta o plataforma digital que unifique el registro de datos y agilice la comunicación con su equipo, permitiendo el acceso en tiempo real a la información de cada proyecto sin depender del Excel o WhatsApp, buscando que su flujo de trabajo sea más fluido y eficiente.</td>
+  </tr>
+</tbody>
+</table>
 
 ### Segmento 2: Empresas Supervisoras y Consultoras Ambientales
 
@@ -359,18 +395,32 @@ Los participantes de este segmento corresponden a profesionales responsables de 
 
 #### Entrevista #3
 
+
+
 | Campo | Información |
+
 |---|---|
+
 | Nombres | Pendiente |
+
 | Apellidos | Pendiente |
+
 | Edad | Pendiente |
+
 | Distrito | Pendiente |
+
 | Cargo | Pendiente |
+
 | Años de experiencia | Pendiente |
+
 | Evidencia | Pendiente |
+
 | Enlace de video | Pendiente |
+
 | Inicio de entrevista | Pendiente |
+
 | Duración | Pendiente |
+
 | Resumen | Pendiente de actualización con la nueva entrevista. |
 
 ### 2.2.3 Análisis de Entrevistas
