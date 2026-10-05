@@ -13,19 +13,19 @@
 | :--- | :---: | :---: | :---: | :---: |
 | **Cabecera** | <img src="../assets/images/chapter2/RoadWatchLogo.jpeg" alt="Logo de RoadWatch OS" width="110"/> | <img src="../assets/images/chapter2/SiteHiveLogo.png" alt="Logo de SiteHive" width="110"/> | <img src="../assets/images/chapter2/SonitusSystemsLogo.png" alt="Logo de Sonitus Systems" width="110"/> | <img src="../assets/images/chapter2/AutodeskCCLogo.png" alt="Logo de Autodesk Construction Cloud" width="110"/> |
 | **Perfil** | | | | |
-| **Overview** | Plataforma HaaS/SaaS orientada al monitoreo ambiental y la gestión preventiva en proyectos viales mediante integración de mediciones, incidencias, acciones de mitigación y evidencias. | Plataforma SaaS australiana especializada en monitoreo ambiental continuo de ruido, polvo y vibración para construcción y minería. | Proveedor global especializado en instrumentación y monitoreo ambiental mediante dispositivos para ruido y calidad del aire integrados con servicios en la nube. | Suite integral basada en la nube para la gestión de proyectos de construcción, coordinación BIM, control documental y seguimiento de incidencias. |
-| **Ventaja competitiva (valor al cliente)** | Integración del monitoreo ambiental con la gestión de incidencias, acciones de mitigación y evidencias dentro de una misma plataforma orientada específicamente a proyectos viales. La propuesta busca facilitar una gestión preventiva y mantener la trazabilidad de la información necesaria para supervisiones y auditorías. | Automatización del procesamiento de datos ambientales de campo y capacidades especializadas para monitoreo continuo en proyectos de construcción. | Especialización en equipos de medición ambiental y monitoreo remoto mediante instrumentación orientada al control de ruido y calidad ambiental. | Integración con herramientas de diseño y construcción del ecosistema Autodesk, permitiendo centralizar documentación, coordinación y seguimiento de proyectos. |
+| **Overview** | Plataforma web orientada a la gestión y supervisión ambiental de proyectos viales. Centraliza proyectos, puntos de monitoreo, mediciones, alertas, incidencias, acciones de mitigación, evidencias y reportes dentro de un mismo entorno digital. | Plataforma SaaS australiana especializada en monitoreo ambiental continuo de ruido, polvo y vibración para proyectos de construcción y minería. | Proveedor especializado en instrumentación y monitoreo ambiental mediante dispositivos para ruido y calidad del aire integrados con servicios en la nube. | Suite integral basada en la nube para la gestión de proyectos de construcción, coordinación, documentación y seguimiento de incidencias. |
+| **Ventaja competitiva (valor al cliente)** | Integración de la gestión ambiental con el seguimiento de incidencias, acciones de mitigación, evidencias e información histórica dentro de una plataforma orientada específicamente a proyectos viales. La propuesta busca reducir la dispersión de información y facilitar una gestión preventiva y trazable. | Automatización del procesamiento de datos ambientales de campo y capacidades especializadas para monitoreo continuo en proyectos de construcción. | Especialización en equipos de medición ambiental y monitoreo remoto mediante instrumentación orientada al control de ruido y calidad ambiental. | Integración con herramientas de diseño y construcción del ecosistema Autodesk, permitiendo centralizar documentación, coordinación y seguimiento de proyectos. |
 | **Perfil de Marketing** | | | | |
 | **Mercado objetivo** | Empresas constructoras viales y empresas supervisoras o consultoras ambientales que gestionan uno o varios proyectos de infraestructura. | Empresas constructoras, contratistas y proyectos de infraestructura que requieren monitoreo ambiental continuo. | Consultoras ambientales, autoridades, empresas industriales y organizaciones que requieren monitoreo de ruido y calidad ambiental. | Empresas constructoras, consorcios de ingeniería, estudios de diseño y organizaciones responsables de gestionar proyectos de construcción. |
-| **Estrategias de marketing** | Prospección B2B dirigida a empresas constructoras viales y consultoras ambientales, presencia en espacios especializados del sector y presentación de la propuesta mediante casos de uso relacionados con control ambiental y trazabilidad. | Marketing de contenidos, presentación de casos de uso en proyectos de construcción y promoción de capacidades de monitoreo ambiental continuo. | Venta consultiva especializada, presencia en mercados de instrumentación ambiental y comercialización mediante distribuidores y canales especializados. | Marketing B2B global, ecosistema de partners, certificaciones profesionales y promoción integrada dentro del ecosistema Autodesk. |
+| **Estrategias de marketing** | Prospección B2B dirigida a empresas constructoras viales y consultoras ambientales, presencia en espacios especializados del sector y presentación de la propuesta mediante casos de uso relacionados con gestión ambiental, trazabilidad y seguimiento de incidencias. | Marketing de contenidos, presentación de casos de uso en proyectos de construcción y promoción de capacidades de monitoreo ambiental continuo. | Venta consultiva especializada, presencia en mercados de instrumentación ambiental y comercialización mediante distribuidores y canales especializados. | Marketing B2B global, ecosistema de socios comerciales, certificaciones profesionales y promoción integrada dentro del ecosistema Autodesk. |
 | **Perfil de Producto** | | | | |
-| **Productos & Servicios** | Plataforma web para gestión ambiental de proyectos viales, integración de mediciones, seguimiento de incidencias, acciones de mitigación, evidencias e información histórica asociada a proyectos y puntos de monitoreo. | Dispositivos de monitoreo ambiental y plataforma en la nube con visualización de datos, alertas y reportes. | Equipos de medición ambiental integrados con una plataforma web para consulta y análisis de información histórica. | Módulos de gestión de construcción, documentación, coordinación, incidencias, planos y colaboración entre participantes del proyecto. |
-| **Precios & Costos** | Modelo de suscripción orientado a organizaciones, con posibilidad de estructurar planes según cantidad de proyectos, puntos de monitoreo y alcance de los servicios utilizados. | Modelo de contratación asociado al uso de dispositivos y servicios de monitoreo. | Comercialización de dispositivos de medición junto con servicios de acceso a plataforma y gestión de información. | Licenciamiento mediante suscripciones para usuarios y organizaciones, con diferentes planes según productos y capacidades contratadas. |
-| **Canales de distribución** | Plataforma web responsiva accesible mediante navegador, complementada con servicios asociados al monitoreo de proyectos viales. | Plataforma web y servicios asociados al despliegue de dispositivos de monitoreo. | Plataforma web y distribución de equipos especializados mediante canales comerciales y representantes. | Plataforma web, aplicaciones móviles y herramientas integradas dentro del ecosistema Autodesk. |
+| **Productos & Servicios** | Plataforma web para la gestión y supervisión ambiental de proyectos viales, con registro y consulta de proyectos, puntos de monitoreo, mediciones, alertas, incidencias, acciones de mitigación, evidencias, historial y reportes. | Dispositivos de monitoreo ambiental y plataforma en la nube con visualización de datos, alertas y reportes. | Equipos de medición ambiental integrados con una plataforma web para consulta y análisis de información histórica. | Módulos de gestión de construcción, documentación, coordinación, incidencias, planos y colaboración entre participantes del proyecto. |
+| **Precios & Costos** | Modelo de suscripción orientado a organizaciones, con diferentes niveles de servicio según funcionalidades, cantidad de usuarios, proyectos y capacidades disponibles. La implementación de pasarelas de pago reales no forma parte del MVP. | Modelo de contratación asociado al uso de dispositivos y servicios de monitoreo. | Comercialización de dispositivos de medición junto con servicios de acceso a plataforma y gestión de información. | Licenciamiento mediante suscripciones para usuarios y organizaciones, con diferentes planes según productos y capacidades contratadas. |
+| **Canales de distribución** | Aplicación web responsiva accesible mediante navegador para empresas constructoras viales y empresas supervisoras o consultoras ambientales. | Plataforma web y servicios asociados al despliegue de dispositivos de monitoreo. | Plataforma web y distribución de equipos especializados mediante canales comerciales y representantes. | Plataforma web, aplicaciones móviles y herramientas integradas dentro del ecosistema Autodesk. |
 | **Análisis SWOT** | *Las fortalezas permiten aprovechar oportunidades y sustentar la propuesta de diferenciación.* | | | |
-| **Fortalezas** | Integración de monitoreo ambiental, seguimiento de incidencias y gestión de evidencias dentro de una plataforma orientada al contexto de proyectos viales, con una propuesta de servicio que busca reducir la necesidad de inversión inicial en infraestructura propia. | Especialización en monitoreo ambiental continuo y experiencia en proyectos de construcción e infraestructura. | Experiencia en instrumentación ambiental y disponibilidad de equipos especializados de monitoreo. | Amplio ecosistema de herramientas para proyectos de construcción y elevada integración entre sus productos. |
+| **Fortalezas** | Especialización en gestión ambiental para proyectos viales e integración de mediciones, alertas, incidencias, acciones de mitigación, evidencias e información histórica dentro de una misma plataforma. | Especialización en monitoreo ambiental continuo y experiencia en proyectos de construcción e infraestructura. | Experiencia en instrumentación ambiental y disponibilidad de equipos especializados de monitoreo. | Amplio ecosistema de herramientas para proyectos de construcción y elevada integración entre sus productos. |
 | **Debilidades** | Producto en etapa inicial de desarrollo, con menor presencia en el mercado y menor madurez tecnológica que competidores internacionales consolidados. El alcance inicial contempla un conjunto limitado de variables y funcionalidades de monitoreo ambiental. | Su enfoque se concentra principalmente en monitoreo ambiental y puede requerir soluciones adicionales para gestionar procesos operativos posteriores a una incidencia. | Su propuesta se centra principalmente en instrumentación y monitoreo, por lo que la gestión operativa de incidencias puede depender de herramientas complementarias. | Su alcance es general para gestión de construcción y no está específicamente orientado a procesos de supervisión ambiental vial. |
-| **Oportunidades** | Mayor necesidad de digitalizar procesos de seguimiento ambiental, centralizar evidencias y mejorar la trazabilidad de información en proyectos de infraestructura vial. | Expansión de proyectos que requieren monitoreo ambiental continuo y mayor trazabilidad de información. | Crecimiento de la demanda de instrumentación ambiental conectada y monitoreo remoto. | Incorporación progresiva de capacidades adicionales mediante integraciones y extensiones del ecosistema de construcción. |
+| **Oportunidades** | Creciente necesidad de digitalizar los procesos de gestión y supervisión ambiental, centralizar información proveniente de diferentes proyectos y mejorar la trazabilidad de mediciones, incidencias y evidencias. | Expansión de proyectos que requieren monitoreo ambiental continuo y mayor trazabilidad de información. | Crecimiento de la demanda de instrumentación ambiental conectada y monitoreo remoto. | Incorporación progresiva de capacidades adicionales mediante integraciones y extensiones del ecosistema de construcción. |
 | **Amenazas** | Presencia de proveedores internacionales consolidados, incorporación progresiva de funcionalidades ambientales en plataformas generales de construcción y posibilidad de que las empresas clientes mantengan procesos manuales existentes debido a costos o complejidad de adopción. | Entrada de nuevos proveedores especializados y plataformas con capacidades similares de monitoreo ambiental. | Competencia de fabricantes de equipos de menor costo y nuevas soluciones de monitoreo conectado. | Aparición de plataformas especializadas que resuelvan necesidades específicas de industrias o dominios que una solución generalista no cubre en profundidad. |
 
 #### Síntesis del análisis competitivo
@@ -34,133 +34,206 @@ El análisis evidencia que las soluciones evaluadas cubren diferentes partes del
 
 La oportunidad identificada para RoadWatch OS se encuentra en combinar el seguimiento de variables ambientales con la gestión operativa de incidencias, acciones de mitigación, responsables y evidencias dentro de un entorno orientado al contexto de proyectos viales.
 
-Esta diferenciación no se plantea únicamente desde la captura de datos, sino desde la posibilidad de relacionar la información ambiental con las acciones posteriores que realizan las empresas constructoras y las empresas supervisoras o consultoras ambientales.
+Esta diferenciación no se plantea únicamente desde el registro o consulta de mediciones, sino desde la posibilidad de relacionar la información ambiental con las acciones posteriores que realizan las empresas constructoras y las empresas supervisoras o consultoras ambientales.
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
 <a id="2-1-2-estrategias-y-tacticas-frente-a-competidores"></a>
 
-A partir del análisis competitivo realizado, VíaNexo identifica oportunidades para diferenciar RoadWatch OS frente a plataformas especializadas en monitoreo ambiental, proveedores de instrumentación y suites generales de gestión de proyectos de construcción.
+A partir del análisis competitivo realizado, VíaNexo identifica oportunidades para diferenciar RoadWatch OS frente a plataformas especializadas en monitoreo ambiental, proveedores de instrumentación y soluciones generales de gestión de proyectos de construcción.
 
-Las estrategias y tácticas propuestas buscan aprovechar las fortalezas identificadas en el análisis SWOT y responder a las principales brechas observadas en las alternativas evaluadas.
+Las estrategias y tácticas propuestas buscan aprovechar las fortalezas identificadas en el análisis competitivo, responder a las principales debilidades observadas en las alternativas evaluadas y fortalecer la propuesta de valor de RoadWatch OS dentro del contexto de proyectos viales.
 
-#### Estrategia 1: Integración del monitoreo ambiental y la gestión operativa
+#### Estrategia 1: Integración de la gestión ambiental y el seguimiento operativo
 
-Mientras algunas soluciones se concentran principalmente en la captura o visualización de mediciones ambientales, RoadWatch OS plantea integrar en un mismo entorno el monitoreo, la identificación de incidencias, la asignación de acciones de mitigación, el seguimiento de responsables y el almacenamiento de evidencias.
-
-**Tácticas:**
-
-- Centralizar las mediciones ambientales de los diferentes frentes de obra.
-- Relacionar las alertas e incidencias con responsables, acciones correctivas y evidencias.
-- Mantener un historial de los eventos ambientales ocurridos en cada proyecto o tramo.
-- Facilitar el seguimiento de las acciones de mitigación desde su identificación hasta su cierre.
-
-#### Estrategia 2: Orientación preventiva frente al cumplimiento ambiental
-
-RoadWatch OS busca diferenciarse de los procesos de supervisión principalmente reactivos mediante la identificación oportuna de situaciones que puedan aproximarse a los límites ambientales establecidos.
+Mientras algunas soluciones se concentran principalmente en la captura o visualización de mediciones ambientales, RoadWatch OS busca integrar en un mismo entorno la información necesaria para realizar seguimiento a los proyectos, mediciones, alertas, incidencias, acciones de mitigación y evidencias.
 
 **Tácticas:**
 
-- Incorporar alertas asociadas a los valores registrados en los puntos de monitoreo.
-- Facilitar la visualización de tendencias e información histórica.
-- Permitir que los responsables identifiquen rápidamente proyectos o frentes que requieren atención.
-- Apoyar la toma de decisiones antes de que una situación derive en una observación o posible incumplimiento.
+- Centralizar la información ambiental de los diferentes proyectos y frentes de obra.
+- Relacionar las mediciones con alertas, incidencias, responsables y acciones de mitigación.
+- Asociar evidencias y documentos a las situaciones ambientales correspondientes.
+- Mantener un historial que permita revisar las acciones realizadas durante el desarrollo del proyecto.
 
-#### Estrategia 3: Centralización y trazabilidad de la evidencia ambiental
+#### Estrategia 2: Orientación preventiva frente a posibles desviaciones ambientales
 
-Frente al uso fragmentado de hojas de cálculo, correos electrónicos, documentos y aplicaciones de mensajería, RoadWatch OS plantea mantener la información ambiental relacionada dentro de una única plataforma.
-
-**Tácticas:**
-
-- Asociar mediciones, fotografías, incidencias y acciones correctivas al proyecto y punto de monitoreo correspondiente.
-- Mantener registros históricos que permitan reconstruir los eventos ocurridos.
-- Facilitar la consulta de información necesaria para supervisiones, auditorías y fiscalizaciones.
-- Reducir el esfuerzo requerido para localizar y consolidar evidencias provenientes de diferentes fuentes.
-
-#### Estrategia 4: Modelo de servicio accesible para empresas del sector vial
-
-RoadWatch OS plantea un modelo de servicio que permita a las organizaciones acceder a capacidades de monitoreo ambiental sin depender necesariamente de grandes inversiones iniciales en infraestructura tecnológica propia.
+RoadWatch OS busca diferenciarse de los procesos principalmente reactivos mediante la identificación oportuna de mediciones que se acerquen o superen los umbrales ambientales configurados.
 
 **Tácticas:**
 
-- Ofrecer planes de servicio adaptados a la cantidad de proyectos, frentes de obra o puntos de monitoreo.
-- Integrar dentro de la propuesta el uso de dispositivos de monitoreo y la plataforma digital.
-- Orientar la oferta comercial a empresas constructoras viales y empresas supervisoras o consultoras ambientales.
-- Facilitar una adopción progresiva de la plataforma de acuerdo con las necesidades de cada organización.
+- Comparar las mediciones registradas con los umbrales establecidos.
+- Mostrar alertas cuando se identifiquen valores que requieran atención.
+- Facilitar la consulta de información histórica para reconocer cambios en los indicadores ambientales.
+- Permitir que los responsables identifiquen rápidamente los proyectos, frentes o puntos de monitoreo que necesitan revisión.
 
-#### Estrategia 5: Especialización en procesos de gestión ambiental de proyectos viales
+#### Estrategia 3: Centralización y trazabilidad de evidencias ambientales
 
-A diferencia de plataformas generales de gestión de construcción, RoadWatch OS se orienta específicamente a las actividades de monitoreo, seguimiento y supervisión ambiental asociadas a proyectos de infraestructura vial.
+Frente al uso fragmentado de hojas de cálculo, correos electrónicos, fotografías, documentos y aplicaciones de mensajería, RoadWatch OS busca mantener relacionada la información ambiental dentro de una misma plataforma.
+
+**Tácticas:**
+
+- Asociar fotografías, documentos y otros registros a las mediciones o incidencias correspondientes.
+- Mantener un historial de evidencias y acciones realizadas.
+- Facilitar la búsqueda y consulta de información por proyecto, fecha, punto de monitoreo u otros criterios.
+- Reducir el tiempo necesario para localizar y consolidar información durante supervisiones, auditorías o fiscalizaciones.
+
+#### Estrategia 4: Modelo de suscripción adaptable a las organizaciones
+
+RoadWatch OS plantea un modelo de suscripción que permita a las organizaciones acceder a diferentes capacidades de la plataforma según sus necesidades y características operativas.
+
+**Tácticas:**
+
+- Definir diferentes niveles de servicio según las funcionalidades disponibles.
+- Considerar límites relacionados con cantidad de usuarios, proyectos u otras capacidades de uso.
+- Permitir que las organizaciones puedan cambiar de plan según sus necesidades.
+- Facilitar una adopción progresiva de la plataforma sin requerir una inversión inicial en infraestructura tecnológica especializada.
+
+#### Estrategia 5: Especialización en gestión ambiental de proyectos viales
+
+A diferencia de soluciones generales para la gestión de proyectos de construcción, RoadWatch OS se orienta específicamente a las actividades de gestión y supervisión ambiental asociadas a proyectos de infraestructura vial.
 
 **Tácticas:**
 
 - Utilizar conceptos y flujos propios del dominio de gestión ambiental vial.
 - Organizar la información por proyecto, tramo, frente de obra y punto de monitoreo.
-- Priorizar funcionalidades vinculadas con mediciones ambientales, incidencias, acciones de mitigación y evidencias.
-- Diseñar la experiencia considerando las necesidades diferenciadas de empresas constructoras y empresas supervisoras o consultoras ambientales.
+- Priorizar funcionalidades relacionadas con mediciones ambientales, alertas, incidencias, acciones de mitigación, evidencias y reportes.
+- Diseñar la experiencia de uso considerando las necesidades diferenciadas de empresas constructoras viales y empresas supervisoras o consultoras ambientales.
 
+#### Estrategia 6: Supervisión consolidada de múltiples proyectos
+
+RoadWatch OS busca ofrecer una visión organizada de varios proyectos para apoyar a las empresas supervisoras o consultoras ambientales que gestionan información proveniente de distintas obras y responsables.
+
+**Tácticas:**
+
+- Presentar información consolidada del estado ambiental de varios proyectos.
+- Facilitar la identificación de proyectos con incidencias abiertas o situaciones que requieran atención.
+- Permitir la consulta de indicadores, evidencias e historial de cada proyecto.
+- Facilitar la generación y consulta de reportes para actividades de seguimiento y supervisión.
+  
 ## 2.2 Entrevistas
 <a id="2-2-entrevistas"></a>
 
 ### 2.2.1 Diseño de Entrevistas
 <a id="2-2-1-diseno-de-entrevistas"></a>
 
-#### Preguntas presentación
+Las entrevistas tienen como objetivo conocer cómo los representantes de los dos segmentos realizan actualmente las actividades relacionadas con la gestión y supervisión ambiental de proyectos viales, así como identificar sus principales necesidades, objetivos, dificultades, herramientas utilizadas y hábitos de trabajo.
 
-- ¿Hola cuál es tu nombre y edad?
-- ¿Cuál es tu cargo actual y hace cuánto tiempo te desempeñas en él?
-- ¿Cuáles son tus principales responsabilidades del día a día en relación con la gestión o supervisión ambiental del proyecto?
+Las preguntas fueron planteadas de manera abierta para evitar condicionar las respuestas de los participantes. Además de conocer el proceso actual, se busca recopilar información que permita identificar características comunes de cada segmento y construir posteriormente los User Personas.
 
-### Segmento 1: Líderes o jefes de gestión de proyectos viales (Empresas Constructoras)
+Durante las entrevistas se recopilará información demográfica y profesional, experiencia, responsabilidades, herramientas de trabajo, dispositivos utilizados, canales de comunicación, objetivos, frustraciones y expectativas relacionadas con la gestión ambiental.
 
-#### Preguntas principales:
+#### Preguntas de presentación
 
-1. Buen día, ¿podría comentarme su nombre, edad y el puesto que desempeña dentro de la constructora?
+Estas preguntas se realizarán a los participantes de ambos segmentos:
 
-2. ¿Cuántos frentes de obra o tramos viales tienen actualmente en ejecución bajo su cargo?
+1. ¿Cuál es su nombre y edad?
 
-3. ¿Cómo realizan actualmente el registro y seguimiento de los indicadores ambientales (aire, ruido, agua) en los frentes de trabajo?
+2. ¿En qué distrito reside actualmente?
 
-4. ¿Qué herramientas utilizan el equipo de campo y la oficina central para compartir las mediciones, fotografías de evidencias y reportes ambientales?
+3. ¿Cuál es su cargo y en qué tipo de empresa trabaja?
 
-5. Al ejecutar y gestionar varios frentes/tramos viales simultáneamente, ¿qué tan complicado resulta mantener organizada y al día toda la documentación e historial ambiental?
+4. ¿Cuántos años de experiencia tiene en proyectos de infraestructura, construcción o gestión ambiental?
 
-6. ¿Qué ocurre o qué protocolo siguen cuando en campo detectan que un indicador (como polvo o ruido) está cerca de superar o ya superó el límite del ECA/LMP?
+5. ¿Cuáles son sus principales responsabilidades dentro de su trabajo?
 
-7. Tras detectar una incidencia o recibir una observación de la supervisión, ¿cómo asignan y hacen el seguimiento a las acciones de mitigación en campo?
+---
 
-8. ¿Qué dificultades enfrentan al momento de consolidar la información para responder a las auditorías de la supervisión o ante entidades fiscalizadoras (ej. OEFA / MTC)?
+#### Segmento 1: Empresas Constructoras Viales
 
-9. ¿Cuál considera que es la principal dificultad que enfrentan como constructora al gestionar la parte ambiental en múltiples tramos a la vez?
+##### Preguntas principales
 
-10. Si pudiera cambiar una sola cosa del proceso con el que gestionan las contingencias ambientales en obra, ¿qué cambiaría?
+1. ¿Cómo es un día habitual de trabajo para usted cuando tiene que realizar seguimiento ambiental a uno o varios frentes de obra?
 
-11. ¿Considera útil contar con alertas telemáticas o sensores que les avisen automáticamente antes de sobrepasar los límites normativos?
+2. ¿Cómo realizan actualmente el registro de las mediciones ambientales, como ruido, material particulado o calidad del agua?
 
-12. Finalmente, ¿qué información o indicador considera crítico tener a la mano para garantizar que la obra no sea paralizada ni sancionada ambientalmente?
+3. ¿Cómo organizan la información ambiental correspondiente a los diferentes proyectos, tramos o frentes de obra?
 
-### Segmento 2: Empresas Supervisoras y Consultoras Ambientales (Múltiples Proyectos)
+4. ¿Qué herramientas utilizan para registrar o consultar mediciones, fotografías, documentos y reportes ambientales?
 
-1. Buen día, ¿podría comentarme su nombre, edad y puesto que desempeña en el rubro de supervisión o consultoría ambiental?
+5. Cuando se detecta una medición fuera de lo esperado o una posible desviación ambiental, ¿qué sucede desde que se identifica hasta que se atiende?
 
-2. En primer lugar, ¿cómo realizan actualmente el seguimiento de los indicadores ambientales de los proyectos que supervisan, como aire, ruido y agua?
+6. ¿Cómo asignan actualmente las acciones correctivas o medidas de mitigación a los responsables?
 
-3. ¿Qué herramientas utilizan para recibir y compartir las mediciones, fotografías y documentos de los diferentes proyectos?
+7. ¿Cómo realizan el seguimiento para saber si una incidencia o acción pendiente ya fue atendida?
 
-4. Al supervisar varios proyectos, ¿qué tan complicado es mantener organizada toda la información ambiental?
+8. ¿Qué dificultades encuentra al trabajar con varios proyectos o frentes de obra al mismo tiempo?
 
-5. ¿Qué ocurre cuando detectan una medición que podría representar un incumplimiento ambiental?
+9. ¿Qué problemas suelen presentarse al momento de buscar mediciones, fotografías, documentos o evidencias anteriores?
 
-6. ¿Cómo realizan actualmente el seguimiento de las acciones correctivas después de detectar una incidencia?
+10. ¿Cómo preparan actualmente la información cuando reciben una solicitud de la supervisión, una auditoría o una fiscalización?
 
-7. ¿Qué dificultades encuentran al momento de preparar informes para una auditoría o fiscalización?
+11. ¿Qué parte del proceso de gestión ambiental considera que le consume más tiempo?
 
-8. Entrevistador: ¿Cuál considera que es la principal dificultad al supervisar ambientalmente varios proyectos?
+12. ¿Cuál es la situación que más le preocupa durante el seguimiento ambiental de una obra?
 
-9. Entrevistador: Si pudiera cambiar una sola cosa del proceso actual, ¿qué cambiaría?
+13. Si pudiera mejorar una sola parte del proceso actual, ¿cuál sería y por qué?
 
-10. Entrevistador: ¿Considera útil recibir información ambiental directamente desde sensores instalados en los proyectos?
+##### Preguntas complementarias
 
-11. Entrevistador: Finalmente, ¿qué información considera más importante para supervisar correctamente el estado ambiental de los proyectos?
+14. ¿Utiliza principalmente computadora, celular, tablet u otro dispositivo durante sus actividades de trabajo?
+
+15. ¿Qué aplicaciones o canales utiliza con mayor frecuencia para comunicarse con el personal de campo y otros responsables?
+
+16. ¿Qué tipo de información necesita revisar con mayor frecuencia durante el día?
+
+17. ¿Prefiere revisar información mediante tablas, gráficos, mapas, reportes u otro formato? ¿Por qué?
+
+18. ¿Qué tan cómodo se siente utilizando nuevas aplicaciones o herramientas digitales en su trabajo?
+
+19. Cuando necesita tomar una decisión rápidamente, ¿qué información considera indispensable tener disponible?
+
+20. ¿Qué características debería tener una herramienta para que realmente le resulte útil en su trabajo diario?
+
+21. ¿Hay alguna aplicación, plataforma o herramienta digital que utilice frecuentemente y que considere especialmente sencilla o útil? ¿Qué le gusta de ella?
+
+---
+
+#### Segmento 2: Empresas Supervisoras y Consultoras Ambientales
+
+##### Preguntas principales
+
+1. ¿Cómo es un día habitual de trabajo cuando tiene que supervisar o revisar la información ambiental de uno o varios proyectos?
+
+2. ¿Cómo recibe actualmente las mediciones ambientales provenientes de los proyectos que supervisa?
+
+3. ¿Qué herramientas utiliza para organizar mediciones, documentos, fotografías, observaciones y reportes?
+
+4. Cuando supervisa varios proyectos al mismo tiempo, ¿cómo identifica cuáles requieren mayor atención?
+
+5. ¿Qué sucede cuando encuentra una medición, observación o situación que podría representar un problema ambiental?
+
+6. ¿Cómo comunica actualmente una observación a la empresa responsable del proyecto?
+
+7. ¿Cómo realiza el seguimiento para comprobar que una observación o incidencia haya sido atendida?
+
+8. ¿Qué dificultades encuentra al revisar información proveniente de diferentes empresas, proyectos o responsables?
+
+9. ¿Qué problemas suelen presentarse cuando necesita consultar información histórica de un proyecto?
+
+10. ¿Cómo prepara actualmente la información necesaria para elaborar reportes, auditorías o procesos de fiscalización?
+
+11. ¿Qué parte del proceso de supervisión ambiental considera que requiere mayor trabajo manual?
+
+12. ¿Qué información considera más importante para conocer rápidamente el estado ambiental de un proyecto?
+
+13. Si pudiera cambiar una sola parte del proceso actual de supervisión, ¿cuál sería y por qué?
+
+##### Preguntas complementarias
+
+14. ¿Utiliza principalmente computadora, celular, tablet u otro dispositivo para realizar sus actividades?
+
+15. ¿Qué canales utiliza normalmente para comunicarse con las empresas constructoras o responsables de los proyectos?
+
+16. ¿Con qué frecuencia necesita consultar información histórica, evidencias o reportes anteriores?
+
+17. ¿Prefiere revisar la información mediante tablas, gráficos, mapas, indicadores u otro formato? ¿Por qué?
+
+18. ¿Qué tan cómodo se siente utilizando nuevas plataformas digitales en sus actividades de supervisión?
+
+19. Cuando existen varios proyectos con observaciones pendientes, ¿cómo decide cuál revisar primero?
+
+20. ¿Qué características debería tener una herramienta digital para ayudarle a supervisar varios proyectos?
+
+21. ¿Hay alguna aplicación o plataforma que utilice en su trabajo y cuya forma de presentar u organizar la información considere especialmente útil? ¿Por qué?
 
 ### 2.2.2 Registro de Entrevistas
 <a id="2-2-2-registro-de-entrevistas"></a>
@@ -193,17 +266,16 @@ Los participantes de este segmento corresponden a profesionales involucrados en 
 
 | Campo | Información |
 |---|---|
-| Nombres | Pendiente |
-| Apellidos | Pendiente |
-| Edad | Pendiente |
-| Distrito | Pendiente |
-| Cargo | Pendiente |
-| Años de experiencia | Pendiente |
-| Evidencia | Pendiente |
-| Enlace de video | Pendiente |
-| Inicio de entrevista | Pendiente |
-| Duración | Pendiente |
-| Resumen | Pendiente de actualización con la nueva entrevista. |
+| Nombres | Alex Dante  |
+| Apellidos | Quintanilla Pérez |
+| Edad | 49 años |
+| Distrito | San Juan de Lurigancho |
+| Cargo | Jefe de SSOMA |
+| Años de experiencia | 12 años |
+| Evidencia |![Entrevista Alex Quintanilla](../assets/images/chapter2/EntrevistaAlexQuintanilla.png)  |
+| Enlace de video | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241e356_upc_edu_pe/IQDOHhvGbnQpQYQcNzJf3safAW7v3ItfV2NOiFdIGRSiGZc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=7eKvFx) |
+| Duración | 0:00 - 3:16 |
+| Resumen | Alex Dante Quintanilla Pérez es Jefe de SSOMA con 12 años de experiencia en construcción vial. Actualmente gestiona 3 proyectos simultáneos con múltiples frentes de obra, lo que le obliga a delegar constantemente en supervisores de campo al no poder estar presente en todos los puntos a la vez. El registro de mediciones ambientales se realiza de forma manual mediante formatos físicos que luego se trasladan a hojas de cálculo Excel, y las evidencias fotográficas se comparten por WhatsApp o Messenger, reconociendo que no es el método ideal pero es el disponible actualmente. Ante una incidencia reciente de niveles de ruido elevados cerca de una zona residencial, la coordinación se realizó por llamadas telefónicas y la documentación se gestionó en un archivo Word, sin un sistema centralizado de seguimiento formal. Su mayor dificultad es la pérdida de tiempo al buscar registros históricos dispersos en múltiples archivos y grupos de WhatsApp, pudiendo tomar hasta media hora localizar información de un mes específico. Señala además que toda notificación depende de que alguien recuerde avisar manualmente, sin ningún tipo de alerta automática. Las consecuencias de no detectar un incumplimiento a tiempo incluyen multas, paralización de obra y pérdida del contrato en proyectos públicos. Como mejora principal, identifica la necesidad de un panel centralizado con visibilidad en tiempo real del estado de todos sus puntos de monitoreo y alertas automáticas ante sobrepasos de límites normativos, sin depender de terceros para enterarse de una desviación.|
 
 #### Entrevista #3
 
