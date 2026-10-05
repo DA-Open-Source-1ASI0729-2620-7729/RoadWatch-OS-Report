@@ -613,7 +613,6 @@ https://www.figma.com/design/eGXyMXIHk0qbEQibxcmCCk/roadwatch?node-id=0-1&p=f&t=
 | :---: | :---: |
 | ![Prototipo - Constructora Mobile](../assets/images/chapter4/webapp/prototype/prototipo-constructora-mobile.gif) | ![Prototipo - Supervisora Mobile](../assets/images/chapter4/webapp/prototype/prototipo-supervisora-mobile.gif) |
 
-Para completar esta sección de acuerdo con el enunciado del proyecto, se debe añadir para cada aplicación una captura del video de demostración y el enlace correspondiente al video publicado en Microsoft Stream.
 
 ## 4.6. Domain-Driven Software Architecture.
 <a id="4-6-domain-driven-software-architecture"></a>
