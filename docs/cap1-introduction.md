@@ -270,36 +270,50 @@ Se considerará que la propuesta genera valor cuando los usuarios puedan encontr
 
 ---
 
-#### 1.2.2.3. Lean UX Hypothesis Statements
+#### 1.2.2.3 Lean UX Hypothesis Statements
 
-* **Hipótesis 1 (Red de Nodos IoT):**
-  * **We believe we will achieve:** Un crecimiento sostenido en la adopción del modelo de suscripción y recurrencia de clientes (Business Outcome).
-  * **If:** Las empresas constructoras y supervisoras (Users).
-  * **Attain:** El beneficio de optimizar su presupuesto operativo al evitar la compra y mantenimiento complejo de instrumental de medición (User Outcome).
-  * **With:** Una Red de Nodos IoT suministrada bajo el modelo HaaS (Hardware as a Service) (Feature).
+##### Hipótesis 1: Centralización de información ambiental
 
-* **Hipótesis 2 (Motor de Clasificación de Riesgo):**
-  * **We believe we will achieve:** Una reducción del 50% en el tiempo medio de atención y cierre de incidencias ambientales cumpliendo nuestra Definition of Done (Business Outcome).
-  * **If:** Los ingenieros residentes de obra y responsables de mitigación (Users).
-  * **Attain:** El objetivo de reaccionar rápidamente y mitigar desviaciones antes de que se conviertan en multas o paralizaciones (User Outcome).
-  * **With:** Un Motor de Clasificación de Riesgo Automatizado que compara lecturas con los LMP y detona alertas preventivas (Feature).
+- **We believe we will achieve:** una reducción en el tiempo empleado para localizar y consolidar información ambiental de los proyectos.
+- **If:** los responsables ambientales de empresas constructoras y supervisoras utilizan RoadWatch OS de manera frecuente.
+- **Attain:** una mejor organización y acceso a la información relacionada con proyectos, mediciones, incidencias, evidencias y reportes.
+- **With:** una plataforma web que centraliza la información ambiental dentro de un mismo entorno.
 
-* **Hipótesis 3 (Módulo Operativo de Mitigación):**
-  * **We believe we will achieve:** Un aumento en el Ingreso Mensual Recurrente (MRR) por altas tasas de renovación de licencias al trasladarse a nuevos frentes de obra (Business Outcome).
-  * **If:** El equipo operativo de mitigación ambiental de la empresa constructora (Users).
-  * **Attain:** El beneficio de resolver incidentes de forma ordenada en campo, dejando constancia para evitar sanciones (User Outcome).
-  * **With:** Un Módulo Operativo de Mitigación que centraliza alertas, abre tickets automáticos y permite el registro de evidencias fotográficas georreferenciadas (Feature).
+##### Hipótesis 2: Seguimiento preventivo de mediciones
 
-* **Hipótesis 4 (Módulo de Fiscalización Digital):**
-  * **We believe we will achieve:** Una reducción en nuestro Costo de Adquisición de Clientes (CAC) al lograr que las entidades de auditoría recomienden el software como estándar (Business Outcome).
-  * **If:** Los auditores y consultores ambientales de las firmas supervisoras (Users).
-  * **Attain:** El objetivo de emitir dictámenes más rápidos reduciendo drásticamente las costosas visitas presenciales a campo (User Outcome).
-  * **With:** Un Módulo de Fiscalización Digital que provee historiales inalterables y un generador automatizado de reportes normativos (Feature).
+- **We believe we will achieve:** una identificación más oportuna de situaciones que requieran atención ambiental.
+- **If:** los responsables de gestión ambiental registran y revisan periódicamente las mediciones de sus proyectos.
+- **Attain:** la capacidad de detectar valores cercanos o superiores a los umbrales establecidos.
+- **With:** un sistema que compara las mediciones ambientales con los límites configurados y genera alertas cuando corresponde.
 
-* **Hipótesis 5 (Control de Accesos por Bounded Contexts):**
-  * **We believe we will achieve:** El éxito comercial derivado de la doble monetización activa (Dual Revenue) sobre un mismo proyecto vial (Business Outcome).
-  * **If:** Las firmas supervisoras y las empresas ejecutoras que intervienen en la misma obra (Users).
-  * **Attain:** La tranquilidad profesional de interactuar en un entorno de datos neutral, transparente y protegido contra manipulaciones (User Outcome).
+##### Hipótesis 3: Gestión de incidencias y acciones de mitigación
+
+- **We believe we will achieve:** una mejora en el seguimiento de las incidencias ambientales y de las acciones realizadas para atenderlas.
+- **If:** los responsables ambientales de las empresas constructoras registran y actualizan las incidencias dentro de la plataforma.
+- **Attain:** una mejor trazabilidad de las situaciones detectadas, las acciones de mitigación realizadas y las evidencias asociadas.
+- **With:** un módulo de gestión de incidencias, acciones de mitigación y evidencias.
+
+##### Hipótesis 4: Supervisión de múltiples proyectos
+
+- **We believe we will achieve:** una reducción en el tiempo necesario para revisar el estado ambiental de varios proyectos.
+- **If:** los usuarios de empresas supervisoras o consultoras ambientales utilizan la plataforma para consultar la información consolidada de los proyectos bajo su responsabilidad.
+- **Attain:** una visión más clara del estado de las mediciones, incidencias, evidencias y reportes de cada proyecto.
+- **With:** un panel de supervisión que permite consultar y comparar información de múltiples proyectos.
+
+##### Hipótesis 5: Generación y consulta de reportes
+
+- **We believe we will achieve:** una mayor eficiencia en la preparación de información para procesos de seguimiento y supervisión ambiental.
+- **If:** los usuarios utilizan RoadWatch OS para registrar y mantener actualizada la información de sus proyectos.
+- **Attain:** la posibilidad de consultar información histórica y consolidada de manera más rápida.
+- **With:** funcionalidades de generación, consulta y descarga de reportes ambientales.
+
+##### Hipótesis 6: Modelo de suscripción
+
+- **We believe we will achieve:** una mayor sostenibilidad del modelo de negocio de RoadWatch OS.
+- **If:** las organizaciones perciben valor en las funcionalidades ofrecidas por la plataforma.
+- **Attain:** un uso recurrente de RoadWatch OS de acuerdo con las necesidades de cada organización.
+- **With:** distintos niveles de suscripción asociados a funcionalidades y capacidades de uso de la plataforma.
+  
 ---
 
 #### 1.2.2.4. Lean UX Canvas
