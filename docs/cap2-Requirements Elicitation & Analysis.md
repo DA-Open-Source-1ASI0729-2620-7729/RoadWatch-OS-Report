@@ -39,65 +39,76 @@ Esta diferenciación no se plantea únicamente desde el registro o consulta de m
 ### 2.1.2. Estrategias y tácticas frente a competidores
 <a id="2-1-2-estrategias-y-tacticas-frente-a-competidores"></a>
 
-A partir del análisis competitivo realizado, VíaNexo identifica oportunidades para diferenciar RoadWatch OS frente a plataformas especializadas en monitoreo ambiental, proveedores de instrumentación y suites generales de gestión de proyectos de construcción.
+A partir del análisis competitivo realizado, VíaNexo identifica oportunidades para diferenciar RoadWatch OS frente a plataformas especializadas en monitoreo ambiental, proveedores de instrumentación y soluciones generales de gestión de proyectos de construcción.
 
-Las estrategias y tácticas propuestas buscan aprovechar las fortalezas identificadas en el análisis SWOT y responder a las principales brechas observadas en las alternativas evaluadas.
+Las estrategias y tácticas propuestas buscan aprovechar las fortalezas identificadas en el análisis competitivo, responder a las principales debilidades observadas en las alternativas evaluadas y fortalecer la propuesta de valor de RoadWatch OS dentro del contexto de proyectos viales.
 
-#### Estrategia 1: Integración del monitoreo ambiental y la gestión operativa
+#### Estrategia 1: Integración de la gestión ambiental y el seguimiento operativo
 
-Mientras algunas soluciones se concentran principalmente en la captura o visualización de mediciones ambientales, RoadWatch OS plantea integrar en un mismo entorno el monitoreo, la identificación de incidencias, la asignación de acciones de mitigación, el seguimiento de responsables y el almacenamiento de evidencias.
-
-**Tácticas:**
-
-- Centralizar las mediciones ambientales de los diferentes frentes de obra.
-- Relacionar las alertas e incidencias con responsables, acciones correctivas y evidencias.
-- Mantener un historial de los eventos ambientales ocurridos en cada proyecto o tramo.
-- Facilitar el seguimiento de las acciones de mitigación desde su identificación hasta su cierre.
-
-#### Estrategia 2: Orientación preventiva frente al cumplimiento ambiental
-
-RoadWatch OS busca diferenciarse de los procesos de supervisión principalmente reactivos mediante la identificación oportuna de situaciones que puedan aproximarse a los límites ambientales establecidos.
+Mientras algunas soluciones se concentran principalmente en la captura o visualización de mediciones ambientales, RoadWatch OS busca integrar en un mismo entorno la información necesaria para realizar seguimiento a los proyectos, mediciones, alertas, incidencias, acciones de mitigación y evidencias.
 
 **Tácticas:**
 
-- Incorporar alertas asociadas a los valores registrados en los puntos de monitoreo.
-- Facilitar la visualización de tendencias e información histórica.
-- Permitir que los responsables identifiquen rápidamente proyectos o frentes que requieren atención.
-- Apoyar la toma de decisiones antes de que una situación derive en una observación o posible incumplimiento.
+- Centralizar la información ambiental de los diferentes proyectos y frentes de obra.
+- Relacionar las mediciones con alertas, incidencias, responsables y acciones de mitigación.
+- Asociar evidencias y documentos a las situaciones ambientales correspondientes.
+- Mantener un historial que permita revisar las acciones realizadas durante el desarrollo del proyecto.
 
-#### Estrategia 3: Centralización y trazabilidad de la evidencia ambiental
+#### Estrategia 2: Orientación preventiva frente a posibles desviaciones ambientales
 
-Frente al uso fragmentado de hojas de cálculo, correos electrónicos, documentos y aplicaciones de mensajería, RoadWatch OS plantea mantener la información ambiental relacionada dentro de una única plataforma.
-
-**Tácticas:**
-
-- Asociar mediciones, fotografías, incidencias y acciones correctivas al proyecto y punto de monitoreo correspondiente.
-- Mantener registros históricos que permitan reconstruir los eventos ocurridos.
-- Facilitar la consulta de información necesaria para supervisiones, auditorías y fiscalizaciones.
-- Reducir el esfuerzo requerido para localizar y consolidar evidencias provenientes de diferentes fuentes.
-
-#### Estrategia 4: Modelo de servicio accesible para empresas del sector vial
-
-RoadWatch OS plantea un modelo de servicio que permita a las organizaciones acceder a capacidades de monitoreo ambiental sin depender necesariamente de grandes inversiones iniciales en infraestructura tecnológica propia.
+RoadWatch OS busca diferenciarse de los procesos principalmente reactivos mediante la identificación oportuna de mediciones que se acerquen o superen los umbrales ambientales configurados.
 
 **Tácticas:**
 
-- Ofrecer planes de servicio adaptados a la cantidad de proyectos, frentes de obra o puntos de monitoreo.
-- Integrar dentro de la propuesta el uso de dispositivos de monitoreo y la plataforma digital.
-- Orientar la oferta comercial a empresas constructoras viales y empresas supervisoras o consultoras ambientales.
-- Facilitar una adopción progresiva de la plataforma de acuerdo con las necesidades de cada organización.
+- Comparar las mediciones registradas con los umbrales establecidos.
+- Mostrar alertas cuando se identifiquen valores que requieran atención.
+- Facilitar la consulta de información histórica para reconocer cambios en los indicadores ambientales.
+- Permitir que los responsables identifiquen rápidamente los proyectos, frentes o puntos de monitoreo que necesitan revisión.
 
-#### Estrategia 5: Especialización en procesos de gestión ambiental de proyectos viales
+#### Estrategia 3: Centralización y trazabilidad de evidencias ambientales
 
-A diferencia de plataformas generales de gestión de construcción, RoadWatch OS se orienta específicamente a las actividades de monitoreo, seguimiento y supervisión ambiental asociadas a proyectos de infraestructura vial.
+Frente al uso fragmentado de hojas de cálculo, correos electrónicos, fotografías, documentos y aplicaciones de mensajería, RoadWatch OS busca mantener relacionada la información ambiental dentro de una misma plataforma.
+
+**Tácticas:**
+
+- Asociar fotografías, documentos y otros registros a las mediciones o incidencias correspondientes.
+- Mantener un historial de evidencias y acciones realizadas.
+- Facilitar la búsqueda y consulta de información por proyecto, fecha, punto de monitoreo u otros criterios.
+- Reducir el tiempo necesario para localizar y consolidar información durante supervisiones, auditorías o fiscalizaciones.
+
+#### Estrategia 4: Modelo de suscripción adaptable a las organizaciones
+
+RoadWatch OS plantea un modelo de suscripción que permita a las organizaciones acceder a diferentes capacidades de la plataforma según sus necesidades y características operativas.
+
+**Tácticas:**
+
+- Definir diferentes niveles de servicio según las funcionalidades disponibles.
+- Considerar límites relacionados con cantidad de usuarios, proyectos u otras capacidades de uso.
+- Permitir que las organizaciones puedan cambiar de plan según sus necesidades.
+- Facilitar una adopción progresiva de la plataforma sin requerir una inversión inicial en infraestructura tecnológica especializada.
+
+#### Estrategia 5: Especialización en gestión ambiental de proyectos viales
+
+A diferencia de soluciones generales para la gestión de proyectos de construcción, RoadWatch OS se orienta específicamente a las actividades de gestión y supervisión ambiental asociadas a proyectos de infraestructura vial.
 
 **Tácticas:**
 
 - Utilizar conceptos y flujos propios del dominio de gestión ambiental vial.
 - Organizar la información por proyecto, tramo, frente de obra y punto de monitoreo.
-- Priorizar funcionalidades vinculadas con mediciones ambientales, incidencias, acciones de mitigación y evidencias.
-- Diseñar la experiencia considerando las necesidades diferenciadas de empresas constructoras y empresas supervisoras o consultoras ambientales.
+- Priorizar funcionalidades relacionadas con mediciones ambientales, alertas, incidencias, acciones de mitigación, evidencias y reportes.
+- Diseñar la experiencia de uso considerando las necesidades diferenciadas de empresas constructoras viales y empresas supervisoras o consultoras ambientales.
 
+#### Estrategia 6: Supervisión consolidada de múltiples proyectos
+
+RoadWatch OS busca ofrecer una visión organizada de varios proyectos para apoyar a las empresas supervisoras o consultoras ambientales que gestionan información proveniente de distintas obras y responsables.
+
+**Tácticas:**
+
+- Presentar información consolidada del estado ambiental de varios proyectos.
+- Facilitar la identificación de proyectos con incidencias abiertas o situaciones que requieran atención.
+- Permitir la consulta de indicadores, evidencias e historial de cada proyecto.
+- Facilitar la generación y consulta de reportes para actividades de seguimiento y supervisión.
+  
 ## 2.2 Entrevistas
 <a id="2-2-entrevistas"></a>
 
