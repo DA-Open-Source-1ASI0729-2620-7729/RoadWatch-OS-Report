@@ -335,19 +335,50 @@ Los participantes de este segmento corresponden a profesionales responsables de 
 
 #### Entrevista #1
 
-| Campo | Información |
-|---|---|
-| Nombres | Pendiente |
-| Apellidos | Pendiente |
-| Edad | Pendiente |
-| Distrito | Pendiente |
-| Cargo | Pendiente |
-| Años de experiencia | Pendiente |
-| Evidencia | Pendiente |
-| Enlace de video | Pendiente |
-| Inicio de entrevista | Pendiente |
-| Duración | Pendiente |
-| Resumen | Pendiente de actualización con la nueva entrevista. |
+<table>
+<thead>
+  <tr>
+    <th colspan="2">Entrevista #1</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Nombre</td>
+    <td>Angiela</td>
+  </tr>
+  <tr>
+    <td>Apellidos</td>
+    <td>Fuentes Alvarez</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>San Juan de Lurigancho</td>
+  </tr>
+ <tr>
+  <td>Evidencia</td>
+  <td><img src="../assets/images/chapter2/EvidenciaAngiela.jpeg" alt="Evidencia entrevista Angiela" width="400"></td>
+</tr>
+  <tr>
+    <tr>
+  <td>Link</td>
+  <td><a href="https://1drv.ms/v/c/113B281D1AF386CE/IQDGziSKN-XBRKO401eqvDWJARuiheeZ5hj3WNWlq3t0GE8?e=MV9WvJ" target="_blank">Ver video</a></td>
+</tr>
+  </tr>
+  <tr>
+    <td>Duración</td>
+    <td>0:00 - 4:23</td>
+  </tr>
+  <tr>
+    <td>Resumen</td>
+    <td>Angiela es una supervisora y consultora ambiental encargada de monitorear los indicadores de aire, ruido y agua en múltiples proyectos simultáneos. Para el control, seguimiento y recepción de evidencias, utiliza un conjunto de herramientas fragmentadas que incluyen Excel, correos electrónicos, WhatsApp, carpetas compartidas y documentos físicos. Busca garantizar el cumplimiento ambiental de todos los proyectos y agilizar la preparación de informes para auditorías o fiscalizaciones. Sin embargo, enfrenta grandes dificultades debido a la falta de centralización de la información; al manejar distintos formatos y canales por cada proyecto, se ve obligada a invertir demasiado tiempo en consolidar datos y rastrear evidencias. Esta desorganización le impide tener una visión global clara sobre qué proyectos tienen incidencias abiertas o están próximos a un incumplimiento. Angiela considera que contar con una plataforma centralizada —integrada con sensores IoT para recibir alertas en tiempo real— tendría un impacto sumamente positivo, ya que automatizaría su trabajo y mejoraría el éxito ambiental de sus proyectos.</td>
+  </tr>
+</tbody>
+</table>
+
 
 #### Entrevista #2
 
