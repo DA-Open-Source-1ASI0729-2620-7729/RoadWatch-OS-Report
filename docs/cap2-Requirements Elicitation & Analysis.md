@@ -562,13 +562,29 @@ Estos hallazgos servirán como base para revisar y sustentar los User Personas, 
 
 **Segmento 1**
 
-Para el Segmento 1 (Empresas Constructoras Viales / Módulo Operativo) se elaboró el User Persona Carlos Mendoza. Se consideraron factores como su rol de Jefe de Proyectos Viales en una empresa constructora en Lima, su experiencia de más de 10 años liderando obras viales y su responsabilidad de coordinar múltiples frentes de trabajo asegurando el avance físico y el cumplimiento de las normativas ambientales aplicables. Sus principales objetivos se centran en mantener la continuidad de la obra sin paralizaciones, recibir alertas preventivas antes de exceder los límites permitidos de polvo o ruido y centralizar las evidencias fotográficas junto con los datos obtenidos en campo. Sus principales frustraciones se relacionan con la dispersión de información en herramientas como WhatsApp, Excel y correo, la falta de visibilidad sobre posibles eventos contaminantes lejanos, la respuesta tardía provocada por mediciones manuales y la pérdida de tiempo al preparar descargos para la supervisión. Asimismo, se tomó en cuenta su alto nivel de competencias en gestión del tiempo, organización, planificación y toma de decisiones, así como su necesidad de contar con una plataforma en la nube con telemetría IoT en tiempo real, notificaciones instantáneas ante riesgos de desviación y un sistema que permita realizar el seguimiento de las acciones correctivas. Todo ello orientado a reducir riesgos de multas o paralizaciones, optimizar el tiempo del equipo técnico y proteger la reputación de la empresa constructora.
+Para el Segmento 1 (Empresas Constructoras Viales / Módulo Operativo) se elaboró el User Persona Carlos Mendoza. Se consideraron factores como su rol de Jefe de Proyectos Viales en una empresa constructora, su experiencia liderando múltiples frentes de obra y su responsabilidad de coordinar el avance del proyecto asegurando el cumplimiento de los requisitos ambientales aplicables.
+
+Sus principales objetivos se centran en mantener la continuidad de la obra, reducir el riesgo de observaciones o paralizaciones, disponer oportunamente de información sobre mediciones e incidencias y mantener organizadas las evidencias y acciones realizadas en cada frente de trabajo.
+
+Sus principales frustraciones se relacionan con la dispersión de información entre herramientas como WhatsApp, Excel, correo electrónico y documentos físicos, la dificultad para localizar registros históricos, la demora en consolidar evidencias y la dependencia de procesos manuales para conocer el estado de diferentes proyectos o frentes.
+
+Asimismo, se tomó en cuenta su necesidad de contar con una plataforma web centralizada que permita consultar mediciones, alertas, incidencias, responsables, acciones de mitigación, evidencias e información histórica desde un mismo entorno, facilitando el seguimiento de los proyectos y la toma de decisiones ante posibles desviaciones ambientales.
+
+Todo ello está orientado a reducir el tiempo dedicado a tareas administrativas, mejorar la trazabilidad de la información y disminuir los riesgos asociados al incumplimiento ambiental.
 
 ![User Persona - Carlos Mendoza](../assets/images/chapter2/CarlosUserPerson.jpeg)
 
 **Segmento 2**
 
-Para el Segmento 2 (Empresas Supervisoras Ambientales / Consultoras - Módulo de Fiscalización) se elaboró el User Persona Gisela Chavez. Se consideraron factores como su rol de Directora de Operaciones en una consultora ambiental, su vasta experiencia liderando auditorías y fiscalizaciones de proyectos de transporte a nivel nacional, y su necesidad de auditar el cumplimiento regulatorio de múltiples frentes de obra de forma transparente e imparcial. Sus principales frustraciones se relacionan con la falta de visibilidad centralizada por la dispersión de informes fragmentados provenientes de distintas constructoras, la pérdida de tiempo administrativo al navegar entre correos o reportes estáticos y la fricción que se genera al existir discrepancias de datos sobre posibles incumplimientos ambientales. Asimismo, se tomó en cuenta su alto nivel de competencias en gestión y planificación, y su necesidad de una plataforma SaaS que permita unificar los datos de cumplimiento en tiempo real, automatizar la generación de reportes oficiales respaldados por datos inalterables y priorizar la atención de auditorías mediante métricas claras de riesgo.
+Para el Segmento 2 (Empresas Supervisoras y Consultoras Ambientales / Módulo de Fiscalización) se elaboró el User Persona Gisela Chavez. Se consideraron factores como su rol de Directora de Operaciones en una consultora ambiental, su experiencia coordinando actividades de supervisión y su responsabilidad de revisar el cumplimiento ambiental de varios proyectos de manera simultánea.
+
+Sus principales objetivos se centran en disponer de una visión general del estado de los proyectos supervisados, identificar rápidamente situaciones que requieren atención, mantener la trazabilidad de mediciones, incidencias y evidencias, y reducir el tiempo requerido para preparar reportes, auditorías o fiscalizaciones.
+
+Sus principales frustraciones se relacionan con la dispersión de información entre correos electrónicos, hojas de cálculo, documentos, carpetas compartidas y aplicaciones de mensajería, así como con la dificultad para consolidar información proveniente de diferentes empresas y responsables.
+
+Asimismo, se tomó en cuenta su necesidad de contar con una plataforma web que centralice información de múltiples proyectos, permita revisar indicadores de cumplimiento, consultar evidencias e historial, identificar observaciones pendientes y generar reportes de manera más organizada.
+
+Todo ello está orientado a facilitar la supervisión de varios proyectos, mejorar la disponibilidad de la información y reducir el esfuerzo manual asociado a la validación y consolidación de documentos.
 
 ![User Persona - Gisela Chavez](../assets/images/chapter2/GiselaUserPerson.jpeg)
 ### 2.3.2. User Task Matrix
