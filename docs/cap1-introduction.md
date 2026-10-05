@@ -134,33 +134,37 @@ El desarrollo de infraestructura vial constituye un eje prioritario en el crecim
 
 A pesar del marco regulatorio vigente, los procedimientos de monitoreo ambiental en obra continúan sufriendo de un bajo nivel de adopción tecnológica. En la mayoría de frentes de trabajo, la toma de datos depende de muestreos periódicos cuyos resultados se compilan manualmente en hojas de cálculo o reportes extemporáneos. Esta desconexión operativa dificulta la adopción de medidas correctivas inmediatas, eleva el riesgo de multas para el contratista y exige que las entidades supervisoras destinen recursos significativos a la verificación presencial de los registros presentados.
 
-#### What / ¿QUÉ?
+#### ¿QUÉ?
 
-RoadWatch OS resuelve la falta de continuidad, la fragilidad operativa y los problemas de trazabilidad en los datos ambientales de proyectos viales, integrando nodos sensores IoT neutrales, dashboards geolocalizados, un motor de evaluación de riesgos con despacho automático de tickets de mitigación y un entorno de auditoría inalterable.
+RoadWatch OS busca resolver la dispersión de información ambiental en proyectos viales, centralizando en una sola plataforma los datos relacionados con proyectos, puntos de monitoreo, mediciones, alertas, incidencias, evidencias, acciones de mitigación y reportes.
 
-#### When / ¿CUÁNDO?
+#### ¿CUÁNDO?
 
-La atención de este problema resulta urgente en el escenario actual, caracterizado por la masificación de exigencias tecnológicas en la fiscalización pública, la reactivación de proyectos viales multipunto y la necesidad de contar con evidencias objetivas frente a posibles contingencias socioambientales u observaciones normativas.
+La necesidad de contar con una herramienta de este tipo se presenta durante la ejecución y supervisión de proyectos viales, especialmente cuando se requiere revisar periódicamente mediciones ambientales, identificar posibles desviaciones y dar seguimiento a incidencias o acciones correctivas.
 
-#### Where / ¿DÓNDE?
+#### ¿DÓNDE?
 
-La solución opera en los corredores viales, carreteras y obras de infraestructura de transporte —donde se despliegan los nodos de medición física—, así como en las centrales de control y oficinas técnicas de las empresas ejecutoras y supervisoras.
+La solución está orientada a empresas constructoras viales y empresas supervisoras o consultoras ambientales que participan en proyectos de infraestructura vial. La plataforma puede ser utilizada desde oficinas técnicas o desde campo mediante una aplicación web responsiva.
 
-#### Who / ¿QUIÉN?
+#### ¿QUIÉN?
 
-Los involucrados directos son las **empresas constructoras/contratistas** encargadas de la ejecución de la vía que deben demostrar el cumplimiento de los IGA, y las **empresas supervisoras / consultoras ambientales** encargadas de auditar la obra en representación del Estado o del concesionario.
+Los principales usuarios de RoadWatch OS son las empresas constructoras viales, representadas por responsables de gestión ambiental, jefes de proyecto e ingenieros de obra, y las empresas supervisoras o consultoras ambientales encargadas de revisar el cumplimiento y seguimiento ambiental de los proyectos.
 
-#### Why / ¿POR QUÉ?
+#### ¿POR QUÉ?
 
-Porque la detección tardía de un sobrepaso en los límites máximos permisibles (LMP) desencadena sanciones administrativas, paralizaciones de frentes de trabajo y daños reputacionales para la constructora; mientras que para la supervisora, la ausencia de un canal de datos continuo e inalterable incrementa los costos logísticos de fiscalización y retrasa la emisión de dictámenes de cumplimiento.
+La información ambiental de un proyecto suele encontrarse distribuida entre hojas de cálculo, documentos, fotografías, correos y otros medios. Esta dispersión dificulta la consulta de antecedentes, el seguimiento de incidencias y la elaboración de reportes. RoadWatch OS busca facilitar la organización de esta información y mejorar la trazabilidad de las acciones realizadas durante el proyecto.
 
-#### How / ¿CÓMO?
+#### ¿CÓMO?
 
-A través de un modelo HaaS/SaaS centralizado en la nube. VíaNexo despliega y mantiene la red de nodos IoT en el trazado de la obra; estos transmiten parámetros en tiempo real hacia la API REST. El backend evalúa la tendencia del dato y, si se identifican umbrales de riesgo, genera una alerta y habilita un flujo de mitigación en el módulo de la constructora. Simultáneamente, el módulo de la supervisora recibe las lecturas sin posibilidad de alteración para su validación e integración en reportes oficiales.
+RoadWatch OS funciona mediante una aplicación web integrada con una API REST. Los usuarios pueden registrar y consultar proyectos, puntos de monitoreo y mediciones ambientales. El sistema permite comparar los valores registrados con los umbrales configurados, generar alertas, registrar incidencias, asociar evidencias, dar seguimiento a acciones de mitigación y consultar información consolidada para la supervisión y elaboración de reportes.
 
-#### How Much / ¿CUÁNTO?
+En el MVP, las mediciones pueden ser registradas mediante los servicios de la plataforma. La integración directa con dispositivos físicos de monitoreo ambiental se considera una posible evolución futura.
 
-El modelo de ingresos opera mediante **suscripciones independientes (dual revenue)**. VíaNexo cobra tarifas periódicas a la constructora y a la supervisora del mismo proyecto vial según el nivel contratado (Base, Profesional o Enterprise). El costo del hardware IoT está absorbido dentro de la suscripción HaaS (los equipos son devueltos al concluir la obra), ajustando los planes en función al número de frentes de monitoreo, volumen de usuarios y capacidades de exportación de reportes.
+#### ¿CUÁNTO?
+
+El modelo de negocio considera un esquema de suscripción para las organizaciones que utilicen RoadWatch OS. Se podrán definir distintos niveles de servicio de acuerdo con las funcionalidades, cantidad de usuarios, proyectos o capacidades disponibles para cada organización.
+
+Dentro del MVP no se contempla la implementación de una pasarela de pago real. La gestión comercial de los planes podrá representarse mediante la configuración de suscripciones y límites de uso dentro de la plataforma.
 
 ---
 
