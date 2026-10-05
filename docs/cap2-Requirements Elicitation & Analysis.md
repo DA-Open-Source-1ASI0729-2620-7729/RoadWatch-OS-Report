@@ -477,57 +477,80 @@ Los participantes de este segmento corresponden a profesionales responsables de 
 </table>
 
 ### 2.2.3 Análisis de Entrevistas
-
 <a id="2-2-3-analisis-de-entrevistas"></a>
 
-**Segmento 1: Líderes o jefes de gestión de proyectos viales – Empresas Constructoras**
+El análisis de entrevistas se realizó de manera independiente para cada segmento objetivo, considerando las respuestas y resúmenes obtenidos de tres participantes por segmento. A partir de esta información se identificaron características objetivas y subjetivas recurrentes, así como necesidades, dificultades, hábitos de trabajo y expectativas comunes.
 
-| Característica                                             | Mención |   %   | Evidencia                                                                                                                                                                                            |
-| :--------------------------------------------------------- | :-----: | :---: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Uso de herramientas y canales fragmentados                 |   3/3   |  100% | Keler, Becker y Jaime utilizan Excel, WhatsApp, correos, carpetas compartidas, informes y otros medios separados para gestionar mediciones y evidencias ambientales.                                 |
-| Dificultad para organizar información de múltiples frentes |   3/3   |  100% | Los entrevistados señalan que gestionar varios frentes simultáneamente dificulta mantener actualizados y correctamente asociados los documentos, mediciones, fotografías y evidencias.               |
-| Necesidad de una plataforma centralizada                   |   3/3   |  100% | Los tres entrevistados consideran necesario disponer de una plataforma que concentre mediciones, incidencias, responsables, acciones y evidencias de todos los frentes de obra.                      |
-| Interés en sensores y alertas preventivas                  |   3/3   |  100% | Keler, Becker y Jaime consideran beneficioso utilizar sensores IoT y alertas automáticas para detectar anticipadamente valores cercanos a los límites ambientales permitidos.                        |
-| Seguimiento ambiental principalmente manual o reactivo     |   3/3   |  100% | Las mediciones y comunicaciones dependen actualmente de registros manuales, reportes periódicos o de que el personal detecte y comunique oportunamente una situación de riesgo.                      |
-| Necesidad de visibilidad en tiempo real                    |   3/3   |  100% | Los entrevistados manifiestan la necesidad de conocer oportunamente lo que ocurre en cada tramo para evitar reaccionar cuando el incumplimiento o la observación ya se produjo.                      |
-| Importancia de la trazabilidad de incidencias y evidencias |   3/3   |  100% | Se requiere mantener información asociada al tramo, fecha, punto de monitoreo, responsables, acciones ejecutadas y evidencias que permitan reconstruir el historial de una incidencia.               |
-| Riesgo de sanciones, observaciones o paralizaciones        |   3/3   |  100% | Una preocupación recurrente es detectar los problemas ambientales antes de que generen observaciones de supervisión, multas, incumplimientos o paralizaciones de la obra.                            |
-| Necesidad de gestionar acciones de mitigación              |   3/3   |  100% | Ante una incidencia se deben ejecutar acciones como riego de vías, control de velocidad, modificación de horarios u otras medidas, además de verificar posteriormente su cumplimiento.               |
-| Dificultad para consolidar información para auditorías     |   2/3   | 66.7% | Keler y Becker destacan especialmente el tiempo invertido en localizar fotografías, mediciones y documentos dispersos para preparar expedientes solicitados durante supervisiones o fiscalizaciones. |
+Los porcentajes presentados corresponden a la cantidad de entrevistados que mencionaron o evidenciaron una determinada característica dentro de cada grupo de tres participantes.
 
-**Insights Destacados**
+#### Segmento 1: Empresas Constructoras Viales
 
-* La **fragmentación de la información** constituye uno de los principales problemas del segmento, ya que las mediciones, fotografías, documentos y comunicaciones se encuentran distribuidos entre Excel, WhatsApp, correos y carpetas compartidas.
-* Existe una necesidad generalizada de pasar de una gestión ambiental **reactiva a una gestión preventiva**, detectando tendencias de riesgo antes de que un indicador supere los límites establecidos.
-* El **100% de los entrevistados considera útil centralizar la información** de los diferentes frentes de obra en una única plataforma que permita visualizar indicadores, incidencias, responsables, acciones correctivas y evidencias.
-* La incorporación de **sensores IoT y alertas automáticas** es percibida como una oportunidad para mejorar la capacidad de respuesta y reducir el riesgo de observaciones, multas o paralizaciones.
-* La **trazabilidad histórica y documental** representa un aspecto crítico, especialmente para demostrar las acciones realizadas frente a una incidencia y responder de manera más eficiente ante auditorías o fiscalizaciones.
+Para este segmento se analizaron las entrevistas realizadas a Luis Alfonso Chávez Madueño, Alex Dante Quintanilla Pérez y José Luis Pérez Ramírez, profesionales vinculados con la gestión de proyectos, SSOMA y gestión ambiental.
+
+| Característica | Mención | % | Evidencia |
+|---|:---:|:---:|---|
+| Gestión simultánea de varios proyectos o frentes de trabajo | 3/3 | 100% | Luis Alfonso menciona que administra hasta tres proyectos; Alex gestiona tres proyectos simultáneos con múltiples frentes; y José Luis supervisa entre 10 y 30 proyectos de manera simultánea. |
+| Uso de múltiples herramientas y canales para organizar información | 3/3 | 100% | Los participantes utilizan herramientas como correo electrónico, WhatsApp, Messenger, Excel, Word, Project, Primavera y documentos físicos para gestionar información relacionada con los proyectos. |
+| Necesidad de mantener organizada y disponible la información del proyecto | 3/3 | 100% | Los tres entrevistados requieren revisar información proveniente de diferentes proyectos, responsables y medios, lo cual demanda esfuerzo adicional para mantener la información actualizada y accesible. |
+| Importancia del cumplimiento ambiental y normativo | 3/3 | 100% | Luis Alfonso busca evitar problemas que afecten presupuesto, tiempo y reputación; Alex señala riesgos de multas, paralización y pérdida de contratos; y José Luis tiene como objetivo asegurar el cumplimiento de normas y estándares ambientales. |
+| Procesos manuales o dependientes de herramientas dispersas | 2/3 | 66.7% | Alex registra mediciones inicialmente en formatos físicos que luego traslada a Excel, mientras que José Luis recibe información por WhatsApp y posteriormente la organiza manualmente en hojas de cálculo. |
+| Dificultad para localizar o consolidar información histórica | 2/3 | 66.7% | Alex menciona que localizar registros anteriores puede tomar hasta media hora debido a la dispersión de archivos y grupos de mensajería. José Luis señala que debe recopilar y organizar manualmente información recibida por distintos medios. |
+| Necesidad de una plataforma digital centralizada | 2/3 | 66.7% | Alex propone disponer de un panel centralizado que le permita conocer el estado de sus puntos de monitoreo, mientras que José Luis considera necesaria una plataforma que unifique el registro de información y facilite la comunicación con su equipo. |
+| Necesidad de consultar información desde diferentes ubicaciones | 2/3 | 66.7% | Luis Alfonso utiliza principalmente celular y laptop para mantenerse informado sobre diferentes proyectos, mientras que José Luis manifiesta la necesidad de acceder a la información sin depender de encontrarse físicamente en la oficina. |
+| Interés en alertas automáticas ante situaciones ambientales | 1/3 | 33.3% | Alex señala expresamente que actualmente las notificaciones dependen de que una persona recuerde comunicar una situación y considera útil contar con alertas automáticas ante desviaciones ambientales. |
+
+#### Insights destacados del Segmento 1
+
+* La gestión de múltiples proyectos o frentes de obra es una característica común en los tres entrevistados, por lo que disponer de información organizada resulta especialmente importante para este segmento.
+
+* Existe una fuerte dependencia de herramientas y canales separados como Excel, WhatsApp, correo electrónico, documentos físicos y diferentes aplicaciones de gestión, lo cual genera mayor esfuerzo para organizar la información.
+
+* El cumplimiento ambiental representa una preocupación relevante debido al impacto que un problema puede tener sobre los costos, los plazos, la reputación de la empresa o incluso la continuidad de un proyecto.
+
+* Dos de los tres entrevistados identifican de manera explícita la necesidad de contar con una plataforma que centralice información y reduzca el trabajo manual asociado a la búsqueda, registro y consolidación de datos.
+
+* La posibilidad de acceder oportunamente a la información desde distintos lugares también resulta relevante, especialmente cuando los responsables deben coordinar varios proyectos o frentes sin encontrarse físicamente en cada uno de ellos.
 
 ---
 
-**Segmento 2: Empresas Supervisoras y Consultoras Ambientales – Múltiples Proyectos**
+#### Segmento 2: Empresas Supervisoras y Consultoras Ambientales
 
-| Característica                                                        | Mención |   %   | Evidencia                                                                                                                                                                                       |
-| :-------------------------------------------------------------------- | :-----: | :---: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Uso de múltiples herramientas para gestionar información              |   3/3   |  100% | Angiela, Guadalupe y Guillermo utilizan principalmente Excel, correos electrónicos, WhatsApp, documentos PDF, carpetas compartidas y reportes para realizar el seguimiento ambiental.           |
-| Dificultad para consolidar información de varios proyectos            |   3/3   |  100% | Los entrevistados indican que supervisar múltiples proyectos genera grandes cantidades de mediciones, fotografías, informes y observaciones distribuidas en distintos archivos y formatos.      |
-| Necesidad de centralizar la información                               |   3/3   |  100% | Los tres participantes consideran que una plataforma centralizada permitiría revisar los diferentes proyectos sin depender de numerosos archivos, carpetas y canales de comunicación.           |
-| Dificultad para obtener una visión global del estado de los proyectos |   3/3   |  100% | Actualmente resulta complicado identificar rápidamente qué proyecto presenta una incidencia, cuál posee acciones pendientes o cuál requiere mayor atención.                                     |
-| Seguimiento manual de incidencias y acciones correctivas              |   3/3   |  100% | El seguimiento se realiza mediante matrices de Excel, correos, reuniones, reportes y revisión manual de evidencias entregadas por los responsables de cada proyecto.                            |
-| Interés en sensores y monitoreo continuo                              |   3/3   |  100% | Los entrevistados consideran útil disponer de información obtenida mediante sensores para mejorar la supervisión y detectar con mayor rapidez cambios en los indicadores ambientales.           |
-| Necesidad de alertas preventivas                                      |   2/3   | 66.7% | Angiela y Guadalupe destacan directamente la utilidad de contar con alertas que permitan identificar situaciones críticas o próximas a un incumplimiento antes de que el problema se agrave.    |
-| Importancia del historial y trazabilidad                              |   3/3   |  100% | Se considera necesario disponer de registros históricos de mediciones, incidencias, responsables, acciones correctivas y evidencias para sustentar revisiones y fiscalizaciones.                |
-| Dificultad para preparar auditorías e informes                        |   3/3   |  100% | La dispersión de mediciones, fotografías y documentos incrementa el tiempo requerido para consolidar información y elaborar expedientes o informes de cumplimiento.                             |
-| Necesidad de geolocalización y ubicación de puntos de monitoreo       |   2/3   | 66.7% | Guadalupe destaca la visualización mediante mapas y Guillermo señala la importancia de conocer la ubicación exacta de cada punto de monitoreo para contextualizar correctamente las mediciones. |
+Para este segmento se analizaron las entrevistas realizadas a Angiela Fuentes Alvarez, Guadalupe Kim Chang y Rosa Mariel Montes Chang, quienes desempeñan funciones relacionadas con supervisión, coordinación, auditoría y gestión de proyectos.
 
-**Insights Destacados**
+| Característica | Mención | % | Evidencia |
+|---|:---:|:---:|---|
+| Supervisión simultánea de varios proyectos | 3/3 | 100% | Angiela realiza seguimiento a múltiples proyectos, Guadalupe supervisa diferentes actividades y proyectos, y Rosa Mariel puede gestionar hasta diez proyectos durante periodos de alta carga. |
+| Uso de múltiples herramientas y canales para gestionar información | 3/3 | 100% | Los tres participantes utilizan combinaciones de Excel, correo electrónico, WhatsApp, documentos PDF, carpetas compartidas, formatos físicos y herramientas de visualización como Power BI o Looker Studio. |
+| Dificultad para centralizar y consolidar información | 3/3 | 100% | Angiela debe consolidar información proveniente de diferentes proyectos; Guadalupe encuentra mediciones, documentos y evidencias distribuidos en diversos canales; y Rosa trabaja con registros en papel, mensajería y herramientas digitales separadas. |
+| Necesidad de una plataforma digital centralizada | 3/3 | 100% | Angiela considera necesaria una plataforma que concentre la información de los proyectos; Guadalupe destaca la utilidad de una solución centralizada; y Rosa propone una aplicación propia que permita registrar y consultar la información ambiental en un solo lugar. |
+| Importancia de disponer de información organizada para auditorías o fiscalizaciones | 3/3 | 100% | Los tres participantes necesitan reunir y validar información para reportes, auditorías o fiscalizaciones, y mencionan dificultades cuando los documentos o evidencias están distribuidos en diferentes fuentes. |
+| Necesidad de mantener trazabilidad e historial de la información | 3/3 | 100% | Angiela necesita rastrear evidencias de distintos proyectos; Guadalupe destaca la importancia de conservar el historial de mediciones, incidencias, responsables y acciones; y Rosa necesita mantener la documentación accesible ante posibles auditorías. |
+| Necesidad de una visión global del estado de los proyectos | 2/3 | 66.7% | Angiela manifiesta dificultad para identificar rápidamente cuáles proyectos presentan incidencias, mientras que Guadalupe considera necesaria una vista general que permita revisar el estado de varios proyectos de manera simultánea. |
+| Interés en alertas preventivas e información oportuna | 2/3 | 66.7% | Angiela y Guadalupe consideran útil contar con alertas o información continua que permita identificar oportunamente situaciones que requieran atención. |
+| Necesidad de acceso remoto o móvil a la información | 2/3 | 66.7% | Guadalupe valora la posibilidad de supervisar remotamente diferentes proyectos, mientras que Rosa señala que actualmente el acceso desde el celular es limitado cuando se encuentra trabajando en campo. |
+| Uso de indicadores visuales para facilitar la toma de decisiones | 2/3 | 66.7% | Guadalupe propone estados visuales como verde, amarillo y rojo para identificar situaciones normales o críticas, mientras que Rosa utiliza herramientas como Power BI y Looker Studio para presentar y analizar información. |
 
-* Las empresas supervisoras y consultoras enfrentan una fuerte **carga administrativa causada por la dispersión de información** proveniente de distintos proyectos, empresas y responsables.
-* Existe una necesidad común de disponer de una **vista consolidada multiproyecto** que permita identificar rápidamente proyectos críticos, observaciones abiertas y acciones correctivas pendientes.
-* El **100% de los entrevistados considera necesaria la centralización de mediciones, evidencias, incidencias e historial**, especialmente para reducir el tiempo dedicado a consolidar información manualmente.
-* La incorporación de **sensores, alertas y visualización continua de indicadores** permitiría fortalecer la supervisión remota y detectar situaciones que requieren atención antes de convertirse en incumplimientos.
-* La **trazabilidad y confiabilidad de los datos** son especialmente relevantes para este segmento, debido a que la información debe utilizarse posteriormente como sustento durante auditorías, fiscalizaciones y elaboración de informes oficiales.
+#### Insights destacados del Segmento 2
 
+* La principal dificultad del segmento se relaciona con la dispersión de información proveniente de distintos proyectos, empresas, responsables y canales de comunicación.
+
+* Los tres entrevistados coinciden en la necesidad de disponer de una solución que permita centralizar documentos, mediciones, evidencias y reportes para reducir el trabajo de consolidación manual.
+
+* La preparación de auditorías y fiscalizaciones requiere información completa, ordenada y trazable, por lo que el almacenamiento histórico y la disponibilidad de evidencias resultan especialmente importantes.
+
+* La supervisión de varios proyectos genera la necesidad de contar con una vista consolidada que facilite la identificación de situaciones que requieren atención.
+
+* También se observa interés por acceder a información de manera oportuna y desde diferentes ubicaciones, especialmente cuando los responsables realizan actividades tanto de oficina como de campo.
+
+#### Conclusiones del análisis
+
+Los resultados obtenidos evidencian que ambos segmentos presentan problemas relacionados con la dispersión de información, el uso de múltiples herramientas y el tiempo requerido para buscar, organizar y consolidar datos ambientales.
+
+En el caso de las empresas constructoras viales, las principales necesidades se relacionan con el seguimiento operativo de varios proyectos o frentes de obra, el cumplimiento ambiental, la organización de mediciones y evidencias y la disponibilidad oportuna de información para responder ante posibles desviaciones.
+
+En las empresas supervisoras y consultoras ambientales adquieren mayor relevancia la consolidación de información proveniente de varios proyectos, la trazabilidad documental, la preparación de auditorías o fiscalizaciones y la capacidad de obtener una visión general del estado ambiental de los proyectos supervisados.
+
+Estos hallazgos servirán como base para revisar y sustentar los User Personas, el User Task Matrix, los User Journey Maps y los demás artefactos de Needfinding desarrollados para RoadWatch OS.
 
 ---
 
