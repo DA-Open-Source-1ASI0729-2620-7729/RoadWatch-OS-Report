@@ -18,21 +18,21 @@ En esta sección se expone la estructura institucional de la entidad desarrollad
 
 ### 1.1.1 Descripción de la Startup
 
-**VíaNexo** es una startup tecnológica dedicada al diseño de soluciones digitales integradas bajo el modelo **HaaS/SaaS**, concebidas para optimizar el cumplimiento normativo e hídrico-ambiental en el sector de la construcción de carreteras e infraestructura de transporte. Su propuesta central consiste en sustituir los procesos discontinuos y manuales de monitoreo por un ecosistema de captura continua en tiempo real, soportado por hardware IoT propietario, con alta escalabilidad y capacidad de adaptación a proyectos de diversa envergadura.
+**VíaNexo** es una startup tecnológica orientada al desarrollo de soluciones digitales para apoyar la gestión y supervisión ambiental en proyectos de infraestructura vial. Su propuesta busca facilitar el registro, organización y seguimiento de información relacionada con mediciones ambientales, incidencias, evidencias, acciones de mitigación y reportes, permitiendo que los distintos actores involucrados puedan trabajar con información centralizada y organizada.
 
-El nombre **VíaNexo** representa el vínculo técnico y transparente que la plataforma establece entre la infraestructura física (*vía*) y la articulación digital (*nexo*) de los actores responsables de su ejecución y fiscalización. La organización opera como una entidad neutral, garantizando la fidelidad de los datos capturados y eliminando la asimetría informativa entre las partes contratantes y los órganos reguladores.
+El nombre **VíaNexo** representa la conexión entre la infraestructura vial y los procesos digitales que permiten gestionar y supervisar la información ambiental asociada a los proyectos. La startup busca reducir la dispersión de información y facilitar la coordinación entre empresas constructoras viales y empresas supervisoras o consultoras ambientales.
 
-La estrategia de comercialización se fundamenta en un esquema de **doble monetización independiente (dual revenue)**: VíaNexo comercializa licencias de uso diferenciadas para los dos principales actores que intervienen en una misma concesión o tramo vial —la empresa ejecutora/constructora y la empresa supervisora/auditora ambiental—. Ambas partes acceden a entornos de software independientes, sustentados por niveles de suscripción escalables (Base, Profesional y Enterprise), lo que asegura la sostenibilidad económica del modelo sin incrementar exponencialmente los costos fijos de operación.
+La estrategia de comercialización considera un modelo de suscripción orientado a los dos principales segmentos del producto: las empresas constructoras viales y las empresas supervisoras o consultoras ambientales. RoadWatch OS podrá ofrecer diferentes niveles de servicio de acuerdo con las funcionalidades y capacidades disponibles para cada organización, permitiendo adaptar el uso de la plataforma a las necesidades de cada empresa.
 
-En el marco de esta iniciativa, la empresa impulsa **RoadWatch OS**, una plataforma que combina el suministro del equipamiento de sensores ambientales en campo con la suite de software de gestión, orientada a evitar penalizaciones por infracciones ambientales en la etapa de construcción y a digitalizar el proceso de auditoría oficial.
+En el marco de esta propuesta, VíaNexo desarrolla **RoadWatch OS**, una plataforma web orientada a centralizar la gestión ambiental de proyectos viales. La solución permite registrar proyectos y puntos de monitoreo, gestionar mediciones ambientales, identificar posibles desviaciones respecto de los umbrales establecidos, dar seguimiento a incidencias y acciones de mitigación, asociar evidencias y generar información consolidada para la supervisión y elaboración de reportes.
 
 #### Misión
 
-Proveer soluciones de ingeniería de software e Internet de las Cosas (IoT) que permitan a las empresas constructoras y supervisoras de obras viales automatizar el seguimiento de parámetros ambientales, prevenir contingencias sancionatorias y validar el cumplimiento regulatorio mediante datos verificables y neutrales recopilados en tiempo real.
+Desarrollar soluciones digitales que faciliten a las empresas constructoras viales y a las empresas supervisoras o consultoras ambientales la gestión, seguimiento y supervisión de la información ambiental de sus proyectos, promoviendo una mejor organización de los datos y una atención más oportuna de las incidencias.
 
 #### Visión
 
-Consolidarse como la plataforma tecnológica de referencia en América Latina para el control y fiscalización ambiental remota en obras de infraestructura vial, reconocida por su rigor técnico, la integridad de su arquitectura de datos y su aporte a la sostenibilidad en la construcción pública y privada.
+Consolidarse como una startup tecnológica reconocida por ofrecer soluciones digitales que contribuyan a mejorar la gestión y supervisión ambiental en proyectos de infraestructura vial, mediante herramientas accesibles, organizadas y adaptables a las necesidades de las empresas del sector.
 
 ### 1.1.2. Perfiles de los Miembros del Equipo
 
