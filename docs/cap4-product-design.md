@@ -406,10 +406,6 @@ La comunicación se orienta a los dos segmentos objetivo del proyecto: empresas 
 
 La versión Mobile conserva la misma identidad visual, pero adapta los componentes a una lectura vertical y a interacciones táctiles. Los botones, tarjetas, textos e imágenes se ajustan al espacio disponible para mantener la claridad de la información.
 
-Los mock-ups mantienen la misma estructura visual entre ambas versiones y aplican los criterios definidos en el sistema de diseño.
-
-> **Nota de revisión:** si las imágenes actuales de los mock-ups todavía muestran expresiones como “sensores neutrales”, “auditoría inalterable”, “hardware incluido” o presentan un tercer segmento, dichas frases deben actualizarse también en Figma para mantener consistencia con el alcance actual del proyecto.
-
 ## 4.4. Web Applications UX/UI Design.
 <a id="4-4-web-applications-ux-ui-design"></a>
 
@@ -558,8 +554,6 @@ Estas vistas permiten revisar el estado de los proyectos supervisados, consultar
 | Portafolio | Mediciones | Reporte |
 | :---: | :---: | :---: |
 | ![Mockup - Portafolio Mobile](../assets/images/chapter4/webapp/mockups/m-s-portafolio.png) | ![Mockup - Mediciones Mobile](../assets/images/chapter4/webapp/mockups/m-s-historial.png) | ![Mockup - Reporte Mobile](../assets/images/chapter4/webapp/mockups/m-s-reporte.png) |
-
-> **Nota de revisión:** los mock-ups deben conservar únicamente funciones coherentes con el alcance actual de RoadWatch OS. Si alguna imagen todavía muestra planes de suscripción, un tercer segmento, hardware incluido, datos “inalterables” o funcionalidades que ya no forman parte del alcance, la imagen debe actualizarse en Figma.
 
 ### 4.4.4. Web Applications User Flow Diagrams.
 <a id="4-4-4-web-applications-user-flow-diagrams"></a>
@@ -737,7 +731,6 @@ La Web Application no accede directamente a la base de datos. Las operaciones de
 
 ![Diagrama de Contenedores C4 - RoadWatch OS](/assets/images/ContainerDiagram.png)
 
-> **Nota de revisión:** el diagrama de contenedores también debe mostrar Angular para la Web Application y Spring Boot / Java para los Web Services. Si la imagen actual todavía indica Vue.js, C# o ASP.NET Core, debe ser actualizada.
 
 ### 4.6.4. Software Architecture Components Diagrams.
 <a id="4-6-4-software-architecture-components-diagrams"></a>
@@ -758,8 +751,6 @@ Para el backend, los componentes deben representar las responsabilidades princip
 Cada componente debe mantener una responsabilidad definida y comunicarse con los demás únicamente cuando sea necesario para completar un caso de uso.
 
 ![Diagrama de Componentes C4 - RoadWatch OS](/assets/images/ComponentDiagram.png)
-
-> **Nota de revisión:** el enunciado solicita Component Diagrams para cada Container considerado. Si actualmente solo existe el diagrama de componentes del backend, se deben agregar los diagramas correspondientes a los demás Containers cuando aplique.
 
 ## 4.7. Software Object-Oriented Design.
 <a id="4-7-software-object-oriented-design"></a>
@@ -798,8 +789,6 @@ Actualmente el repositorio contiene los siguientes diagramas:
 ![Class Diagram - Reports and Compliance](/assets/images/CD-ReportsandCompliance.png)
 
 Los diagramas deben revisarse para comprobar que sus clases y relaciones correspondan a las funcionalidades actuales del producto.
-
-> **Nota de revisión:** los diagramas `Subscriptions and Payment` y `Device and Asset Management` solo deben mantenerse si esos contextos continúan formando parte del alcance acordado por el equipo. Si ya no forman parte del MVP o contradicen el Capítulo I, deben retirarse o rediseñarse.
 
 ## 4.8. Database Design.
 <a id="4-8-database-design"></a>
