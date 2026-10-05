@@ -180,57 +180,60 @@ Se considerará que la propuesta genera valor cuando los usuarios puedan encontr
 
 ---
 
-#### 1.2.2.2. Lean UX Assumptions
+#### 1.2.2.2 Lean UX Assumptions
 
 ##### A. Business Assumptions
 
-Creemos que la industria de construcción vial necesita un entorno de seguimiento ambiental automatizado y neutral que elimine la compra costosa de hardware  y asegure la inalterabilidad de los datos.
+1. **Creemos que** las empresas constructoras viales y las empresas supervisoras o consultoras ambientales necesitan una herramienta que les permita centralizar y organizar la información ambiental de sus proyectos.
 
-Creemos que podemos monetizar esta necesidad eficientemente mediante una plataforma HaaS/SaaS de doble monetización , cobrando suscripciones independientes y escalables (Base, Profesional, Enterprise) tanto a la constructora como a la supervisora del mismo proyecto.
+2. **Creemos que** RoadWatch OS puede generar valor al facilitar el registro y seguimiento de mediciones, incidencias, evidencias, acciones de mitigación y reportes dentro de una misma plataforma.
 
-Creemos que nuestra ventaja competitiva frente a los visores pasivos tradicionales radica en actuar como un tercero neutral, integrando la entrega de hardware en comodato con un motor de gestión preventiva (tickets de mitigación).
+3. **Creemos que** un modelo de suscripción permitirá adaptar el acceso a la plataforma de acuerdo con las necesidades y capacidades de cada organización.
 
-Creemos que los canales de captación más efectivos serán los acuerdos estratégicos con gremios (ej. CAPECO), la prospección directa del padrón del RNCA y las referencias cruzadas entre contratistas y auditores de una misma concesión.
+4. **Creemos que** la diferenciación de RoadWatch OS estará en integrar dentro de una sola solución funciones que actualmente pueden encontrarse distribuidas entre hojas de cálculo, documentos, correos, fotografías y otros medios.
 
-##### B. User Assumptions
+##### B. Business Outcome Assumptions
 
-* Creemos que alcanzaremos el éxito comercial cuando veamos un crecimiento sostenido en la adopción del modelo de doble suscripción (constructora + supervisora) operando activamente sobre un mismo proyecto vial.
+1. **Creemos que** aumentará la adopción de RoadWatch OS si los usuarios perciben una reducción en el tiempo necesario para encontrar y consolidar información ambiental.
 
-* Creemos que aumentaremos el Ingreso Mensual Recurrente (MRR) al lograr una alta tasa de renovación de licencias cuando las constructoras trasladen nuestra plataforma a nuevos frentes de obra.
+2. **Creemos que** la plataforma generará mayor recurrencia de uso si permite mantener organizados los proyectos, mediciones, incidencias, evidencias y reportes.
 
-* Creemos que nuestra Definition of Done (DoD) a nivel de negocio se cumplirá cuando un cliente logre operar el ecosistema completo (nodos IoT en campo + plataforma) evidenciando una reducción medible (ej. 50%) en su tiempo medio de cierre de incidencias ambientales.
+3. **Creemos que** las organizaciones estarán dispuestas a mantener una suscripción si las funcionalidades disponibles facilitan sus procesos de seguimiento y supervisión ambiental.
 
-* Creemos que reduciremos nuestro Costo de Adquisición de Clientes (CAC) al aprovechar la obligatoriedad normativa, logrando que las empresas supervisoras recomienden el uso de nuestro estándar a otras constructoras.
+4. **Creemos que** el valor del producto podrá medirse mediante la frecuencia de uso, el número de proyectos gestionados y la reducción del tiempo empleado en consolidar información.
 
-##### C. User Outcome & Benefit Assumptions
+##### C. User Assumptions
 
-* Creemos que nuestro usuario principal del "Segmento 1" está compuesto por ingenieros residentes de obra y responsables de mitigación en constructoras, quienes sufren por el desfase temporal en la detección de incidentes y necesitan reaccionar rápidamente en campo.
+1. **Creemos que** los usuarios del segmento de empresas constructoras viales necesitan registrar y consultar información ambiental de manera rápida durante la ejecución de los proyectos.
 
-* Creemos que nuestro usuario del "Segmento 2" está compuesto por auditores y consultores ambientales de firmas supervisoras, cuyo problema principal es la incertidumbre sobre la validez de los datos de campo y el alto costo de viajar físicamente a la obra.
+2. **Creemos que** los usuarios del segmento de empresas supervisoras o consultoras ambientales necesitan revisar información consolidada de uno o varios proyectos para realizar seguimiento y elaborar reportes.
 
-* Creemos que ambos perfiles operan en contextos de alta presión normativa y utilizarán la plataforma de maneras distintas: la constructora mediante alertas y tickets diarios (móvil/web), y la supervisora mediante auditorías y extracción de expedientes (gabinete).
+3. **Creemos que** ambos segmentos necesitan acceder a información histórica relacionada con mediciones, incidencias, evidencias y acciones realizadas.
 
-##### D. Business Outcome Assumptions
+##### D. User Outcome & Benefit Assumptions
 
-* Creemos que los ingenieros de la constructora lograrán su principal objetivo (evitar multas y paralizaciones) al recibir alertas tempranas que les permitan mitigar desviaciones antes de que se conviertan en infracciones formales.
+1. **Creemos que** los responsables ambientales de las empresas constructoras podrán identificar con mayor rapidez las situaciones que requieran atención al contar con mediciones, alertas e incidencias organizadas dentro de la plataforma.
 
-* Creemos que las empresas contratistas obtendrán el beneficio de optimizar su presupuesto operativo al no tener que invertir en la compra y mantenimiento complejo de instrumental de medición (modelo HaaS).
+2. **Creemos que** los usuarios podrán reducir el tiempo empleado en buscar información al contar con evidencias, historial y acciones de mitigación asociadas directamente a cada proyecto o incidencia.
 
-* Creemos que los auditores ambientales lograrán su objetivo de emitir dictámenes más rápidos y seguros al reducir drásticamente las visitas presenciales a campo, basándose en telemetría continua y remota.
+3. **Creemos que** las empresas supervisoras o consultoras ambientales podrán revisar con mayor facilidad el estado de varios proyectos mediante información consolidada y reportes.
 
-* Creemos que las firmas supervisoras obtendrán el beneficio de la tranquilidad profesional al compilar expedientes normativos respaldados por datos técnicamente inalterables y neutrales.
+4. **Creemos que** ambos segmentos obtendrán una mejor trazabilidad de las actividades realizadas al mantener relacionados los registros ambientales dentro de un mismo sistema.
 
 ##### E. Feature Assumptions
 
-* Creemos que una Red de Nodos IoT bajo modelo HaaS resolverá el problema de la captura manual, proveyendo parámetros en tiempo real sin requerir que el usuario adquiera o mantenga el hardware.
+1. **Creemos que** el registro de proyectos y puntos de monitoreo permitirá organizar correctamente la información ambiental de cada obra.
 
-* Creemos que un Motor de Clasificación de Riesgo Automatizado permitirá comparar las lecturas ambientales contra la normativa vigente (LMP) y detonar alertas preventivas inmediatas.
+2. **Creemos que** el registro de mediciones y su comparación con umbrales configurados permitirá identificar posibles desviaciones ambientales.
 
-* Creemos que un Módulo Operativo de Mitigación (Dashboard para Constructora) facilitará la resolución de incidentes mediante la generación de tickets y el registro de evidencias fotográficas y georreferenciadas.
+3. **Creemos que** un módulo de alertas e incidencias permitirá dar seguimiento a situaciones que necesiten atención.
 
-* Creemos que un Módulo de Fiscalización Digital (Panel para Supervisora) permitirá automatizar el trabajo de gabinete mediante reportes normativos exportables y un registro histórico protegido contra ediciones.
+4. **Creemos que** el registro de evidencias y acciones de mitigación permitirá mantener información asociada al tratamiento de cada incidencia.
 
-* Creemos que un sistema de Control de Accesos por Bounded Contexts (RBAC) garantizará la transparencia del sistema, separando lógicamente la gestión interna de la constructora de la visualización auditable de la supervisora.
+5. **Creemos que** la generación y consulta de reportes facilitará la supervisión y consolidación de información ambiental.
+
+6. **Creemos que** un sistema de roles y permisos permitirá controlar el acceso a las funcionalidades de acuerdo con las responsabilidades de cada usuario.
+   
 ---
 
 #### 1.2.2.2. Lean UX Assumptions
