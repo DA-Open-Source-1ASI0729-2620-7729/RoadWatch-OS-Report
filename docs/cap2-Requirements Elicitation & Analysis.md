@@ -398,7 +398,7 @@ Los participantes de este segmento corresponden a profesionales responsables de 
 <table>
 <thead>
   <tr>
-    <th colspan="2">Entrevista #4</th>
+    <th colspan="2">Entrevista #3</th>
   </tr>
 </thead>
 <tbody>
