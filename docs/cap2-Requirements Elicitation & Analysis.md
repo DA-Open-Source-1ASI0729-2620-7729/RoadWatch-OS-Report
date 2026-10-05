@@ -115,63 +115,125 @@ RoadWatch OS busca ofrecer una visión organizada de varios proyectos para apoya
 ### 2.2.1 Diseño de Entrevistas
 <a id="2-2-1-diseno-de-entrevistas"></a>
 
-#### Preguntas presentación
+Las entrevistas tienen como objetivo conocer cómo los representantes de los dos segmentos realizan actualmente las actividades relacionadas con la gestión y supervisión ambiental de proyectos viales, así como identificar sus principales necesidades, objetivos, dificultades, herramientas utilizadas y hábitos de trabajo.
 
-- ¿Hola cuál es tu nombre y edad?
-- ¿Cuál es tu cargo actual y hace cuánto tiempo te desempeñas en él?
-- ¿Cuáles son tus principales responsabilidades del día a día en relación con la gestión o supervisión ambiental del proyecto?
+Las preguntas fueron planteadas de manera abierta para evitar condicionar las respuestas de los participantes. Además de conocer el proceso actual, se busca recopilar información que permita identificar características comunes de cada segmento y construir posteriormente los User Personas.
 
-### Segmento 1: Líderes o jefes de gestión de proyectos viales (Empresas Constructoras)
+Durante las entrevistas se recopilará información demográfica y profesional, experiencia, responsabilidades, herramientas de trabajo, dispositivos utilizados, canales de comunicación, objetivos, frustraciones y expectativas relacionadas con la gestión ambiental.
 
-#### Preguntas principales:
+#### Preguntas de presentación
 
-1. Buen día, ¿podría comentarme su nombre, edad y el puesto que desempeña dentro de la constructora?
+Estas preguntas se realizarán a los participantes de ambos segmentos:
 
-2. ¿Cuántos frentes de obra o tramos viales tienen actualmente en ejecución bajo su cargo?
+1. ¿Cuál es su nombre y edad?
 
-3. ¿Cómo realizan actualmente el registro y seguimiento de los indicadores ambientales (aire, ruido, agua) en los frentes de trabajo?
+2. ¿En qué distrito reside actualmente?
 
-4. ¿Qué herramientas utilizan el equipo de campo y la oficina central para compartir las mediciones, fotografías de evidencias y reportes ambientales?
+3. ¿Cuál es su cargo y en qué tipo de empresa trabaja?
 
-5. Al ejecutar y gestionar varios frentes/tramos viales simultáneamente, ¿qué tan complicado resulta mantener organizada y al día toda la documentación e historial ambiental?
+4. ¿Cuántos años de experiencia tiene en proyectos de infraestructura, construcción o gestión ambiental?
 
-6. ¿Qué ocurre o qué protocolo siguen cuando en campo detectan que un indicador (como polvo o ruido) está cerca de superar o ya superó el límite del ECA/LMP?
+5. ¿Cuáles son sus principales responsabilidades dentro de su trabajo?
 
-7. Tras detectar una incidencia o recibir una observación de la supervisión, ¿cómo asignan y hacen el seguimiento a las acciones de mitigación en campo?
+---
 
-8. ¿Qué dificultades enfrentan al momento de consolidar la información para responder a las auditorías de la supervisión o ante entidades fiscalizadoras (ej. OEFA / MTC)?
+#### Segmento 1: Empresas Constructoras Viales
 
-9. ¿Cuál considera que es la principal dificultad que enfrentan como constructora al gestionar la parte ambiental en múltiples tramos a la vez?
+##### Preguntas principales
 
-10. Si pudiera cambiar una sola cosa del proceso con el que gestionan las contingencias ambientales en obra, ¿qué cambiaría?
+1. ¿Cómo es un día habitual de trabajo para usted cuando tiene que realizar seguimiento ambiental a uno o varios frentes de obra?
 
-11. ¿Considera útil contar con alertas telemáticas o sensores que les avisen automáticamente antes de sobrepasar los límites normativos?
+2. ¿Cómo realizan actualmente el registro de las mediciones ambientales, como ruido, material particulado o calidad del agua?
 
-12. Finalmente, ¿qué información o indicador considera crítico tener a la mano para garantizar que la obra no sea paralizada ni sancionada ambientalmente?
+3. ¿Cómo organizan la información ambiental correspondiente a los diferentes proyectos, tramos o frentes de obra?
 
-### Segmento 2: Empresas Supervisoras y Consultoras Ambientales (Múltiples Proyectos)
+4. ¿Qué herramientas utilizan para registrar o consultar mediciones, fotografías, documentos y reportes ambientales?
 
-1. Buen día, ¿podría comentarme su nombre, edad y puesto que desempeña en el rubro de supervisión o consultoría ambiental?
+5. Cuando se detecta una medición fuera de lo esperado o una posible desviación ambiental, ¿qué sucede desde que se identifica hasta que se atiende?
 
-2. En primer lugar, ¿cómo realizan actualmente el seguimiento de los indicadores ambientales de los proyectos que supervisan, como aire, ruido y agua?
+6. ¿Cómo asignan actualmente las acciones correctivas o medidas de mitigación a los responsables?
 
-3. ¿Qué herramientas utilizan para recibir y compartir las mediciones, fotografías y documentos de los diferentes proyectos?
+7. ¿Cómo realizan el seguimiento para saber si una incidencia o acción pendiente ya fue atendida?
 
-4. Al supervisar varios proyectos, ¿qué tan complicado es mantener organizada toda la información ambiental?
+8. ¿Qué dificultades encuentra al trabajar con varios proyectos o frentes de obra al mismo tiempo?
 
-5. ¿Qué ocurre cuando detectan una medición que podría representar un incumplimiento ambiental?
+9. ¿Qué problemas suelen presentarse al momento de buscar mediciones, fotografías, documentos o evidencias anteriores?
 
-6. ¿Cómo realizan actualmente el seguimiento de las acciones correctivas después de detectar una incidencia?
+10. ¿Cómo preparan actualmente la información cuando reciben una solicitud de la supervisión, una auditoría o una fiscalización?
 
-7. ¿Qué dificultades encuentran al momento de preparar informes para una auditoría o fiscalización?
+11. ¿Qué parte del proceso de gestión ambiental considera que le consume más tiempo?
 
-8. Entrevistador: ¿Cuál considera que es la principal dificultad al supervisar ambientalmente varios proyectos?
+12. ¿Cuál es la situación que más le preocupa durante el seguimiento ambiental de una obra?
 
-9. Entrevistador: Si pudiera cambiar una sola cosa del proceso actual, ¿qué cambiaría?
+13. Si pudiera mejorar una sola parte del proceso actual, ¿cuál sería y por qué?
 
-10. Entrevistador: ¿Considera útil recibir información ambiental directamente desde sensores instalados en los proyectos?
+##### Preguntas complementarias
 
-11. Entrevistador: Finalmente, ¿qué información considera más importante para supervisar correctamente el estado ambiental de los proyectos?
+14. ¿Utiliza principalmente computadora, celular, tablet u otro dispositivo durante sus actividades de trabajo?
+
+15. ¿Qué aplicaciones o canales utiliza con mayor frecuencia para comunicarse con el personal de campo y otros responsables?
+
+16. ¿Qué tipo de información necesita revisar con mayor frecuencia durante el día?
+
+17. ¿Prefiere revisar información mediante tablas, gráficos, mapas, reportes u otro formato? ¿Por qué?
+
+18. ¿Qué tan cómodo se siente utilizando nuevas aplicaciones o herramientas digitales en su trabajo?
+
+19. Cuando necesita tomar una decisión rápidamente, ¿qué información considera indispensable tener disponible?
+
+20. ¿Qué características debería tener una herramienta para que realmente le resulte útil en su trabajo diario?
+
+21. ¿Hay alguna aplicación, plataforma o herramienta digital que utilice frecuentemente y que considere especialmente sencilla o útil? ¿Qué le gusta de ella?
+
+---
+
+#### Segmento 2: Empresas Supervisoras y Consultoras Ambientales
+
+##### Preguntas principales
+
+1. ¿Cómo es un día habitual de trabajo cuando tiene que supervisar o revisar la información ambiental de uno o varios proyectos?
+
+2. ¿Cómo recibe actualmente las mediciones ambientales provenientes de los proyectos que supervisa?
+
+3. ¿Qué herramientas utiliza para organizar mediciones, documentos, fotografías, observaciones y reportes?
+
+4. Cuando supervisa varios proyectos al mismo tiempo, ¿cómo identifica cuáles requieren mayor atención?
+
+5. ¿Qué sucede cuando encuentra una medición, observación o situación que podría representar un problema ambiental?
+
+6. ¿Cómo comunica actualmente una observación a la empresa responsable del proyecto?
+
+7. ¿Cómo realiza el seguimiento para comprobar que una observación o incidencia haya sido atendida?
+
+8. ¿Qué dificultades encuentra al revisar información proveniente de diferentes empresas, proyectos o responsables?
+
+9. ¿Qué problemas suelen presentarse cuando necesita consultar información histórica de un proyecto?
+
+10. ¿Cómo prepara actualmente la información necesaria para elaborar reportes, auditorías o procesos de fiscalización?
+
+11. ¿Qué parte del proceso de supervisión ambiental considera que requiere mayor trabajo manual?
+
+12. ¿Qué información considera más importante para conocer rápidamente el estado ambiental de un proyecto?
+
+13. Si pudiera cambiar una sola parte del proceso actual de supervisión, ¿cuál sería y por qué?
+
+##### Preguntas complementarias
+
+14. ¿Utiliza principalmente computadora, celular, tablet u otro dispositivo para realizar sus actividades?
+
+15. ¿Qué canales utiliza normalmente para comunicarse con las empresas constructoras o responsables de los proyectos?
+
+16. ¿Con qué frecuencia necesita consultar información histórica, evidencias o reportes anteriores?
+
+17. ¿Prefiere revisar la información mediante tablas, gráficos, mapas, indicadores u otro formato? ¿Por qué?
+
+18. ¿Qué tan cómodo se siente utilizando nuevas plataformas digitales en sus actividades de supervisión?
+
+19. Cuando existen varios proyectos con observaciones pendientes, ¿cómo decide cuál revisar primero?
+
+20. ¿Qué características debería tener una herramienta digital para ayudarle a supervisar varios proyectos?
+
+21. ¿Hay alguna aplicación o plataforma que utilice en su trabajo y cuya forma de presentar u organizar la información considere especialmente útil? ¿Por qué?
 
 ### 2.2.2 Registro de Entrevistas
 <a id="2-2-2-registro-de-entrevistas"></a>
