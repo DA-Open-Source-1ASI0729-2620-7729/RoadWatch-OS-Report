@@ -266,17 +266,16 @@ Los participantes de este segmento corresponden a profesionales involucrados en 
 
 | Campo | Información |
 |---|---|
-| Nombres | Pendiente |
-| Apellidos | Pendiente |
-| Edad | Pendiente |
-| Distrito | Pendiente |
-| Cargo | Pendiente |
-| Años de experiencia | Pendiente |
-| Evidencia | Pendiente |
-| Enlace de video | Pendiente |
-| Inicio de entrevista | Pendiente |
-| Duración | Pendiente |
-| Resumen | Pendiente de actualización con la nueva entrevista. |
+| Nombres | Alex Dante  |
+| Apellidos | Quintanilla Pérez |
+| Edad | 49 años |
+| Distrito | San Juan de Lurigancho |
+| Cargo | Jefe de SSOMA |
+| Años de experiencia | 12 años |
+| Evidencia |![Entrevista Alex Quintanilla](../assets/images/chapter2/EntrevistaAlexQuintanilla.png)  |
+| Enlace de video | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241e356_upc_edu_pe/IQDOHhvGbnQpQYQcNzJf3safAW7v3ItfV2NOiFdIGRSiGZc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=7eKvFx) |
+| Duración | 0:00 - 3:16 |
+| Resumen | Alex Dante Quintanilla Pérez es Jefe de SSOMA con 12 años de experiencia en construcción vial. Actualmente gestiona 3 proyectos simultáneos con múltiples frentes de obra, lo que le obliga a delegar constantemente en supervisores de campo al no poder estar presente en todos los puntos a la vez. El registro de mediciones ambientales se realiza de forma manual mediante formatos físicos que luego se trasladan a hojas de cálculo Excel, y las evidencias fotográficas se comparten por WhatsApp o Messenger, reconociendo que no es el método ideal pero es el disponible actualmente. Ante una incidencia reciente de niveles de ruido elevados cerca de una zona residencial, la coordinación se realizó por llamadas telefónicas y la documentación se gestionó en un archivo Word, sin un sistema centralizado de seguimiento formal. Su mayor dificultad es la pérdida de tiempo al buscar registros históricos dispersos en múltiples archivos y grupos de WhatsApp, pudiendo tomar hasta media hora localizar información de un mes específico. Señala además que toda notificación depende de que alguien recuerde avisar manualmente, sin ningún tipo de alerta automática. Las consecuencias de no detectar un incumplimiento a tiempo incluyen multas, paralización de obra y pérdida del contrato en proyectos públicos. Como mejora principal, identifica la necesidad de un panel centralizado con visibilidad en tiempo real del estado de todos sus puntos de monitoreo y alertas automáticas ante sobrepasos de límites normativos, sin depender de terceros para enterarse de una desviación.|
 
 #### Entrevista #3
 
