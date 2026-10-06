@@ -395,8 +395,10 @@ Durante el Sprint 2, el equipo trabajó sobre el repositorio de la Web Applicati
 
 Al finalizar el Sprint 2, la Web Application cuenta con la estructura fundamental de los 5 dominios operativos. Los usuarios pueden iniciar sesión según su rol (Constructor o Supervisor), visualizar sus proyectos asignados, consultar las métricas ambientales, gestionar el estado de las incidencias mediante un tablero Kanban interactivo y adjuntar la documentación de cumplimiento correspondiente.
 
+![Evidencia del Front](/assets/images/chapter5/FrontEvidence.jpeg)
 **Video de navegación de la Web Application (Sprint 2):**  
-*(Enlace al video de demostración técnica del funcionamiento integrado de los módulos)*
+
+[Ver video de demostración del Sprint 2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202418029_upc_edu_pe/IQCFRFdP6q8ZRJBC7Daji-IfAVr9wVVrikD0aTOqE_KlONk?e=uweOJY)
 
 ---
 
@@ -453,4 +455,21 @@ La estrategia colaborativa de este Sprint consistió en la separación de respon
 | Diaz De La Cruz, Sebastian Gabriel | Implementó el sistema base de autenticación (Login), perfiles de usuario y las validaciones de acceso según la suscripción de la empresa. |
 | Montes Chang, Piero Francisco | Construyó el centro de alertas e historial de mediciones, enfocándose en la validación de valores frente a umbrales permitidos. |
 | Pancorbo Amorós, Italo Raul | Desarrolló la vista interactiva de incidencias críticas (Kanban y detalle), permitiendo el seguimiento de las acciones de mitigación de inicio a fin. |
+
+
+Evidencia de insights del reporte:
+
+![Insight del reporte]()
+
+
+Evidencia insights de la landing page:
+
+![Insight de la landing page](../assets/images/chapter5/InsightReport.jpeg)
+
+
+Evidencia insights del front:
+
+
+![Insight del reporte](../assets/images/chapter5/InsightFront.jpeg)
+
 
