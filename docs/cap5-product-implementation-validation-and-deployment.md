@@ -86,17 +86,12 @@ https://github.com/DA-Open-Source-1ASI0729-2620-7729
 
 **Repositorios del proyecto:**
 
-| Producto | URL del Repositorio                                                         |
-|:---|:----------------------------------------------------------------------------|
-<<<<<<< HEAD
-| Landing Page | https://github.com/DA-Open-Source-1ASI0729-2620-7729/RoadWatch-LandingPage  |
-=======
-| Landing Page | https://github.com/DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-LandingPage  |
->>>>>>> eb54eb7f9465306acb0c835a4ef2baa5918a446e
-| Frontend Web Application |                                                                             |
-| Web Services (RESTful API) |                                                                             |
-| Project Report | https://github.com/DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Report.git|
-
+| Producto | URL del Repositorio |
+|:---|:---|
+| Landing Page | https://github.com/DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-LandingPage |
+| Frontend Web Application | https://github.com/DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Frontend.git |
+| Web Services (RESTful API) | https://github.com/DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Backend.git|
+| Project Report | https://github.com/DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Report |
 #### GitFlow Workflow
 
 El equipo implementa **GitFlow** como estrategia de ramificación para gestionar el ciclo de vida del código. Las ramas definidas son:
@@ -173,11 +168,9 @@ En esta sección se describe la configuración de despliegue para el Landing Pag
 #### Landing Page — GitHub Pages
 
 El Landing Page de RoadWatch OS se despliega como sitio web estático mediante **GitHub Pages**, directamente desde el repositorio:  
-<<<<<<< HEAD
-https://github.com/DA-Open-Source-1ASI0729-2620-7729/RoadWatch-LandingPage
-=======
+
 https://github.com/DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-LandingPage
->>>>>>> eb54eb7f9465306acb0c835a4ef2baa5918a446e
+
 
 **Pasos para el despliegue:**
 
