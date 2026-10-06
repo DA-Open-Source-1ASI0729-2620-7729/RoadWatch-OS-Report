@@ -423,8 +423,24 @@ La Web Application fue integrada y desplegada en un entorno de pruebas continuas
 2. **Despliegue del Frontend:** Se alojaron los artefactos estáticos de Angular asegurando el ruteo dinámico de las SPA.
 3. **Despliegue de Servicios:** Se levantó una instancia inicial del Backend principal para resolver las peticiones de autenticación y carga de datos base.
 
+![Configuración y despliegue en GitHub Pages 2](../assets/images/chapter5/CambiarRama.jpeg)
+
+![Configuración y despliegue en GitHub Pages 2](../assets/images/chapter5/RamaDevelop.jpeg)
+
+![Configuración y despliegue en GitHub Pages 2](../assets/images/chapter5/Vercel1.jpeg)
+
+![Configuración y despliegue en GitHub Pages 2](../assets/images/chapter5/Vercel2.jpeg)
+
+![Configuración y despliegue en GitHub Pages 2](../assets/images/chapter5/Vercel3.jpeg)
+
+![Configuración y despliegue en GitHub Pages 2](../assets/images/chapter5/Deploy1.jpeg)
+
+![Configuración y despliegue en GitHub Pages 2](../assets/images/chapter5/Deploy2.jpeg)
+
+
 URL de la Web Application desplegada (QA):  
-*(Enlace al entorno de QA de VíaNexo / RoadWatch OS)*
+
+[*(Enlace al entorno de QA de VíaNexo / RoadWatch OS)*](https://road-watch-os-frontend.vercel.app/auth/login)
 
 ---
 
