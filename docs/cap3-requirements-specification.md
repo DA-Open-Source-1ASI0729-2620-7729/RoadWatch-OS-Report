@@ -3,6 +3,9 @@
 <a id="3-requirements-specification"></a>
 ## 3.1. User Stories
 <a id="3-1-user-stories"></a>
+En esta sección se presentan las User Stories identificadas para RoadWatch OS a partir de las necesidades y hallazgos obtenidos durante el proceso de Requirements Elicitation & Analysis. Las historias se organizan considerando el Landing Page, la Frontend Web Application, los Web Services y los requerimientos de negocio compartidos.
+
+Cada User Story incluye una descripción expresada desde la perspectiva del actor correspondiente y criterios de aceptación redactados en formato Given-When-Then, con el fin de establecer condiciones verificables para su implementación y validación.
 
 ## 1. Landing Page (Presentación y Conversión)
 
@@ -94,7 +97,7 @@
 
 ## IMPACT MAPPING 1
 
-El Impact Mapping correspondiente al segmento de empresas constructoras viales permite visualizar la relación entre el objetivo de negocio, la persona representativa, los impactos esperados, los entregables y las historias de usuario asociadas. El objetivo se orienta a reducir el tiempo promedio de respuesta ante desviaciones de parámetros ambientales, mediante la detección oportuna de riesgos, el monitoreo en tiempo real, la generación de alertas tempranas, el seguimiento de acciones correctivas y la centralización de evidencias ambientales trazables.
+El Impact Mapping correspondiente al segmento de empresas constructoras viales permite visualizar la relación entre el objetivo de negocio, la persona representativa, los impactos esperados, los entregables y las historias de usuario asociadas. El objetivo se orienta a reducir el tiempo promedio de respuesta ante desviaciones de parámetros ambientales, mediante la detección oportuna de riesgos, el seguimiento oportuno de las mediciones ambientales, la generación de alertas tempranas, el seguimiento de acciones correctivas y la centralización de evidencias ambientales trazables.
 
 ![Impact Mapping - Segmento 1](<../assets/images/chapter3/Impact map Empresas Constructoras Viales.png>)
 
