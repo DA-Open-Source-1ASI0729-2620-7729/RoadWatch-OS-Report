@@ -358,6 +358,11 @@ Para el Sprint 2, el trabajo se ha paralelizado enfocándose en los Bounded Cont
 
 #### 5.2.2.3. Sprint Backlog 2
 
+![Configuración y despliegue en GitHub Pages 2](../assets/images/chapter5/EvidenciaTrello.jpeg)
+
+Evidencia Trello: 
+https://trello.com/invite/b/6ac45a47333a77ed1bb96de5/ATTId01870fd734279c8b64b2e32744d1f60715FC467/sprin2-roadwatch 
+
 El objetivo de este Sprint es establecer la base de las aplicaciones funcionales para los distintos dominios del sistema, asegurando que tanto las empresas constructoras como las supervisoras puedan empezar a interactuar con sus respectivos módulos.
 
 | **Story Id** | **Story Title** | **Task Id**| **Task Title** | **Task Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
