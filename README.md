@@ -217,7 +217,7 @@ Proyecto<br>
 
 | Entrega | Título | Enlace |
 |---|---|---|
-| AV1 | Exposición AV1 — RoadWatch OS | |
+| AV1 | Exposición AV1 — RoadWatch OS | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410421_upc_edu_pe/IQD_LnHNx-HqRqv-HFAjJ1qpAS--FQJu5dsHsXaKySKqQjY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=UE0Qfp |
 | TB1 | Exposición TB1 — RoadWatch OS | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410421_upc_edu_pe/IQBv2exzNrqBSrXMzGM1jBgYASk-nrAZWRl3pYsNgxF8844?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=66IAzR|
 
 
