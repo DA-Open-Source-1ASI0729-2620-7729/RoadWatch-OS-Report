@@ -181,6 +181,41 @@ Proyecto<br>
 
 ## [Bibliografía](#bibliografia)
 
+Brown, S. (s. f.). *Structurizr - Embedding diagrams*. Structurizr. https://docs.structurizr.com/cloud/embed
+
+Cohn, M. (s. f.). *User stories articles*. Mountain Goat Software. https://www.mountaingoatsoftware.com/blog/tag/user-stories
+
+DZone. (s. f.). *Acceptance criteria in Scrum: Explanation, examples, and template*. https://dzone.com/articles/acceptance-criteria-in-software-explanation-exampl
+
+Fowler, M. (s. f.). *Ubiquitous Language*. https://martinfowler.com/bliki/UbiquitousLanguage.html
+
+IBM. (s. f.). *As-is scenario map: Build a better understanding of your users’ current experience*. https://www.ibm.com/design/thinking/page/toolkit/activity/as-is-scenario-map
+
+IBM. (s. f.). *Empathy map: Build empathy for your users through a conversation informed by your team’s observations*. https://www.ibm.com/design/thinking/page/toolkit/activity/empathy-map
+
+IBM. (s. f.). *To-be scenario map: Draft a vision of your user’s future experience*. https://www.ibm.com/design/thinking/page/toolkit/activity/to-be-scenario-map
+
+Mendel, J. (s. f.). *Seriously, what’s your startup’s problem?* Medium. https://medium.com/@jakemendel/seriously-whats-your-startup-s-problem-b3a884c54ab4
+
+Nielsen Norman Group. (s. f.). *Empathy mapping: The first step in design thinking*. https://www.nngroup.com/articles/empathy-mapping/
+
+Open Practice Library. (s. f.). *Ubiquitous Language: Unambiguously define the terms and concepts of a business domain*. https://openpracticelibrary.com/practice/ubiquitous-language/
+
+Progressa Lean. (s. f.). *5W+2H - Técnica de análisis de problemas*. https://www.progressalean.com/5w2h-tecnica-de-analisis-de-problemas/
+
+The Markdown Guide. (s. f.). *Markdown Guide*. https://www.markdownguide.org/
+
+UXPressia. (s. f.). *How to create an Impact Map in 4 easy steps?* https://uxpressia.com/blog/build-impact-map-4-easy-steps
+
+UXPressia. (s. f.). *User vs. Buyer Persona: Differences and free template*. https://uxpressia.com/blog/user-persona-vs-buyer-persona-difference
+
+Dittrich, J. (s. f.). *A beginner’s guide to finding user needs*. https://jdittrich.github.io/userNeedResearchBook/
+
+Modern Requirements. (s. f.). *Using a Requirements Traceability Matrix to improve project quality*. https://www.modernrequirements.com/blogs/using-a-requirements-traceability-matrix-to-improve-project-quality/
+
+Tamim, N. (s. f.). *How to use PlantUML with Markdown*. GitHub Gist. https://gist.github.com/noamtamim/f11982b28602bd7e604c233fbe9d910f
+
+UX for the Masses. (s. f.). *A step-by-step guide to scenario mapping*. http://www.uxforthemasses.com/scenario-mapping/
 
 
 ## [Anexos](#anexos)
