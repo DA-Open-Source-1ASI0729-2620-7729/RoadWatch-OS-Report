@@ -464,17 +464,17 @@ La estrategia colaborativa de este Sprint consistió en la separación de respon
 
 Evidencia de insights del reporte:
 
-![Insight del reporte]()
+![Insight del reporte](../assets/images/chapter5/InsightReport.jpeg)
 
 
 Evidencia insights de la landing page:
 
-![Insight de la landing page](../assets/images/chapter5/InsightReport.jpeg)
+![Insight de la landing page](../assets/images/chapter5/InsightLanding.jpeg)
 
 
 Evidencia insights del front:
 
 
-![Insight del reporte](../assets/images/chapter5/InsightFront.jpeg)
+![Insight del frontend](../assets/images/chapter5/InsightFront.jpeg)
 
 
