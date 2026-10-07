@@ -25,8 +25,8 @@ Proyecto<br>
 |-------------|----------------------------------|
 | U202418029  | Pancorbo Amorós, Italo Raul      |
 | U202412462  |Cabrera Sotelo, Camila Celeste  |
-| U202  |Conde Huashuayo, Sebasthian Alex |
-| U202 |Montes Chang, Piero Francisco |
+| u20241e356  |Conde Huashuayo, Sebasthian Alex |
+| U20241g031 |Montes Chang, Piero Francisco |
 | U202410421 |Diaz De La Cruz, Sebastian Gabriel |
 
 **Período 202620**  
