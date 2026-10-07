@@ -251,20 +251,20 @@ A continuación, se presenta el tablero de control del Sprint 1. El Sprint # es 
 
 #### 5.2.1.4. Development Evidence for Sprint Review
 
-Durante el Sprint 1 se implementó la primera versión del Landing Page de RoadWatch OS. Los commits realizados en el repositorio evidencian el avance progresivo por secciones, con la participación de todos los miembros del equipo.
+Durante el Sprint 1 se implementó la primera versión del Landing Page de RoadWatch OS. Los commits realizados en el repositorio evidencian el avance progresivo por secciones y la aplicación de una estrategia de desarrollo basada en ramas feature.
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
 |:---|:---|:---|:---|:---|:---|
-| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-LandingPage | main | *(hash)* | chore: initialize landing page project structure | Set up base HTML, CSS and JS folder structure with initial index.html | 2026-08-26 |
-| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-LandingPage | feature/navbar | *(hash)* | feat(landing): add responsive navbar with internal links | Implement sticky navbar with logo, nav links and mobile hamburger menu | 2026-08-27 |
-| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-LandingPage | feature/hero-section | *(hash)* | feat(landing): add hero section with headline and CTA | Hero section with value proposition copy, background image and primary CTA buttons | 2026-08-27 |
-| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-LandingPage | feature/features-section | *(hash)* | feat(landing): implement features section with map demo | Add features section with icon cards and static map visualization | 2026-08-28 |
-| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-LandingPage | feature/plans-section | *(hash)* | feat(landing): add subscription plans comparison table | Implement Base, Professional and Enterprise plan cards with feature list | 2026-08-29 |
-| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-LandingPage | feature/cta-segments | *(hash)* | feat(landing): add segment-specific CTA buttons | Add CTAs for constructora and supervisora segments with redirect links | 2026-08-29 |
-| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-LandingPage | feature/testimonials | *(hash)* | feat(landing): implement impact metrics and testimonials section | Add section with key performance metrics and illustrative testimonials | 2026-08-30 |
-| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-LandingPage | feature/contact-form | *(hash)* | feat(landing): add contact form with field validation | Implement lead capture form with client-side validation and confirmation message | 2026-08-31 |
-| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-LandingPage | main | *(hash)* | chore: configure GitHub Pages deployment | Enable GitHub Pages from main branch, verify production URL | 2026-09-01 |
-| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-LandingPage | main | *(hash)* | fix(landing): fix mobile responsiveness on plans section | Adjust grid layout breakpoints for correct display on mobile devices | 2026-09-02 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-LandingPage | feature/landing-structure | `52869286c7239091875e09e6935e52ba89deac6c` | `feat(landing): add base HTML structure` | Se agregó la estructura HTML base del Landing Page de RoadWatch OS. | 2026-09-16 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-LandingPage | feature/header | `f4c281f021cab74c299ebca7a661ff1e19a0ba53` | `feat(header): add navigation header` | Se implementó el encabezado de navegación principal del Landing Page. | 2026-09-16 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-LandingPage | feature/hero | `c1e7e45f0d206e252a2a352581b3ec8631e059be` | `feat(hero): add landing hero section` | Se implementó la sección Hero con la presentación principal de RoadWatch OS. | 2026-09-16 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-LandingPage | feature/solutions | `f6ea802311d905ac384f69933ebc66f080baba8a` | `feat(solutions): add environmental solutions section` | Se agregó la sección de soluciones ambientales del Landing Page. | 2026-09-16 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-LandingPage | feature/benefits | `ac12b760c23af3125a847ee8c1a7d20ce51b027d` | `feat(benefits): add benefits section` | Se implementó la sección de beneficios de RoadWatch OS. | 2026-09-16 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-LandingPage | feature/features | `23a0a8441d395cd9ff5637228bd18a52d53bd6cc` | `feat(features): add technology features section` | Se implementó la sección de funcionalidades principales del producto. | 2026-09-16 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-LandingPage | feature/pricing | `61dd05f1adb9aa491e167f43e3694e3d13e1d1ef` | `feat(pricing): add SaaS pricing plans` | Se agregó la sección de planes comerciales del Landing Page. | 2026-09-16 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-LandingPage | feature/team | `ead82cfd4f06492dba1471288496079579f9efd3` | `feat(team): add team section` | Se implementó la sección de presentación del equipo VíaNexo. | 2026-09-16 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-LandingPage | feature/testimonials | `5a19956fd32f3484084eb90fbfe68171167c3d9f` | `feat(testimonials): add testimonials and final CTA` | Se agregó la sección de testimonios y el llamado a la acción final. | 2026-09-16 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-LandingPage | feature/footer | `def4c893cde8902b11f7df50e9c84108fde2b821` | `feat(footer): add site footer` | Se implementó el footer principal del Landing Page. | 2026-09-16 |
 
 ---
 
@@ -378,16 +378,21 @@ El objetivo de este Sprint es establecer la base de las aplicaciones funcionales
 
 #### 5.2.2.4. Development Evidence for Sprint Review
 
-Durante el Sprint 2, el equipo trabajó sobre el repositorio de la Web Application (Frontend) y el inicio de los Web Services (Backend). Los commits evidencian el avance modular basado en la distribución de dominios.
+Durante el Sprint 2, el equipo trabajó sobre el repositorio de la Frontend Web Application, organizando la implementación por Bounded Contexts. Los commits evidencian el desarrollo modular de las principales funcionalidades de la aplicación y su integración progresiva.
 
 | Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
 |:---|:---|:---|:---|:---|:---|
-| DA-Open-Source/RoadWatch-OS-Frontend | feature/identity-access | *(hash)* | feat(auth): implement login and jwt handling | Added authentication service and role-based access control for subscription plans. | 2026-09-12 |
-| DA-Open-Source/RoadWatch-OS-Frontend | feature/project-mgmt | *(hash)* | feat(projects): add project portfolio view | Created project list, detail views, and monitoring point mapping. | 2026-09-14 |
-| DA-Open-Source/RoadWatch-OS-Frontend | feature/env-monitoring | *(hash)* | feat(monitoring): build environmental dashboard | Implemented real-time measurement charts and threshold alert indicators. | 2026-09-16 |
-| DA-Open-Source/RoadWatch-OS-Frontend | feature/incident-mgmt | *(hash)* | feat(incidents): implement kanban board drag-drop | Added interactive Kanban for incident status, mitigation tracking and responsibles. | 2026-09-18 |
-| DA-Open-Source/RoadWatch-OS-Frontend | feature/document-mgmt | *(hash)* | feat(documents): add evidence upload and pdf export | Integrated file upload component for compliance reports and audit evidence. | 2026-09-20 |
-| DA-Open-Source/RoadWatch-OS-Frontend | main | *(hash)* | chore(core): merge bounded contexts into main layout | Integrated all 5 feature branches into the master routing layout. | 2026-09-21 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Frontend | ft-identity-access-management | `0841063c9a2cc3e8287a8f6d738ed89db03ca648` | `feat(identity-access): add mock authentication module` | Se implementó el módulo de autenticación mock para la interfaz de acceso y gestión básica de sesión. | 2026-10-05 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Frontend | ft-subscription-management | `a180fc98dba70012f29bd1e649ecbabcb7b59b36` | `feat(subscription): add plans and subscription management module` | Se implementó el módulo de planes y gestión visual de suscripciones. | 2026-10-05 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Frontend | ft-project-management | `26d2ed911713894be678ff7bc7fc4bbe75ab3e1e` | `feat(projects): add project detail view` | Se agregó la vista de detalle de proyectos y la estructura de navegación asociada. | 2026-10-06 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Frontend | ft-project-management | `81e0ef31eac900337b3d6e8f7875161d122f374a` | `refactor(projects): adopt shared shell for portfolio views` | Se integraron las vistas de Project Management con el App Shell compartido. | 2026-10-06 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Frontend | ft-incident-mitigation-management | `a9b90f966998e676ae4bdede115e1cb403cce1f1` | `feat(incidents): complete critical list and detail views` | Se completaron las vistas de incidencias críticas y detalle de incidencias. | 2026-10-06 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Frontend | ft-incident-mitigation-management | `7ab180dcca4e4bcd2db12083e88345446bb6ac5d` | `refactor(incidents): adopt shared navigation and shell` | Se integró Incident & Mitigation Management con la navegación y estructura compartidas. | 2026-10-06 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Frontend | ft-document-evidence-management | `556220c2f16fe88252cae0a9d3497d76ad4edcdc` | `feat(document-evidence): add evidence and required document views` | Se agregaron las vistas de evidencias y documentos requeridos. | 2026-10-05 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Frontend | ft-document-evidence-management | `6f4dffe53a56a5dff85044a55ab95cb556387265` | `feat(document-evidence): complete document registration flow` | Se completó el flujo visual de registro y gestión de documentos. | 2026-10-05 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Frontend | ft-reports-compliance-management | `f287c233ce1716c0d802142ff41285a6d2e39cff` | `feat(reports-compliance): connect audit generation flow` | Se conectó el flujo de generación visual de reportes de auditoría. | 2026-10-05 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Frontend | ft-reports-compliance-management | `09d3800555ff208cc10139cafc348ea667b7383b` | `feat(reports-compliance): complete report export workflow` | Se completó el flujo visual de exportación de reportes. | 2026-10-05 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Frontend | ft-reports-compliance-management | `e7aa7a1bc9934ffa8020c21cb01b6d02f43cb786` | `feat(reports-compliance): add report and compliance filters` | Se agregaron filtros para reportes y vistas de cumplimiento. | 2026-10-05 |
 
 ---
 
