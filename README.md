@@ -25,8 +25,8 @@ Proyecto<br>
 |-------------|----------------------------------|
 | U202418029  | Pancorbo Amorós, Italo Raul      |
 | U202412462  |Cabrera Sotelo, Camila Celeste  |
-| U202  |Conde Huashuayo, Sebasthian Alex |
-| U202 |Montes Chang, Piero Francisco |
+| u20241e356  |Conde Huashuayo, Sebasthian Alex |
+| U20241g031 |Montes Chang, Piero Francisco |
 | U202410421 |Diaz De La Cruz, Sebastian Gabriel |
 
 **Período 202620**  
@@ -217,11 +217,11 @@ Proyecto<br>
 
 | Entrega | Título | Enlace |
 |---|---|---|
-| AV1 | Exposición AV1 — RoadWatch OS | |
+| AV1 | Exposición AV1 — RoadWatch OS | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410421_upc_edu_pe/IQD_LnHNx-HqRqv-HFAjJ1qpAS--FQJu5dsHsXaKySKqQjY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=UE0Qfp |
 | TB1 | Exposición TB1 — RoadWatch OS | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410421_upc_edu_pe/IQBv2exzNrqBSrXMzGM1jBgYASk-nrAZWRl3pYsNgxF8844?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=66IAzR|
 
-
 </div>
+
 #### ABET – EAC - Student Outcome 3
 
 **Criterio:** *Capacidad de comunicarse efectivamente con un rango de audiencias.*
