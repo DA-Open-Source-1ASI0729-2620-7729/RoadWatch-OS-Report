@@ -331,25 +331,25 @@ La versión Desktop organiza la información en bloques claramente diferenciados
 
 ![Wireframe Hero Desktop](../assets/images/heroDesktop.png)
 
-**Figura X. Wireframe del Hero Section – Desktop Web Browser.**
+**Wireframe del Hero Section – Desktop Web Browser.**
 
 La primera sección presenta el nombre del producto, su propuesta general y los principales llamados a la acción.
 
 ![Wireframe Funcionalidades Desktop](../assets/images/funcionalidadesDesktop.png)
 
-**Figura X. Wireframe de funcionalidades – Desktop Web Browser.**
+**Wireframe de funcionalidades – Desktop Web Browser.**
 
 Las funcionalidades se presentan en bloques independientes para facilitar la comprensión de los principales componentes de RoadWatch OS.
 
 ![Wireframe Planes Desktop](../assets/images/planesDesktop.png)
 
-**Figura X. Wireframe de opciones comerciales – Desktop Web Browser.**
+**Wireframe de opciones comerciales – Desktop Web Browser.**
 
 Esta sección presenta las opciones comerciales consideradas en el diseño de la Landing Page. Su contenido podrá ajustarse de acuerdo con el modelo de negocio finalmente validado por el equipo.
 
 ![Wireframe Equipo Desktop](../assets/images/equipo.png)
 
-**Figura X. Wireframe de equipo – Desktop Web Browser.**
+**Wireframe de equipo – Desktop Web Browser.**
 
 La sección de equipo presenta a los integrantes de VíaNexo y permite reforzar la identificación del startup responsable del producto.
 
@@ -359,27 +359,27 @@ La versión Mobile mantiene la misma arquitectura general y reorganiza los compo
 
 ![Wireframe Hero Mobile](../assets/images/hero.png)
 
-**Figura X. Wireframe del Hero Section – Mobile Web Browser.**
+**Wireframe del Hero Section – Mobile Web Browser.**
 
 ![Wireframe Acerca del Proyecto](../assets/images/AcercaDelProyecto.png)
 
-**Figura X. Wireframe de Acerca del Proyecto – Mobile Web Browser.**
+**Wireframe de Acerca del Proyecto – Mobile Web Browser.**
 
 ![Wireframe Beneficios Mobile](../assets/images/beneficios.png)
 
-**Figura X. Wireframe de beneficios – Mobile Web Browser.**
+**Wireframe de beneficios – Mobile Web Browser.**
 
 ![Wireframe Funcionalidades Mobile](../assets/images/funcionalidades.png)
 
-**Figura X. Wireframe de funcionalidades – Mobile Web Browser.**
+**Wireframe de funcionalidades – Mobile Web Browser.**
 
 ![Wireframe Cómo Funciona Mobile](../assets/images/ComoFunciona.png)
 
-**Figura X. Wireframe de Cómo Funciona – Mobile Web Browser.**
+**Wireframe de Cómo Funciona – Mobile Web Browser.**
 
 ![Wireframe Equipo y Planes Mobile](../assets/images/equipo%20y%20planes.png)
 
-**Figura X. Wireframe de Equipo y opciones comerciales – Mobile Web Browser.**
+**Wireframe de Equipo y opciones comerciales – Mobile Web Browser.**
 
 La propuesta aplica jerarquía visual, proximidad, consistencia y simplicidad. También considera tamaños adecuados para elementos interactivos, separación suficiente entre componentes y una organización que no depende únicamente del color para transmitir información.
 
@@ -392,7 +392,7 @@ Los mock-ups representan la propuesta visual de alta fidelidad de la Landing Pag
 
 ![Landing Page Mock-up Web](../assets/images/chapter4/landing/landing-web.png)
 
-**Figura X. Mock-up de la Landing Page – Desktop Web Browser.**
+**Mock-up de la Landing Page – Desktop Web Browser.**
 
 La versión Web presenta una navegación principal, un bloque inicial con la propuesta de valor de RoadWatch OS, información sobre el problema que se busca resolver, beneficios, funcionalidades, explicación general del funcionamiento, información del equipo y medios de contacto.
 
@@ -402,7 +402,7 @@ La comunicación se orienta a los dos segmentos objetivo del proyecto: empresas 
 
 ![Landing Page Mock-up Mobile](../assets/images/chapter4/landing/landing-mobile.png)
 
-**Figura X. Mock-up de la Landing Page – Mobile Web Browser.**
+**Mock-up de la Landing Page – Mobile Web Browser.**
 
 La versión Mobile conserva la misma identidad visual, pero adapta los componentes a una lectura vertical y a interacciones táctiles. Los botones, tarjetas, textos e imágenes se ajustan al espacio disponible para mantener la claridad de la información.
 
