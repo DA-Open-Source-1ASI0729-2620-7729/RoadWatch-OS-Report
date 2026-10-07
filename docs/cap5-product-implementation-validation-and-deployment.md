@@ -326,11 +326,11 @@ A continuación, se presentan los analíticos de colaboración del repositorio d
 
 ![Landing Insights](../assets/images/chapter5/landingInsights.jpg)
 
-**Figura X. Resultados e insights de la Landing Page.**
+**Resultados e insights de la Landing Page.**
 
 ![Report Insights](../assets/images/chapter5/reportInsights.jpg)
 
-**Figura X. Resultados e insights del reporte.**
+**Resultados e insights del reporte.**
 
 | Miembro del equipo | Contribuciones principales en el Sprint |
 |:---|:---|
