@@ -2,11 +2,13 @@
 
 ## Introducción
 
-El presente proyecto tiene como finalidad el diseño, desarrollo e implementación de una solución tecnológica distribuida bajo un esquema **HaaS/SaaS** (Hardware as a Service + Software as a Service). Esta propuesta está conformada por una API REST de arquitectura propia y una aplicación web integrada, orientadas a resolver las deficiencias críticas en la supervisión, control y auditoría del cumplimiento ambiental en proyectos de infraestructura vial. La construcción del sistema adopta estándares de ingeniería de software moderna, integrando prácticas de diseño centrado en el usuario (Lean UX), metodologías de desarrollo ágil y una arquitectura orientada a servicios.
+El presente proyecto tiene como finalidad el diseño, desarrollo e implementación de una solución tecnológica distribuida conformada por una API REST y una aplicación web responsiva. La propuesta está orientada a mejorar la gestión y supervisión ambiental en proyectos de infraestructura vial, centralizando información relacionada con proyectos, puntos de monitoreo, mediciones ambientales, incidencias, evidencias, acciones de mitigación y reportes. Para su desarrollo se aplican prácticas de diseño centrado en el usuario mediante Lean UX, metodologías ágiles y una arquitectura orientada a servicios.
 
-En la actualidad, las firmas contratistas encargadas de la ejecución de obras viales y las consultoras/supervisoras ambientales enfrentan importantes cuellos de botella en la captura, procesamiento y seguimiento continuo de parámetros ambientales (calidad del aire, emisión de ruido y estado de suelos/agua). La persistencia de metodologías tradicionales, basadas en mediciones puntuales, registros en papel o formatos digitales aislados, genera vulnerabilidades operativas: los datos quedan expuestos a modificaciones extemporáneas, el tiempo de respuesta ante sobrepasos normativos es elevado y la verificación de cumplimiento exige desplazamientos constantes a campo, derivando en disputas de credibilidad entre ejecutores y auditores.
+En la actualidad, las empresas constructoras viales y las empresas supervisoras o consultoras ambientales enfrentan dificultades para registrar, organizar y dar seguimiento a la información ambiental generada durante la ejecución de los proyectos. El uso de hojas de cálculo, documentos, fotografías y distintos canales de comunicación puede ocasionar información dispersa, dificultades para consultar antecedentes y demoras en la identificación y atención de posibles desviaciones ambientales.
 
-Para superar esta problemática, el presente proyecto plantea el desarrollo de **RoadWatch OS**, una plataforma digital que centraliza el flujo de datos proveniente de nodos IoT de medición propios, procesa indicadores mediante un motor de evaluación de riesgos en tiempo real e independiza las operaciones de control preventivo de las de fiscalización remota. De este modo, se dota a las constructoras de mecanismos de mitigación inmediata y a las supervisoras de un registro inalterable para la auditoría digital de obras.
+Para atender esta problemática, se plantea el desarrollo de **RoadWatch OS**, una plataforma web que permite centralizar y consultar la información ambiental de los proyectos viales. La solución facilita el registro de mediciones, la comparación de valores con los umbrales establecidos, el seguimiento de alertas e incidencias, la asociación de evidencias y acciones de mitigación, y la generación de información consolidada para apoyar los procesos de supervisión y elaboración de reportes.
+
+Dentro del alcance del MVP, las mediciones ambientales pueden ser registradas mediante los servicios desarrollados por la plataforma, sin depender de una integración directa con dispositivos físicos. Como evolución futura del producto, RoadWatch OS podrá incorporar integraciones con dispositivos de monitoreo ambiental para automatizar la recepción de mediciones provenientes de campo.
 
 ---
 
@@ -16,21 +18,21 @@ En esta sección se expone la estructura institucional de la entidad desarrollad
 
 ### 1.1.1 Descripción de la Startup
 
-**VíaNexo** es una startup tecnológica dedicada al diseño de soluciones digitales integradas bajo el modelo **HaaS/SaaS**, concebidas para optimizar el cumplimiento normativo e hídrico-ambiental en el sector de la construcción de carreteras e infraestructura de transporte. Su propuesta central consiste en sustituir los procesos discontinuos y manuales de monitoreo por un ecosistema de captura continua en tiempo real, soportado por hardware IoT propietario, con alta escalabilidad y capacidad de adaptación a proyectos de diversa envergadura.
+**VíaNexo** es una startup tecnológica orientada al desarrollo de soluciones digitales para apoyar la gestión y supervisión ambiental en proyectos de infraestructura vial. Su propuesta busca facilitar el registro, organización y seguimiento de información relacionada con mediciones ambientales, incidencias, evidencias, acciones de mitigación y reportes, permitiendo que los distintos actores involucrados puedan trabajar con información centralizada y organizada.
 
-El nombre **VíaNexo** representa el vínculo técnico y transparente que la plataforma establece entre la infraestructura física (*vía*) y la articulación digital (*nexo*) de los actores responsables de su ejecución y fiscalización. La organización opera como una entidad neutral, garantizando la fidelidad de los datos capturados y eliminando la asimetría informativa entre las partes contratantes y los órganos reguladores.
+El nombre **VíaNexo** representa la conexión entre la infraestructura vial y los procesos digitales que permiten gestionar y supervisar la información ambiental asociada a los proyectos. La startup busca reducir la dispersión de información y facilitar la coordinación entre empresas constructoras viales y empresas supervisoras o consultoras ambientales.
 
-La estrategia de comercialización se fundamenta en un esquema de **doble monetización independiente (dual revenue)**: VíaNexo comercializa licencias de uso diferenciadas para los dos principales actores que intervienen en una misma concesión o tramo vial —la empresa ejecutora/constructora y la empresa supervisora/auditora ambiental—. Ambas partes acceden a entornos de software independientes, sustentados por niveles de suscripción escalables (Base, Profesional y Enterprise), lo que asegura la sostenibilidad económica del modelo sin incrementar exponencialmente los costos fijos de operación.
+La estrategia de comercialización considera un modelo de suscripción orientado a los dos principales segmentos del producto: las empresas constructoras viales y las empresas supervisoras o consultoras ambientales. RoadWatch OS podrá ofrecer diferentes niveles de servicio de acuerdo con las funcionalidades y capacidades disponibles para cada organización, permitiendo adaptar el uso de la plataforma a las necesidades de cada empresa.
 
-En el marco de esta iniciativa, la empresa impulsa **RoadWatch OS**, una plataforma que combina el suministro del equipamiento de sensores ambientales en campo con la suite de software de gestión, orientada a evitar penalizaciones por infracciones ambientales en la etapa de construcción y a digitalizar el proceso de auditoría oficial.
+En el marco de esta propuesta, VíaNexo desarrolla **RoadWatch OS**, una plataforma web orientada a centralizar la gestión ambiental de proyectos viales. La solución permite registrar proyectos y puntos de monitoreo, gestionar mediciones ambientales, identificar posibles desviaciones respecto de los umbrales establecidos, dar seguimiento a incidencias y acciones de mitigación, asociar evidencias y generar información consolidada para la supervisión y elaboración de reportes.
 
 #### Misión
 
-Proveer soluciones de ingeniería de software e Internet de las Cosas (IoT) que permitan a las empresas constructoras y supervisoras de obras viales automatizar el seguimiento de parámetros ambientales, prevenir contingencias sancionatorias y validar el cumplimiento regulatorio mediante datos verificables y neutrales recopilados en tiempo real.
+Desarrollar soluciones digitales que faciliten a las empresas constructoras viales y a las empresas supervisoras o consultoras ambientales la gestión, seguimiento y supervisión de la información ambiental de sus proyectos, promoviendo una mejor organización de los datos y una atención más oportuna de las incidencias.
 
 #### Visión
 
-Consolidarse como la plataforma tecnológica de referencia en América Latina para el control y fiscalización ambiental remota en obras de infraestructura vial, reconocida por su rigor técnico, la integridad de su arquitectura de datos y su aporte a la sostenibilidad en la construcción pública y privada.
+Consolidarse como una startup tecnológica reconocida por ofrecer soluciones digitales que contribuyan a mejorar la gestión y supervisión ambiental en proyectos de infraestructura vial, mediante herramientas accesibles, organizadas y adaptables a las necesidades de las empresas del sector.
 
 ### 1.1.2. Perfiles de los Miembros del Equipo
 
@@ -46,7 +48,83 @@ Consolidarse como la plataforma tecnológica de referencia en América Latina pa
 
 ## 1.2 Solution Profile
 
-**RoadWatch OS** es una solución informática integral distribuida como un servicio híbrido (**HaaS/SaaS**), diseñada para articular el monitoreo, la gestión de alertas preventivas, la mitigación operativa y la auditoría formal en proyectos de construcción vial. Mediante el despliegue de nodos sensores (calidad del aire, partículas en suspensión, sonometría y parámetros fisicoquímicos en agua/suelo), el sistema habilita dos módulos de trabajo aislados: un tablero operativo para la constructora destinado a la resolución de incidencias en campo, y un tablero de fiscalización para la supervisora respaldado por registros inalterables y generación automatizada de informes normativos.
+**RoadWatch OS** es una plataforma web orientada a apoyar la gestión y supervisión ambiental en proyectos de infraestructura vial. La solución permite centralizar información relacionada con proyectos, puntos de monitoreo, mediciones ambientales, alertas, incidencias, evidencias, acciones de mitigación y reportes dentro de un mismo entorno digital.
+
+La plataforma está dirigida a dos segmentos principales: empresas constructoras viales y empresas supervisoras o consultoras ambientales. Cada segmento accede a funcionalidades relacionadas con sus responsabilidades dentro del proceso de seguimiento ambiental, manteniendo una experiencia adaptada a sus necesidades.
+
+RoadWatch OS busca facilitar la consulta y trazabilidad de la información ambiental, reducir la dispersión de registros entre diferentes medios y permitir una atención más ordenada de las situaciones que requieran seguimiento. En el MVP, las mediciones pueden registrarse mediante los servicios de la plataforma, mientras que la integración directa con dispositivos de monitoreo ambiental se considera como una posible evolución futura del producto.
+
+#### Propuesta de valor
+
+RoadWatch OS es una plataforma pensada para apoyar la gestión y supervisión ambiental en proyectos viales. La propuesta busca resolver un problema que se repite en este tipo de proyectos: la información suele estar repartida entre hojas de cálculo, fotografías, correos, reportes y diferentes canales de comunicación.
+
+La idea es reunir esa información en un solo lugar para que sea más fácil revisar mediciones, incidencias, evidencias y acciones correctivas, y así tener una visión más clara de lo que está ocurriendo en cada proyecto.
+
+La propuesta considera los dos segmentos objetivo definidos para RoadWatch OS:
+
+| Segmento | Problema principal | Propuesta de valor | Resultado esperado |
+| :--- | :--- | :--- | :--- |
+| **Empresas Constructoras Viales** | La información ambiental de la obra se encuentra distribuida entre distintos documentos y canales, lo que dificulta hacer seguimiento a mediciones, incidencias y acciones correctivas. | Centralizar mediciones ambientales, puntos de monitoreo, incidencias, evidencias y alertas dentro de una misma plataforma. | Facilitar el seguimiento ambiental de la obra, detectar posibles desviaciones con mayor anticipación y mantener mejor organizada la evidencia. |
+| **Empresas Supervisoras y Consultoras Ambientales** | La supervisión de uno o varios proyectos implica recopilar y revisar información proveniente de distintos responsables y fuentes. | Contar con una vista organizada del estado ambiental de los proyectos, sus mediciones, incidencias, evidencias, historial y reportes. | Reducir el tiempo empleado en recopilar información y facilitar la supervisión, elaboración de reportes y procesos de fiscalización. |
+
+#### Alcance del producto
+
+RoadWatch OS se plantea como una plataforma web para apoyar la gestión y supervisión ambiental de proyectos viales.
+
+Para mantener un alcance realista durante el desarrollo del proyecto, el MVP considera las siguientes funcionalidades:
+
+**Incluido en el alcance del MVP:**
+
+- Landing Page responsiva para presentar RoadWatch OS, su propuesta de valor y sus principales características.
+- Aplicación web responsiva para la gestión y supervisión ambiental.
+- Inicio de sesión y control de acceso según el tipo de usuario.
+- Registro y consulta de proyectos viales.
+- Registro y consulta de puntos de monitoreo ambiental.
+- Registro de mediciones ambientales.
+- Visualización del estado ambiental de los proyectos mediante indicadores.
+- Identificación de valores que se acerquen o superen los umbrales establecidos.
+- Registro y seguimiento de incidencias ambientales.
+- Registro de evidencias relacionadas con mediciones o incidencias.
+- Seguimiento de acciones correctivas o medidas de mitigación.
+- Consulta del historial de mediciones e incidencias.
+- Visualización de información consolidada para la supervisión de varios proyectos.
+- Generación y consulta de reportes de seguimiento.
+- Búsqueda y filtrado de información por proyecto, fecha, tipo de indicador u otros criterios relacionados.
+
+Entre las variables ambientales consideradas se encuentran:
+
+- Calidad del aire, mediante registros de material particulado.
+- Nivel de ruido.
+- Parámetros básicos relacionados con la calidad del agua.
+
+**Fuera del alcance del MVP:**
+
+- Desarrollo o fabricación de dispositivos físicos de monitoreo ambiental.
+- Aplicaciones móviles nativas para Android o iOS.
+- Integración directa con sistemas de entidades públicas.
+- Uso de inteligencia artificial o modelos predictivos avanzados.
+- Automatización completa de procesos oficiales de fiscalización.
+- Pasarelas de pago reales.
+- Certificación oficial de documentos o firmas digitales.
+
+Como posible evolución del producto, se podrá considerar una integración directa con dispositivos de monitoreo ambiental. Para el MVP, los registros necesarios para validar el funcionamiento de la plataforma podrán ser ingresados mediante los servicios desarrollados por el sistema.
+
+El alcance será evaluado principalmente por la capacidad de organizar la información ambiental, facilitar el seguimiento de incidencias y reducir el tiempo necesario para encontrar y consolidar información de los proyectos.
+
+#### Componente innovador
+
+El componente innovador de RoadWatch OS se encuentra en reunir dentro de una sola plataforma distintas actividades que actualmente pueden realizarse de manera separada usando hojas de cálculo, documentos, fotografías, correos y otros medios.
+
+La propuesta no se centra únicamente en registrar información, sino también en facilitar el seguimiento preventivo de situaciones ambientales y mantener relacionada la información de cada proyecto.
+
+| Componente | ¿En qué consiste? | Valor aportado |
+| :--- | :--- | :--- |
+| **Monitoreo ambiental centralizado** | Las mediciones, puntos de monitoreo, incidencias y evidencias se organizan dentro de una misma plataforma. | Ayuda a reducir la dispersión de información y facilita su consulta. |
+| **Seguimiento preventivo de indicadores** | Los valores ambientales pueden compararse con los umbrales establecidos para identificar situaciones que necesiten atención. | Permite actuar con mayor anticipación frente a posibles desviaciones. |
+| **Gestión de incidencias ambientales** | Las observaciones o problemas detectados pueden registrarse y mantenerse asociados al proyecto correspondiente. | Facilita el seguimiento de los pendientes y de las acciones realizadas. |
+| **Trazabilidad de información** | Las mediciones, incidencias, evidencias y acciones quedan relacionadas dentro del historial del proyecto. | Permite revisar con mayor facilidad lo ocurrido durante el desarrollo del proyecto. |
+| **Supervisión de múltiples proyectos** | Los responsables de supervisión pueden revisar información de distintos proyectos desde un mismo espacio. | Facilita la comparación y seguimiento del estado ambiental de varios proyectos. |
+| **Integración de evidencias y reportes** | Fotografías, registros y documentos pueden relacionarse con las actividades ambientales correspondientes. | Facilita la preparación de reportes y la revisión de información durante supervisiones o fiscalizaciones. |
 
 ---
 
@@ -56,139 +134,198 @@ El desarrollo de infraestructura vial constituye un eje prioritario en el crecim
 
 A pesar del marco regulatorio vigente, los procedimientos de monitoreo ambiental en obra continúan sufriendo de un bajo nivel de adopción tecnológica. En la mayoría de frentes de trabajo, la toma de datos depende de muestreos periódicos cuyos resultados se compilan manualmente en hojas de cálculo o reportes extemporáneos. Esta desconexión operativa dificulta la adopción de medidas correctivas inmediatas, eleva el riesgo de multas para el contratista y exige que las entidades supervisoras destinen recursos significativos a la verificación presencial de los registros presentados.
 
-#### What / ¿QUÉ?
+#### ¿QUÉ?
 
-RoadWatch OS resuelve la falta de continuidad, la fragilidad operativa y los problemas de trazabilidad en los datos ambientales de proyectos viales, integrando nodos sensores IoT neutrales, dashboards geolocalizados, un motor de evaluación de riesgos con despacho automático de tickets de mitigación y un entorno de auditoría inalterable.
+RoadWatch OS busca resolver la dispersión de información ambiental en proyectos viales, centralizando en una sola plataforma los datos relacionados con proyectos, puntos de monitoreo, mediciones, alertas, incidencias, evidencias, acciones de mitigación y reportes.
 
-#### When / ¿CUÁNDO?
+#### ¿CUÁNDO?
 
-La atención de este problema resulta urgente en el escenario actual, caracterizado por la masificación de exigencias tecnológicas en la fiscalización pública, la reactivación de proyectos viales multipunto y la necesidad de contar con evidencias objetivas frente a posibles contingencias socioambientales u observaciones normativas.
+La necesidad de contar con una herramienta de este tipo se presenta durante la ejecución y supervisión de proyectos viales, especialmente cuando se requiere revisar periódicamente mediciones ambientales, identificar posibles desviaciones y dar seguimiento a incidencias o acciones correctivas.
 
-#### Where / ¿DÓNDE?
+#### ¿DÓNDE?
 
-La solución opera en los corredores viales, carreteras y obras de infraestructura de transporte —donde se despliegan los nodos de medición física—, así como en las centrales de control y oficinas técnicas de las empresas ejecutoras y supervisoras.
+La solución está orientada a empresas constructoras viales y empresas supervisoras o consultoras ambientales que participan en proyectos de infraestructura vial. La plataforma puede ser utilizada desde oficinas técnicas o desde campo mediante una aplicación web responsiva.
 
-#### Who / ¿QUIÉN?
+#### ¿QUIÉN?
 
-Los involucrados directos son las **empresas constructoras/contratistas** encargadas de la ejecución de la vía que deben demostrar el cumplimiento de los IGA, y las **empresas supervisoras / consultoras ambientales** encargadas de auditar la obra en representación del Estado o del concesionario.
+Los principales usuarios de RoadWatch OS son las empresas constructoras viales, representadas por responsables de gestión ambiental, jefes de proyecto e ingenieros de obra, y las empresas supervisoras o consultoras ambientales encargadas de revisar el cumplimiento y seguimiento ambiental de los proyectos.
 
-#### Why / ¿POR QUÉ?
+#### ¿POR QUÉ?
 
-Porque la detección tardía de un sobrepaso en los límites máximos permisibles (LMP) desencadena sanciones administrativas, paralizaciones de frentes de trabajo y daños reputacionales para la constructora; mientras que para la supervisora, la ausencia de un canal de datos continuo e inalterable incrementa los costos logísticos de fiscalización y retrasa la emisión de dictámenes de cumplimiento.
+La información ambiental de un proyecto suele encontrarse distribuida entre hojas de cálculo, documentos, fotografías, correos y otros medios. Esta dispersión dificulta la consulta de antecedentes, el seguimiento de incidencias y la elaboración de reportes. RoadWatch OS busca facilitar la organización de esta información y mejorar la trazabilidad de las acciones realizadas durante el proyecto.
 
-#### How / ¿CÓMO?
+#### ¿CÓMO?
 
-A través de un modelo HaaS/SaaS centralizado en la nube. VíaNexo despliega y mantiene la red de nodos IoT en el trazado de la obra; estos transmiten parámetros en tiempo real hacia la API REST. El backend evalúa la tendencia del dato y, si se identifican umbrales de riesgo, genera una alerta y habilita un flujo de mitigación en el módulo de la constructora. Simultáneamente, el módulo de la supervisora recibe las lecturas sin posibilidad de alteración para su validación e integración en reportes oficiales.
+RoadWatch OS funciona mediante una aplicación web integrada con una API REST. Los usuarios pueden registrar y consultar proyectos, puntos de monitoreo y mediciones ambientales. El sistema permite comparar los valores registrados con los umbrales configurados, generar alertas, registrar incidencias, asociar evidencias, dar seguimiento a acciones de mitigación y consultar información consolidada para la supervisión y elaboración de reportes.
 
-#### How Much / ¿CUÁNTO?
+En el MVP, las mediciones pueden ser registradas mediante los servicios de la plataforma. La integración directa con dispositivos físicos de monitoreo ambiental se considera una posible evolución futura.
 
-El modelo de ingresos opera mediante **suscripciones independientes (dual revenue)**. VíaNexo cobra tarifas periódicas a la constructora y a la supervisora del mismo proyecto vial según el nivel contratado (Base, Profesional o Enterprise). El costo del hardware IoT está absorbido dentro de la suscripción HaaS (los equipos son devueltos al concluir la obra), ajustando los planes en función al número de frentes de monitoreo, volumen de usuarios y capacidades de exportación de reportes.
+#### ¿CUÁNTO?
+
+El modelo de negocio considera un esquema de suscripción para las organizaciones que utilicen RoadWatch OS. Se podrán definir distintos niveles de servicio de acuerdo con las funcionalidades, cantidad de usuarios, proyectos o capacidades disponibles para cada organización.
+
+Dentro del MVP no se contempla la implementación de una pasarela de pago real. La gestión comercial de los planes podrá representarse mediante la configuración de suscripciones y límites de uso dentro de la plataforma.
 
 ---
 
 ### 1.2.2 Lean UX Process
 
-#### 1.2.2.1. Lean UX Problem Statements
+Actualmente, la gestión y supervisión ambiental en proyectos de infraestructura vial puede involucrar el uso de hojas de cálculo, documentos, fotografías, correos y otros medios separados para registrar y consultar información. Esta forma de trabajo dificulta mantener una visión consolidada de las mediciones, incidencias, evidencias y acciones realizadas durante el desarrollo de un proyecto.
 
-El estado actual de **la supervisión ambiental en proyectos de infraestructura vial** se caracteriza por **el registro discontinuo, manual y desarticulado de los indicadores normativos, careciendo de mecanismos de análisis preventivo, interfaces geolocalizadas unificadas e inalterabilidad de los datos en campo**, lo que ocasiona **reacciones tardías ante incidentes ambientales, exposición a procesos sancionatorios, elevados costos de fiscalización presencial y desconfianza en la validez de los reportes presentados.** Esta problemática afecta directamente a **las empresas constructoras y a las firmas supervisoras/consultoras ambientales**, quienes deben basar sus decisiones y auditorías en documentación procesada de forma extemporánea.
+RoadWatch OS busca atender esta problemática mediante una plataforma web que centralice la información ambiental y facilite su seguimiento. La solución permitirá registrar mediciones, identificar valores cercanos o superiores a los umbrales establecidos, gestionar incidencias, asociar evidencias, realizar seguimiento a acciones de mitigación y consultar reportes relacionados con el estado ambiental de los proyectos.
 
-Las soluciones existentes en el mercado no resuelven la **captura automatizada y neutral de datos en campo acoplada a un flujo de trabajo que separe la gestión operativa de mitigación de la fiscalización formal**. Nuestro producto, **RoadWatch OS**, abordará este vacío mediante un ecosistema HaaS/SaaS que despliega sensores IoT propios, clasifica los niveles de riesgo normativo, habilita alertas preventivas y ofrece paneles de control con Bounded Contexts totalmente independientes.
+El producto está orientado principalmente a dos segmentos: las empresas constructoras viales, responsables de gestionar y atender las situaciones ambientales que se presentan durante la ejecución de las obras, y las empresas supervisoras o consultoras ambientales, encargadas de revisar la información, realizar seguimiento y elaborar reportes sobre los proyectos bajo su supervisión.
 
-Dirigiremos nuestro enfoque inicial a **empresas constructoras de infraestructura vial y consultoras ambientales registradas en el RNCA que operan en el mercado nacional**. Consideraremos que la propuesta es exitosa al verificar una reducción cuantitativa en los tiempos de respuesta ante desviaciones ambientales, un incremento en la resolución de incidencias antes de inspecciones externas y una disminución en las horas de gabinete requeridas para estructurar expedientes de auditoría.
+Se considerará que la propuesta genera valor cuando los usuarios puedan encontrar y revisar la información ambiental con mayor facilidad, identificar situaciones que requieran atención, mantener un historial organizado de las acciones realizadas y reducir el tiempo necesario para consolidar información para la supervisión y elaboración de reportes.
 
 ---
 
-#### 1.2.2.2. Lean UX Assumptions
+#### 1.2.2.1 Lean UX Problem Statements
+
+Actualmente, la gestión y supervisión ambiental en proyectos de infraestructura vial presenta dificultades relacionadas con la dispersión de información entre distintos medios, como hojas de cálculo, documentos, fotografías, correos y reportes independientes. Esta situación dificulta mantener una visión actualizada y organizada de las mediciones ambientales, incidencias, evidencias y acciones realizadas durante la ejecución de un proyecto.
+
+Este problema afecta principalmente a las empresas constructoras viales y a las empresas supervisoras o consultoras ambientales. En el caso de las constructoras, los responsables de gestión ambiental necesitan registrar y revisar información de manera oportuna para identificar situaciones que requieran atención y realizar seguimiento a las acciones de mitigación. Por otro lado, las empresas supervisoras o consultoras requieren acceder a información consolidada de uno o varios proyectos para revisar antecedentes, verificar el seguimiento realizado y preparar reportes.
+
+La falta de centralización de la información puede generar demoras en la consulta de registros, dificultades para relacionar mediciones con incidencias y evidencias, pérdida de tiempo durante la consolidación de información y menor trazabilidad de las acciones realizadas.
+
+RoadWatch OS busca abordar esta problemática mediante una plataforma web que centraliza la información ambiental de los proyectos viales. La solución permite registrar proyectos, puntos de monitoreo y mediciones ambientales, comparar los valores con los umbrales establecidos, gestionar alertas e incidencias, asociar evidencias y acciones de mitigación, y consultar información histórica y reportes.
+
+El objetivo es facilitar el seguimiento ambiental de los proyectos y permitir que los usuarios encuentren, relacionen y consulten la información necesaria de manera más ordenada, reduciendo la dependencia de múltiples fuentes y herramientas separadas.
+
+---
+
+#### 1.2.2.2 Lean UX Assumptions
 
 ##### A. Business Assumptions
 
-1. **Nuestros clientes necesitan:** un entorno de seguimiento ambiental automatizado, con garantía de inalterabilidad, que evite la adquisición directa y el mantenimiento complejo de equipos de medición.
-2. **Estas necesidades se satisfacen con:** una plataforma HaaS/SaaS que provee la red de sensores IoT, procesa los parámetros en tiempo real, alerta sobre tendencias de riesgo y presenta la información en tableros geolocalizados.
-3. **Nuestros usuarios iniciales serán:** ingenieros residentes de obra, responsables de SST/MA en constructoras y jefes de supervisión en consultoras ambientales acreditadas.
-4. **Valor clave esperado:** para la constructora, contar con un mecanismo de mitigación previa a la infracción; para la supervisora, auditar con datos transparentes recolectados de forma remota.
-5. **Beneficios complementarios:** reducción de tiempos de elaboración de informes oficiales, trazabilidad histórica completa y mejora del perfil de cumplimiento de la empresa ejecutora.
-6. **Estrategia de captación:** acuerdos con gremios de la construcción, prospección sobre empresas registradas en el RNCA y difusión orientada a gerentes de operaciones e inspectores de obra.
-7. **Estructura de ingresos:** cobro de suscripciones periódicas diferenciadas (HaaS/SaaS) para constructoras y supervisoras bajo planes escalables (Base, Profesional, Enterprise).
-8. **Competidores directos:** comercializadores de hardware de medición sin capa de gestión integrada, plataformas de monitoreo pasivo de parámetros y registros tradicionales en hojas de cálculo.
-9. **Ventaja competitiva:** provisión de hardware bajo modelo HaaS actuando como tercero neutral; motor de gestión preventiva (tickets de mitigación) y arquitectura con aislamiento estricto de datos (Bounded Contexts) para cada segmento.
-10. **Riesgos del producto:** dificultades logísticas en el mantenimiento de sensores en zonas remotas o la percepción de parcialidad en el flujo de información.
-11. **Estrategias de mitigación:** implementación de controles de acceso estricto por roles (RBAC), bloqueo de edición sobre el histórico de datos e historial público de calibración de los nodos IoT.
+1. **Creemos que** las empresas constructoras viales y las empresas supervisoras o consultoras ambientales necesitan una herramienta que les permita centralizar y organizar la información ambiental de sus proyectos.
 
-##### B. User Assumptions
+2. **Creemos que** RoadWatch OS puede generar valor al facilitar el registro y seguimiento de mediciones, incidencias, evidencias, acciones de mitigación y reportes dentro de una misma plataforma.
 
-* **¿Quién es el usuario?** Dos perfiles operativos: (1) El responsable de mitigación ambiental de la empresa constructora; y (2) El auditor / consultor ambiental de la firma supervisora.
-* **¿Dónde encaja el producto?** En el flujo operativo diario de control de frentes de obra (constructora) y en la rutina de verificación periódica de expedientes normativos (supervisora).
-* **Problema a resolver:** La incertidumbre sobre la validez de las mediciones de campo y el desfase temporal en la detección de incidentes ambientales.
-* **Uso típico:** Atención de alertas de riesgo, carga de evidencias fotográficas para el cierre de acciones correctivas (constructora); revisión del histórico de mediciones y exportación de expedientes de fiscalización (supervisora).
-* **Funcionalidades críticas:** Ingesta continua vía IoT, clasificación automática de riesgo (verde/amarillo/rojo), tableros cartográficos interactivos y generación de reportes en PDF/Excel adaptados a formatos normativos.
-* **Experiencia visual (Look & Feel):** Interfaz limpia tipo *dashboard* empresarial con código de colores preventivo, optimizada para su visualización en pantallas de gabinete y dispositivos móviles en campo.
+3. **Creemos que** un modelo de suscripción permitirá adaptar el acceso a la plataforma de acuerdo con las necesidades y capacidades de cada organización.
 
-##### C. User Outcome & Benefit Assumptions
+4. **Creemos que** la diferenciación de RoadWatch OS estará en integrar dentro de una sola solución funciones que actualmente pueden encontrarse distribuidas entre hojas de cálculo, documentos, correos, fotografías y otros medios.
 
-* El equipo operativo de la constructora soluciona desviaciones ambientales antes de incurrir en infracciones normativas gracias a la detección temprana.
-* La empresa contratista optimiza su presupuesto al evitar la compra definitiva de instrumental de laboratorio o sensores de alta gama.
-* La consultora ambiental reduce la frecuencia de inspecciones presenciales al contar con datos continuos y confiables recolectados de forma remota.
-* El equipo auditor compila expedientes normativos en menor tiempo y con respaldo técnico inalterable.
+##### B. Business Outcome Assumptions
 
-##### D. Business Outcome Assumptions
+1. **Creemos que** aumentará la adopción de RoadWatch OS si los usuarios perciben una reducción en el tiempo necesario para encontrar y consolidar información ambiental.
 
-* Crecimiento en la adopción del modelo de doble suscripción activa (constructora + supervisora) sobre un mismo proyecto vial.
-* Reducción en el tiempo medio de atención y cierre de incidencias ambientales en los proyectos registrados.
-* Incremento en la tasa de renovación de licencias al término de los periodos contractuales de obra.
-* Reutilización eficiente del parque de nodos sensores IoT en nuevos proyectos al concluir las etapas de obra previa.
+2. **Creemos que** la plataforma generará mayor recurrencia de uso si permite mantener organizados los proyectos, mediciones, incidencias, evidencias y reportes.
+
+3. **Creemos que** las organizaciones estarán dispuestas a mantener una suscripción si las funcionalidades disponibles facilitan sus procesos de seguimiento y supervisión ambiental.
+
+4. **Creemos que** el valor del producto podrá medirse mediante la frecuencia de uso, el número de proyectos gestionados y la reducción del tiempo empleado en consolidar información.
+
+##### C. User Assumptions
+
+1. **Creemos que** los usuarios del segmento de empresas constructoras viales necesitan registrar y consultar información ambiental de manera rápida durante la ejecución de los proyectos.
+
+2. **Creemos que** los usuarios del segmento de empresas supervisoras o consultoras ambientales necesitan revisar información consolidada de uno o varios proyectos para realizar seguimiento y elaborar reportes.
+
+3. **Creemos que** ambos segmentos necesitan acceder a información histórica relacionada con mediciones, incidencias, evidencias y acciones realizadas.
+
+##### D. User Outcome & Benefit Assumptions
+
+1. **Creemos que** los responsables ambientales de las empresas constructoras podrán identificar con mayor rapidez las situaciones que requieran atención al contar con mediciones, alertas e incidencias organizadas dentro de la plataforma.
+
+2. **Creemos que** los usuarios podrán reducir el tiempo empleado en buscar información al contar con evidencias, historial y acciones de mitigación asociadas directamente a cada proyecto o incidencia.
+
+3. **Creemos que** las empresas supervisoras o consultoras ambientales podrán revisar con mayor facilidad el estado de varios proyectos mediante información consolidada y reportes.
+
+4. **Creemos que** ambos segmentos obtendrán una mejor trazabilidad de las actividades realizadas al mantener relacionados los registros ambientales dentro de un mismo sistema.
 
 ##### E. Feature Assumptions
 
-1. **Red de Nodos IoT (HaaS):** Kits integrados de sensores ambientales suministrados, instalados y mantenidos por VíaNexo dentro de la tarifa del servicio.
-2. **Motor de Clasificación de Riesgo:** Algoritmo en el backend que evalúa las lecturas contra los parámetros normativos e identifica condiciones óptimas, de advertencia o críticas.
-3. **Módulo Operativo de Mitigación (Constructora):** Dashboard geolocalizado para la atención de alertas, apertura automática de tickets y registro de evidencias foto/georeferenciadas.
-4. **Módulo de Fiscalización Digital (Supervisora):** Panel de auditoría multitramo con lecturas históricas protegidas contra edición y generador automatizado de reportes normativos.
-5. **Control de Accesos por Bounded Contexts (RBAC):** Separación lógica completa de los datos para garantizar que las operaciones internas de la constructora no comprometan la independencia de la supervisora.
+1. **Creemos que** el registro de proyectos y puntos de monitoreo permitirá organizar correctamente la información ambiental de cada obra.
 
+2. **Creemos que** el registro de mediciones y su comparación con umbrales configurados permitirá identificar posibles desviaciones ambientales.
+
+3. **Creemos que** un módulo de alertas e incidencias permitirá dar seguimiento a situaciones que necesiten atención.
+
+4. **Creemos que** el registro de evidencias y acciones de mitigación permitirá mantener información asociada al tratamiento de cada incidencia.
+
+5. **Creemos que** la generación y consulta de reportes facilitará la supervisión y consolidación de información ambiental.
+
+6. **Creemos que** un sistema de roles y permisos permitirá controlar el acceso a las funcionalidades de acuerdo con las responsabilidades de cada usuario.
+   
 ---
 
-#### 1.2.2.3. Lean UX Hypothesis Statements
+#### 1.2.2.3 Lean UX Hypothesis Statements
 
-##### Transparencia mediante Datos Inalterables
+##### Hipótesis 1: Centralización de información ambiental
 
-Creemos que incrementaremos la tasa de adopción por parte de las empresas supervisoras si la plataforma les provee acceso a un registro continuo capturado por nodos IoT neutrales e imposibles de alterar por la empresa constructora, integrando un módulo de fiscalización remota de datos inalterables.
+- **Creemos que lograremos:** una reducción en el tiempo empleado para localizar y consolidar información ambiental de los proyectos.
+- **Si:** los responsables ambientales de empresas constructoras y supervisoras utilizan RoadWatch OS de manera frecuente.
+- **Alcanzar:** una mejor organización y acceso a la información relacionada con proyectos, mediciones, incidencias, evidencias y reportes.
+- **Mediante:** una plataforma web que centraliza la información ambiental dentro de un mismo entorno.
 
-##### Mitigación Preventiva vs. Monitoreo Pasivo
+##### Hipótesis 2: Seguimiento preventivo de mediciones
 
-Creemos que reduciremos el riesgo de multas y paralizaciones de obra para las constructoras si el sistema las notifica ante tendencias atípicas (Nivel de Advertencia) en lugar de advertir únicamente el sobrepaso consumado, mediante un motor de gestión preventiva que despacha tickets de atención inmediata.
+- **Creemos que lograremos:** una identificación más oportuna de situaciones que requieran atención ambiental.
+- **Si:** los responsables de gestión ambiental registran y revisan periódicamente las mediciones de sus proyectos.
+- **Alcanzar:** la capacidad de detectar valores cercanos o superiores a los umbrales establecidos.
+- **Mediante:** un sistema que compara las mediciones ambientales con los límites configurados y genera alertas cuando corresponde.
 
-##### Automatización de Expedientes de Auditoría
+##### Hipótesis 3: Gestión de incidencias y acciones de mitigación
 
-Creemos que disminuiremos el tiempo de preparación de auditorías ambientales si la supervisora dispone de un módulo que compile automáticamente el historial de parámetros e incidencias en formatos oficiales exportables, mediante un generador automatizado de reportes normativos.
+- **Creemos que lograremos:** una mejora en el seguimiento de las incidencias ambientales y de las acciones realizadas para atenderlas.
+- **Si:** los responsables ambientales de las empresas constructoras registran y actualizan las incidencias dentro de la plataforma.
+- **Alcanzar:** una mejor trazabilidad de las situaciones detectadas, las acciones de mitigación realizadas y las evidencias asociadas.
+- **Mediante:** un módulo de gestión de incidencias, acciones de mitigación y evidencias.
 
-##### Gestión Consolidada Multi-Proyecto
+##### Hipótesis 4: Supervisión de múltiples proyectos
 
-Creemos que facilitaremos la supervisión a nivel corporativo si los gerentes de operaciones y jefes de fiscalización pueden monitorear múltiples frentes viales en una sola interfaz cartográfica, mediante un dashboard de control geolocalizado multi-tramo.
+- **Creemos que lograremos:** una reducción en el tiempo necesario para revisar el estado ambiental de varios proyectos.
+- **Si:** los usuarios de empresas supervisoras o consultoras ambientales utilizan la plataforma para consultar la información consolidada de los proyectos bajo su responsabilidad.
+- **Alcanzar:** una visión más clara del estado de las mediciones, incidencias, evidencias y reportes de cada proyecto.
+- **Mediante:** un panel de supervisión que permite consultar y comparar información de múltiples proyectos.
 
+##### Hipótesis 5: Generación y consulta de reportes
+
+- **Creemos que lograremos:** una mayor eficiencia en la preparación de información para procesos de seguimiento y supervisión ambiental.
+- **Si:** los usuarios utilizan RoadWatch OS para registrar y mantener actualizada la información de sus proyectos.
+- **Alcanzar:** la posibilidad de consultar información histórica y consolidada de manera más rápida.
+- **Mediante:** funcionalidades de generación, consulta y descarga de reportes ambientales.
+
+##### Hipótesis 6: Modelo de suscripción
+
+- **Creemos que lograremos:** una mayor sostenibilidad del modelo de negocio de RoadWatch OS.
+- **Si:** las organizaciones perciben valor en las funcionalidades ofrecidas por la plataforma.
+- **Alcanzar:** un uso recurrente de RoadWatch OS de acuerdo con las necesidades de cada organización.
+- **Mediante:** distintos niveles de suscripción asociados a funcionalidades y capacidades de uso de la plataforma.
+  
 ---
 
-#### 1.2.2.4. Lean UX Canvas
+#### 1.2.2.4 Lean UX Canvas
 
-| **Business Problem** | **Solutions** | **Business Outcomes** |
+| **Business Problem** | **Solutions (Features)** | **Business Outcomes** |
 | :--- | :--- | :--- |
-| Las empresas ejecutoras y supervisoras de infraestructura vial en el país deben verificar el cumplimiento de estándares ambientales (aire, ruido, agua) en múltiples frentes de trabajo. Actualmente, este proceso se realiza mediante toma de datos manual en planillas o informes aislados, sin visualización en tiempo real, sin alertas automatizadas y con limitada trazabilidad para auditorías. Esto genera respuestas tardías ante incidentes, demoras de varios días en la elaboración de informes y falta de visibilidad para la alta dirección. **RoadWatch OS** aborda esta brecha con un ecosistema web centralizado que geolocaliza los puntos de monitoreo, clasifica el riesgo normativo, gestiona tickets de mitigación y genera expedientes de auditoría automáticos. Sabremos que el producto es exitoso al verificar la reducción en los tiempos de respuesta, la disminución de horas dedicadas a informes y la incorporación progresiva de frentes de obra a la plataforma. | **- Tablero cartográfico interactivo:** Representación geolocalizada de nodos de medición con estados según nivel de riesgo normativo.<br>**- Engine de evaluación de parámetros y tickets:** Comparación automatizada de mediciones contra límites normativos y apertura de incidentes de mitigación.<br>**- Sistema de alertas tempranas:** Notificaciones preventivas ante tendencias al alza o tareas de mitigación pendientes de atención.<br>**- Generador de expedientes de auditoría:** Consolidación de lecturas e incidentes en archivos descargables estructurados para entes reguladores.<br>**- Gestión documental y evidencias:** Almacenamiento de fotografías e IGA asociados con control de versiones y trazabilidad.<br>**- Control de acceso por roles (RBAC):** Administración estricta de permisos diferenciando ejecutores, auditores y administradores de plataforma. | - Reducción del 30% en el tiempo promedio de respuesta ante sobrepasos de parámetros normativos.<br>- Disminución del 40% en el tiempo requerido para estructurar y validar un expediente de auditoría ambiental.<br>- Reducción del 20% en incidentes de mitigación que superan las 72 horas sin atención en campo.<br>- Integración de 40 tramos o proyectos viales en la plataforma durante el primer año de operaciones.<br>- Retención superior al 90% en la renovación de licencias al término del ciclo inicial de contrato. |
+| Las empresas constructoras viales y las empresas supervisoras o consultoras ambientales suelen gestionar información ambiental mediante hojas de cálculo, documentos, fotografías, correos y otros medios separados. Esta dispersión dificulta el seguimiento de mediciones, incidencias, evidencias y acciones realizadas durante el proyecto. **RoadWatch OS** busca centralizar esta información en una sola plataforma para facilitar su consulta, seguimiento y consolidación. | **1. Gestión de proyectos y puntos de monitoreo:** permite organizar la información ambiental según cada obra y ubicación.<br>**2. Registro y seguimiento de mediciones:** permite ingresar valores ambientales y compararlos con los umbrales definidos.<br>**3. Gestión de alertas e incidencias:** permite identificar situaciones que requieren atención y realizar su seguimiento.<br>**4. Registro de evidencias y acciones de mitigación:** permite asociar fotografías, documentos y acciones realizadas a cada incidencia.<br>**5. Supervisión de múltiples proyectos:** permite revisar información consolidada de varios proyectos.<br>**6. Generación y consulta de reportes:** facilita la consolidación y revisión de información ambiental.<br>**7. Gestión de usuarios, roles y suscripciones:** permite controlar accesos y adaptar las capacidades disponibles según la organización. | - Reducción del tiempo necesario para localizar y consolidar información ambiental.<br>- Mayor frecuencia de uso de la plataforma para actividades de seguimiento y supervisión.<br>- Incremento en la cantidad de proyectos gestionados dentro de RoadWatch OS.<br>- Mejora en la organización y trazabilidad de mediciones, incidencias, evidencias y acciones realizadas.<br>- Mayor recurrencia de organizaciones que mantengan el uso de la plataforma mediante un modelo de suscripción. |
 
 | **Users** | **User Outcomes & Benefits** |
 | :--- | :--- |
-| **- Ingeniero Residente / Responsable Ambiental (Constructora):** "Necesito conocer al instante si algún frente de trabajo está cerca de superar los límites permitidos para corregirlo antes de una inspección."<br>**- Auditor / Especialista Ambiental (Supervisora):** "Necesito verificar la evolución real de los parámetros en la obra con datos confiables sin depender del envío manual de reportes por parte del contratista."<br>**- Director de Operaciones / Administrador Enterprise:** "Requiero supervisar la salud ambiental de toda mi cartera de proyectos y gestionar permisos de acceso para mis equipos." | **- Responsable Ambiental (Constructora):** Elimina el registro manual disperso, sube evidencias foto-georeferenciadas desde dispositivos móviles y recibe notificaciones antes de incurrir en infracciones. Beneficios: menor carga administrativa en gabinete y reducción de riesgo de sanciones. Indicadores: tiempo de atención por alerta, % de incidentes cerrados a tiempo.<br>**- Auditor Ambiental (Supervisora):** Accede a un historial de mediciones inalterable capturado por hardware neutral y compila expedientes normativos en minutos. Beneficios: reducción de viajes no programados a campo y mayor respaldo técnico. Indicadores: horas dedicadas a reportes, precisión en auditorías.<br>**- Director de Operaciones:** Evalúa la condición global de sus proyectos en una sola vista cartográfica y administra licencias corporativas. Beneficios: toma de decisiones informada y control centralizado. Indicadores: número de proyectos en estado óptimo, tiempo de asignación de usuarios. |
+| **Segmento 1: Empresas Constructoras Viales:** responsables de gestión ambiental, jefes de proyecto e ingenieros vinculados al seguimiento ambiental de la obra.<br><br>**Segmento 2: Empresas Supervisoras y Consultoras Ambientales:** profesionales responsables de revisar, consolidar y supervisar la información ambiental de uno o varios proyectos. | **Empresas Constructoras Viales:** pueden registrar y consultar mediciones, revisar alertas, gestionar incidencias, asociar evidencias y realizar seguimiento a acciones de mitigación dentro de una misma plataforma.<br><br>**Empresas Supervisoras y Consultoras Ambientales:** pueden revisar el estado ambiental de varios proyectos, consultar mediciones, incidencias y evidencias, y acceder a información consolidada para facilitar la elaboración de reportes y actividades de supervisión. |
 
 | **Hypotheses** | **What's the most important thing we need to learn first?** | **What's the least amount of work we need to do to learn the next most important thing?** |
 | :--- | :--- | :--- |
-| **- Creemos que** reduciremos el tiempo de atención de incidentes si el equipo de obra recibe alertas preventivas directamente en la aplicación web en lugar de revisar planillas periódicas.<br>**- Creemos que** incrementaremos la adopción por parte de las supervisoras si el expediente de auditoría se genera con estructura conforme a los requerimientos normativos vigentes.<br>**- Creemos que** los ejecutores de obra valorarán la plataforma si el motor de gestión les permite adjuntar evidencias fotográficas geolocalizadas para justificar sus acciones de mitigación.<br>**- Creemos que** los directores de proyectos adoptarán la vista multi-tramo si la codificación por colores refleja fielmente el nivel de riesgo global de cada concesión. | - ¿El principal obstáculo de los responsables de obra es la falta de alertas en tiempo real o la carga administrativa de elaborar reportes finales?<br>- ¿Las firmas supervisoras aceptan auditorías basadas en datos recopilados por nodos IoT neutrales sin exigir validaciones presenciales continuas?<br>- ¿Qué nivel de detalle en el registro de evidencias fotográficas exige la supervisora para dar por cerrada una incidencia en campo?<br>- ¿El mapa cartográfico con semáforos de riesgo es la herramienta preferida por la alta dirección para tomar decisiones preventivas? | - Realizar entrevistas estructuradas con 5 especialistas ambientales de obra y auditores para validar sus flujos de trabajo actuales.<br>- Diseñar un prototipo interactivo de la interfaz de alertas e incidentes para validar la usabilidad con usuarios de campo.<br>- Ejecutar una prueba piloto controlada simulando la transmisión de datos IoT sobre un tramo vial de prueba.<br>- Validar la estructura del reporte exportable en PDF con un auditor acreditado antes del desarrollo del motor de reporteo final.<br>- Presentar maquetas del dashboard multi-tramo a gerentes de operaciones para priorizar los indicadores mostrados en pantalla. |
+| **H1:** Creemos que la centralización de la información reducirá el tiempo necesario para localizar y revisar datos ambientales.<br>**H2:** Creemos que la comparación de mediciones con umbrales permitirá identificar situaciones que requieran atención con mayor anticipación.<br>**H3:** Creemos que la gestión de incidencias, acciones de mitigación y evidencias mejorará la trazabilidad del seguimiento ambiental.<br>**H4:** Creemos que la visualización consolidada de varios proyectos facilitará el trabajo de supervisión.<br>**H5:** Creemos que la generación y consulta de reportes reducirá el tiempo necesario para consolidar información.<br>**H6:** Creemos que las organizaciones mantendrán una suscripción si perciben valor en las funcionalidades ofrecidas por RoadWatch OS. | - ¿Los usuarios consideran que la dispersión de información ambiental es un problema relevante en su trabajo?<br>- ¿Las empresas constructoras consideran útil recibir alertas basadas en mediciones y umbrales configurados?<br>- ¿Las empresas supervisoras necesitan revisar información consolidada de varios proyectos?<br>- ¿Los usuarios consideran útil relacionar incidencias, evidencias y acciones de mitigación dentro de una misma plataforma?<br>- ¿Las organizaciones estarían dispuestas a utilizar un modelo de suscripción para acceder a RoadWatch OS? | - Realizar entrevistas con representantes de los dos segmentos objetivo para validar sus principales problemas y necesidades.<br>- Utilizar los wireframes y mock-ups de RoadWatch OS para validar la comprensión de los flujos principales.<br>- Probar el prototipo navegable con usuarios representativos de ambos segmentos.<br>- Evaluar tareas como registrar una medición, revisar una alerta, gestionar una incidencia, adjuntar evidencia y consultar un reporte.<br>- Recopilar comentarios sobre la utilidad percibida de los distintos niveles de servicio o suscripción. |
 
 ---
 
 ## 1.3 Segmentos Objetivos
 
-### Segmento 1: Empresas Constructoras Viales (Módulo Operativo)
+### Segmento 1: Empresas Constructoras Viales
 
-Compañías contratistas dedicadas a la ejecución física de obras de infraestructura vial, representadas por sus ingenieros residentes, jefes de producción y responsables de mitigación ambiental. Utilizan **RoadWatch OS** como una herramienta de control interno: reciben notificaciones preventivas ante incrementos atípicos en los niveles de emisión o contaminación (aire, ruido, agua) y gestionan la mitigación en tiempo real. La plataforma les permite documentar acciones correctivas con imágenes y coordenadas geográficas para prevenir la imposición de multas o la paralización de frentes de trabajo. La recuperación de la inversión en obra pública y concesiones viales en el país (CAPECO, 2025) sostiene una demanda continua de soluciones tecnológicas de control operativo para este segmento.
+Este segmento está conformado por empresas encargadas de la ejecución de proyectos de infraestructura vial, representadas principalmente por responsables de gestión ambiental, jefes de proyecto, ingenieros residentes y otros profesionales relacionados con el seguimiento ambiental de la obra.
 
-### Segmento 2: Empresas Supervisoras Ambientales / Consultoras (Módulo de Fiscalización)
+Estos usuarios utilizarán **RoadWatch OS** para registrar y consultar proyectos, puntos de monitoreo y mediciones ambientales, revisar alertas, gestionar incidencias, registrar evidencias y dar seguimiento a acciones de mitigación. La plataforma busca facilitar la organización de la información ambiental y permitir que los responsables identifiquen con mayor rapidez las situaciones que requieren atención.
 
-Firmas independientes de ingeniería y consultoría ambiental —contratadas por entidades del Estado o concesionarias— encargadas de auditar la ejecución de los planes de manejo ambiental en proyectos viales. Utilizan **RoadWatch OS** para digitalizar la fiscalización, acceder a lecturas continuas e inalterables generadas por la red de nodos IoT de VíaNexo y estructurar informes normativos sin requerir desplazamientos diarios a campo. Considerando la fiscalización ejercida por la Dirección de Gestión Ambiental del MTC (SPDA, 2024) y la presencia de más de 1,200 consultoras inscritas en el Registro Nacional de Consultoras Ambientales (SENACE, 2024), este segmento representa un mercado clave para la adopción de herramientas de auditoría remota multi-proyecto.
+El principal beneficio para este segmento es contar con un entorno centralizado que permita mantener relacionadas las mediciones, incidencias, evidencias y acciones realizadas durante la ejecución del proyecto, reduciendo la dispersión de información entre diferentes documentos y herramientas.
+
+### Segmento 2: Empresas Supervisoras y Consultoras Ambientales
+
+Este segmento está conformado por empresas y profesionales responsables de supervisar, revisar y analizar la información ambiental generada durante el desarrollo de proyectos viales.
+
+Los usuarios de este segmento utilizarán **RoadWatch OS** para consultar el estado de los proyectos bajo su supervisión, revisar mediciones ambientales, incidencias, evidencias e historiales, así como acceder a información consolidada y reportes que faciliten sus actividades de seguimiento.
+
+El principal beneficio para este segmento es disponer de una visión organizada de uno o varios proyectos, facilitando la revisión de antecedentes, la identificación de situaciones relevantes y la consolidación de información necesaria para los procesos de supervisión y elaboración de reportes.
