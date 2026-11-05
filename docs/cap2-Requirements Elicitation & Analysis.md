@@ -256,11 +256,11 @@ Los participantes de este segmento corresponden a profesionales involucrados en 
 | Distrito | Magdalena |
 | Cargo | Lider de gestión de proyectos viales |
 | Años de experiencia | 10 |
-| Evidencia |<img src="../assets/images/chapter2/EnvidenciaAlfonso.jpeg" alt="Evidencia entrevista Guadalupe" width="400">  |
+| Evidencia |<img src="../assets/images/chapter2/EnvidenciaAlfonso.jpeg" alt="Evidencia entrevista Luis Alfonso" width="400">  |
 | Enlace de video | [Ver Grabación del Video (SharePoint/OneDrive)](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202418029_upc_edu_pe/IQC5hE5D4yYbSoeDSpUqJJhtAVSoS5G6YbZyQICU7nfboMs?e=oIDYf7) |
 | Inicio de entrevista | 0:00|
 | Duración | 17:54 |
-| Resumen |Alfonso es un ingeniero industrial que lleva trabajando 10 años en el puesto de Lider de gestión de proyectos viales. Esto conforma la construcción de proyectos viales tanto terrestre y via férrea, su principal función es asegurarse con su equipo que los proyectos que se están llevando a cabo tengan los cumplimientos y normativas correctas. Comenta que lo máximo que se puede administrar son poco mas de 3 proyectos, de los cuales la prioridad suele ir enfocado a 1 de ellos, o al que tenga algún momento crítico o importante a tratarse. En cuanto a la comuniación, se maneja lo clásico, para la formalidad del caso se utiliza el correo y para consultas de información se emplea el uso de WhatsApp. Para su trabajo más que nada utiliza dispositivos portátiles (celular y laptop) para mantenrse al tanto de las situaciones en los disitintos proyectos. Nos comenta que mantener organizado el proyecto en general, tonmando en cuenta fotografías, mediciones e información, no es complicado, mas si duraedero al momento de utilizar softwares llamados Porject y Primavera. Lo que más le suele tomar tiempo para la realización de estos proyectos es la planificación, ya que es donde se tienen que tomar muchas medidas previas para evitar problemas de gestión o ambiental, ya que eso los haría perder presupuesto, tiempo y reputación.  |
+| Resumen | Alfonso es un ingeniero industrial que lleva trabajando 10 años en el puesto de Líder de gestión de proyectos viales. Esto comprende la construcción de proyectos viales tanto terrestres como de vía férrea, donde su principal función es asegurarse con su equipo de que los proyectos en ejecución cumplan con las normativas y compromisos aplicables. Comenta que lo máximo que suele administrar simultáneamente son poco más de 3 proyectos, de los cuales la prioridad se enfoca en aquel que se encuentre en un momento crítico o requiera atención inmediata. En cuanto a la comunicación, utiliza el correo electrónico para gestiones formales y WhatsApp para consultas rápidas de información. Para su trabajo emplea principalmente dispositivos portátiles (celular y laptop) para mantenerse al tanto de las situaciones en los distintos proyectos. Nos comenta que mantener organizado el proyecto en general —tomando en cuenta fotografías, mediciones e información— demanda tiempo adicional al emplear herramientas separadas como MS Project y Primavera. Lo que más tiempo le consume en la realización de estos proyectos es la planificación y consolidación de información previa para prevenir problemas de gestión o ambientales, ya que cualquier incumplimiento implicaría pérdidas de presupuesto, tiempo y reputación. |
 
 #### Entrevista #2
 
@@ -358,15 +358,21 @@ Los participantes de este segmento corresponden a profesionales responsables de 
     <td>Distrito</td>
     <td>San Juan de Lurigancho</td>
   </tr>
- <tr>
-  <td>Evidencia</td>
-  <td><img src="../assets/images/chapter2/EvidenciaAngiela.jpeg" alt="Evidencia entrevista Angiela" width="400"></td>
-</tr>
   <tr>
-    <tr>
-  <td>Link</td>
-  <td><a href="https://1drv.ms/v/c/113B281D1AF386CE/IQDGziSKN-XBRKO401eqvDWJARuiheeZ5hj3WNWlq3t0GE8?e=MV9WvJ" target="_blank">Ver video</a></td>
-</tr>
+    <td>Cargo</td>
+    <td>Supervisora y Consultora Ambiental</td>
+  </tr>
+  <tr>
+    <td>Años de experiencia</td>
+    <td>3 años</td>
+  </tr>
+  <tr>
+    <td>Evidencia</td>
+    <td><img src="../assets/images/chapter2/EvidenciaAngiela.jpeg" alt="Evidencia entrevista Angiela" width="400"></td>
+  </tr>
+  <tr>
+    <td>Link</td>
+    <td><a href="https://1drv.ms/v/c/113B281D1AF386CE/IQDGziSKN-XBRKO401eqvDWJARuiheeZ5hj3WNWlq3t0GE8?e=MV9WvJ" target="_blank">Ver video</a></td>
   </tr>
   <tr>
     <td>Duración</td>
@@ -374,7 +380,7 @@ Los participantes de este segmento corresponden a profesionales responsables de 
   </tr>
   <tr>
     <td>Resumen</td>
-    <td>Angiela es una supervisora y consultora ambiental encargada de monitorear los indicadores de aire, ruido y agua en múltiples proyectos simultáneos. Para el control, seguimiento y recepción de evidencias, utiliza un conjunto de herramientas fragmentadas que incluyen Excel, correos electrónicos, WhatsApp, carpetas compartidas y documentos físicos. Busca garantizar el cumplimiento ambiental de todos los proyectos y agilizar la preparación de informes para auditorías o fiscalizaciones. Sin embargo, enfrenta grandes dificultades debido a la falta de centralización de la información; al manejar distintos formatos y canales por cada proyecto, se ve obligada a invertir demasiado tiempo en consolidar datos y rastrear evidencias. Esta desorganización le impide tener una visión global clara sobre qué proyectos tienen incidencias abiertas o están próximos a un incumplimiento. Angiela considera que contar con una plataforma centralizada —integrada con sensores IoT para recibir alertas en tiempo real— tendría un impacto sumamente positivo, ya que automatizaría su trabajo y mejoraría el éxito ambiental de sus proyectos.</td>
+    <td>Angiela es una supervisora y consultora ambiental encargada de monitorear los indicadores de aire, ruido y agua en múltiples proyectos simultáneos. Para el control, seguimiento y recepción de evidencias, utiliza un conjunto de herramientas fragmentadas que incluyen Excel, correos electrónicos, WhatsApp, carpetas compartidas y documentos físicos. Busca garantizar el cumplimiento ambiental de todos los proyectos y agilizar la preparación de informes para auditorías o fiscalizaciones. Sin embargo, enfrenta grandes dificultades debido a la falta de centralización de la información; al manejar distintos formatos y canales por cada proyecto, se ve obligada a invertir demasiado tiempo en consolidar datos y rastrear evidencias. Esta desorganización le impide tener una visión global clara sobre qué proyectos tienen incidencias abiertas o están próximos a un incumplimiento. Como expectativa personal, menciona que contar con una plataforma centralizada —incluso imaginando a futuro una integración con sensores para recibir alertas inmediatas— tendría un impacto positivo al reducir el trabajo manual y mejorar el seguimiento ambiental de sus proyectos.</td>
   </tr>
 </tbody>
 </table>
@@ -404,6 +410,14 @@ Los participantes de este segmento corresponden a profesionales responsables de 
   <tr>
     <td>Distrito</td>
     <td>San Isidro</td>
+  </tr>
+  <tr>
+    <td>Cargo</td>
+    <td>Coordinadora de Supervisión y Seguimiento Ambiental</td>
+  </tr>
+  <tr>
+    <td>Años de experiencia</td>
+    <td>12 años</td>
   </tr>
   <tr>
     <td>Evidencia</td>
@@ -550,6 +564,8 @@ En el caso de las empresas constructoras viales, las principales necesidades se 
 
 En las empresas supervisoras y consultoras ambientales adquieren mayor relevancia la consolidación de información proveniente de varios proyectos, la trazabilidad documental, la preparación de auditorías o fiscalizaciones y la capacidad de obtener una visión general del estado ambiental de los proyectos supervisados.
 
+> **Nota de delimitación respecto al alcance del MVP:** Si bien algunos entrevistados mencionaron de manera espontánea el deseo de contar con sensores físicos (*IoT*) o telemetría continua como parte de una solución ideal a futuro, **dentro del alcance del MVP de RoadWatch OS no se incluye la integración con dispositivos físicos ni el uso de modelos de inteligencia artificial**. En el MVP, las necesidades identificadas se atienden mediante el registro digital centralizado de mediciones ambientales en la aplicación web, su evaluación automática frente a los umbrales normativos configurados, la generación de alertas preventivas/críticas y la trazabilidad de incidencias, evidencias y reportes.
+
 Estos hallazgos servirán como base para revisar y sustentar los User Personas, el User Task Matrix, los User Journey Maps y los demás artefactos de Needfinding desarrollados para RoadWatch OS.
 
 ---
@@ -568,7 +584,7 @@ Sus principales objetivos se centran en mantener la continuidad de la obra, redu
 
 Sus principales frustraciones se relacionan con la dispersión de información entre herramientas como WhatsApp, Excel, correo electrónico y documentos físicos, la dificultad para localizar registros históricos, la demora en consolidar evidencias y la dependencia de procesos manuales para conocer el estado de diferentes proyectos o frentes.
 
-Asimismo, se tomó en cuenta su necesidad de contar con una plataforma web centralizada que permita consultar mediciones, alertas, incidencias, responsables, acciones de mitigación, evidencias e información histórica desde un mismo entorno, facilitando el seguimiento de los proyectos y la toma de decisiones ante posibles desviaciones ambientales.
+Asimismo, se tomó en cuenta su necesidad de contar con una plataforma web centralizada que permita consultar mediciones registradas, alertas, incidencias, responsables, acciones de mitigación, evidencias e información histórica desde un mismo entorno, facilitando el seguimiento de los proyectos y la toma de decisiones ante posibles desviaciones ambientales (considerando que en el alcance del MVP los registros se gestionan directamente en la plataforma web y cualquier mención a telemetría física en la lámina corresponde únicamente a una proyección futura del usuario).
 
 Todo ello está orientado a reducir el tiempo dedicado a tareas administrativas, mejorar la trazabilidad de la información y disminuir los riesgos asociados al incumplimiento ambiental.
 
@@ -582,7 +598,7 @@ Sus principales objetivos se centran en disponer de una visión general del esta
 
 Sus principales frustraciones se relacionan con la dispersión de información entre correos electrónicos, hojas de cálculo, documentos, carpetas compartidas y aplicaciones de mensajería, así como con la dificultad para consolidar información proveniente de diferentes empresas y responsables.
 
-Asimismo, se tomó en cuenta su necesidad de contar con una plataforma web que centralice información de múltiples proyectos, permita revisar indicadores de cumplimiento, consultar evidencias e historial, identificar observaciones pendientes y generar reportes de manera más organizada.
+Asimismo, se tomó en cuenta su necesidad de contar con una plataforma web que centralice información de múltiples proyectos, permita revisar indicadores de cumplimiento, consultar evidencias e historial, identificar observaciones pendientes y generar reportes de manera más organizada (precisando que para el MVP la consolidación y generación de reportes se realiza sobre los registros y evidencias ingresados en la plataforma, sin depender de sensores físicos).
 
 Todo ello está orientado a facilitar la supervisión de varios proyectos, mejorar la disponibilidad de la información y reducir el esfuerzo manual asociado a la validación y consolidación de documentos.
 
