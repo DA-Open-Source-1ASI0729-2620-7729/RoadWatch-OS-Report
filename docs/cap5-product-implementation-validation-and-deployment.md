@@ -1,0 +1,511 @@
+# Capítulo V: Product Implementation, Validation & Deployment
+
+## 5.1. Software Configuration Management
+
+En esta sección se establecen las decisiones y convenciones adoptadas por el equipo de VíaNexo para garantizar la consistencia, trazabilidad y calidad del ciclo de vida del software a lo largo del desarrollo de RoadWatch OS.
+
+---
+
+### 5.1.1. Software Development Environment Configuration
+
+A continuación, se especifican los productos de software utilizados por los miembros del equipo para colaborar en cada etapa del ciclo de vida del producto digital, organizados por tipo de actividad.
+
+#### Project Management
+
+- **Trello** — Herramienta de gestión de tareas y tableros Kanban utilizada para el seguimiento del Sprint Backlog y la coordinación de actividades entre miembros del equipo.  
+  Ruta de referencia: https://trello.com
+
+- **Discord / WhatsApp** — Canales de comunicación sincrónica y asincrónica para la coordinación interna del equipo.
+
+#### Requirements Management
+
+- **GitHub (repositorio de informe)** — Plataforma de control de versiones utilizada para la elaboración colaborativa del Project Report en formato Markdown.  
+  Ruta de referencia: https://github.com
+
+- **UXPressia** — Herramienta SaaS utilizada para la elaboración de User Personas, Empathy Maps, Journey Maps e Impact Maps.  
+  Ruta de referencia: https://uxpressia.com
+
+#### Product UX/UI Design
+
+- **Figma** — Herramienta de diseño colaborativo utilizada para la elaboración de Wireframes, Mock-ups y Prototipos interactivos del Landing Page y la Web Application.  
+  Ruta de referencia: https://figma.com
+
+- **FigJam / LucidChart** — Herramientas de diagramación visual utilizadas para la elaboración de Wireflows, User Flows y diagramas de EventStorming.  
+  Ruta de referencia: https://figma.com/figjam | https://lucidchart.com
+
+#### Software Development
+
+- **Visual Studio Code** — Editor de código principal utilizado para el desarrollo del Landing Page (HTML5, CSS3 y JavaScript).  
+  Ruta de descarga: https://code.visualstudio.com
+
+- **IntelliJ IDEA** — IDE utilizado para el desarrollo del backend con Spring Boot Framework y Java.  
+  Ruta de descarga: https://www.jetbrains.com/idea
+
+- **WebStorm** — IDE utilizado para el desarrollo del Frontend Web Application con Angular Framework y TypeScript.  
+  Ruta de descarga: https://www.jetbrains.com/webstorm
+
+- **Node.js / npm** — Entorno de ejecución y gestor de paquetes necesario para el desarrollo con Angular.  
+  Ruta de descarga: https://nodejs.org
+
+- **Angular CLI** — Interfaz de línea de comandos para la creación y gestión de proyectos Angular.  
+  Ruta de referencia: https://angular.io/cli
+
+- **Java JDK 17** — Kit de desarrollo para la implementación del backend con Spring Boot.  
+  Ruta de descarga: https://adoptium.net
+
+- **Spring Boot** — Framework Java utilizado para el desarrollo de la RESTful API bajo arquitectura orientada a servicios.  
+  Ruta de referencia: https://spring.io/projects/spring-boot
+
+#### Software Deployment
+
+- **GitHub Pages** — Plataforma de hosting estático utilizada para el despliegue del Landing Page.  
+  Ruta de referencia: https://pages.github.com
+
+- **Git** — Sistema de control de versiones distribuido utilizado en todos los repositorios del proyecto.  
+  Ruta de descarga: https://git-scm.com
+
+#### Software Documentation
+
+- **Swagger / OpenAPI** — Herramienta utilizada para la documentación interactiva de los endpoints del RESTful API.  
+  Ruta de referencia: https://swagger.io
+
+- **Structurizr** — Herramienta basada en C4 Model DSL utilizada para la elaboración de diagramas de arquitectura de software.  
+  Ruta de referencia: https://structurizr.com
+
+- **ERDPlus / LucidChart** — Herramientas utilizadas para la elaboración de diagramas de base de datos (ERD).  
+  Ruta de referencia: https://erdplus.com | https://lucidchart.com
+
+---
+
+### 5.1.2. Source Code Management
+
+El equipo gestiona el código fuente mediante **GitHub** como plataforma de control de versiones, organizado bajo una organización pública que agrupa los repositorios de cada producto digital del proyecto.
+
+**Organización GitHub:**  
+https://github.com/DA-Open-Source-1ASI0729-2620-7729
+
+**Repositorios del proyecto:**
+
+| Producto | URL del Repositorio |
+|:---|:---|
+| Landing Page | https://github.com/DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-LandingPage |
+| Frontend Web Application | https://github.com/DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Frontend.git |
+| Web Services (RESTful API) | https://github.com/DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Backend.git|
+| Project Report | https://github.com/DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Report |
+#### GitFlow Workflow
+
+El equipo implementa **GitFlow** como estrategia de ramificación para gestionar el ciclo de vida del código. Las ramas definidas son:
+
+- **`main`**: Rama principal que contiene el código de producción estable. Solo recibe merges desde `release` o `hotfix`.
+- **`develop`**: Rama de integración continua donde se consolidan los features completados antes de pasar a producción.
+- **`feature/<nombre-feature>`**: Rama individual para el desarrollo de cada funcionalidad. Se crea desde `develop` y se integra de vuelta a `develop` al completarse. Ejemplo: `feature/hero-section`, `feature/navbar`, `feature/contact-form`.
+- **`release/<versión>`**: Rama de preparación de una nueva versión de producción. Se crea desde `develop` cuando el Sprint está completo. Ejemplo: `release/1.0.0`.
+- **`hotfix/<descripción>`**: Rama para correcciones críticas en producción. Se crea desde `main`. Ejemplo: `hotfix/fix-cta-redirect`.
+
+#### Semantic Versioning
+
+Para el nombramiento de versiones se aplica **Semantic Versioning 2.0.0** con el formato `MAJOR.MINOR.PATCH`:
+- `MAJOR`: cambios incompatibles con versiones anteriores.
+- `MINOR`: nuevas funcionalidades compatibles con versiones anteriores.
+- `PATCH`: correcciones de errores compatibles con versiones anteriores.
+
+La primera versión del Landing Page se etiqueta como `v1.0.0`.
+
+#### Conventional Commits
+
+Para los mensajes de commit, el equipo aplica la especificación **Conventional Commits**, usando el formato:
+
+```
+<type>(<scope>): <description>
+```
+
+Los tipos permitidos son:
+- `feat`: nueva funcionalidad.
+- `fix`: corrección de error.
+- `docs`: cambios en documentación.
+- `style`: cambios de formato que no afectan la lógica.
+- `refactor`: reestructuración de código sin cambio funcional.
+- `chore`: tareas de mantenimiento (dependencias, configuración).
+- `test`: adición o modificación de pruebas.
+
+Ejemplos aplicados al proyecto:
+```
+feat(landing): add hero section with CTA buttons
+feat(landing): implement responsive navbar
+fix(landing): correct mobile layout for plans section
+docs(readme): update deployment instructions
+style(landing): apply Material Design color tokens
+```
+
+---
+
+### 5.1.3. Source Code Style Guide & Conventions
+
+El equipo adopta las siguientes guías de estilo y convenciones de codificación para garantizar uniformidad y legibilidad en todos los productos. Toda nomenclatura se redacta en **inglés**.
+
+#### HTML5 & CSS3 (Landing Page)
+- Se aplica la guía **W3Schools HTML Style Guide** para estructura semántica, indentación con 2 espacios, atributos en minúsculas y uso de comillas dobles.
+- Se aplica la guía **Google HTML/CSS Style Guide** para nomenclatura de clases en `kebab-case`, evitar el uso de selectores de ID en CSS y priorizar propiedades abreviadas.
+- El diseño visual se basa en **Material Design** como sistema de diseño de referencia.
+
+#### TypeScript & Angular (Frontend Web Application)
+- Se aplica la **Angular Coding Style Guide** oficial: componentes con sufijo `Component`, servicios con sufijo `Service`, módulos con sufijo `Module`.
+- Nombres de archivos en `kebab-case`: `project-list.component.ts`.
+- Se aplica la **Google TypeScript Style Guide** para tipado estricto y gestión de imports.
+
+#### Java & Spring Boot (Web Services)
+- Se sigue la convención de **Spring Boot** para controladores (`@RestController`), servicios (`@Service`) y repositorios (`@Repository`).
+
+#### Gherkin (Acceptance Criteria)
+- Se aplican las **Gherkin Conventions for Readable Specifications**: un solo nivel de indentación para `Given/When/Then`, escenarios en inglés, descripciones en tercera persona.
+
+---
+
+### 5.1.4. Software Deployment Configuration
+
+En esta sección se describe la configuración de despliegue para el Landing Page, único producto desplegado en el Sprint 1.
+
+#### Landing Page — GitHub Pages
+
+El Landing Page de RoadWatch OS se despliega como sitio web estático mediante **GitHub Pages**, directamente desde el repositorio:  
+
+https://github.com/DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-LandingPage
+
+
+**Pasos para el despliegue:**
+
+1. Asegurarse de que la rama `main` contiene los archivos del Landing Page (`index.html`, carpetas `css/`, `js/`, `assets/`).
+2. Ingresar al repositorio en GitHub y navegar a **Settings > Pages**.
+3. En la sección **Source**, seleccionar la rama `main` y la carpeta `/ (root)`.
+4. Hacer clic en **Save**. GitHub Pages genera automáticamente la URL de despliegue.
+5. Verificar el sitio desplegado en la URL generada por GitHub Pages.
+
+Cualquier push a la rama `main` actualiza automáticamente el sitio desplegado.
+
+---
+
+## 5.2. Landing Page, Services & Applications Implementation
+
+### 5.2.1. Sprint 1
+
+#### 5.2.1.1. Sprint Planning 1
+
+El Sprint 1 tiene como objetivo principal la implementación y despliegue de la primera versión funcional del Landing Page de RoadWatch OS, que permita presentar la propuesta de valor de VíaNexo a los segmentos objetivo (empresas constructoras viales y consultoras supervisoras ambientales) y redirigirlos hacia la futura Web Application.
+
+| Sprint # | Sprint 1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+|:---|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Sprint Planning Background** |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Date | 2026-08-25                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Time | 07:00 PM                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Location | Reunión virtual vía Discord                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Prepared By | Pancorbo Amorós, Italo Raul                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Attendees | Cabrera Sotelo, Camila Celeste / Conde Huashuayo, Sebasthian Alex / Diaz De La Cruz, Sebastian Gabriel / Montes Chang, Piero Francisco / Pancorbo Amorós, Italo Raul                                                                                                                                                                                                                                                                                                                     |
+| Sprint 0 Review Summary | Al ser el primer Sprint del proyecto, no existe un Sprint anterior. Se parte del Product Backlog inicial definido y de los artefactos elaborados en los capítulos previos.                                                                                                                                                                                                                                                                                                               |
+| Sprint 0 Retrospective Summary | El equipo acordó establecer estándares de trabajo desde el inicio: aplicar GitFlow, Conventional Commits y dividir las responsabilidades de implementación del Landing Page por secciones entre los miembros.                                                                                                                                                                                                                                                                            |
+| **Sprint Goal & User Stories** |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Sprint 1 Goal | Our focus is on delivering a fully deployed and navigable Landing Page for RoadWatch OS. We believe it delivers a clear understanding of the value proposition to potential clients from both target segments (construction companies and environmental supervisors). This will be confirmed when visitors can navigate all sections of the Landing Page, identify the product's features, compare subscription plans, and access the call-to-action buttons for each segment.           |
+| Sprint 1 Velocity | 20 Story Points                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Sum of Story Points | 19 Story Points                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+
+---
+
+#### 5.2.1.2. Aspect Leaders and Collaborators
+
+Para el Sprint 1, los aspectos de trabajo se organizan en torno a las secciones del Landing Page y la configuración del entorno de desarrollo y despliegue. Cada aspecto cuenta con un líder responsable de liderar la implementación y uno o más colaboradores de apoyo.
+
+| Team Member | GitHub Username            | Hero & Navbar | Plans Section | Features Section | Contact Form | Deployment & Config |
+|:---|:---------------------------|:---:|:---:|:---:|:---:|:---:|
+| Cabrera Sotelo, Camila Celeste | *whcamm*               | L | C | | | C |
+| Conde Huashuayo, Sebasthian Alex | *SebasthianCH*             | C | | L | C | C |
+| Diaz De La Cruz, Sebastian Gabriel | *tipaso07*               | C | | C | L | |
+| Montes Chang, Piero Francisco | *chang*               | | L | C | | C |
+| Pancorbo Amorós, Italo Raul | *pancorboitalo-design*               | | C | C | | L |
+
+*L = Líder | C = Colaborador*
+
+---
+
+#### 5.2.1.3. Sprint Backlog 1
+
+El objetivo principal de este Sprint es implementar y desplegar la primera versión del Landing Page de RoadWatch OS, cubriendo las secciones de presentación de valor, funcionalidades, planes de suscripción, testimonios y formulario de contacto, con CTAs diferenciados para cada segmento objetivo.
+
+A continuación, se presenta el tablero de control del Sprint 1. El Sprint # es el 1, con un velocity acordado de 20 Story Points y un total comprometido de 19 Story Points.
+
+> **URL del Board en Trello:** https://trello.com/invite/b/6aaaf893146da1803fa7c582/ATTI953be54ae0a00d9a1f783b712cdcda28CEA7DD62/roadwatch-os-sprint-1
+
+*![Trello.png](../assets/images/chapter5/Trello-Sprint%201.png)*
+
+| **Story Id** | **Story Title** | **Task Id**| **Task Title** | **Task Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
+|:---|:---|:---|:---|:---|:---|:---|:---|
+| US02 | Demo de Tablero Geolocalizado | T01 | Sección "Funciones" con mapa demo | Implementar la sección de funcionalidades del Landing Page mostrando un mapa estático o animación del tablero de monitoreo como demo visual. | 4 | Conde Huashuayo, Sebasthian | Done |
+| US03 | Explicación de planes | T02 | Sección "Planes" con tabla comparativa | Desarrollar la sección de planes con tabla de comparación Base / Profesional / Enterprise y sus características. | 4 | Montes Chang, Piero | Done |
+| US04 | CTA Segmento Consultora | T03 | Botón CTA "Monitorea tu proyecto" | Implementar el call-to-action para el segmento de consultoras supervisoras, con redirección a la vista de registro/login de la Web App. | 2 | Diaz De La Cruz, Sebastian | Done |
+| US05 | CTA Segmento Empresa Multi-Proyecto | T04 | Botón CTA "Gestiona tu cartera" | Implementar el call-to-action para el segmento de empresas constructoras multi-proyecto, con redirección al dashboard. | 2 | Diaz De La Cruz, Sebastian | Done |
+| US06 | Caso de Uso / Testimonio | T05 | Sección de métricas e impacto | Implementar sección con cifras de impacto ilustrativas (ej. reducción de tiempo de respuesta, proyectos integrados). | 3 | Conde Huashuayo, Sebasthian | Done |
+| US08 | Formulario de Contacto Comercial | T06 | Formulario de contacto con validación | Desarrollar el formulario de captura de leads con validación de campos y mensaje de confirmación al enviar. | 4 | Diaz De La Cruz, Sebastian | Done |
+| — | Configuración general | T07 | Navbar y estructura base del Landing Page | Implementar el navbar responsivo con logo, secciones y links de navegación internos. Configurar la estructura HTML base del proyecto. | 3 | Cabrera Sotelo, Camila | Done |
+| — | Configuración general | T08 | Hero Section con propuesta de valor | Diseñar e implementar la sección hero con headline, subtítulo, imagen de fondo y CTAs principales. | 3 | Cabrera Sotelo, Camila | Done |
+| — | Despliegue | T09 | Configuración y despliegue en GitHub Pages | Configurar el repositorio para despliegue automático vía GitHub Pages desde la rama main. Verificar el correcto funcionamiento del sitio desplegado. | 2 | Pancorbo Amorós, Italo | Done |
+
+---
+
+#### 5.2.1.4. Development Evidence for Sprint Review
+
+Durante el Sprint 1 se implementó la primera versión del Landing Page de RoadWatch OS. Los commits realizados en el repositorio evidencian el avance progresivo por secciones y la aplicación de una estrategia de desarrollo basada en ramas feature.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|:---|:---|:---|:---|:---|:---|
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-LandingPage | feature/landing-structure | `52869286c7239091875e09e6935e52ba89deac6c` | `feat(landing): add base HTML structure` | Se agregó la estructura HTML base del Landing Page de RoadWatch OS. | 2026-09-16 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-LandingPage | feature/header | `f4c281f021cab74c299ebca7a661ff1e19a0ba53` | `feat(header): add navigation header` | Se implementó el encabezado de navegación principal del Landing Page. | 2026-09-16 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-LandingPage | feature/hero | `c1e7e45f0d206e252a2a352581b3ec8631e059be` | `feat(hero): add landing hero section` | Se implementó la sección Hero con la presentación principal de RoadWatch OS. | 2026-09-16 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-LandingPage | feature/solutions | `f6ea802311d905ac384f69933ebc66f080baba8a` | `feat(solutions): add environmental solutions section` | Se agregó la sección de soluciones ambientales del Landing Page. | 2026-09-16 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-LandingPage | feature/benefits | `ac12b760c23af3125a847ee8c1a7d20ce51b027d` | `feat(benefits): add benefits section` | Se implementó la sección de beneficios de RoadWatch OS. | 2026-09-16 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-LandingPage | feature/features | `23a0a8441d395cd9ff5637228bd18a52d53bd6cc` | `feat(features): add technology features section` | Se implementó la sección de funcionalidades principales del producto. | 2026-09-16 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-LandingPage | feature/pricing | `61dd05f1adb9aa491e167f43e3694e3d13e1d1ef` | `feat(pricing): add SaaS pricing plans` | Se agregó la sección de planes comerciales del Landing Page. | 2026-09-16 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-LandingPage | feature/team | `ead82cfd4f06492dba1471288496079579f9efd3` | `feat(team): add team section` | Se implementó la sección de presentación del equipo VíaNexo. | 2026-09-16 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-LandingPage | feature/testimonials | `5a19956fd32f3484084eb90fbfe68171167c3d9f` | `feat(testimonials): add testimonials and final CTA` | Se agregó la sección de testimonios y el llamado a la acción final. | 2026-09-16 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-LandingPage | feature/footer | `def4c893cde8902b11f7df50e9c84108fde2b821` | `feat(footer): add site footer` | Se implementó el footer principal del Landing Page. | 2026-09-16 |
+
+---
+
+#### 5.2.1.5. Execution Evidence for Sprint Review
+
+Al finalizar el Sprint 1, se logró desplegar la primera versión funcional del Landing Page de RoadWatch OS en GitHub Pages. El sitio presenta todas las secciones planificadas en el Sprint Backlog: navbar responsivo, hero section con propuesta de valor, sección de funcionalidades con demo visual del tablero de monitoreo, sección de planes de suscripción con tabla comparativa, sección de métricas de impacto, CTAs diferenciados para cada segmento objetivo y formulario de contacto comercial con validación.
+
+La experiencia es consistente entre el segmento de empresas constructoras y supervisoras ambientales, y los call-to-action de cada segmento redirigen al usuario a la vista correspondiente en la Web Application (actualmente apuntando a la URL de la futura aplicación).
+
+**Video de navegación del Landing Page (Sprint 1):**  
+URL: *https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410421_upc_edu_pe/IQC42lSycdIVS4-Oi0OhpG9EATYxm0X6Y7foFXAAdKn9XwU?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=RUyDKY*  
+
+---
+
+#### 5.2.1.6. Services Documentation Evidence for Sprint Review
+
+Durante el Sprint 1, el alcance de implementación se centró exclusivamente en el Landing Page estático. No se implementaron endpoints de Web Services en este Sprint, por lo que no aplica documentación de API para esta entrega.
+
+Como preparación para los Sprints siguientes, el equipo definió la estructura base de los endpoints que serán documentados con OpenAPI/Swagger a partir del Sprint 3, en concordancia con los Technical Stories del Product Backlog (US24 al US39).
+
+| Endpoint | Acción | Estado |
+|:---|:---|:---|
+| `POST /api/v1/auth/login` | Autenticación JWT | Pendiente (Sprint 3) |
+| `GET /api/v1/projects` | Listado de proyectos viales | Pendiente (Sprint 3) |
+| `POST /api/v1/indicators` | Registro de indicador ambiental | Pendiente (Sprint 3) |
+| `GET /api/v1/reports/{projectId}` | Generación de reporte de auditoría | Pendiente (Sprint 3) |
+
+---
+
+#### 5.2.1.7. Software Deployment Evidence for Sprint Review
+
+Durante el Sprint 1 se realizó el despliegue del Landing Page de RoadWatch OS en **GitHub Pages**. A continuación, se describen los pasos realizados:
+
+1. **Creación del repositorio:** Se creó el repositorio público `RoadWatch-OS-LandingPage` bajo la organización `DA-Open-Source-1ASI0729-2620-7729` en GitHub.
+
+2. **Inicialización del proyecto:** Se inicializó el repositorio con la estructura de carpetas base (`index.html`, `css/`, `js/`, `assets/`) y se realizó el primer commit desde la rama `main`.
+
+3. **Configuración de GitHub Pages:** Desde la pestaña **Settings > Pages** del repositorio, se seleccionó la rama `main` como fuente de despliegue con la carpeta raíz `/`.
+
+4. **Verificación del despliegue:** GitHub Pages generó automáticamente la URL de producción del sitio. Se verificó el correcto renderizado de todas las secciones y la responsividad en dispositivos móviles.
+
+5. **Automatización de actualizaciones:** Cada push a la rama `main` actualiza automáticamente el sitio sin configuración adicional.
+
+![Configuración y despliegue en GitHub Pages](../assets/images/chapter5/Step1.png)
+![Configuración y despliegue en GitHub Pages 2](../assets/images/chapter5/Step2.png)
+
+URL del Landing Page desplegado:  
+https://da-open-source-1asi0729-2620-7729.github.io/RoadWatch-OS-LandingPage/
+
+---
+
+#### 5.2.1.8. Team Collaboration Insights during Sprint
+
+Durante el Sprint 1, todos los miembros del equipo participaron activamente en la implementación del Landing Page, asumiendo responsabilidades sobre secciones específicas según la matriz de líderes y colaboradores definida en la sección 5.2.1.2.
+
+La estrategia de colaboración adoptada fue la siguiente: cada miembro trabajó sobre su rama `feature/<sección>` correspondiente, realizando commits frecuentes con mensajes bajo la convención de Conventional Commits. Una vez completada cada sección, se realizó un Pull Request hacia la rama `develop` para revisión del líder del aspecto correspondiente. Tras la revisión, se realizó el merge y, al concluir el Sprint, se integró `develop` en `main` para el despliegue final.
+
+A continuación, se presentan los analíticos de colaboración del repositorio del Landing Page:
+
+![Landing Insights](../assets/images/chapter5/landingInsights.jpg)
+
+**Resultados e insights de la Landing Page.**
+
+![Report Insights](../assets/images/chapter5/reportInsights.jpg)
+
+**Resultados e insights del reporte.**
+
+| Miembro del equipo | Contribuciones principales en el Sprint |
+|:---|:---|
+| Cabrera Sotelo, Camila Celeste | Implementación de Navbar y Hero Section; revisión general de responsividad. |
+| Conde Huashuayo, Sebasthian Alex | Sección de Funcionalidades con demo visual del tablero de monitoreo; sección de testimonios y métricas de impacto. |
+| Diaz De La Cruz, Sebastian Gabriel | CTAs diferenciados para segmentos constructora y supervisora; formulario de contacto con validación. |
+| Montes Chang, Piero Francisco | Sección de Planes con tabla comparativa de suscripciones. |
+| Pancorbo Amorós, Italo Raul | Configuración del entorno de despliegue en GitHub Pages; gestión de ramas y merge final a `main`. |
+
+---
+
+### 5.2.2. Sprint 2
+
+#### 5.2.2.1. Sprint Planning 2
+
+El Sprint 2 tiene como objetivo principal la implementación y despliegue de la primera versión funcional de la **Frontend Web Application** de RoadWatch OS, abarcando las vistas e interacciones principales de los **7 Bounded Contexts** definidos en la arquitectura (*Identity & Access Management*, *Subscription Management*, *Project Management*, *Environmental Monitoring*, *Incident & Mitigation Management*, *Document & Evidence Management* y *Reports & Compliance Management*), utilizando adaptadores de datos simulados (*Mock Adapters*) para validar los flujos de los segmentos de empresas constructoras viales y empresas supervisoras ambientales.
+
+| Sprint # | Sprint 2 |
+|:---|:---|
+| **Sprint Planning Background** | |
+| Date | 2026-09-22 |
+| Time | 08:00 PM |
+| Location | Reunión virtual vía Discord |
+| Prepared By | Pancorbo Amorós, Italo Raul |
+| Attendees | Cabrera Sotelo, Camila Celeste / Conde Huashuayo, Sebasthian Alex / Diaz De La Cruz, Sebastian Gabriel / Montes Chang, Piero Francisco / Pancorbo Amorós, Italo Raul |
+| Sprint 1 Review Summary | Se completó y desplegó satisfactoriamente la primera versión del Landing Page en GitHub Pages cumpliendo los 19 Story Points comprometidos. Durante la revisión de la entrega AV1 se identificó la necesidad de refinar el alcance del MVP (descartando integraciones directas con sensores físicos IoT e IA) y consolidar el diseño arquitectónico en 7 Bounded Contexts claramente delimitados. |
+| Sprint 1 Retrospective Summary | El equipo acordó mantener la estrategia de ramificación *GitFlow* con *Conventional Commits*, dividir el desarrollo de la Web Application en módulos independientes por *Bounded Context* para evitar conflictos de integración, y emplear un *App Shell* compartido junto con *Mock Adapters* mientras se prepara la implementación del Backend para el siguiente Sprint. |
+| **Sprint Goal & User Stories** | |
+| Sprint 2 Goal | Our focus is on delivering the first functional version of the RoadWatch OS Frontend Web Application deployed in a QA environment. We believe it enables both target segments (road construction companies and environmental supervision consultants) to navigate their tailored workspaces and execute core environmental tracking flows across all 7 Bounded Contexts. This will be confirmed when users can authenticate by profile, manage projects and monitoring points, record and filter environmental measurements, manage alerts and incidents on the Kanban board, attach regulatory documents/evidence, and generate compliance reports. |
+| Sprint 2 Velocity | 32 Story Points |
+| Sum of Story Points | 32 Story Points |
+
+---
+
+#### 5.2.2.2. Aspect Leaders and Collaborators
+
+Para el Sprint 2, el trabajo se ha paralelizado enfocándose en los **7 Bounded Contexts** de la plataforma. Cada miembro del equipo asume el rol de líder (`L`) en los dominios que le fueron asignados y colabora (`C`) en las integraciones transversales y el *App Shell* compartido.
+
+| Team Member | GitHub Username | Identity & Access | Subscription Mgmt | Project Mgmt | Env. Monitoring | Incident & Mitigation | Document & Evidence | Reports & Compliance |
+|:---|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Cabrera Sotelo, Camila Celeste | *whcamm* | L | L | | | C | C | |
+| Conde Huashuayo, Sebasthian Alex | *SebasthianCH* | C | | L | C | | | |
+| Diaz De La Cruz, Sebastian Gabriel | *tipaso07* | C | | C | | | L | L |
+| Montes Chang, Piero Francisco | *PieroMchang* | | | C | L | | | C |
+| Pancorbo Amorós, Italo Raul | *pancorboitalo-design* | | C | | | L | C | |
+
+*L = Líder | C = Colaborador*
+
+---
+
+#### 5.2.2.3. Sprint Backlog 2
+
+![Configuración y despliegue en GitHub Pages 2](../assets/images/chapter5/EvidenciaTrello.jpeg)
+
+> **URL del Board en Trello:** https://trello.com/invite/b/6ac45a47333a77ed1bb96de5/ATTId01870fd734279c8b64b2e32744d1f60715FC467/sprin2-roadwatch
+
+El objetivo de este Sprint es establecer la primera versión funcional de la Web Application cubriendo los **7 Bounded Contexts** del sistema, asegurando que tanto las empresas constructoras viales como las supervisoras y consultoras ambientales puedan interactuar con sus respectivos módulos y flujos de trabajo.
+
+| **Story Id** | **Story Title** | **Task Id** | **Task Title** | **Task Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
+|:---|:---|:---|:---|:---|:---|:---|:---|
+| US01 / US21 | Autenticación y Login Minimalista | T01 | Login y gestión de sesiones por segmento | Implementar la vista de autenticación minimalista con selector de perfiles demostrativos por segmento (*Identity & Access Management*). | 4 | Cabrera Sotelo, Camila | Done |
+| US23 | Selector de Color de Marca y Suscripción | T02 | Configuración de planes y cuenta | Implementar el módulo visual de planes de suscripción, cuotas operativas y preferencias de cuenta (*Subscription Management*). | 3 | Cabrera Sotelo, Camila | Done |
+| US10 / US22 | Tarjetas y Lista de Proyectos | T03 | Gestión de portafolio y puntos de monitoreo | Desarrollar las vistas en tarjetas y tabla de proyectos viales, detalle de obra y visualización de puntos de monitoreo (*Project Management*). | 5 | Conde Huashuayo, Sebasthian | Done |
+| US09 / US13 | Registro y Filtro de Indicadores | T04 | Dashboard ambiental, mediciones y alertas | Construir el formulario validado de registro de mediciones, filtros por tipo de indicador (aire, ruido, agua), historial y centro de alertas (*Environmental Monitoring*). | 5 | Montes Chang, Piero | Done |
+| US11 / US18 | Tablero Kanban e Incidencias Críticas | T05 | Kanban de incidencias y seguimiento de mitigación | Implementar el tablero Kanban interactivo, listado de incidencias críticas, detalle de acciones de mitigación e historial de comentarios (*Incident & Mitigation Management*). | 5 | Pancorbo Amorós, Italo | Done |
+| US14 | Adjuntar Evidencia Fotográfica y Documentos | T06 | Repositorio de evidencias y documentos normativos | Desarrollar las vistas de carga y consulta de evidencias fotográficas y control de documentos obligatorios por hito (*Document & Evidence Management*). | 4 | Diaz De La Cruz, Sebastian | Done |
+| US15 / US19 | Progreso de Cumplimiento y Reportes | T07 | Generación y exportación visual de reportes | Implementar el flujo de generación de reportes de auditoría, filtros por rango de fechas e indicadores de cumplimiento (*Reports & Compliance Management*). | 4 | Diaz De La Cruz, Sebastian | Done |
+| — | Integración Global (App Shell) | T08 | Enrutamiento e interfaz base compartida | Configurar el *layout* principal responsivo y la navegación diferenciada por rol conectando los 7 Bounded Contexts desarrollados por el equipo. | 4 | Pancorbo Amorós, Italo | Done |
+
+---
+
+#### 5.2.2.4. Development Evidence for Sprint Review
+
+Durante el Sprint 2, el equipo trabajó sobre el repositorio de la Frontend Web Application, organizando la implementación por Bounded Contexts. Los commits evidencian el desarrollo modular de las principales funcionalidades de la aplicación y su integración progresiva.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+|:---|:---|:---|:---|:---|:---|
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Frontend | ft-identity-access-management | `0841063c9a2cc3e8287a8f6d738ed89db03ca648` | `feat(identity-access): add mock authentication module` | Se implementó el módulo de autenticación mock para la interfaz de acceso y gestión básica de sesión. | 2026-10-05 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Frontend | ft-subscription-management | `a180fc98dba70012f29bd1e649ecbabcb7b59b36` | `feat(subscription): add plans and subscription management module` | Se implementó el módulo de planes y gestión visual de suscripciones. | 2026-10-05 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Frontend | ft-project-management | `26d2ed911713894be678ff7bc7fc4bbe75ab3e1e` | `feat(projects): add project detail view` | Se agregó la vista de detalle de proyectos y la estructura de navegación asociada. | 2026-10-06 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Frontend | ft-project-management | `81e0ef31eac900337b3d6e8f7875161d122f374a` | `refactor(projects): adopt shared shell for portfolio views` | Se integraron las vistas de Project Management con el App Shell compartido. | 2026-10-06 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Frontend | ft-environmental-monitoring | `548943a` | `feat(monitoring): add mock domain and data layer` | Se implementó la capa de dominio y adaptadores de datos simulados para mediciones y alertas ambientales. | 2026-10-05 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Frontend | ft-environmental-monitoring | `2f6c921` | `feat(monitoring): add operational monitoring views` | Se agregaron las vistas operativas de monitoreo ambiental, registro de mediciones y centro de alertas. | 2026-10-05 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Frontend | ft-incident-mitigation-management | `a9b90f966998e676ae4bdede115e1cb403cce1f1` | `feat(incidents): complete critical list and detail views` | Se completaron las vistas de incidencias críticas y detalle de incidencias. | 2026-10-06 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Frontend | ft-incident-mitigation-management | `7ab180dcca4e4bcd2db12083e88345446bb6ac5d` | `refactor(incidents): adopt shared navigation and shell` | Se integró Incident & Mitigation Management con la navegación y estructura compartidas. | 2026-10-06 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Frontend | ft-document-evidence-management | `556220c2f16fe88252cae0a9d3497d76ad4edcdc` | `feat(document-evidence): add evidence and required document views` | Se agregaron las vistas de evidencias y documentos requeridos. | 2026-10-05 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Frontend | ft-document-evidence-management | `6f4dffe53a56a5dff85044a55ab95cb556387265` | `feat(document-evidence): complete document registration flow` | Se completó el flujo visual de registro y gestión de documentos. | 2026-10-05 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Frontend | ft-reports-compliance-management | `f287c233ce1716c0d802142ff41285a6d2e39cff` | `feat(reports-compliance): connect audit generation flow` | Se conectó el flujo de generación visual de reportes de auditoría. | 2026-10-05 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Frontend | ft-reports-compliance-management | `09d3800555ff208cc10139cafc348ea667b7383b` | `feat(reports-compliance): complete report export workflow` | Se completó el flujo visual de exportación de reportes. | 2026-10-05 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Frontend | ft-reports-compliance-management | `e7aa7a1bc9934ffa8020c21cb01b6d02f43cb786` | `feat(reports-compliance): add report and compliance filters` | Se agregaron filtros para reportes y vistas de cumplimiento. | 2026-10-05 |
+
+---
+
+#### 5.2.2.5. Execution Evidence for Sprint Review
+
+Al finalizar el Sprint 2, la Web Application cuenta con la estructura funcional de los **7 Bounded Contexts** definidos en la arquitectura. Los usuarios pueden iniciar sesión según su segmento (Empresa Constructora Vial o Empresa Supervisora / Consultora Ambiental), gestionar sus planes de suscripción, visualizar su portafolio de proyectos y puntos de monitoreo, registrar y consultar mediciones y alertas ambientales, gestionar incidencias y acciones de mitigación mediante un tablero Kanban interactivo, adjuntar evidencias y documentos normativos, y generar reportes consolidados de cumplimiento.
+
+![Evidencia del Front](/assets/images/chapter5/FrontEvidence.jpeg)
+**Video de navegación de la Web Application (Sprint 2):**  
+
+[Ver video de demostración del Sprint 2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202418029_upc_edu_pe/IQCFRFdP6q8ZRJBC7Daji-IfAVr9wVVrikD0aTOqE_KlONk?e=uweOJY)
+
+---
+
+#### 5.2.2.6. Services Documentation Evidence for Sprint Review
+
+Durante el Sprint 2, el alcance de implementación correspondió a la primera versión funcional de la **Frontend Web Application**, la cual opera mediante capas de dominio y adaptadores de datos simulados (*Mock Adapters*). En paralelo, se definieron las rutas y contratos esperados de la API RESTful (OpenAPI / Swagger) para los **7 Bounded Contexts**, cuya implementación en el Backend se realizará a partir del Sprint 3:
+
+| Bounded Context | Endpoint Principal Proyectado | Acción | Estado en Sprint 2 |
+|:---|:---|:---|:---|
+| Identity & Access Management | `POST /api/v1/auth/login` | Autenticación de usuarios y emisión de sesión | Definido (Mock en Frontend / Pendiente Backend en Sprint 3) |
+| Subscription Management | `GET /api/v1/subscriptions/current` | Consulta y actualización de plan de suscripción | Definido (Mock en Frontend / Pendiente Backend en Sprint 3) |
+| Project Management | `GET /api/v1/projects` | Gestión de proyectos viales y puntos de monitoreo | Definido (Mock en Frontend / Pendiente Backend en Sprint 3) |
+| Environmental Monitoring | `POST /api/v1/measurements` | Registro de mediciones ambientales y evaluación de alertas | Definido (Mock en Frontend / Pendiente Backend en Sprint 3) |
+| Incident & Mitigation Management | `PATCH /api/v1/incidents/{id}/status` | Gestión de estados de incidencias y acciones de mitigación | Definido (Mock en Frontend / Pendiente Backend en Sprint 3) |
+| Document & Evidence Management | `POST /api/v1/documents` | Registro de evidencias fotográficas y documentos normativos | Definido (Mock en Frontend / Pendiente Backend en Sprint 3) |
+| Reports & Compliance Management | `GET /api/v1/reports/compliance` | Consolidación de indicadores y generación de reportes de auditoría | Definido (Mock en Frontend / Pendiente Backend en Sprint 3) |
+
+---
+
+#### 5.2.2.7. Software Deployment Evidence for Sprint Review
+
+La primera versión funcional de la Frontend Web Application fue integrada y desplegada en **Vercel** como entorno de validación y pruebas (QA):
+
+1. **Integración de ramas en GitHub:** Cada módulo desarrollado en su respectiva rama `ft-<bounded-context>` fue revisado e integrado en la rama `develop` y posteriormente consolidado en `main`.
+2. **Configuración de despliegue continuo en Vercel:** Se vinculó el repositorio `RoadWatch-OS-Frontend` con Vercel, configurando el comando de compilación de Angular (`npm run build`) y las reglas de reescritura (`vercel.json`) para soportar el enrutamiento SPA (*Single-Page Application*).
+3. **Verificación del entorno desplegado:** Se validó el acceso público a través de la URL generada por Vercel, comprobando el funcionamiento de los perfiles demostrativos de ambos segmentos y la navegación entre los 7 Bounded Contexts con datos simulados.
+
+![Configuración y despliegue en GitHub Pages 2](../assets/images/chapter5/CambiarRama.jpeg)
+
+![Configuración y despliegue en GitHub Pages 2](../assets/images/chapter5/RamaDevelop.jpeg)
+
+![Configuración y despliegue en GitHub Pages 2](../assets/images/chapter5/Vercel1.jpeg)
+
+![Configuración y despliegue en GitHub Pages 2](../assets/images/chapter5/Vercel2.jpeg)
+
+![Configuración y despliegue en GitHub Pages 2](../assets/images/chapter5/Vercel3.jpeg)
+
+![Configuración y despliegue en GitHub Pages 2](../assets/images/chapter5/Deploy1.jpeg)
+
+![Configuración y despliegue en GitHub Pages 2](../assets/images/chapter5/Deploy2.jpeg)
+
+
+URL de la Web Application desplegada (QA):  
+
+[*(Enlace al entorno de QA de VíaNexo / RoadWatch OS)*](https://road-watch-os-frontend.vercel.app/auth/login)
+
+---
+
+#### 5.2.2.8. Team Collaboration Insights during Sprint
+
+La estrategia colaborativa de este Sprint consistió en la separación modular de responsabilidades por *Bounded Context* ("Divide y Vencerás"). Cada integrante trabajó dentro del directorio de su contexto asignado en el repositorio `RoadWatch-OS-Frontend` sobre ramas `ft-<bounded-context>`, reduciendo los conflictos de fusión (*Merge Conflicts*) al momento de integrar las vistas en el *App Shell* principal.
+
+| Miembro del equipo | Contribuciones principales en el Sprint 2 |
+|:---|:---|
+| Cabrera Sotelo, Camila Celeste | Implementó los módulos frontend de *Identity & Access Management* (login segmentado) y *Subscription Management* (planes y configuración de suscripción), además de elaborar los prototipos y flujos UX/UI. |
+| Conde Huashuayo, Sebasthian Alex | Desarrolló el módulo de *Project Management*, incluyendo las vistas de portafolio de proyectos, detalle de proyecto y visualización de puntos de monitoreo viales. |
+| Diaz De La Cruz, Sebastian Gabriel | Desarrolló los módulos de *Document & Evidence Management* y *Reports & Compliance Management*, integró el *App Shell* compartido entre contextos y configuró el despliegue continuo en Vercel. |
+| Montes Chang, Piero Francisco | Construyó el módulo de *Environmental Monitoring*, abarcando el panel de indicadores, el formulario validado de registro de mediciones, el historial y el centro de alertas ambientales. |
+| Pancorbo Amorós, Italo Raul | Desarrolló el módulo de *Incident & Mitigation Management* (tablero Kanban interactivo, listado de incidencias críticas y detalle de acciones de mitigación) y apoyó en la integración general del Sprint 2. |
+
+
+Evidencia de insights del reporte:
+
+![Insight del reporte](../assets/images/chapter5/InsightReport.jpeg)
+
+
+Evidencia insights de la landing page:
+
+![Insight de la landing page](../assets/images/chapter5/InsightLanding.jpeg)
+
+
+Evidencia insights del front:
+
+
+![Insight del frontend](../assets/images/chapter5/InsightFront.jpeg)
+
+
