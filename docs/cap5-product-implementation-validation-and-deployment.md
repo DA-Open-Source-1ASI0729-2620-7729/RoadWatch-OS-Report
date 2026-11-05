@@ -340,17 +340,42 @@ A continuación, se presentan los analíticos de colaboración del repositorio d
 | Montes Chang, Piero Francisco | Sección de Planes con tabla comparativa de suscripciones. |
 | Pancorbo Amorós, Italo Raul | Configuración del entorno de despliegue en GitHub Pages; gestión de ramas y merge final a `main`. |
 
+---
+
+### 5.2.2. Sprint 2
+
+#### 5.2.2.1. Sprint Planning 2
+
+El Sprint 2 tiene como objetivo principal la implementación y despliegue de la primera versión funcional de la **Frontend Web Application** de RoadWatch OS, abarcando las vistas e interacciones principales de los **7 Bounded Contexts** definidos en la arquitectura (*Identity & Access Management*, *Subscription Management*, *Project Management*, *Environmental Monitoring*, *Incident & Mitigation Management*, *Document & Evidence Management* y *Reports & Compliance Management*), utilizando adaptadores de datos simulados (*Mock Adapters*) para validar los flujos de los segmentos de empresas constructoras viales y empresas supervisoras ambientales.
+
+| Sprint # | Sprint 2 |
+|:---|:---|
+| **Sprint Planning Background** | |
+| Date | 2026-09-22 |
+| Time | 08:00 PM |
+| Location | Reunión virtual vía Discord |
+| Prepared By | Pancorbo Amorós, Italo Raul |
+| Attendees | Cabrera Sotelo, Camila Celeste / Conde Huashuayo, Sebasthian Alex / Diaz De La Cruz, Sebastian Gabriel / Montes Chang, Piero Francisco / Pancorbo Amorós, Italo Raul |
+| Sprint 1 Review Summary | Se completó y desplegó satisfactoriamente la primera versión del Landing Page en GitHub Pages cumpliendo los 19 Story Points comprometidos. Durante la revisión de la entrega AV1 se identificó la necesidad de refinar el alcance del MVP (descartando integraciones directas con sensores físicos IoT e IA) y consolidar el diseño arquitectónico en 7 Bounded Contexts claramente delimitados. |
+| Sprint 1 Retrospective Summary | El equipo acordó mantener la estrategia de ramificación *GitFlow* con *Conventional Commits*, dividir el desarrollo de la Web Application en módulos independientes por *Bounded Context* para evitar conflictos de integración, y emplear un *App Shell* compartido junto con *Mock Adapters* mientras se prepara la implementación del Backend para el siguiente Sprint. |
+| **Sprint Goal & User Stories** | |
+| Sprint 2 Goal | Our focus is on delivering the first functional version of the RoadWatch OS Frontend Web Application deployed in a QA environment. We believe it enables both target segments (road construction companies and environmental supervision consultants) to navigate their tailored workspaces and execute core environmental tracking flows across all 7 Bounded Contexts. This will be confirmed when users can authenticate by profile, manage projects and monitoring points, record and filter environmental measurements, manage alerts and incidents on the Kanban board, attach regulatory documents/evidence, and generate compliance reports. |
+| Sprint 2 Velocity | 32 Story Points |
+| Sum of Story Points | 32 Story Points |
+
+---
+
 #### 5.2.2.2. Aspect Leaders and Collaborators
 
-Para el Sprint 2, el trabajo se ha paralelizado enfocándose en los Bounded Contexts principales de la plataforma. Cada miembro del equipo asume el rol de líder (L) en el dominio que le fue asignado, colaborando (C) en las integraciones transversales.
+Para el Sprint 2, el trabajo se ha paralelizado enfocándose en los **7 Bounded Contexts** de la plataforma. Cada miembro del equipo asume el rol de líder (`L`) en los dominios que le fueron asignados y colabora (`C`) en las integraciones transversales y el *App Shell* compartido.
 
-| Team Member | GitHub Username | Identity & Access | Project Mgmt | Env. Monitoring | Incident Mgmt | Document Mgmt |
-|:---|:---|:---:|:---:|:---:|:---:|:---:|
-| Cabrera Sotelo, Camila Celeste | *whcamm* | | | | C | L |
-| Conde Huashuayo, Sebasthian Alex | *SebasthianCH* | C | L | | | |
-| Diaz De La Cruz, Sebastian Gabriel| *tipaso07* | L | | C | | |
-| Montes Chang, Piero Francisco | *chang* | | C | L | | |
-| Pancorbo Amorós, Italo Raul | *pancorboitalo-design* | | | | L | C |
+| Team Member | GitHub Username | Identity & Access | Subscription Mgmt | Project Mgmt | Env. Monitoring | Incident & Mitigation | Document & Evidence | Reports & Compliance |
+|:---|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Cabrera Sotelo, Camila Celeste | *whcamm* | L | L | | | C | C | |
+| Conde Huashuayo, Sebasthian Alex | *SebasthianCH* | C | | L | C | | | |
+| Diaz De La Cruz, Sebastian Gabriel | *tipaso07* | C | | C | | | L | L |
+| Montes Chang, Piero Francisco | *PieroMchang* | | | C | L | | | C |
+| Pancorbo Amorós, Italo Raul | *pancorboitalo-design* | | C | | | L | C | |
 
 *L = Líder | C = Colaborador*
 
@@ -360,19 +385,20 @@ Para el Sprint 2, el trabajo se ha paralelizado enfocándose en los Bounded Cont
 
 ![Configuración y despliegue en GitHub Pages 2](../assets/images/chapter5/EvidenciaTrello.jpeg)
 
-Evidencia Trello: 
-https://trello.com/invite/b/6ac45a47333a77ed1bb96de5/ATTId01870fd734279c8b64b2e32744d1f60715FC467/sprin2-roadwatch 
+> **URL del Board en Trello:** https://trello.com/invite/b/6ac45a47333a77ed1bb96de5/ATTId01870fd734279c8b64b2e32744d1f60715FC467/sprin2-roadwatch
 
-El objetivo de este Sprint es establecer la base de las aplicaciones funcionales para los distintos dominios del sistema, asegurando que tanto las empresas constructoras como las supervisoras puedan empezar a interactuar con sus respectivos módulos.
+El objetivo de este Sprint es establecer la primera versión funcional de la Web Application cubriendo los **7 Bounded Contexts** del sistema, asegurando que tanto las empresas constructoras viales como las supervisoras y consultoras ambientales puedan interactuar con sus respectivos módulos y flujos de trabajo.
 
-| **Story Id** | **Story Title** | **Task Id**| **Task Title** | **Task Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
+| **Story Id** | **Story Title** | **Task Id** | **Task Title** | **Task Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
 |:---|:---|:---|:---|:---|:---|:---|:---|
-| US09 | Autenticación y Accesos | T01 | Login y gestión de usuarios | Implementar autenticación JWT, definición de roles, permisos y configuración de planes de suscripción. | 5 | Diaz De La Cruz, Sebastian | Done |
-| US10 | Gestión de Portafolio | T02 | CRUD de Proyectos viales | Desarrollar la gestión de proyectos, asignación de responsables y visualización de puntos de monitoreo. | 5 | Conde Huashuayo, Sebasthian | Done |
-| US11 | Monitoreo Operativo | T03 | Dashboard Ambiental | Construir el dashboard de mediciones, registro de indicadores, validación de umbrales y alertas. | 5 | Montes Chang, Piero | Done |
-| US12 | Control de Incidencias | T04 | Kanban de Mitigación | Implementar tablero Kanban de incidencias, actualización de estados, comentarios y seguimiento de acciones. | 5 | Pancorbo Amorós, Italo | Done |
-| US13 | Gestión Documental | T05 | Repositorio de Evidencias | Desarrollar módulo para carga de documentos normativos, reportes de auditoría, evidencias y exportación PDF. | 5 | Cabrera Sotelo, Camila | Done |
-| — | Integración Global | T06 | Enrutamiento e Interfaz Base | Configurar layout principal de la Web App conectando los 5 Bounded Contexts desarrollados por el equipo. | 4 | Pancorbo Amorós, Italo | Done |
+| US01 / US21 | Autenticación y Login Minimalista | T01 | Login y gestión de sesiones por segmento | Implementar la vista de autenticación minimalista con selector de perfiles demostrativos por segmento (*Identity & Access Management*). | 4 | Cabrera Sotelo, Camila | Done |
+| US23 | Selector de Color de Marca y Suscripción | T02 | Configuración de planes y cuenta | Implementar el módulo visual de planes de suscripción, cuotas operativas y preferencias de cuenta (*Subscription Management*). | 3 | Cabrera Sotelo, Camila | Done |
+| US10 / US22 | Tarjetas y Lista de Proyectos | T03 | Gestión de portafolio y puntos de monitoreo | Desarrollar las vistas en tarjetas y tabla de proyectos viales, detalle de obra y visualización de puntos de monitoreo (*Project Management*). | 5 | Conde Huashuayo, Sebasthian | Done |
+| US09 / US13 | Registro y Filtro de Indicadores | T04 | Dashboard ambiental, mediciones y alertas | Construir el formulario validado de registro de mediciones, filtros por tipo de indicador (aire, ruido, agua), historial y centro de alertas (*Environmental Monitoring*). | 5 | Montes Chang, Piero | Done |
+| US11 / US18 | Tablero Kanban e Incidencias Críticas | T05 | Kanban de incidencias y seguimiento de mitigación | Implementar el tablero Kanban interactivo, listado de incidencias críticas, detalle de acciones de mitigación e historial de comentarios (*Incident & Mitigation Management*). | 5 | Pancorbo Amorós, Italo | Done |
+| US14 | Adjuntar Evidencia Fotográfica y Documentos | T06 | Repositorio de evidencias y documentos normativos | Desarrollar las vistas de carga y consulta de evidencias fotográficas y control de documentos obligatorios por hito (*Document & Evidence Management*). | 4 | Diaz De La Cruz, Sebastian | Done |
+| US15 / US19 | Progreso de Cumplimiento y Reportes | T07 | Generación y exportación visual de reportes | Implementar el flujo de generación de reportes de auditoría, filtros por rango de fechas e indicadores de cumplimiento (*Reports & Compliance Management*). | 4 | Diaz De La Cruz, Sebastian | Done |
+| — | Integración Global (App Shell) | T08 | Enrutamiento e interfaz base compartida | Configurar el *layout* principal responsivo y la navegación diferenciada por rol conectando los 7 Bounded Contexts desarrollados por el equipo. | 4 | Pancorbo Amorós, Italo | Done |
 
 ---
 
@@ -386,6 +412,8 @@ Durante el Sprint 2, el equipo trabajó sobre el repositorio de la Frontend Web 
 | DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Frontend | ft-subscription-management | `a180fc98dba70012f29bd1e649ecbabcb7b59b36` | `feat(subscription): add plans and subscription management module` | Se implementó el módulo de planes y gestión visual de suscripciones. | 2026-10-05 |
 | DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Frontend | ft-project-management | `26d2ed911713894be678ff7bc7fc4bbe75ab3e1e` | `feat(projects): add project detail view` | Se agregó la vista de detalle de proyectos y la estructura de navegación asociada. | 2026-10-06 |
 | DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Frontend | ft-project-management | `81e0ef31eac900337b3d6e8f7875161d122f374a` | `refactor(projects): adopt shared shell for portfolio views` | Se integraron las vistas de Project Management con el App Shell compartido. | 2026-10-06 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Frontend | ft-environmental-monitoring | `548943a` | `feat(monitoring): add mock domain and data layer` | Se implementó la capa de dominio y adaptadores de datos simulados para mediciones y alertas ambientales. | 2026-10-05 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Frontend | ft-environmental-monitoring | `2f6c921` | `feat(monitoring): add operational monitoring views` | Se agregaron las vistas operativas de monitoreo ambiental, registro de mediciones y centro de alertas. | 2026-10-05 |
 | DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Frontend | ft-incident-mitigation-management | `a9b90f966998e676ae4bdede115e1cb403cce1f1` | `feat(incidents): complete critical list and detail views` | Se completaron las vistas de incidencias críticas y detalle de incidencias. | 2026-10-06 |
 | DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Frontend | ft-incident-mitigation-management | `7ab180dcca4e4bcd2db12083e88345446bb6ac5d` | `refactor(incidents): adopt shared navigation and shell` | Se integró Incident & Mitigation Management con la navegación y estructura compartidas. | 2026-10-06 |
 | DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Frontend | ft-document-evidence-management | `556220c2f16fe88252cae0a9d3497d76ad4edcdc` | `feat(document-evidence): add evidence and required document views` | Se agregaron las vistas de evidencias y documentos requeridos. | 2026-10-05 |
@@ -398,7 +426,7 @@ Durante el Sprint 2, el equipo trabajó sobre el repositorio de la Frontend Web 
 
 #### 5.2.2.5. Execution Evidence for Sprint Review
 
-Al finalizar el Sprint 2, la Web Application cuenta con la estructura fundamental de los 5 dominios operativos. Los usuarios pueden iniciar sesión según su rol (Constructor o Supervisor), visualizar sus proyectos asignados, consultar las métricas ambientales, gestionar el estado de las incidencias mediante un tablero Kanban interactivo y adjuntar la documentación de cumplimiento correspondiente.
+Al finalizar el Sprint 2, la Web Application cuenta con la estructura funcional de los **7 Bounded Contexts** definidos en la arquitectura. Los usuarios pueden iniciar sesión según su segmento (Empresa Constructora Vial o Empresa Supervisora / Consultora Ambiental), gestionar sus planes de suscripción, visualizar su portafolio de proyectos y puntos de monitoreo, registrar y consultar mediciones y alertas ambientales, gestionar incidencias y acciones de mitigación mediante un tablero Kanban interactivo, adjuntar evidencias y documentos normativos, y generar reportes consolidados de cumplimiento.
 
 ![Evidencia del Front](/assets/images/chapter5/FrontEvidence.jpeg)
 **Video de navegación de la Web Application (Sprint 2):**  
@@ -409,24 +437,27 @@ Al finalizar el Sprint 2, la Web Application cuenta con la estructura fundamenta
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review
 
-En paralelo al frontend, se definieron los contratos de la API RESTful (Swagger/OpenAPI) correspondientes a cada Bounded Context para asegurar la correcta comunicación cliente-servidor:
+Durante el Sprint 2, el alcance de implementación correspondió a la primera versión funcional de la **Frontend Web Application**, la cual opera mediante capas de dominio y adaptadores de datos simulados (*Mock Adapters*). En paralelo, se definieron las rutas y contratos esperados de la API RESTful (OpenAPI / Swagger) para los **7 Bounded Contexts**, cuya implementación en el Backend se realizará a partir del Sprint 3:
 
-| Bounded Context | Endpoint Principal | Estado |
-|:---|:---|:---|
-| Identity & Access | `POST /api/v1/auth/login` | Implementado |
-| Project Management | `GET /api/v1/projects` | Implementado |
-| Environmental Monitoring | `POST /api/v1/measurements` | Implementado |
-| Incident Management | `PATCH /api/v1/incidents/{id}/status` | Implementado |
-| Document Management | `POST /api/v1/documents/upload` | Implementado |
+| Bounded Context | Endpoint Principal Proyectado | Acción | Estado en Sprint 2 |
+|:---|:---|:---|:---|
+| Identity & Access Management | `POST /api/v1/auth/login` | Autenticación de usuarios y emisión de sesión | Definido (Mock en Frontend / Pendiente Backend en Sprint 3) |
+| Subscription Management | `GET /api/v1/subscriptions/current` | Consulta y actualización de plan de suscripción | Definido (Mock en Frontend / Pendiente Backend en Sprint 3) |
+| Project Management | `GET /api/v1/projects` | Gestión de proyectos viales y puntos de monitoreo | Definido (Mock en Frontend / Pendiente Backend en Sprint 3) |
+| Environmental Monitoring | `POST /api/v1/measurements` | Registro de mediciones ambientales y evaluación de alertas | Definido (Mock en Frontend / Pendiente Backend en Sprint 3) |
+| Incident & Mitigation Management | `PATCH /api/v1/incidents/{id}/status` | Gestión de estados de incidencias y acciones de mitigación | Definido (Mock en Frontend / Pendiente Backend en Sprint 3) |
+| Document & Evidence Management | `POST /api/v1/documents` | Registro de evidencias fotográficas y documentos normativos | Definido (Mock en Frontend / Pendiente Backend en Sprint 3) |
+| Reports & Compliance Management | `GET /api/v1/reports/compliance` | Consolidación de indicadores y generación de reportes de auditoría | Definido (Mock en Frontend / Pendiente Backend en Sprint 3) |
 
 ---
 
 #### 5.2.2.7. Software Deployment Evidence for Sprint Review
 
-La Web Application fue integrada y desplegada en un entorno de pruebas continuas (QA).
-1. **Configuración CI/CD:** Se automatizó el proceso de build tras cada *merge* a la rama `main`.
-2. **Despliegue del Frontend:** Se alojaron los artefactos estáticos de Angular asegurando el ruteo dinámico de las SPA.
-3. **Despliegue de Servicios:** Se levantó una instancia inicial del Backend principal para resolver las peticiones de autenticación y carga de datos base.
+La primera versión funcional de la Frontend Web Application fue integrada y desplegada en **Vercel** como entorno de validación y pruebas (QA):
+
+1. **Integración de ramas en GitHub:** Cada módulo desarrollado en su respectiva rama `ft-<bounded-context>` fue revisado e integrado en la rama `develop` y posteriormente consolidado en `main`.
+2. **Configuración de despliegue continuo en Vercel:** Se vinculó el repositorio `RoadWatch-OS-Frontend` con Vercel, configurando el comando de compilación de Angular (`npm run build`) y las reglas de reescritura (`vercel.json`) para soportar el enrutamiento SPA (*Single-Page Application*).
+3. **Verificación del entorno desplegado:** Se validó el acceso público a través de la URL generada por Vercel, comprobando el funcionamiento de los perfiles demostrativos de ambos segmentos y la navegación entre los 7 Bounded Contexts con datos simulados.
 
 ![Configuración y despliegue en GitHub Pages 2](../assets/images/chapter5/CambiarRama.jpeg)
 
@@ -451,30 +482,30 @@ URL de la Web Application desplegada (QA):
 
 #### 5.2.2.8. Team Collaboration Insights during Sprint
 
-La estrategia colaborativa de este Sprint consistió en la separación de responsabilidades ("Divide y Vencerás"). Cada integrante clonó la estructura base y trabajó exclusivamente dentro de la carpeta y módulo de su Bounded Context, reduciendo drásticamente los conflictos de fusión (Merge Conflicts) al final del ciclo.
+La estrategia colaborativa de este Sprint consistió en la separación modular de responsabilidades por *Bounded Context* ("Divide y Vencerás"). Cada integrante trabajó dentro del directorio de su contexto asignado en el repositorio `RoadWatch-OS-Frontend` sobre ramas `ft-<bounded-context>`, reduciendo los conflictos de fusión (*Merge Conflicts*) al momento de integrar las vistas en el *App Shell* principal.
 
-| Miembro del equipo | Contribuciones principales en el Sprint |
+| Miembro del equipo | Contribuciones principales en el Sprint 2 |
 |:---|:---|
-| Cabrera Sotelo, Camila Celeste | Lideró el módulo de gestión documental, asegurando la subida de archivos, versionado de evidencias y preparación para exportación de KPIs. |
-| Conde Huashuayo, Sebasthian Alex | Estructuró el portafolio de proyectos, permitiendo la asignación de responsables y la visualización de los puntos de monitoreo viales. |
-| Diaz De La Cruz, Sebastian Gabriel | Implementó el sistema base de autenticación (Login), perfiles de usuario y las validaciones de acceso según la suscripción de la empresa. |
-| Montes Chang, Piero Francisco | Construyó el centro de alertas e historial de mediciones, enfocándose en la validación de valores frente a umbrales permitidos. |
-| Pancorbo Amorós, Italo Raul | Desarrolló la vista interactiva de incidencias críticas (Kanban y detalle), permitiendo el seguimiento de las acciones de mitigación de inicio a fin. |
+| Cabrera Sotelo, Camila Celeste | Implementó los módulos frontend de *Identity & Access Management* (login segmentado) y *Subscription Management* (planes y configuración de suscripción), además de elaborar los prototipos y flujos UX/UI. |
+| Conde Huashuayo, Sebasthian Alex | Desarrolló el módulo de *Project Management*, incluyendo las vistas de portafolio de proyectos, detalle de proyecto y visualización de puntos de monitoreo viales. |
+| Diaz De La Cruz, Sebastian Gabriel | Desarrolló los módulos de *Document & Evidence Management* y *Reports & Compliance Management*, integró el *App Shell* compartido entre contextos y configuró el despliegue continuo en Vercel. |
+| Montes Chang, Piero Francisco | Construyó el módulo de *Environmental Monitoring*, abarcando el panel de indicadores, el formulario validado de registro de mediciones, el historial y el centro de alertas ambientales. |
+| Pancorbo Amorós, Italo Raul | Desarrolló el módulo de *Incident & Mitigation Management* (tablero Kanban interactivo, listado de incidencias críticas y detalle de acciones de mitigación) y apoyó en la integración general del Sprint 2. |
 
 
 Evidencia de insights del reporte:
 
-![Insight del reporte]()
+![Insight del reporte](../assets/images/chapter5/InsightReport.jpeg)
 
 
 Evidencia insights de la landing page:
 
-![Insight de la landing page](../assets/images/chapter5/InsightReport.jpeg)
+![Insight de la landing page](../assets/images/chapter5/InsightLanding.jpeg)
 
 
 Evidencia insights del front:
 
 
-![Insight del reporte](../assets/images/chapter5/InsightFront.jpeg)
+![Insight del frontend](../assets/images/chapter5/InsightFront.jpeg)
 
 
