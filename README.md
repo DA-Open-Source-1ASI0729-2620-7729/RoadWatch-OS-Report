@@ -13,7 +13,7 @@ NRC<br>
 Docente<br>
 **Mori Paiva, Hugo Allan**<br>
 Equipo<br>
-**ViaNexo**
+**VíaNexo**
 
 Proyecto<br>
 **RoadWatch OS**
@@ -24,14 +24,14 @@ Proyecto<br>
 | Código      | Apellidos y Nombres              |
 |-------------|----------------------------------|
 | U202418029  | Pancorbo Amorós, Italo Raul      |
-| U202412462  |Cabrera Sotelo, Camila Celeste  |
-| u20241e356  |Conde Huashuayo, Sebasthian Alex |
-| U20241g031 |Montes Chang, Piero Francisco |
-| U202410421 |Diaz De La Cruz, Sebastian Gabriel |
+| U202412462  | Cabrera Sotelo, Camila Celeste   |
+| U20241E356  | Conde Huashuayo, Sebasthian Alex |
+| U20241G031  | Montes Chang, Piero Francisco    |
+| U202410421  | Diaz De La Cruz, Sebastian Gabriel |
 
 **Período 202620**  
 
-**Septiempre 2026**
+**Septiembre 2026**
 
 
 </div>
@@ -148,14 +148,15 @@ Proyecto<br>
     - [5.2.1.6. Services Documentation Evidence for Sprint Review](#5-2-1-6-services-documentation-evidence-for-sprint-review)
     - [5.2.1.7. Software Deployment Evidence for Sprint Review](#5-2-1-7-software-deployment-evidence-for-sprint-review)
     - [5.2.1.8. Team Collaboration Insights during Sprint](#5-2-1-8-team-collaboration-insights-during-sprint)
- - [5.2.2.1. Sprint Planning 2](#5-2-2-1-sprint-planning-2)
-      - [5.2.2.2. Aspect Leaders and Collaborators](#5-2-2-2-aspect-leaders-and-collaborators)
-      - [5.2.2.3. Sprint Backlog 2](#5-2-2-3-sprint-backlog-2)
-      - [5.2.2.4. Development Evidence for Sprint Review](#5-2-2-4-development-evidence-for-sprint-review)
-      - [5.2.2.5. Execution Evidence for Sprint Review](#5-2-2-5-execution-evidence-for-sprint-review)
-      - [5.2.2.6. Services Documentation Evidence for Sprint Review](#5-2-2-6-services-documentation-evidence-for-sprint-review)
-      - [5.2.2.7. Software Deployment Evidence for Sprint Review](#5-2-2-7-software-deployment-evidence-for-sprint-review)
-      - [5.2.2.8. Team Collaboration Insights during Sprint](#5-2-2-8-team-collaboration-insights-during-sprint)
+  - [5.2.2. Sprint 2](#5-2-2-sprint-2)
+    - [5.2.2.1. Sprint Planning 2](#5-2-2-1-sprint-planning-2)
+    - [5.2.2.2. Aspect Leaders and Collaborators](#5-2-2-2-aspect-leaders-and-collaborators)
+    - [5.2.2.3. Sprint Backlog 2](#5-2-2-3-sprint-backlog-2)
+    - [5.2.2.4. Development Evidence for Sprint Review](#5-2-2-4-development-evidence-for-sprint-review)
+    - [5.2.2.5. Execution Evidence for Sprint Review](#5-2-2-5-execution-evidence-for-sprint-review)
+    - [5.2.2.6. Services Documentation Evidence for Sprint Review](#5-2-2-6-services-documentation-evidence-for-sprint-review)
+    - [5.2.2.7. Software Deployment Evidence for Sprint Review](#5-2-2-7-software-deployment-evidence-for-sprint-review)
+    - [5.2.2.8. Team Collaboration Insights during Sprint](#5-2-2-8-team-collaboration-insights-during-sprint)
 
 ---
 
@@ -163,19 +164,19 @@ Proyecto<br>
 
 ### Conclusiones
 
-* Se logró consolidar una plataforma web que resuelve de manera efectiva la dispersión de la información ambiental en los proyectos de infraestructura vial. Al centralizar las mediciones, alertas, incidencias y evidencias en un solo ecosistema, **RoadWatch OS** permite que las empresas constructoras y supervisoras mantengan una trazabilidad completa, trazable y en tiempo real del cumplimiento ambiental en sus obras.
+* Se logró consolidar una plataforma web que aborda de manera efectiva la dispersión de la información ambiental en los proyectos de infraestructura vial. Al centralizar los registros de proyectos, puntos de monitoreo, mediciones, alertas, incidencias, evidencias y reportes en un solo entorno digital, **RoadWatch OS** permite que las empresas constructoras y supervisoras mantengan un seguimiento ordenado y una trazabilidad clara de la información ambiental registrada en sus obras.
 
-* La estructuración del sistema basada en el Diseño Guiado por Dominios (DDD) y la división en *Bounded Contexts* específicos (Identity & Access, Project Management, Environmental Monitoring, Incident Management y Document Management) permitió organizar la complejidad técnica de la plataforma. Este enfoque modular facilitó el desarrollo en paralelo de funcionalidades independientes, garantizando que el sistema sea escalable y adaptable a nuevas exigencias normativas sin comprometer la arquitectura existente.
+* La estructuración del sistema basada en el Diseño Guiado por Dominios (DDD) y su descomposición en siete *Bounded Contexts* específicos (*Identity & Access Management*, *Subscription Management*, *Project Management*, *Environmental Monitoring*, *Incident & Mitigation Management*, *Document & Evidence Management* y *Reports & Compliance Management*) permitió organizar con claridad las responsabilidades de la plataforma. Este enfoque modular facilitó el diseño y desarrollo en paralelo de módulos desacoplados, garantizando que el sistema sea mantenible, escalable y adaptable a nuevas exigencias del sector sin comprometer la arquitectura existente.
 
-* El éxito del ciclo de trabajo radicó en la capacidad de autogestión y la estrategia colaborativa del equipo ("divide y vencerás"). La definición de una matriz de aspectos con líderes por dominio y el trabajo sobre ramas independientes redujeron drásticamente los conflictos de código (*merge conflicts*), asegurando la integración fluida de las vistas (Kanban, tabulares y dashboards) en un *layout* unificado.
+* El avance consistente del ciclo de desarrollo radicó en la capacidad de autogestión y en la estrategia colaborativa del equipo ("divide y vencerás"). La definición de una matriz de líderes y colaboradores por *Bounded Context* y el trabajo sobre ramas *feature* independientes bajo *GitFlow* redujeron los conflictos de integración (*merge conflicts*), permitiendo consolidar los flujos de ambos segmentos objetivo (empresas constructoras y supervisoras ambientales) dentro de un *App Shell* unificado.
 
 ---
 
 ### Recomendaciones
 
-* Durante el desarrollo de las vistas interactivas (como el tablero Kanban y el dashboard ambiental), el mayor reto fue estandarizar la gestión del estado reactivo e integrar los componentes de los cinco dominios en el *layout* principal. La curva de aprendizaje para sincronizar las interacciones de usuario y mantener la coherencia del diseño demandó una alta coordinación técnica inicial que afectó el ritmo en los primeros días del Sprint.
+* Durante el desarrollo de las vistas interactivas (como el tablero Kanban de incidencias, el historial de mediciones y las vistas de supervisión de portafolio), uno de los principales retos fue estandarizar la gestión del estado y la navegación compartida para integrar los componentes de los siete *Bounded Contexts* en el *layout* principal. Definir desde el inicio un diseño común de *App Shell*, rutas y componentes reutilizables permite reducir la fricción de integración en los primeros días de cada Sprint.
 
-* Se recomienda formalizar de manera anticipada los contratos de comunicación (API RESTful / OpenAPI) entre la capa de presentación y los servicios web. Establecer estos acuerdos desde la fase de diseño mediante adaptadores de datos simulados (*Mock Adapters*) permite que los miembros del equipo trabajen de forma independiente con una visión compartida, minimizando errores de integración y optimizando los tiempos de entrega en los siguientes ciclos de desarrollo.
+* Se recomienda formalizar de manera anticipada los contratos de comunicación (API RESTful / OpenAPI) entre la capa de presentación y los servicios backend de cada *Bounded Context*. Establecer estos acuerdos desde la fase de diseño y apoyarse inicialmente en adaptadores de datos simulados (*Mock Adapters*) permite validar los flujos de usuario del frontend de manera temprana y preparar una transición ordenada hacia la implementación y conexión de los servicios web en los siguientes Sprints.
 
 ---
 
@@ -183,7 +184,11 @@ Proyecto<br>
 
 Brown, S. (s. f.). *Structurizr - Embedding diagrams*. Structurizr. https://docs.structurizr.com/cloud/embed
 
+Cámara Peruana de la Construcción [CAPECO]. (2025). *Informe Económico de la Construcción (IEC)*. CAPECO. https://www.capeco.org/
+
 Cohn, M. (s. f.). *User stories articles*. Mountain Goat Software. https://www.mountaingoatsoftware.com/blog/tag/user-stories
+
+Dittrich, J. (s. f.). *A beginner’s guide to finding user needs*. https://jdittrich.github.io/userNeedResearchBook/
 
 DZone. (s. f.). *Acceptance criteria in Scrum: Explanation, examples, and template*. https://dzone.com/articles/acceptance-criteria-in-software-explanation-exampl
 
@@ -197,25 +202,28 @@ IBM. (s. f.). *To-be scenario map: Draft a vision of your user’s future experi
 
 Mendel, J. (s. f.). *Seriously, what’s your startup’s problem?* Medium. https://medium.com/@jakemendel/seriously-whats-your-startup-s-problem-b3a884c54ab4
 
+Modern Requirements. (s. f.). *Using a Requirements Traceability Matrix to improve project quality*. https://www.modernrequirements.com/blogs/using-a-requirements-traceability-matrix-to-improve-project-quality/
+
 Nielsen Norman Group. (s. f.). *Empathy mapping: The first step in design thinking*. https://www.nngroup.com/articles/empathy-mapping/
 
 Open Practice Library. (s. f.). *Ubiquitous Language: Unambiguously define the terms and concepts of a business domain*. https://openpracticelibrary.com/practice/ubiquitous-language/
 
+Organismo de Evaluación y Fiscalización Ambiental [OEFA]. (2025). *Fiscalización ambiental en el sector transportes y comunicaciones*. Plataforma Digital Única del Estado Peruano. https://www.gob.pe/oefa
+
 Progressa Lean. (s. f.). *5W+2H - Técnica de análisis de problemas*. https://www.progressalean.com/5w2h-tecnica-de-analisis-de-problemas/
 
+Servicio Nacional de Certificación Ambiental para las Inversiones Sostenibles [SENACE]. (2024). *Registro Nacional de Consultoras Ambientales (RNCA)*. Plataforma Digital Única del Estado Peruano. https://www.gob.pe/senace
+
+Tamim, N. (s. f.). *How to use PlantUML with Markdown*. GitHub Gist. https://gist.github.com/noamtamim/f11982b28602bd7e604c233fbe9d910f
+
 The Markdown Guide. (s. f.). *Markdown Guide*. https://www.markdownguide.org/
+
+UX for the Masses. (s. f.). *A step-by-step guide to scenario mapping*. http://www.uxforthemasses.com/scenario-mapping/
 
 UXPressia. (s. f.). *How to create an Impact Map in 4 easy steps?* https://uxpressia.com/blog/build-impact-map-4-easy-steps
 
 UXPressia. (s. f.). *User vs. Buyer Persona: Differences and free template*. https://uxpressia.com/blog/user-persona-vs-buyer-persona-difference
 
-Dittrich, J. (s. f.). *A beginner’s guide to finding user needs*. https://jdittrich.github.io/userNeedResearchBook/
-
-Modern Requirements. (s. f.). *Using a Requirements Traceability Matrix to improve project quality*. https://www.modernrequirements.com/blogs/using-a-requirements-traceability-matrix-to-improve-project-quality/
-
-Tamim, N. (s. f.). *How to use PlantUML with Markdown*. GitHub Gist. https://gist.github.com/noamtamim/f11982b28602bd7e604c233fbe9d910f
-
-UX for the Masses. (s. f.). *A step-by-step guide to scenario mapping*. http://www.uxforthemasses.com/scenario-mapping/
 
 
 ## [Anexos](#anexos)
@@ -266,4 +274,4 @@ En el siguiente cuadro se describen las acciones realizadas y los enunciados de 
 | Criterio específico | Acciones realizadas | Conclusiones |
 |:---|:---|:---|
 | **Comunica oralmente con efectividad a diferentes rangos de audiencia.** | **Cabrera Sotelo, Camila Celeste**<br>*AV1:* Conducción oral de entrevistas de investigación para el levantamiento de información y análisis de necesidades.<br>*TB1:* Exposición y sustentación oral de los flujos de diseño (Wireflows, UserFlows) y prototipos de interfaz de usuario.<br><br>**Conde Huashuayo, Sebasthian Alex**<br>*AV1:* Facilitación y comunicación en equipo durante el desarrollo del modelo del EventStorming inicial.<br>*TB1:* Realización oral de la entrevista de validación para el segmento 1 y locución/participación activa en el video de presentación técnica.<br><br>**Diaz De La Cruz, Sebastian Gabriel**<br>*AV1:* Conducción oral de 2 entrevistas a usuarios clave y locución en la edición del video explicativo del proyecto.<br>*TB1:* Exposición oral sobre la arquitectura de despliegue (Deploy) del frontend y sustentación de los módulos de Document & Evidence y Reports & Compliance.<br><br>**Montes Chang, Piero Francisco**<br>*AV1:* Ejecución oral de 2 entrevistas directas con el segmento objetivo para extraer requerimientos de dominio.<br>*TB1:* Entrevistas orales de validación y sustentación del flujo de monitoreo ambiental.<br><br>**Pancorbo Amorós, Italo Raul**<br>*AV1:* Ejecución y moderación oral de 2 entrevistas de campo con potenciales usuarios.<br>*TB1:* Presentación oral principal y locución en el video demostrativo del proyecto, detallando los avances del Sprint 2 y la interacción del módulo de incidencias. | En **AV1**, el equipo estableció una comunicación oral fluida con usuarios reales durante las entrevistas de campo para el levantamiento de información. En **TB1**, se fortaleció la comunicación hacia audiencias académicas y clientes mediante la presentación técnica de prototipos y la producción de videos demostrativos, transmitiendo con claridad el valor de la plataforma. |
-| **Comunica por escrito con efectividad a diferentes rangos de audiencia.** | **Cabrera Sotelo, Camila Celeste**<br>*AV1:* Redacción del Needfinding del segmento 1, análisis de entrevistas e implementación técnica de i18n (internacionalización) en la Landing Page.<br>*TB1:* Documentación escrita detallada de Mockups, Wireframes, Wireflows, UserFlows, y desarrollo de código frontend para los Bounded Contexts de *Identity & Access Management* y *Subscription Management*.<br><br>**Conde Huashuayo, Sebasthian Alex**<br>*AV1:* Redacción del Sprint 1, apoyo en la edición del informe general, capturas de mockups y documentación del Capítulo 5.<br>*TB1:* Redacción técnica de correcciones del Capítulo 5, documentación del Bounded Context de *Project Management*, ajustes escritos a la Landing Page y redacción de capítulos de soporte.<br><br>**Diaz De La Cruz, Sebastian Gabriel**<br>*AV1:* Redacción del análisis de 2 entrevistas, actualización de Needfinding y documentación técnica para Landing Page y Mockups mobile.<br>*TB1:* Redacción técnica de correcciones del Capítulo 2 (análisis de entrevistas, Needfinding, diagramas de contenedores y clases), guía escrita del Deploy del frontend y desarrollo frontend de *Document & Evidence* y *Reports & Compliance*.<br><br>**Montes Chang, Piero Francisco**<br>*AV1:* Redacción de la Sección 4.6.1 del informe general, documentación del Design-Level EventStorming (Arquitectura DDD con 8 Bounded Contexts) y análisis escrito de entrevistas.<br>*TB1:* Redacción del informe del proceso de entrevistas y especificación escrita del Bounded Context de *Environmental Monitoring*. <br><br>**Pancorbo Amorós, Italo Raul**<br>*AV1:* Desarrollo escrito del Capítulo I, análisis de competidores, Needfinding del segmento 2, Product Backlog, User Stories y diagramas de clases y ERD.<br>*TB1:* Corrección integral del Lean UX Process en el Capítulo 1, corrección escrita de entrevistas, documentación del frontend de *Incident and Mitigation Management* y reporte del Sprint 2. | La documentación escrita demostró una evolución técnico-formal consistente. En **AV1**, se redactó con precisión la fase de investigación y modelado del negocio. En **TB1**, la comunicación escrita se adaptó a estándares de ingeniería de software, detallando arquitecturas, Bounded Contexts y guías de despliegue. |
+| **Comunica por escrito con efectividad a diferentes rangos de audiencia.** | **Cabrera Sotelo, Camila Celeste**<br>*AV1:* Redacción del Needfinding del segmento 1, análisis de entrevistas e implementación técnica de i18n (internacionalización) en la Landing Page.<br>*TB1:* Documentación escrita detallada de Mockups, Wireframes, Wireflows, UserFlows, y desarrollo de código frontend para los Bounded Contexts de *Identity & Access Management* y *Subscription Management*.<br><br>**Conde Huashuayo, Sebasthian Alex**<br>*AV1:* Redacción del Sprint 1, apoyo en la edición del informe general, capturas de mockups y documentación del Capítulo 5.<br>*TB1:* Redacción técnica de correcciones del Capítulo 5, documentación del Bounded Context de *Project Management*, ajustes escritos a la Landing Page y redacción de capítulos de soporte.<br><br>**Diaz De La Cruz, Sebastian Gabriel**<br>*AV1:* Redacción del análisis de 2 entrevistas, actualización de Needfinding y documentación técnica para Landing Page y Mockups mobile.<br>*TB1:* Redacción técnica de correcciones del Capítulo 2 (análisis de entrevistas, Needfinding, diagramas de contenedores y clases), guía escrita del Deploy del frontend y desarrollo frontend de *Document & Evidence* y *Reports & Compliance*.<br><br>**Montes Chang, Piero Francisco**<br>*AV1:* Redacción de la Sección 4.6.1 del informe general, documentación del Design-Level EventStorming (Arquitectura DDD con 7 Bounded Contexts) y análisis escrito de entrevistas.<br>*TB1:* Redacción del informe del proceso de entrevistas y especificación escrita del Bounded Context de *Environmental Monitoring*. <br><br>**Pancorbo Amorós, Italo Raul**<br>*AV1:* Desarrollo escrito del Capítulo I, análisis de competidores, Needfinding del segmento 2, Product Backlog, User Stories y diagramas de clases y ERD.<br>*TB1:* Corrección integral del Lean UX Process en el Capítulo 1, corrección escrita de entrevistas, documentación del frontend de *Incident and Mitigation Management* y reporte del Sprint 2. | La documentación escrita demostró una evolución técnico-formal consistente. En **AV1**, se redactó con precisión la fase de investigación y modelado del negocio. En **TB1**, la comunicación escrita se adaptó a estándares de ingeniería de software, detallando arquitecturas, Bounded Contexts y guías de despliegue. |
