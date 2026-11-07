@@ -624,103 +624,28 @@ La propuesta busca separar las responsabilidades del sistema en contextos cohere
 ### 4.6.1. Design-Level EventStorming.
 <a id="4-6-1-design-level-eventstorming"></a>
 
-El Design-Level EventStorming profundiza el modelo obtenido en el Big Picture EventStorming y lo refina hasta el nivel de diseño de software: para cada flujo del dominio se identifican los **actores**, los **commands**, los **aggregates** que los atienden, los **domain events** resultantes, las **policies** que automatizan reglas de negocio y los **read models / queries** que alimentan las pantallas. A partir de este modelo se delimitan los siete Bounded Contexts de RoadWatch OS, que son la base de los diagramas de arquitectura (4.6.2 a 4.6.4), de clases (4.7.1) y de base de datos (4.8.1).
-
-El alcance corresponde al MVP: las mediciones se registran de forma manual y no se modelan dispositivos IoT ni pagos.
+El Design-Level EventStorming permite profundizar el modelo identificado previamente en el Big Picture Event Storming y reconocer actores, comandos, eventos, políticas, consultas y posibles Bounded Contexts.
 
 **Global EventStorming Map**
 
 <div align="center">
-  <img src="../assets/images/EventStorming-global.png" alt="RoadWatch OS - Global EventStorming">
-  <br><sub><em>Figura 1. Mapa global del Design-Level EventStorming de RoadWatch OS: los siete Bounded Contexts y sus relaciones (flechas punteadas numeradas 1 a 7).</em></sub>
+  <img src="../assets/images/EventStorming.jpg" alt="RoadWatch Global Event Storming">
 </div>
 
-El mapa global agrupa en un marco cada Bounded Context. Las flechas continuas muestran el flujo dentro de un contexto; las flechas punteadas numeradas, las relaciones entre contextos (queries síncronas, eventos y referencias por ID), explicadas en la leyenda de la figura.
+Durante el refinamiento del Design-Level EventStorming se identificaron siete Bounded Contexts principales para RoadWatch OS:
 
-**EventStorming por Bounded Context**
+- **Identity & Access Management**, responsable de la autenticación, usuarios, roles y permisos.
+- **Subscription Management**, responsable de los planes, suscripciones y límites operativos.
+- **Project Management**, responsable de los proyectos viales y sus puntos de monitoreo.
+- **Environmental Monitoring**, responsable del registro de mediciones, evaluación de umbrales y generación de alertas ambientales.
+- **Incident & Mitigation Management**, responsable del seguimiento de incidencias y acciones de mitigación.
+- **Document & Evidence Management**, responsable de evidencias, documentos normativos y sus versiones.
+- **Reports & Compliance Management**, responsable de reportes, indicadores y evaluación del cumplimiento ambiental.
 
-Cada contexto se detalla en su propio diagrama (actores → commands → aggregates → eventos → policies → read models):
+Estos Bounded Contexts sirven como base para mantener consistencia entre el modelo de dominio, la arquitectura de software, los Class Diagrams y los Database Diagrams.
 
-<div align="center">
-  <img src="../assets/images/BC1-IdentityAccess.png" alt="BC1-IdentityAccess">
-  <br><sub><em>Figura 2. Bounded Context 1 – Identity & Access Management: registro de usuarios, roles, permisos y autenticación.</em></sub>
-</div>
 
-<div align="center">
-  <img src="../assets/images/BC2-Subscription.png" alt="BC2-Subscription">
-  <br><sub><em>Figura 3. Bounded Context 2 – Subscription Management: selección, activación, cambio y cancelación de planes de suscripción.</em></sub>
-</div>
-
-<div align="center">
-  <img src="../assets/images/BC3-ProjectManagement.png" alt="BC3-ProjectManagement">
-  <br><sub><em>Figura 4. Bounded Context 3 – Project Management: proyectos viales, responsables y puntos de monitoreo (con validación de ubicación mediante Maps & Geolocation Service).</em></sub>
-</div>
-
-<div align="center">
-  <img src="../assets/images/BC4-EnvironmentalMonitoring.png" alt="BC4-EnvironmentalMonitoring">
-  <br><sub><em>Figura 5. Bounded Context 4 – Environmental Monitoring: registro de mediciones, evaluación frente a umbrales normativos y generación de alertas.</em></sub>
-</div>
-
-<div align="center">
-  <img src="../assets/images/BC5-IncidentMitigation.png" alt="BC5-IncidentMitigation">
-  <br><sub><em>Figura 6. Bounded Context 5 – Incident & Mitigation Management: ciclo de vida de las incidencias, acciones de mitigación, comentarios y control de vencimiento.</em></sub>
-</div>
-
-<div align="center">
-  <img src="../assets/images/BC6-DocumentEvidence.png" alt="BC6-DocumentEvidence">
-  <br><sub><em>Figura 7. Bounded Context 6 – Document & Evidence Management: evidencias, documentos normativos, versiones y documentos requeridos.</em></sub>
-</div>
-
-<div align="center">
-  <img src="../assets/images/BC7-ReportsCompliance.png" alt="BC7-ReportsCompliance">
-  <br><sub><em>Figura 8. Bounded Context 7 – Reports & Compliance Management: reportes de auditoría, indicadores ambientales y evaluación del cumplimiento.</em></sub>
-</div>
-
-**Leyenda de elementos aplicados**
-
-| Elemento | Color | Significado |
-| :--- | :--- | :--- |
-| Actor / Rol | Amarillo | Quien ejecuta la acción (Admin, Project Manager, Environmental Officer, Auditor). |
-| Command | Azul | Intención o acción que se solicita al sistema. |
-| Aggregate | Amarillo claro con borde oscuro | Raíz de consistencia que valida el command y emite el evento. |
-| Domain Event | Naranja | Hecho relevante que ya ocurrió en el dominio. |
-| Policy | Morado | Regla de negocio o automatización que reacciona a un evento o a una consulta. |
-| Read Model / Query | Verde | Datos proyectados para las pantallas de la aplicación. |
-| Sistema externo | Rosado | Servicio fuera de RoadWatch OS (Maps & Geolocation Service). |
-| Dependencia con otro contexto | Borde rojo discontinuo | Policy que depende de otro Bounded Context. |
-
-#### Bounded Contexts identificados
-
-| # | Bounded Context | Responsabilidad | Aggregates | Commands principales | Domain Events principales | Read models / Queries |
-| :-- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | **Identity & Access Management** | Autenticación, usuarios, roles y permisos (RBAC). | `User` (root), `Role` ◆ `Permission`, `AuthToken` | Register User, Assign Role, Grant Permission to Role, Authenticate, Deactivate User | User Registered, Role Assigned, Permission Granted, Session Token Issued, User Deactivated | User Management Dashboard, Roles & Permissions Matrix |
-| 2 | **Subscription Management** | Planes, suscripciones y límites operativos por cuenta. | `Subscription` (root) → `Plan` | Select Plan, Activate Subscription, Change Plan, Cancel Subscription | Plan Selected, Subscription Activated, Plan Changed, Subscription Cancelled | Plan Catalog, Current Plan & Quota Usage |
-| 3 | **Project Management** | Proyectos viales, responsables y puntos de monitoreo. | `Project` (root) ◆ `MonitoringPoint` | Create Road Project, Assign Responsible, Define Monitoring Point, Update Point Location / Threshold, Archive Project | Road Project Created, Responsible Assigned, Monitoring Point Defined, Monitoring Point Updated, Project Archived | Project Portfolio, Project Detail, Monitoring Points Map |
-| 4 | **Environmental Monitoring** | Registro de mediciones, evaluación frente a umbrales normativos y alertas. | `EnvironmentalMeasurement` (root) → `EnvironmentalAlert`, `NormativeThreshold` | Register Environmental Measurement, Evaluate Measurement, Generate Alert, Acknowledge Alert, Configure Normative Threshold | Measurement Registered, Measurement Classified, Environmental Alert Generated, Alert Acknowledged, Threshold Updated | Monitoring Dashboard, Measurement History, Alert Center |
-| 5 | **Incident & Mitigation Management** | Ciclo de vida de las incidencias y sus acciones de mitigación. | `EnvironmentalIncident` (root) ◆ `MitigationAction`, `IncidentComment`, `IncidentStatusHistory` | Create Environmental Incident, Register Mitigation Action, Add Comment, Change Incident Status, Mark Overdue | Environmental Incident Created, Mitigation Action Registered, Comment Added, Incident Status Changed, Incident Marked Overdue | Incident Kanban Board, Critical Incidents Table, Incident Detail & Status History |
-| 6 | **Document & Evidence Management** | Evidencias, documentos normativos, versiones y documentos requeridos. | `Evidence`, `NormativeDocument` (root) ◆ `DocumentVersion`, `RequiredDocument` | Upload Evidence, Create Normative Document, Upload New Version, Define Required Document, Mark Document Missing | Evidence Uploaded, Normative Document Created, Document Version Uploaded, Required Document Defined, Document Marked Missing | Evidence Library, Normative Documents & Versions, Required Documents Checklist |
-| 7 | **Reports & Compliance Management** | Reportes de auditoría, indicadores y evaluación del cumplimiento. | `AuditReport` (root), `EnvironmentalKpi`, `ComplianceSummary` | Request Audit Report, Generate Audit Report, Recalculate KPIs, Recalculate Compliance | Audit Report Requested, Audit Report Generated / Failed, KPIs Recalculated, Compliance Calculated | Compliance Scorecard, Environmental KPI Panel, Audit Report History |
-
-#### Coreografía entre Bounded Contexts
-
-Los contextos no comparten modelos: se relacionan únicamente mediante identificadores, consultas controladas o eventos de dominio.
-
-| Relación | Tipo | Descripción |
-| :--- | :--- | :--- |
-| Subscription → Identity & Access | Query (síncrona) | `validateUserQuota` antes de registrar un usuario (*User Quota Policy*). |
-| Subscription → Project Management | Query (síncrona) | `validateProjectQuota` antes de crear un proyecto (*Project Quota Policy*). |
-| Project Management → Environmental Monitoring | Referencia por ID | Cada medición guarda el `monitoringPointId` de un punto que pertenece al aggregate `Project`. |
-| Environmental Monitoring → Incident & Mitigation | Evento (asíncrono) | *Environmental Alert Generated* dispara la *Auto-Incident Generation Policy*. |
-| Document & Evidence → Incident & Mitigation | Query (síncrona) | La *Evidence Required Policy* verifica que exista evidencia antes de cambiar el estado de cierre de la incidencia. |
-| Environmental Monitoring / Incident → Reports & Compliance | Evento (asíncrono) | *Measurement Classified* e *Incident Status Changed* alimentan la *KPI Projection Policy*. |
-| Environmental Monitoring / Document & Evidence → Reports & Compliance | Evento (asíncrono) | *Measurement Classified* y *Document Version Uploaded* alimentan la *Compliance Projection Policy*. |
-| Identity & Access → todos los contextos | Token JWT | *Role Assigned* determina qué comandos puede ejecutar cada rol (*Access Control Policy*). |
-
-#### Decisiones de diseño
-
-- **Los puntos de monitoreo pertenecen a Project Management.** `MonitoringPoint` es una entidad dentro del aggregate `Project`. Environmental Monitoring solo los referencia por identificador.
-- **Reports & Compliance no duplica lógica operativa.** Consume eventos de otros contextos y mantiene sus propios indicadores (`EnvironmentalKpi`, `ComplianceSummary`).
-- **Fuera del alcance del MVP:** gestión de dispositivos y sensores IoT, pagos, escaneo de virus y retención de documentos.### 4.6.2. Software Architecture Context Diagram.
+### 4.6.2. Software Architecture Context Diagram.
 <a id="4-6-2-software-architecture-context-diagram"></a>
 
 El Context Diagram representa a RoadWatch OS como sistema central y muestra a los usuarios y sistemas externos con los que interactúa.
