@@ -832,171 +832,87 @@ Cada uno de los siete Bounded Contexts sigue internamente una **arquitectura en 
 ## 4.7. Software Object-Oriented Design.
 <a id="4-7-software-object-oriented-design"></a>
 
-En este punto, expondremos los diagramas de clases, cuya finalidad sería brindar la representación a detalle de la estructura parametrizada, orientada a objetos, con respecto a cada uno de los **Bounded Contexts** que tenemos incluidos dentro de RoadWatch.
+Esta sección presenta los diagramas de clases utilizados para representar con mayor detalle la estructura orientada a objetos de cada uno de los **siete Bounded Contexts** de RoadWatch OS.
 
-El diseño orientado a objetos de **RoadWatch OS** materializa en clases, interfaces y enumeraciones el modelo de dominio obtenido en el **Design-Level EventStorming (4.6.1)** y la estructura modular definida en el **Component Diagram (4.6.4)**.
-
-Para preservar el bajo acoplamiento y la alta cohesión entre los **siete Bounded Contexts**, el diseño aplica los patrones tácticos de *Domain-Driven Design (DDD)*:
-
-- **Aggregate Roots y Entidades Internas:** Cada raíz de agregado (`User`, `Subscription`, `Project`, `EnvironmentalMeasurement`, `EnvironmentalIncident`, `NormativeDocument`, `AuditReport`) controla el ciclo de vida y las invariantes de sus entidades internas mediante relaciones de composición (`◆`).
-- **Referencias entre Contextos por Identificador (ID):** Siguiendo la coreografía definida en el EventStorming, los agregados de distintos Bounded Contexts no mantienen referencias directas a objetos de otros contextos; en su lugar, almacenan únicamente identificadores inmutables (`accountId`, `projectId`, `responsibleUserId`, `monitoringPointId`, `normativeThresholdId`, `measurementId`, `incidentId`).
-- **Servicios y Repositorios:** Los servicios encapsulan la lógica de coordinación, evaluación normativa y políticas de negocio, apoyándose en interfaces de repositorio para desacoplar el dominio de la persistencia relacional.
+Los diagramas mantienen consistencia directa con el Component Diagram definido en la arquitectura y representan las clases de dominio, servicios de aplicación, interfaces de repositorio, enumeraciones, atributos, métodos, visibilidad y multiplicidades correspondientes (destacando que en *Project Management* la entidad `MonitoringPoint` mantiene únicamente una clave de referencia `normativeThresholdId` hacia la configuración normativa gobernada por *Environmental Monitoring*).
 
 ### 4.7.1. Class Diagrams.
 <a id="4-7-1-class-diagrams"></a>
 
-A continuación se detallan los diagramas de clases correspondientes a cada uno de los siete Bounded Contexts de RoadWatch OS, especificando sus agregados, entidades, objetos de valor/enumeraciones, servicios y contratos de persistencia.
+A continuación se presentan los Class Diagrams correspondientes a los siete Bounded Contexts definidos para RoadWatch OS. Estos diagramas detallan las principales clases, interfaces, enumeraciones, atributos, métodos y relaciones que permiten representar las responsabilidades de cada contexto.
 
-#### 1. Bounded Context – Identity & Access Management
+### Bounded Context - Identity & Access Management
 
-Modela el control de acceso basado en roles (*RBAC*) y la autenticación mediante tokens JWT. El agregado raíz `User` gestiona el estado de la cuenta (`UserStatus`) y la asignación de roles (`Role`), los cuales agrupan permisos granulares (`Permission`). `AuthenticationService` coordina la verificación de credenciales a través de `PasswordEncoder` y la emisión/validación de sesiones con `JwtTokenProvider` (`AuthToken`), mientras que `UserService` y `RoleService` administran el ciclo de vida de usuarios y permisos apoyándose en `UserRepository`, `RoleRepository` y `PermissionRepository`.
+![Class Diagram - Identity and Access](../assets/images/CD-IdentityandAccess.png)
 
-<div align="center">
-  <img src="..\assets\images\plantuml-diagram.png">
-  <br><sub><em>Figura 12. Diagrama de clases del Bounded Context 1 – Identity & Access Management.</em></sub>
-</div>
+### Bounded Context - Subscription Management
 
-#### 2. Bounded Context – Subscription Management
+![Class Diagram - Subscription Management](../assets/images/CD-SubscriptionManagement.png)
 
-Representa la gestión de planes comerciales y el control de cuotas operativas por cuenta (`accountId`). El agregado raíz `Subscription` controla su estado (`SubscriptionStatus`) y referencia al `Plan` contratado (`PlanType`: `BASE`, `PROFESSIONAL`, `ENTERPRISE`), donde se definen los límites `maxProjects` y `maxUsers`. `SubscriptionService` implementa los métodos `validateProjectQuota` y `validateUserQuota`, los cuales son consultados síncronamente por *Project Management* e *Identity & Access Management* para hacer cumplir las políticas de cuota antes de registrar nuevos recursos.
+### Bounded Context - Project Management
 
-<div align="center">
-  <img src="../assets/images/CD-SubscriptionManagement.png" alt="Class Diagram - Subscription Management">
-  <br><sub><em>Figura 13. Diagrama de clases del Bounded Context 2 – Subscription Management.</em></sub>
-</div>
+![Class Diagram - Project Management](../assets/images/CD-ProjectManagement.png)
 
-#### 3. Bounded Context – Project Management
+### Bounded Context - Environmental Monitoring
 
-Encapsula la gestión de proyectos viales y sus ubicaciones de control ambiental. El agregado raíz `Project` compone (`1` a `0..*`) las entidades `MonitoringPoint` y mantiene referencias por ID hacia el usuario responsable (`responsibleUserId`). Cada `MonitoringPoint` almacena sus coordenadas geográficas (`latitude`, `longitude`) y la referencia `normativeThresholdId` hacia el umbral aplicable. `ProjectService` y `MonitoringPointService` gestionan las operaciones del contexto, apoyándose en `GeolocationService` para validar las ubicaciones con el servicio externo de mapas.
+![Class Diagram - Environmental Monitoring](../assets/images/CD-EnvironmentalMonitoring.png)
 
-<div align="center">
-  <img src="..\assets\images\plantuml-diagram (1).png">
-  <br><sub><em>Figura 14. Diagrama de clases del Bounded Context 3 – Project Management.</em></sub>
-</div>
+### Bounded Context - Incident & Mitigation Management
 
-#### 4. Bounded Context – Environmental Monitoring
+![Class Diagram - Incident and Mitigation](../assets/images/CD-IncidentandMitigation.png)
 
-Gestiona la captura manual de mediciones ambientales (`AIR`, `NOISE`, `WATER`), su contraste frente a los parámetros normativos y la emisión de alertas. Al registrarse una medición en `MeasurementService`, `ThresholdEvaluationService` evalúa el valor de `EnvironmentalMeasurement` contra los límites (`warningLimit`, `maximumLimit`) definidos en `NormativeThreshold`, asignando el estado `COMPLIANT`, `WARNING` o `NON_COMPLIANT`. Cuando se detecta un incumplimiento o advertencia, `AlertService` genera la entidad `EnvironmentalAlert` asociada.
+### Bounded Context - Document & Evidence Management
 
-<div align="center">
-  <img src="..\assets\images\plantuml-diagram (2).png" alt="Class Diagram - Environmental Monitoring">
-  <br><sub><em>Figura 15. Diagrama de clases del Bounded Context 4 – Environmental Monitoring.</em></sub>
-</div>
+![Class Diagram - Document and Evidence](../assets/images/CD-DocumentandEvidence.png)
 
-#### 5. Bounded Context – Incident & Mitigation Management
+### Bounded Context - Reports & Compliance Management
 
-Gobierna el ciclo de vida de las incidencias ambientales originadas a partir de alertas críticas o desviaciones en campo. El agregado raíz `EnvironmentalIncident` clasifica la severidad (`IncidentSeverity`: `LOW`, `MEDIUM`, `HIGH`, `CRITICAL`) y el estado en el flujo Kanban (`IncidentStatus`: `OPEN`, `IN_PROGRESS`, `RESOLVED`, `CLOSED`, `OVERDUE`), componiendo internamente las acciones correctivas (`MitigationAction`), los comentarios de seguimiento (`IncidentComment`) y la trazabilidad de cambios de estado (`IncidentStatusHistory`).
-
-<div align="center">
-  <img src="../assets/images/CD-IncidentandMitigation.png" alt="Class Diagram - Incident and Mitigation">
-  <br><sub><em>Figura 16. Diagrama de clases del Bounded Context 5 – Incident & Mitigation Management.</em></sub>
-</div>
-
-#### 6. Bounded Context – Document & Evidence Management
-
-Centraliza los respaldos probatorios de campo y la documentación regulatoria de los proyectos. El agregado `Evidence` vincula archivos y fotografías a mediciones (`measurementId`) o incidencias (`incidentId`), permitiendo validar la política de evidencia obligatoria antes del cierre de una incidencia. Por su parte, el agregado raíz `NormativeDocument` compone su historial de versiones (`DocumentVersion` de `1` a `1..*`) y `RequiredDocument` define la lista de verificación documental exigible por hito del proyecto.
-
-<div align="center">
-  <img src="../assets/images/CD-DocumentandEvidence.png" alt="Class Diagram - Document and Evidence">
-  <br><sub><em>Figura 17. Diagrama de clases del Bounded Context 6 – Document & Evidence Management.</em></sub>
-</div>
-
-#### 7. Bounded Context – Reports & Compliance Management
-
-Consolida las proyecciones de cumplimiento ambiental, indicadores de desempeño y reportes de auditoría sin duplicar la lógica operativa de los demás contextos. `KpiService` y `ComplianceService` calculan y actualizan los agregados `EnvironmentalKpi` y `ComplianceSummary` a partir de las mediciones clasificadas, incidencias y documentos validados. `ReportService` gestiona la solicitud y generación de `AuditReport` (`REQUESTED`, `GENERATED`, `FAILED`), apoyándose en `PdfExportService` para la exportación del documento final.
-
-<div align="center">
-  <img src="..\assets\images\plantuml-diagram (3).png">
-  <br><sub><em>Figura 18. Diagrama de clases del Bounded Context 7 – Reports & Compliance Management.</em></sub>
-</div>
-
-#### Síntesis de Clases por Bounded Context
-
-| # | Bounded Context | Clases de Dominio (Aggregates / Entities) | Enumeraciones | Servicios | Interfaces de Repositorio |
-| :-- | :--- | :--- | :--- | :--- | :--- |
-| 1 | **Identity & Access Management** | `User`, `Role`, `Permission`, `AuthToken` | `UserStatus`, `RoleType` | `AuthenticationService`, `UserService`, `RoleService`, `PasswordEncoder`, `JwtTokenProvider` | `UserRepository`, `RoleRepository`, `PermissionRepository` |
-| 2 | **Subscription Management** | `Subscription`, `Plan` | `SubscriptionStatus`, `PlanType` | `SubscriptionService`, `PlanService` | `SubscriptionRepository`, `PlanRepository` |
-| 3 | **Project Management** | `Project`, `MonitoringPoint` | `ProjectStatus` | `ProjectService`, `MonitoringPointService`, `GeolocationService` | `ProjectRepository`, `MonitoringPointRepository` |
-| 4 | **Environmental Monitoring** | `EnvironmentalMeasurement`, `NormativeThreshold`, `EnvironmentalAlert` | `IndicatorType`, `MeasurementStatus` | `MeasurementService`, `ThresholdEvaluationService`, `AlertService` | `MeasurementRepository`, `ThresholdRepository`, `AlertRepository` |
-| 5 | **Incident & Mitigation Management** | `EnvironmentalIncident`, `MitigationAction`, `IncidentComment`, `IncidentStatusHistory` | `IncidentStatus`, `IncidentSeverity` | `IncidentService`, `MitigationService`, `CommentService` | `IncidentRepository`, `MitigationRepository`, `CommentRepository`, `IncidentStatusHistoryRepository` |
-| 6 | **Document & Evidence Management** | `Evidence`, `NormativeDocument`, `DocumentVersion`, `RequiredDocument` | `DocumentStatus` | `EvidenceService`, `DocumentService`, `RequiredDocumentService` | `EvidenceRepository`, `DocumentRepository`, `DocumentVersionRepository`, `RequiredDocumentRepository` |
-| 7 | **Reports & Compliance Management** | `AuditReport`, `EnvironmentalKpi`, `ComplianceSummary` | `ReportStatus` | `ReportService`, `KpiService`, `ComplianceService`, `PdfExportService` | `AuditReportRepository`, `EnvironmentalKpiRepository`, `ComplianceSummaryRepository` |
+![Class Diagram - Reports and Compliance](../assets/images/CD-ReportsandCompliance.png)
 
 ## 4.8. Database Design.
 <a id="4-8-database-design"></a>
 
-El diseño de base de datos relacional de **RoadWatch OS** traduce el modelo de clases de los siete Bounded Contexts en esquemas físicos normalizados, garantizando la integridad referencial dentro de cada contexto y la trazabilidad histórica exigida para la supervisión ambiental.
+El diseño de base de datos de RoadWatch OS se organiza de acuerdo con los siete Bounded Contexts definidos para la solución, manteniendo la integridad de los datos y el registro histórico necesario para el seguimiento ambiental de los proyectos:
 
-#### Criterios de diseño relacional aplicados
+- **Identity & Access Management**
+- **Subscription Management**
+- **Project Management**
+- **Environmental Monitoring**
+- **Incident & Mitigation Management**
+- **Document & Evidence Management**
+- **Reports & Compliance Management**
 
-- **Aislamiento de esquemas por Bounded Context:** Las claves foráneas (`«FK»`) con restricción física se establecen únicamente entre tablas que pertenecen al mismo Bounded Context (por ejemplo, `monitoring_points.project_id` hacia `projects.id` o `mitigation_actions.incident_id` hacia `environmental_incidents.id`).
-- **Desacoplamiento entre contextos mediante IDs lógicos:** Las referencias hacia entidades gobernadas por otros Bounded Contexts (como `account_id`, `responsible_user_id`, `normative_threshold_id`, `monitoring_point_id` o `measurement_id`) se almacenan como columnas `BIGINT` indexadas sin acoplar tablas mediante claves foráneas inter-contexto, respetando la autonomía de cada módulo DDD.
-- **Convención de nombres y tipos de datos:** Se emplea nomenclatura `snake_case` en plural para las tablas, identificadores surrogados `BIGINT «PK»`, tipos `DECIMAL` de precisión exacta para coordenadas geográficas, mediciones y porcentajes de cumplimiento, `VARCHAR` para estados basados en enumeraciones y marcas de tiempo `TIMESTAMP` para auditoría (`created_at`, `updated_at`, `calculated_at`).
+El diseño relacional aplica claves primarias (`PK`), claves foráneas (`FK`), tipos de datos, restricciones de integridad y relaciones consistentes con los modelos de dominio de cada contexto.
 
 ### 4.8.1. Database Diagrams.
 <a id="4-8-1-database-diagrams"></a>
 
-A continuación se presentan los diagramas Entidad-Relación (ERD) correspondientes a cada uno de los siete Bounded Contexts de RoadWatch OS.
+Los Database Diagrams representan las estructuras persistentes correspondientes a cada Bounded Context. En ellos se especifican las tablas, columnas, claves primarias, claves foráneas, restricciones y relaciones necesarias para mantener la integridad de la información de RoadWatch OS.
 
-#### 1. Bounded Context – Identity & Access Management
+### Bounded Context - Identity & Access Management
 
-Comprende las tablas principales `users`, `roles` y `permissions`, vinculadas a través de las tablas intermedias `user_roles` (`user_id`, `role_id`) y `role_permissions` (`role_id`, `permission_id`) con claves primarias compuestas (`«PK, FK»`) para resolver las relaciones muchos a muchos. El objeto `AuthToken` no requiere tabla física al manejarse mediante tokens JWT stateless.
+![Database Diagram - Identity and Access](../assets/images/BC1ERD.png)
 
-<div align="center">
-  <img src="../assets/images/BC1ERD.png" alt="Database Diagram - Identity and Access">
-  <br><sub><em>Figura 19. Diagrama de base de datos del Bounded Context 1 – Identity & Access Management.</em></sub>
-</div>
+### Bounded Context - Subscription Management
 
-#### 2. Bounded Context – Subscription Management
+![Database Diagram - Subscription Management](../assets/images/BC2ERD.png)
 
-Estructura el catálogo de planes en la tabla `plans` (`max_projects`, `max_users`, `active`) y el registro de suscripciones por cuenta en la tabla `subscriptions`, vinculadas mediante la clave foránea `plan_id «FK, NOT NULL»` en una relación uno a muchos (`defines`).
+### Bounded Context - Project Management
 
-<div align="center">
-  <img src="../assets/images/BC2ERD.png" alt="Database Diagram - Subscription Management">
-  <br><sub><em>Figura 20. Diagrama de base de datos del Bounded Context 2 – Subscription Management.</em></sub>
-</div>
+![Database Diagram - Project Management](../assets/images/BC3ERD.png)
 
-#### 3. Bounded Context – Project Management
+### Bounded Context - Environmental Monitoring
 
-Almacena los proyectos viales en la tabla `projects` y sus puntos de control en `monitoring_points`, relacionados mediante `project_id «FK, NOT NULL»` (`contains`). Las coordenadas geográficas (`latitude`, `longitude`) se persisten como `DECIMAL «NOT NULL»` y el umbral asignado se referencia lógicamente mediante `normative_threshold_id`.
+![Database Diagram - Environmental Monitoring](../assets/images/BC4ERD.png)
 
-<div align="center">
-  <img src="../assets/images/BC3ERD.png" alt="Database Diagram - Project Management">
-  <br><sub><em>Figura 21. Diagrama de base de datos del Bounded Context 3 – Project Management.</em></sub>
-</div>
+### Bounded Context - Incident & Mitigation Management
 
-#### 4. Bounded Context – Environmental Monitoring
+![Database Diagram - Incident and Mitigation](../assets/images/BC5ERD.png)
 
-Persiste los parámetros regulatorios en `normative_thresholds` (`indicator_type`, `warning_limit`, `maximum_limit`, `unit`), los registros de campo en `environmental_measurements` (`monitoring_point_id`, `indicator_type`, `value`, `measured_at`, `status`) y las alertas generadas en `environmental_alerts`, vinculada a la medición origen mediante la clave foránea `measurement_id «FK, NOT NULL»`.
+### Bounded Context - Document & Evidence Management
 
-<div align="center">
-  <img src="..\assets\images\DatabaseEnvironmentalMonitoring.png">
-  <br><sub><em>Figura 22. Diagrama de base de datos del Bounded Context 4 – Environmental Monitoring.</em></sub>
-</div>
+![Database Diagram - Document and Evidence](../assets/images/BC6ERD.png)
 
-#### 5. Bounded Context – Incident & Mitigation Management
+### Bounded Context - Reports & Compliance Management
 
-Tiene como tabla central a `environmental_incidents`, de la cual dependen mediante relación uno a muchos (`incident_id «FK, NOT NULL»`) las tablas `mitigation_actions` (acciones correctivas y fechas de cumplimiento), `incident_comments` (observaciones de seguimiento) e `incident_status_history` (bitácora inmutable de transiciones entre estados).
-
-<div align="center">
-  <img src="../assets/images/BC5ERD.png" alt="Database Diagram - Incident and Mitigation">
-  <br><sub><em>Figura 23. Diagrama de base de datos del Bounded Context 5 – Incident & Mitigation Management.</em></sub>
-</div>
-
-#### 6. Bounded Context – Document & Evidence Management
-
-Organiza los documentos regulatorios en `normative_documents` y su historial en `document_versions` (`document_id «FK, NOT NULL»`), aplicando una restricción de unicidad compuesta (`UNIQUE: document_id + version_number`). De forma complementaria, la tabla `evidences` registra los archivos probatorios asociados a incidencias o mediciones, y `required_documents` almacena los requisitos documentales por hito del proyecto.
-
-<div align="center">
-  <img src="../assets/images/BC6ERD.png" alt="Database Diagram - Document and Evidence">
-  <br><sub><em>Figura 24. Diagrama de base de datos del Bounded Context 6 – Document & Evidence Management.</em></sub>
-</div>
-
-#### 7. Bounded Context – Reports & Compliance Management
-
-Persiste las proyecciones analíticas y los reportes generados por proyecto (`project_id`) en tres tablas desacopladas: `audit_reports` (estado de generación y URL del archivo exportado), `environmental_kpis` (porcentaje de cumplimiento, tiempo promedio de resolución e incidencias abiertas/críticas) y `compliance_summaries` (conteo de mediciones conformes y no conformes).
-
-<div align="center">
-  <img src="../assets/images/BC7ERD.png" alt="Database Diagram - Reports and Compliance">
-  <br><sub><em>Figura 25. Diagrama de base de datos del Bounded Context 7 – Reports & Compliance Management.</em></sub>
-</div>
+![Database Diagram - Reports and Compliance](../assets/images/BC7ERD.png)
