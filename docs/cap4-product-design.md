@@ -802,32 +802,117 @@ La Web Application no accede directamente a la base de datos; todas las operacio
 ### 4.6.4. Software Architecture Components Diagrams.
 <a id="4-6-4-software-architecture-components-diagrams"></a>
 
-El Component Diagram descompone internamente el contenedor **RESTful API** de **RoadWatch OS**, mostrando cómo se organiza la lógica del backend en **7 módulos de Bounded Context** independientes y cohesivos, además de detallar la arquitectura interna por capas que aplica cada contexto.
+El Component Diagram descompone el contenedor **RESTful API** de **RoadWatch OS**. Muestra cómo se organiza la lógica del backend en **7 módulos**, uno por cada Bounded Context identificado en el Design-Level EventStorming (4.6.1), y detalla los componentes internos de cada módulo. Las relaciones entre módulos son las mismas de la coreografía definida en 4.6.1: consultas síncronas a través de fachadas, referencias por identificador y domain events publicados en un bus interno.
 
 #### Justificación de la descomposición del contenedor RESTful API
 
-Se descomponen los componentes del contenedor **RESTful API** debido a que concentra las reglas de negocio, las políticas de validación normativa, el control de acceso y la orquestación de datos entre la **Web Application**, la **Relational Database** y el **Servicio de Mapas y Geolocalización**.
+Se descompone el contenedor **RESTful API** porque concentra las reglas de negocio, las políticas de validación normativa, el control de acceso y la orquestación de datos entre la **Web Application**, la **Database** y el **Servicio de Mapas y Geolocalización**.
 
 Cada uno de los siete Bounded Contexts sigue internamente una **arquitectura en capas orientada al dominio (DDD Layered Architecture)** compuesta por cuatro niveles:
 
-1. **Interfaces Layer (`REST Controllers` & `Assemblers`):** Expone los endpoints RESTful (`HTTPS/JSON`), valida las peticiones entrantes de la Web Application y transforma entidades de dominio en *Resources / DTOs*.
-2. **Application Layer (`Command Services`, `Query Services` & `Outbounded Context Facades / ACL`):** Coordina los casos de uso del contexto, procesa comandos y consultas, y gestiona la comunicación controlada con otros Bounded Contexts cuando un flujo transversal lo requiere.
-3. **Domain Layer (`Aggregates`, `Entities`, `Value Objects`, `Domain Services` & `Repository Interfaces`):** Encapsula las reglas de negocio invariantes (como la comparación de mediciones contra umbrales normativos, el cambio de estado de incidencias o la validación de cuotas de suscripción).
-4. **Infrastructure Layer (`JPA Repositories` & `External Adapters`):** Implementa la persistencia relacional mediante **Spring Data JPA** hacia la base de datos y los adaptadores hacia servicios externos (como geolocalización y seguridad JWT).
+1. **Interfaces Layer (`REST Controllers`, `Event Listeners` y `Schedulers`):** Expone los endpoints RESTful (`HTTPS/JSON`) que consume la Web Application, recibe los domain events de otros contextos y ejecuta las políticas programadas (como el control de vencimiento de incidencias).
+2. **Application Layer (`Services`, `Context Facades` y `ACL Clients`):** Coordina los casos de uso del contexto (los *commands* del EventStorming). Las *Context Facades* exponen a otros módulos solo las consultas permitidas y los *ACL Clients* traducen las consultas que el módulo necesita de otro contexto, sin compartir su modelo.
+3. **Domain Layer (`Aggregates`, `Entities`, `Value Objects` y `Repository Interfaces`):** Encapsula las reglas de negocio invariantes, como la clasificación de mediciones frente a umbrales normativos, las transiciones de estado de incidencias o la validación de cuotas de suscripción.
+4. **Infrastructure Layer (`JPA Repositories` y `External Adapters`):** Implementa la persistencia relacional mediante **Spring Data JPA** y los adaptadores técnicos (`JwtTokenProvider`, `PasswordEncoder`, `GeolocationClientAdapter`, `PdfExportService`).
+
+La comunicación asíncrona entre contextos se realiza mediante el **Domain Event Bus** (`ApplicationEventPublisher` de Spring). Así, *Reports & Compliance* proyecta sus indicadores a partir de eventos y no consulta directamente los datos operativos de otros módulos.
+
+**Component Diagram del contenedor RESTful API**
+
+<div align="center">
+  <img src="../assets/images/chapter4/components/c4-component-restful-api.png" alt="C4 Component Diagram - RoadWatch OS RESTful API">
+  <br><sub><em>Figura 11. Component Diagram del contenedor RESTful API: los 7 módulos de Bounded Context, el Domain Event Bus y sus relaciones con la Web Application, la Database y el Servicio de Mapas y Geolocalización.</em></sub>
+</div>
+
+#### Relaciones entre módulos
+
+| Relación (4.6.1) | Componente origen | Componente destino | Mecanismo |
+| :--- | :--- | :--- | :--- |
+| Subscription → Identity & Access | `SubscriptionQuotaClient` (IAM) | `SubscriptionContextFacade` | Llamada interna síncrona `validateUserQuota` (*User Quota Policy*). |
+| Subscription → Project Management | `SubscriptionQuotaClient` (Project) | `SubscriptionContextFacade` | Llamada interna síncrona `validateProjectQuota` (*Project Quota Policy*). |
+| Project Management → Environmental Monitoring | `ProjectPointClient` (Monitoring) | `ProjectContextFacade` | Validación del `monitoringPointId`; la medición solo guarda el identificador. |
+| Environmental Monitoring → Incident & Mitigation | `AlertService` | `AutoIncidentGenerationPolicy` | Evento *Environmental Alert Generated* vía Domain Event Bus. |
+| Document & Evidence → Incident & Mitigation | `EvidenceClient` (Incident) | `EvidenceContextFacade` | Llamada interna síncrona `hasEvidenceForIncident` (*Evidence Required Policy*). |
+| Monitoring / Incident / Document → Reports & Compliance | `ThresholdEvaluationService`, `IncidentService`, `DocumentService` | `ReportingEventHandler` | Eventos *Measurement Classified*, *Incident Status Changed* y *Document Version Uploaded* (*KPI* y *Compliance Projection Policies*). |
+| Identity & Access → todos los contextos | `JwtAuthenticationFilter` | Controladores de los 7 módulos | Validación del token JWT en cada petición (*Access Control Policy*). |
+| Project Management → Servicio de Mapas | `GeolocationClientAdapter` | Servicio de Mapas y Geolocalización | `HTTPS/JSON` (*Geo-validation Policy*). |
 
 #### Especificación de Componentes Internos por Bounded Context
 
-| Bounded Context (Módulo) | Controladores REST (`Interfaces`) | Servicios de Aplicación y Dominio (`Application / Domain`) | Repositorios y Adaptadores (`Infrastructure`) | Interacciones con otros Contextos / Sistemas |
+| Bounded Context (Módulo) | Interfaces | Application | Infrastructure | Interacciones con otros Contextos / Sistemas |
 | :--- | :--- | :--- | :--- | :--- |
-| **1. Identity & Access Management** | `AuthController`<br>`UserController`<br>`RoleController` | `AuthenticationService` (emisión y validación de sesiones)<br>`UserService` (registro, estado y asignación de roles)<br>`RoleService` (gestión de roles y permisos RBAC) | `UserRepository`<br>`RoleRepository`<br>`PermissionRepository`<br>`PasswordEncoder`<br>`JwtTokenProvider` | Consulta `validateUserQuota` en *Subscription Management* (*User Quota Policy*) y provee validación JWT transversal (*Access Control Policy*). |
-| **2. Subscription Management** | `SubscriptionController`<br>`PlanController` | `SubscriptionService` (selección, activación, cambio, cancelación y validación de cuotas)<br>`PlanService` (consulta de catálogo de planes) | `SubscriptionRepository`<br>`PlanRepository` | Es consultado síncronamente por *Identity & Access* y *Project Management* para verificar límites de usuarios y proyectos por plan. |
-| **3. Project Management** | `ProjectController`<br>`MonitoringPointController` | `ProjectService` (ciclo de vida de obras viales y asignación de responsables)<br>`MonitoringPointService` (definición y actualización de puntos de monitoreo) | `ProjectRepository`<br>`MonitoringPointRepository`<br>`GeolocationClientAdapter` | Verifica límites de suscripción en *Subscription Management* (*Project Quota Policy*) y consulta coordenadas en el *Servicio de Mapas y Geolocalización*. |
-| **4. Environmental Monitoring** | `MeasurementController`<br>`ThresholdController`<br>`AlertController` | `MeasurementService` (registro y consulta histórica de aire, ruido y agua)<br>`ThresholdEvaluationService` (evaluación frente a umbrales y configuración normativa)<br>`AlertService` (generación y reconocimiento de alertas) | `MeasurementRepository`<br>`ThresholdRepository`<br>`AlertRepository` | Verifica puntos de monitoreo en *Project Management* y dispara la creación de incidencias en *Incident & Mitigation* ante incumplimientos. |
-| **5. Incident & Mitigation Management** | `IncidentController`<br>`MitigationActionController`<br>`IncidentCommentController` | `IncidentService` (ciclo de vida de incidencias y control de vencimientos)<br>`MitigationService` (registro y cierre de acciones correctivas)<br>`CommentService` (gestión de comentarios) | `IncidentRepository`<br>`MitigationRepository`<br>`CommentRepository`<br>`IncidentStatusHistoryRepository` | Recibe alertas desde *Environmental Monitoring* (*Auto-Incident Generation Policy*) y valida evidencias en *Document & Evidence* antes del cierre (*Evidence Required Policy*). |
-| **6. Document & Evidence Management** | `EvidenceController`<br>`NormativeDocumentController`<br>`RequiredDocumentController` | `EvidenceService` (carga y verificación de evidencias por medición o incidencia)<br>`DocumentService` (documentos normativos, versiones y faltantes)<br>`RequiredDocumentService` (requisitos obligatorios por hito) | `EvidenceRepository`<br>`DocumentRepository`<br>`DocumentVersionRepository`<br>`RequiredDocumentRepository` | Asocia evidencias a incidencias de *Incident & Mitigation* y provee el estado documental a *Reports & Compliance*. |
-| **7. Reports & Compliance Management** | `AuditReportController`<br>`KpiController`<br>`ComplianceController` | `ReportService` (solicitud y generación de reportes de auditoría)<br>`KpiService` (recálculo de KPIs ambientales)<br>`ComplianceService` (evaluación de resumen de cumplimiento) | `AuditReportRepository`<br>`EnvironmentalKpiRepository`<br>`ComplianceSummaryRepository`<br>`PdfExportService` | Consulta y consolida datos de *Project Management*, *Environmental Monitoring*, *Incident & Mitigation* y *Document & Evidence*. |
+| **1. Identity & Access Management** | `JwtAuthenticationFilter`<br>`AuthController`<br>`UserController`<br>`RoleController` | `AuthenticationService`<br>`UserService`<br>`RoleService`<br>`SubscriptionQuotaClient` (ACL) | `UserRepository`<br>`RoleRepository`<br>`PermissionRepository`<br>`PasswordEncoder`<br>`JwtTokenProvider` | Consulta `validateUserQuota` en *Subscription Management* antes de registrar un usuario y valida el JWT de las peticiones a todos los contextos. |
+| **2. Subscription Management** | `PlanController`<br>`SubscriptionController` | `PlanService`<br>`SubscriptionService`<br>`SubscriptionContextFacade` | `PlanRepository`<br>`SubscriptionRepository` | Expone `validateUserQuota` y `validateProjectQuota` a *Identity & Access* y *Project Management*. |
+| **3. Project Management** | `ProjectController`<br>`MonitoringPointController` | `ProjectService`<br>`MonitoringPointService`<br>`ProjectContextFacade`<br>`SubscriptionQuotaClient` (ACL) | `ProjectRepository`<br>`MonitoringPointRepository`<br>`GeolocationClientAdapter` | Consulta la cuota en *Subscription Management*, valida coordenadas con el *Servicio de Mapas y Geolocalización* y expone los puntos de monitoreo a *Environmental Monitoring*. |
+| **4. Environmental Monitoring** | `MeasurementController`<br>`ThresholdController`<br>`AlertController` | `MeasurementService`<br>`ThresholdEvaluationService`<br>`AlertService`<br>`ProjectPointClient` (ACL) | `MeasurementRepository`<br>`ThresholdRepository`<br>`AlertRepository` | Valida el `monitoringPointId` en *Project Management* y publica *Measurement Classified* y *Environmental Alert Generated*. |
+| **5. Incident & Mitigation Management** | `IncidentController`<br>`MitigationActionController`<br>`IncidentCommentController`<br>`AutoIncidentGenerationPolicy` (listener)<br>`OverdueCheckPolicy` (scheduler) | `IncidentService`<br>`MitigationService`<br>`CommentService`<br>`EvidenceClient` (ACL) | `IncidentRepository`<br>`MitigationRepository`<br>`CommentRepository`<br>`IncidentStatusHistoryRepository` | Crea incidencias a partir de *Environmental Alert Generated*, verifica evidencia en *Document & Evidence* antes del cierre y publica *Incident Status Changed*. |
+| **6. Document & Evidence Management** | `EvidenceController`<br>`NormativeDocumentController`<br>`RequiredDocumentController` | `EvidenceService`<br>`DocumentService`<br>`RequiredDocumentService`<br>`EvidenceContextFacade` | `EvidenceRepository`<br>`DocumentRepository`<br>`DocumentVersionRepository`<br>`RequiredDocumentRepository` | Expone `hasEvidenceForIncident` a *Incident & Mitigation* y publica *Document Version Uploaded*. |
+| **7. Reports & Compliance Management** | `AuditReportController`<br>`KpiController`<br>`ComplianceController`<br>`ReportingEventHandler` (listener) | `ReportService`<br>`KpiService`<br>`ComplianceService` | `AuditReportRepository`<br>`EnvironmentalKpiRepository`<br>`ComplianceSummaryRepository`<br>`PdfExportService` | Consume *Measurement Classified*, *Incident Status Changed* y *Document Version Uploaded* para recalcular KPIs y cumplimiento. No consulta directamente los datos de otros contextos. |
 
-![Diagrama de Componentes C4 - RoadWatch OS](../assets/images/ComponentDiagram.png)
+#### Component Diagrams por Bounded Context
+
+**Bounded Context 1 – Identity & Access Management**
+
+`JwtAuthenticationFilter` intercepta todas las peticiones de la Web Application y valida el token con `JwtTokenProvider`. `AuthenticationService` verifica credenciales con `PasswordEncoder` y emite el token. Antes de registrar un usuario, `UserService` consulta la cuota del plan mediante `SubscriptionQuotaClient`.
+
+<div align="center">
+  <img src="../assets/images/chapter4/components/c4-component-bc1-identity-access.png" alt="C4 Component Diagram - Identity and Access Management">
+  <br><sub><em>Figura 11.1. Component Diagram de Identity & Access Management.</em></sub>
+</div>
+
+**Bounded Context 2 – Subscription Management**
+
+`SubscriptionService` atiende la selección, activación, cambio y cancelación de planes. `SubscriptionContextFacade` es el único punto de entrada para los otros contextos y expone las validaciones de cuota de usuarios y de proyectos.
+
+<div align="center">
+  <img src="../assets/images/chapter4/components/c4-component-bc2-subscription.png" alt="C4 Component Diagram - Subscription Management">
+  <br><sub><em>Figura 11.2. Component Diagram de Subscription Management.</em></sub>
+</div>
+
+**Bounded Context 3 – Project Management**
+
+`ProjectService` verifica la cuota de proyectos antes de crear una obra. `MonitoringPointService` valida la ubicación de los puntos con `GeolocationClientAdapter`. `ProjectContextFacade` permite que *Environmental Monitoring* valide un `monitoringPointId` sin acceder al aggregate `Project`.
+
+<div align="center">
+  <img src="../assets/images/chapter4/components/c4-component-bc3-project.png" alt="C4 Component Diagram - Project Management">
+  <br><sub><em>Figura 11.3. Component Diagram de Project Management.</em></sub>
+</div>
+
+**Bounded Context 4 – Environmental Monitoring**
+
+`MeasurementService` registra la medición y solicita su evaluación a `ThresholdEvaluationService`, que publica *Measurement Classified*. Si el resultado es `WARNING` o `NON_COMPLIANT`, `AlertService` genera la alerta y publica *Environmental Alert Generated*.
+
+<div align="center">
+  <img src="../assets/images/chapter4/components/c4-component-bc4-environmental-monitoring.png" alt="C4 Component Diagram - Environmental Monitoring">
+  <br><sub><em>Figura 11.4. Component Diagram de Environmental Monitoring.</em></sub>
+</div>
+
+**Bounded Context 5 – Incident & Mitigation Management**
+
+`AutoIncidentGenerationPolicy` recibe *Environmental Alert Generated* y crea la incidencia, y `OverdueCheckPolicy` marca las vencidas. Antes de cerrar una incidencia, `IncidentService` verifica la evidencia con `EvidenceClient`. Cada cambio de estado queda en `IncidentStatusHistoryRepository` y se publica como *Incident Status Changed*.
+
+<div align="center">
+  <img src="../assets/images/chapter4/components/c4-component-bc5-incident-mitigation.png" alt="C4 Component Diagram - Incident and Mitigation Management">
+  <br><sub><em>Figura 11.5. Component Diagram de Incident & Mitigation Management.</em></sub>
+</div>
+
+**Bounded Context 6 – Document & Evidence Management**
+
+`EvidenceService` asocia evidencias a mediciones o incidencias, y `EvidenceContextFacade` responde la consulta de *Evidence Required Policy*. `DocumentService` versiona los documentos normativos y publica *Document Version Uploaded*.
+
+<div align="center">
+  <img src="../assets/images/chapter4/components/c4-component-bc6-document-evidence.png" alt="C4 Component Diagram - Document and Evidence Management">
+  <br><sub><em>Figura 11.6. Component Diagram de Document & Evidence Management.</em></sub>
+</div>
+
+**Bounded Context 7 – Reports & Compliance Management**
+
+`ReportingEventHandler` consume los eventos de los otros contextos y dispara las proyecciones de `KpiService` y `ComplianceService`. `ReportService` aplica la *Data Aggregation Policy* sobre esos indicadores y exporta el reporte de auditoría con `PdfExportService`.
+
+<div align="center">
+  <img src="../assets/images/chapter4/components/c4-component-bc7-reports-compliance.png" alt="C4 Component Diagram - Reports and Compliance Management">
+  <br><sub><em>Figura 11.7. Component Diagram de Reports & Compliance Management.</em></sub>
+</div>
 
 ## 4.7. Software Object-Oriented Design.
 <a id="4-7-software-object-oriented-design"></a>

@@ -218,7 +218,7 @@ Para el Sprint 1, los aspectos de trabajo se organizan en torno a las secciones 
 | Cabrera Sotelo, Camila Celeste | *whcamm*               | L | C | | | C |
 | Conde Huashuayo, Sebasthian Alex | *SebasthianCH*             | C | | L | C | C |
 | Diaz De La Cruz, Sebastian Gabriel | *tipaso07*               | C | | C | L | |
-| Montes Chang, Piero Francisco | *chang*               | | L | C | | C |
+| Montes Chang, Piero Francisco | *PieroMchang*               | | L | C | | C |
 | Pancorbo Amorós, Italo Raul | *pancorboitalo-design*               | | C | C | | L |
 
 *L = Líder | C = Colaborador*
@@ -371,13 +371,24 @@ Para el Sprint 2, el trabajo se ha paralelizado enfocándose en los **7 Bounded 
 
 | Team Member | GitHub Username | Identity & Access | Subscription Mgmt | Project Mgmt | Env. Monitoring | Incident & Mitigation | Document & Evidence | Reports & Compliance |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| Cabrera Sotelo, Camila Celeste | *whcamm* | L | L | | | C | C | |
-| Conde Huashuayo, Sebasthian Alex | *SebasthianCH* | C | | L | C | | | |
-| Diaz De La Cruz, Sebastian Gabriel | *tipaso07* | C | | C | | | L | L |
-| Montes Chang, Piero Francisco | *PieroMchang* | | | C | L | | | C |
-| Pancorbo Amorós, Italo Raul | *pancorboitalo-design* | | C | | | L | C | |
+| Cabrera Sotelo, Camila Celeste | *whcamm* | L | L | | | | | |
+| Conde Huashuayo, Sebasthian Alex | *SebasthianCH* | | C | L | C | | | |
+| Diaz De La Cruz, Sebastian Gabriel | *tipaso07* | | | | C | C | L | L |
+| Montes Chang, Piero Francisco | *PieroMchang* | | | C | L | | | |
+| Pancorbo Amorós, Italo Raul | *pancorboitalo-design* | C | | | C | L | C | |
 
 *L = Líder | C = Colaborador*
+
+Los colaboradores se asignan según las relaciones entre Bounded Contexts definidas en el Design-Level EventStorming (4.6.1) y en el Component Diagram (4.6.4). En cada punto de integración, el líder del contexto que consume la relación colabora en el contexto que la expone:
+
+| Punto de integración | Mecanismo | Líder del contexto que expone | Colaborador |
+|:---|:---|:---|:---|
+| Cuota de proyectos (*Project Quota Policy*) | Subscription → Project Management | Cabrera Sotelo, Camila | Conde Huashuayo, Sebasthian |
+| Validación del `monitoringPointId` | Project Management → Environmental Monitoring | Conde Huashuayo, Sebasthian | Montes Chang, Piero |
+| *Environmental Alert Generated* (*Auto-Incident Generation Policy*) | Environmental Monitoring → Incident & Mitigation | Montes Chang, Piero | Pancorbo Amorós, Italo |
+| Evidencia antes del cierre (*Evidence Required Policy*) | Document & Evidence → Incident & Mitigation | Diaz De La Cruz, Sebastian | Pancorbo Amorós, Italo |
+| *Measurement Classified*, *Incident Status Changed*, *Document Version Uploaded* | Monitoring / Incident / Document → Reports & Compliance | Montes Chang, Piero / Pancorbo Amorós, Italo / Diaz De La Cruz, Sebastian | Diaz De La Cruz, Sebastian |
+| Navegación por rol en el App Shell (*Access Control Policy*) | Identity & Access → todos los contextos | Cabrera Sotelo, Camila | Pancorbo Amorós, Italo |
 
 ---
 
