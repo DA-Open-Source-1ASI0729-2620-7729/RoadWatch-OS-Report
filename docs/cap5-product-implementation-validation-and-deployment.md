@@ -509,3 +509,54 @@ Evidencia insights del front:
 ![Insight del frontend](../assets/images/chapter5/InsightFront.jpeg)
 
 
+
+---
+
+### 5.2.3. Sprint 3
+
+#### 5.2.3.1. Sprint Planning 3
+
+El Sprint 3 se orienta a implementar la **RESTful API** de RoadWatch OS en el repositorio `RoadWatch-OS-Backend`, organizada en los siete *Bounded Contexts* definidos en la arquitectura. La primera versión funcional del frontend del Sprint 2 utiliza adaptadores de datos simulados; este Sprint prepara los servicios de backend que permitirán sustituirlos de manera gradual. La planificación distingue el avance verificable en ramas feature de la integración y validación final, que aún no se acreditan con esos commits.
+
+| Sprint # | Sprint 3 |
+|:---|:---|
+| **Sprint Planning Background** | |
+| Date, Time and Location | Pendientes de registro por el equipo. |
+| Sprint 2 Review Summary | El Sprint 2 entregó la primera versión funcional de la Web Application para los siete Bounded Contexts, desplegada en un entorno de QA con *Mock Adapters*. |
+| Sprint 2 Retrospective Summary | Se mantiene el trabajo por Bounded Context y rama feature, con contratos REST y referencias por ID para reducir el acoplamiento entre módulos. |
+| **Sprint Goal & User Stories** | |
+| Sprint 3 Goal | Implementar y documentar los servicios REST principales de los siete Bounded Contexts, con persistencia relacional, reglas de dominio y servicios de aplicación separados para comandos y consultas. La meta se confirmará cuando los endpoints estén integrados, sean visibles en Swagger UI y puedan ejecutarse contra la base de datos del equipo. |
+| Velocity Reference | 32 Story Points del Sprint 2; la capacidad y el compromiso de Sprint 3 requieren estimación del equipo. |
+| Sum of Story Points | Pendiente de confirmación en Sprint Planning 3. |
+
+---
+
+#### 5.2.3.2. Aspect Leaders and Collaborators
+
+La asignación siguiente refleja **autoría observada en los commits de las ramas remotas del backend al 2026-11-10**. Identifica responsables de trabajo visible para organizar el backlog; no sustituye la confirmación de roles y carga de trabajo por el equipo. Los commits iniciales de preparación de los BCs fueron realizados por Sebastián Díaz.
+
+| Bounded Context | Rama de backend | Contribuidores observados | Evidencia representativa |
+|:---|:---|:---|:---|
+| Identity & Access / Subscription Management | `ft-identity-subscription` | Diaz De La Cruz, Sebastian Gabriel (`Sebastián Díaz`) | `118446f` autenticación; `2b2fe9d` planes y suscripciones; `8b40d9b` cuotas. |
+| Project Management | `ft-project-management` | Pancorbo Amorós, Italo Raul (`pancorboitalo-design`); Diaz De La Cruz, Sebastian Gabriel (`Sebastián Díaz`) | `c8db7b8` modelo de proyecto; `b4fc0f0` API REST; `1bccba4` ajuste de persistencia. |
+| Environmental Monitoring | `ft-environmental-monitoring` | Montes Chang, Piero Francisco (`PieroMchang`); Diaz De La Cruz, Sebastian Gabriel (`Sebastián Díaz`) | `4bf3bef` modelo de dominio; `a0f0fa5` endpoints; `f34282c` validación de umbrales. |
+| Incident & Mitigation Management | `ft-incident-mitigation` | Cabrera Sotelo, Camila Celeste (`whcamm`); Diaz De La Cruz, Sebastian Gabriel (`Sebastián Díaz`) | `b6dc904` modelo de incidencias; `4c7d0dc` API REST; `9760432` revisión de vencimientos. |
+| Document & Evidence / Reports & Compliance Management | `ft-document-reports` | Conde Huashuayo, Sebasthian Alex (`SebasthianCH`); Diaz De La Cruz, Sebastian Gabriel (`Sebastián Díaz`) | `d9c4912` documentos; `8d4d122` reportes; `968fda9` exportación PDF. |
+
+---
+
+#### 5.2.3.3. Sprint Backlog 3
+
+Las tareas se trazan a las User Stories del Product Backlog y al trabajo visible en ramas feature. **En rama feature** significa que existe implementación registrada en Git; no equivale a una integración validada ni a una historia aceptada. Las horas y el compromiso final deben acordarse en Sprint Planning.
+
+| **Story Id** | **Story Title** | **Task Id** | **Task Title** | **Task Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
+|:---|:---|:---|:---|:---|:---|:---|:---|
+| US24 / US32 / US53 | Autenticación, contraseñas y roles | T01 | API de Identity & Access | Implementar usuarios, autenticación JWT, roles, permisos y operaciones de cuenta mediante controladores, servicios de aplicación y persistencia propios del BC. | Por estimar | Diaz De La Cruz, Sebastian | En rama feature |
+| US39 / US57 | Planes y cuotas de suscripción | T02 | API de Subscription Management | Exponer planes, suscripciones y consulta de cuotas; acordar el contrato que Project Management utilizará antes de crear proyectos. | Por estimar | Diaz De La Cruz, Sebastian | En rama feature; integración de cuotas pendiente |
+| US26 / US20 / US48 / US55 | Proyectos y puntos de monitoreo | T03 | API de Project Management | Implementar proyectos, puntos de monitoreo, archivo, consulta paginada y búsqueda por nombre; verificar referencias externas por ID y persistencia en MySQL. | Por estimar | Pancorbo Amorós, Italo; Diaz De La Cruz, Sebastian | En rama feature; validación integrada pendiente |
+| US27 / US28 | Mediciones y comparación normativa | T04 | API de Environmental Monitoring | Registrar y consultar mediciones, configurar umbrales y evaluar alertas ambientales, conservando `monitoringPointId` como referencia al BC de proyectos. | Por estimar | Montes Chang, Piero; Diaz De La Cruz, Sebastian | En rama feature |
+| US29 / US34 / US43 | Incidencias y mitigación | T05 | API de Incident & Mitigation | Gestionar incidencias, acciones, comentarios, transiciones de estado y revisión de vencimientos; acordar el contrato de alertas con Environmental Monitoring. | Por estimar | Cabrera Sotelo, Camila; Diaz De La Cruz, Sebastian | En rama feature |
+| US30 / US54 / US56 | Evidencias y documentos normativos | T06 | API de Document & Evidence | Gestionar evidencias, documentos obligatorios y versiones con consultas por IDs de los contextos relacionados. | Por estimar | Conde Huashuayo, Sebasthian; Diaz De La Cruz, Sebastian | En rama feature |
+| US33 / US35 / US36 | Cumplimiento y reportes | T07 | API de Reports & Compliance | Consolidar indicadores y datos históricos por proyecto, generar reportes y exponer la exportación a PDF mediante contratos con los BCs fuente. | Por estimar | Conde Huashuayo, Sebasthian; Diaz De La Cruz, Sebastian | En rama feature |
+| US25 / US31 | Swagger y paginación | T08 | Documentación y consultas REST | Publicar los endpoints en `/swagger-ui/index.html`, documentar solicitudes y respuestas, y verificar paginación en los listados aplicables. | Por estimar | Equipo de backend, por BC | Parcial en ramas feature |
+| US26 / US27 / US29 / US30 / US35 | Integración de servicios | T09 | Validación integrada del backend | Integrar las ramas revisadas, resolver contratos entre contextos y comprobar los flujos REST y la persistencia contra la base MySQL del equipo antes del Sprint Review. | Por estimar | Equipo de backend | Pendiente de integración |
