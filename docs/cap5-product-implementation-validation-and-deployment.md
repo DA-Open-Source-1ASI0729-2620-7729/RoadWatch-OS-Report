@@ -560,3 +560,33 @@ Las tareas se trazan a las User Stories del Product Backlog y al trabajo visible
 | US33 / US35 / US36 | Cumplimiento y reportes | T07 | API de Reports & Compliance | Consolidar indicadores y datos históricos por proyecto, generar reportes y exponer la exportación a PDF mediante contratos con los BCs fuente. | Por estimar | Conde Huashuayo, Sebasthian; Diaz De La Cruz, Sebastian | En rama feature |
 | US25 / US31 | Swagger y paginación | T08 | Documentación y consultas REST | Publicar los endpoints en `/swagger-ui/index.html`, documentar solicitudes y respuestas, y verificar paginación en los listados aplicables. | Por estimar | Equipo de backend, por BC | Parcial en ramas feature |
 | US26 / US27 / US29 / US30 / US35 | Integración de servicios | T09 | Validación integrada del backend | Integrar las ramas revisadas, resolver contratos entre contextos y comprobar los flujos REST y la persistencia contra la base MySQL del equipo antes del Sprint Review. | Por estimar | Equipo de backend | Pendiente de integración |
+
+---
+
+#### 5.2.3.4. Development Evidence for Sprint Review
+
+El historial del repositorio `RoadWatch-OS-Backend` muestra avances en las ramas feature de los siete *Bounded Contexts*. La tabla reúne **commits representativos**, no el historial completo. Se registran el hash, autor, rama, mensaje y fecha observados en Git; los commits seleccionados no incluyen cuerpo de mensaje. Esta evidencia demuestra trabajo registrado en cada rama, pero no acredita por sí sola la integración en `develop`, la ejecución con MySQL ni la aceptación de las User Stories.
+
+| Repository | Branch | Commit Id | Author | Commit Message | Commited on (Date) |
+|:---|:---|:---|:---|:---|:---|
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Backend | `develop` (base de las ramas feature) | `ba3b8d73daf19f58fa922ef6a8a417f0b8cfb10e` | Sebastián Díaz | `chore(backend): initialize spring boot foundation` | 2026-11-08 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Backend | `ft-identity-subscription` | `118446f0670f9a5bf02a326d442b531602b22689` | Sebastián Díaz | `feat(iam): implement authentication and token handling` | 2026-11-10 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Backend | `ft-identity-subscription` | `2b2fe9d7df362d4dbf20b2eec738b2129d7f3434` | Sebastián Díaz | `feat(subscription): implement plans and subscriptions` | 2026-11-10 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Backend | `ft-identity-subscription` | `8b40d9b481a244ae09d72618f6b4b2f9d4eff7a6` | Sebastián Díaz | `feat(subscription): expose plans and quota facade` | 2026-11-10 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Backend | `ft-project-management` | `c8db7b8cbc2fb70c48c1b41a5e311a7e994afc62` | pancorboitalo-design | `feat(projects): add project domain model` | 2026-11-08 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Backend | `ft-project-management` | `b4fc0f09ea1e3b87f2848a67dc34f8ec5f843461` | pancorboitalo-design | `feat(projects): expose project REST API` | 2026-11-09 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Backend | `ft-project-management` | `a7e59f44628427a5674e321a8af6579177507062` | pancorboitalo-design | `feat(projects): add monitoring point services and REST API` | 2026-11-09 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Backend | `ft-project-management` | `1bccba43e47ed69b82e399503092ce0b74177dfd` | Sebastián Díaz | `fix(projects): align persistence table names` | 2026-11-10 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Backend | `ft-environmental-monitoring` | `4bf3bef785492a778f213c4035593bdf6babe80b` | PieroMchang | `feat(monitoring): add environmental monitoring domain model and services` | 2026-11-09 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Backend | `ft-environmental-monitoring` | `a0f0fa56487701065fc74e42579e2fe592242fd6` | PieroMchang | `feat(monitoring): expose environmental monitoring rest endpoints and assemblers` | 2026-11-09 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Backend | `ft-environmental-monitoring` | `f34282c007dc196ff7a606f993d045da6a023706` | Sebastián Díaz | `feat(monitoring): add threshold checks` | 2026-11-10 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Backend | `ft-incident-mitigation` | `b6dc9043f677ce76274594975c96c52f076577bc` | whcamm | `feat(incidents): add environmental incident domain model` | 2026-11-09 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Backend | `ft-incident-mitigation` | `4c7d0dc9ba3fa73ff46e00b9c920e9ac914d97b3` | whcamm | `feat(incidents): expose environmental incident REST API` | 2026-11-09 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Backend | `ft-incident-mitigation` | `9760432d14a30ebaa1423b416a5a5082d75d4c8a` | Sebastián Díaz | `feat(incidents): schedule overdue incident checks` | 2026-11-10 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Backend | `ft-document-reports` | `d9c4912f050e438605aa15bef506eea52b946a29` | SebasthianCH | `feat(documentevidence): add NormativeDocument aggregate` | 2026-11-09 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Backend | `ft-document-reports` | `1b32b54440c2f4092a4c0205f282cee10735acdc` | SebasthianCH | `feat(documentevidence): add REST controllers` | 2026-11-09 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Backend | `ft-document-reports` | `8d4d122a0868a2a3864a61aadb112f2b8132a375` | SebasthianCH | `feat(reportscompliance): add AuditReport aggregate` | 2026-11-09 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Backend | `ft-document-reports` | `08a9965949f2491b7a8588ae1e5824f8a92d8bf7` | SebasthianCH | `feat(reportscompliance): add REST resources, assembler and controller` | 2026-11-10 |
+| DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Backend | `ft-document-reports` | `968fda94578710e6f368834b69565d5a449c4f6c` | Sebastián Díaz | `feat(reportscompliance): expose report pdf endpoint` | 2026-11-10 |
+
+La evidencia corresponde a las ramas remotas consultadas el 2026-11-11. La ejecución de servicios, la integración entre Bounded Contexts y el despliegue se documentarán con sus propias pruebas y artefactos cuando estén disponibles.
