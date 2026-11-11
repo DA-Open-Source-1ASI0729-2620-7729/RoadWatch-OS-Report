@@ -629,10 +629,24 @@ Las rutas previstas en Sprint 2 eran contratos preliminares. En la implementaci�
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review
 
-El repositorio de backend contiene perfiles de configuración de desarrollo y producción, y el código del Sprint 3 está integrado en `develop`. Al 2026-11-11, la rama remota `main` permanece en el commit inicial `ba3b8d7`.
+Las capturas del 2026-11-11 documentan la preparación y el despliegue del backend en el proyecto `bubbly-kindness` de Railway, entorno `production`. La primera muestra la pantalla de selección de un repositorio de GitHub; en ese momento la búsqueda aún no devolvía repositorios. Las siguientes muestran el servicio `RoadWatch-OS-Backend` en construcción, la incorporación del servicio MySQL con el volumen `mysql-volume` y su inicialización.
 
-Las capturas proporcionadas por el equipo muestran un **intento de despliegue en Railway** dentro del proyecto `bubbly-kindness`, entorno `production`. Se creó el servicio `RoadWatch-OS-Backend` desde GitHub y se añadió un servicio MySQL con volumen persistente `mysql-volume`. En una captura, ambos servicios aparecen durante la inicialización; en otra, MySQL figura `Online` mientras el backend está en construcción. La configuración visible del backend incluye los nombres de las variables `DATABASE_URL`, `DATABASE_PORT`, `DATABASE_NAME`, `DATABASE_USER`, `DATABASE_PASSWORD`, `SPRING_PROFILES_ACTIVE`, `JWT_SECRET`, `JWT_EXPIRATION_HOURS`, `APP_CORS_ALLOWED_ORIGINS` y `APP_STORAGE_UPLOAD_DIR`; sus valores están ocultos.
+![Selección inicial de repositorio en Railway](../assets/images/chapter5/sprint3-railway-github-selection.png)
 
-Las capturas registran distintos momentos de un despliegue todavía en curso mientras el equipo continuaba editando el backend. En uno de esos momentos el servicio backend aparece como `Crashed` y MySQL como `Online`; la vista de MySQL aún indicaba que intentaba conectarse a la base. Ese estado puntual no demuestra el resultado final del despliegue. Las imágenes acreditan la configuración de Railway y el seguimiento del intento, pero aún no muestran una respuesta HTTP, un arranque estable del backend ni Swagger UI funcionando en la instancia desplegada.
+*Figura: pantalla inicial para seleccionar un repositorio de GitHub en Railway.*
 
-Para cerrar esta evidencia, el equipo debe revisar los logs del despliegue fallido, corregir la causa, registrar el commit desplegado y una URL accesible, comprobar `/swagger-ui/index.html` y probar al menos un flujo REST con persistencia en MySQL. Las capturas del resultado final podrán incorporarse después, evitando publicar valores de variables o credenciales.
+![Backend en proceso de construcción en Railway](../assets/images/chapter5/sprint3-railway-backend-building.png)
+
+*Figura: servicio RoadWatch-OS-Backend en estado Online mientras Railway muestra Building.*
+
+![Servicio MySQL inicializándose en Railway](../assets/images/chapter5/sprint3-railway-mysql-initializing.png)
+
+*Figura: incorporación de MySQL y del volumen mysql-volume durante la inicialización.*
+
+En la captura final, **RoadWatch-OS-Backend y MySQL aparecen `Online`** y Railway muestra el aviso `Restart successful`. La imagen respalda que los dos servicios estaban activos en el panel en ese momento. El aviso confirma que se reinició el despliegue; por sí solo no demuestra que los endpoints respondan ni que el backend haya completado una operación de lectura o escritura en MySQL.
+
+![Backend y MySQL en línea tras reinicio en Railway](../assets/images/chapter5/sprint3-railway-services-online.png)
+
+*Figura: ambos servicios en línea en Railway después de un reinicio exitoso.*
+
+La evidencia visual del despliegue queda incorporada al Sprint Review. Para acreditar el funcionamiento de la API aún se requiere registrar una URL accesible, el commit desplegado, la apertura de `/swagger-ui/index.html` y al menos una prueba REST con persistencia en MySQL. Estas verificaciones no aparecen en las cuatro capturas.
