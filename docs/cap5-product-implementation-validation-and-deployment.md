@@ -516,7 +516,7 @@ Evidencia insights del front:
 
 #### 5.2.3.1. Sprint Planning 3
 
-El Sprint 3 se orienta a implementar la **RESTful API** de RoadWatch OS en el repositorio `RoadWatch-OS-Backend`, organizada en los siete *Bounded Contexts* definidos en la arquitectura. La primera versión funcional del frontend del Sprint 2 utiliza adaptadores de datos simulados; este Sprint prepara los servicios de backend que permitirán sustituirlos de manera gradual. La planificación distingue el avance verificable en ramas feature de la integración y validación final, que aún no se acreditan con esos commits.
+El Sprint 3 se orienta a implementar la **RESTful API** de RoadWatch OS en el repositorio `RoadWatch-OS-Backend`, organizada en los siete *Bounded Contexts* definidos en la arquitectura. La primera versión funcional del frontend del Sprint 2 utiliza adaptadores de datos simulados; este Sprint prepara los servicios de backend que permitirán sustituirlos de manera gradual. Las implementaciones de las ramas feature ya se integraron en `develop`; la validación con MySQL y el despliegue siguen pendientes de evidencia.
 
 | Sprint # | Sprint 3 |
 |:---|:---|
@@ -547,19 +547,19 @@ La asignación siguiente refleja **autoría observada en los commits de las rama
 
 #### 5.2.3.3. Sprint Backlog 3
 
-Las tareas se trazan a las User Stories del Product Backlog y al trabajo visible en ramas feature. **En rama feature** significa que existe implementación registrada en Git; no equivale a una integración validada ni a una historia aceptada. Las horas y el compromiso final deben acordarse en Sprint Planning.
+Las tareas se trazan a las User Stories del Product Backlog y al trabajo integrado en `develop` al 2026-11-11. El estado distingue la integración del código de la validación funcional con MySQL y la aceptación de las historias. Las horas y el compromiso final deben acordarse en Sprint Planning.
 
 | **Story Id** | **Story Title** | **Task Id** | **Task Title** | **Task Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
 |:---|:---|:---|:---|:---|:---|:---|:---|
-| US24 / US32 / US53 | Autenticación, contraseñas y roles | T01 | API de Identity & Access | Implementar usuarios, autenticación JWT, roles, permisos y operaciones de cuenta mediante controladores, servicios de aplicación y persistencia propios del BC. | Por estimar | Diaz De La Cruz, Sebastian | En rama feature |
-| US39 / US57 | Planes y cuotas de suscripción | T02 | API de Subscription Management | Exponer planes, suscripciones y consulta de cuotas; acordar el contrato que Project Management utilizará antes de crear proyectos. | Por estimar | Diaz De La Cruz, Sebastian | En rama feature; integración de cuotas pendiente |
-| US26 / US20 / US48 / US55 | Proyectos y puntos de monitoreo | T03 | API de Project Management | Implementar proyectos, puntos de monitoreo, archivo, consulta paginada y búsqueda por nombre; verificar referencias externas por ID y persistencia en MySQL. | Por estimar | Pancorbo Amorós, Italo; Diaz De La Cruz, Sebastian | En rama feature; validación integrada pendiente |
-| US27 / US28 | Mediciones y comparación normativa | T04 | API de Environmental Monitoring | Registrar y consultar mediciones, configurar umbrales y evaluar alertas ambientales, conservando `monitoringPointId` como referencia al BC de proyectos. | Por estimar | Montes Chang, Piero; Diaz De La Cruz, Sebastian | En rama feature |
-| US29 / US34 / US43 | Incidencias y mitigación | T05 | API de Incident & Mitigation | Gestionar incidencias, acciones, comentarios, transiciones de estado y revisión de vencimientos; acordar el contrato de alertas con Environmental Monitoring. | Por estimar | Cabrera Sotelo, Camila; Diaz De La Cruz, Sebastian | En rama feature |
-| US30 / US54 / US56 | Evidencias y documentos normativos | T06 | API de Document & Evidence | Gestionar evidencias, documentos obligatorios y versiones con consultas por IDs de los contextos relacionados. | Por estimar | Conde Huashuayo, Sebasthian; Diaz De La Cruz, Sebastian | En rama feature |
-| US33 / US35 / US36 | Cumplimiento y reportes | T07 | API de Reports & Compliance | Consolidar indicadores y datos históricos por proyecto, generar reportes y exponer la exportación a PDF mediante contratos con los BCs fuente. | Por estimar | Conde Huashuayo, Sebasthian; Diaz De La Cruz, Sebastian | En rama feature |
-| US25 / US31 | Swagger y paginación | T08 | Documentación y consultas REST | Publicar los endpoints en `/swagger-ui/index.html`, documentar solicitudes y respuestas, y verificar paginación en los listados aplicables. | Por estimar | Equipo de backend, por BC | Parcial en ramas feature |
-| US26 / US27 / US29 / US30 / US35 | Integración de servicios | T09 | Validación integrada del backend | Integrar las ramas revisadas, resolver contratos entre contextos y comprobar los flujos REST y la persistencia contra la base MySQL del equipo antes del Sprint Review. | Por estimar | Equipo de backend | Pendiente de integración |
+| US24 / US32 / US53 | Autenticación, contraseñas y roles | T01 | API de Identity & Access | Implementar usuarios, autenticación JWT, roles, permisos y operaciones de cuenta mediante controladores, servicios de aplicación y persistencia propios del BC. | Por estimar | Diaz De La Cruz, Sebastian | Integrado en `develop`; validación funcional pendiente |
+| US39 / US57 | Planes y cuotas de suscripción | T02 | API de Subscription Management | Exponer planes, suscripciones y consulta de cuotas; acordar el contrato que Project Management utilizará antes de crear proyectos. | Por estimar | Diaz De La Cruz, Sebastian | Integrado en `develop`; contrato de cuotas por validar |
+| US26 / US20 / US48 | Proyectos y puntos de monitoreo | T03 | API de Project Management | Implementar proyectos, puntos de monitoreo, archivo y consulta paginada; verificar referencias externas por ID y persistencia en MySQL. | Por estimar | Pancorbo Amorós, Italo; Diaz De La Cruz, Sebastian | Integrado en `develop`; validación con MySQL pendiente |
+| US27 / US28 | Mediciones y comparación normativa | T04 | API de Environmental Monitoring | Registrar y consultar mediciones, configurar umbrales y evaluar alertas ambientales, conservando `monitoringPointId` como referencia al BC de proyectos. | Por estimar | Montes Chang, Piero; Diaz De La Cruz, Sebastian | Integrado en `develop`; validación funcional pendiente |
+| US29 / US34 / US43 | Incidencias y mitigación | T05 | API de Incident & Mitigation | Gestionar incidencias, acciones, comentarios, transiciones de estado y revisión de vencimientos; acordar el contrato de alertas con Environmental Monitoring. | Por estimar | Cabrera Sotelo, Camila; Diaz De La Cruz, Sebastian | Integrado en `develop`; validación funcional pendiente |
+| US30 / US54 / US56 | Evidencias y documentos normativos | T06 | API de Document & Evidence | Gestionar evidencias, documentos obligatorios y versiones con consultas por IDs de los contextos relacionados. | Por estimar | Conde Huashuayo, Sebasthian; Diaz De La Cruz, Sebastian | Integrado en `develop`; validación funcional pendiente |
+| US33 / US35 / US36 | Cumplimiento y reportes | T07 | API de Reports & Compliance | Consolidar indicadores y datos históricos por proyecto, generar reportes y exponer la exportación a PDF mediante contratos con los BCs fuente. | Por estimar | Conde Huashuayo, Sebasthian; Diaz De La Cruz, Sebastian | Integrado en `develop`; validación funcional pendiente |
+| US25 / US31 | Swagger y paginación | T08 | Documentación y consultas REST | Publicar los endpoints en `/swagger-ui/index.html`, documentar solicitudes y respuestas, y verificar paginación en los listados aplicables. | Por estimar | Equipo de backend, por BC | Código integrado; revisión de Swagger UI en ejecución pendiente |
+| US26 / US27 / US29 / US30 / US35 | Integración de servicios | T09 | Validación integrada del backend | Integrar las ramas revisadas, resolver contratos entre contextos y comprobar los flujos REST y la persistencia contra la base MySQL del equipo antes del Sprint Review. | Por estimar | Equipo de backend | Ramas integradas; flujo REST y MySQL pendientes de validación |
 
 ---
 
@@ -589,4 +589,46 @@ El historial del repositorio `RoadWatch-OS-Backend` muestra avances en las ramas
 | DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Backend | `ft-document-reports` | `08a9965949f2491b7a8588ae1e5824f8a92d8bf7` | SebasthianCH | `feat(reportscompliance): add REST resources, assembler and controller` | 2026-11-10 |
 | DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Backend | `ft-document-reports` | `968fda94578710e6f368834b69565d5a449c4f6c` | Sebastián Díaz | `feat(reportscompliance): expose report pdf endpoint` | 2026-11-10 |
 
-La evidencia corresponde a las ramas remotas consultadas el 2026-11-11. La ejecución de servicios, la integración entre Bounded Contexts y el despliegue se documentarán con sus propias pruebas y artefactos cuando estén disponibles.
+La evidencia corresponde a las ramas remotas consultadas el 2026-11-11. La integración en `develop` y las pruebas automatizadas se detallan a continuación; aún no se dispone de evidencia de ejecución con MySQL ni de despliegue.
+
+
+---
+
+#### 5.2.3.5. Execution Evidence for Sprint Review
+
+Al 2026-11-11, la rama remota `origin/develop` del backend apunta a `c4b27dca9b4e0b859431a5a75a1e88ef15d53a91`. Los commits de integración `514f57d` (Identity & Access y Subscription), `b9dd05b` (Project Management), `01d28b0` (Environmental Monitoring), `f15e92d` (Incident & Mitigation) y `90504a0` (Document & Evidence y Reports & Compliance) figuran en su historial. Los extremos de las cinco ramas feature son ancestros de `origin/develop`. También figuran los cambios de integración entre alertas e incidencias (`63c20f4`) y de validación de evidencias de incidencias (`c4b27dc`).
+
+Para comprobar el estado integrado sin alterar las ramas de trabajo, se extrajo una copia temporal del contenido de `origin/develop` y se ejecutaron los comandos siguientes con el JDK disponible en el entorno de revisión:
+
+| Verificación | Comando | Resultado observado |
+|:---|:---|:---|
+| Compilación del backend integrado | `mvnw.cmd -q -DskipTests compile` | Finalizó correctamente. |
+| Pruebas automatizadas sin la prueba que inicia el contexto con MySQL | `mvnw.cmd -q '-Dtest=*,!RoadwatchOsBackendApplicationTests' test` | 21 suites; 56 pruebas; 0 fallos, 0 errores y 0 omitidas, según los informes Surefire. |
+
+La prueba `RoadwatchOsBackendApplicationTests` se excluyó porque requiere iniciar la aplicación con una base MySQL local. Este resultado verifica la compilación y las pruebas seleccionadas del código integrado; no acredita conexión real a MySQL, migración de datos, funcionamiento de todos los flujos HTTP ni aceptación de las User Stories. Los informes revisados incluyen pruebas de Project Management, Incident & Mitigation, Document & Evidence, Reports & Compliance y la integración entre mediciones ambientales e incidencias. No se identificaron suites dedicadas a Identity & Access o Subscription Management en esta ejecución.
+
+---
+
+#### 5.2.3.6. Services Documentation Evidence for Sprint Review
+
+La siguiente relación se obtuvo de las rutas declaradas por los controladores REST en `origin/develop` al 2026-11-11. Registra la superficie disponible en el código integrado; la visibilidad efectiva de cada endpoint en una instancia de Swagger UI requiere levantar la aplicación y comprobar `/swagger-ui/index.html`.
+
+| Bounded Context | Rutas representativas implementadas | Alcance verificable en código |
+|:---|:---|:---|
+| Identity & Access Management | `POST /api/v1/auth/login`; `POST /api/v1/users`; `GET /api/v1/users/{userId}`; `POST /api/v1/roles` | Autenticación, usuarios y roles. |
+| Subscription Management | `GET /api/v1/plans`; `GET /api/v1/plans/{planId}` | Consulta de planes y fachada interna de cuotas; no se identificó `GET /api/v1/subscriptions/current`. |
+| Project Management | `GET /api/v1/projects`; `POST /api/v1/projects`; `GET /api/v1/projects/{projectId}`; `PUT /api/v1/projects/{projectId}`; `GET /api/v1/projects/{projectId}/monitoring-points` | Proyectos y puntos de monitoreo. |
+| Environmental Monitoring | `GET /api/v1/environmental-measurements`; `POST /api/v1/environmental-measurements`; `GET /api/v1/normative-thresholds`; `GET /api/v1/environmental-alerts` | Mediciones, umbrales y alertas. |
+| Incident & Mitigation Management | `GET /api/v1/incidents`; `POST /api/v1/incidents`; `PATCH /api/v1/incidents/{incidentId}/status` | Incidencias, estado y recursos relacionados de comentarios y mitigación. |
+| Document & Evidence Management | `/api/v1/evidences`; `/api/v1/normative-documents`; `/api/v1/required-documents` | Recursos de evidencias y documentos. |
+| Reports & Compliance Management | `GET /api/v1/reports`; `POST /api/v1/reports`; `GET /api/v1/reports/{reportId}/pdf`; `GET /api/v1/compliance/summary`; `GET /api/v1/compliance/kpis` | Reportes, exportación PDF e indicadores de cumplimiento. |
+
+Las rutas previstas en Sprint 2 eran contratos preliminares. En la implementación integrada, el registro de mediciones usa `/api/v1/environmental-measurements` y el resumen de cumplimiento usa `/api/v1/compliance/summary`; difieren de las rutas proyectadas `/api/v1/measurements` y `/api/v1/reports/compliance`. La documentación de consumo del frontend debe alinearse con las rutas efectivas. La comprobación automatizada de Project Management incluye una prueba de la ruta de Swagger UI en un contexto aislado, pero no sustituye una revisión de la aplicación completa en ejecución.
+
+---
+
+#### 5.2.3.7. Software Deployment Evidence for Sprint Review
+
+El repositorio de backend contiene perfiles de configuración de desarrollo y producción, y el código del Sprint 3 está integrado en `develop`. Al 2026-11-11, la rama remota `main` permanece en el commit inicial `ba3b8d7`. No se dispone de una URL de despliegue, registro de ejecución en un entorno compartido ni comprobación de la API con la base MySQL del equipo. Por ello, el despliegue del backend queda pendiente de evidencia y no se presenta como entregado.
+
+Para cerrar esta evidencia, el equipo deberá registrar el entorno y la versión desplegada, ejecutar la aplicación con sus credenciales de base de datos, comprobar el acceso a `/swagger-ui/index.html` y probar los flujos REST prioritarios entre Bounded Contexts. Los resultados y capturas correspondientes se incorporarán cuando el equipo los obtenga.
