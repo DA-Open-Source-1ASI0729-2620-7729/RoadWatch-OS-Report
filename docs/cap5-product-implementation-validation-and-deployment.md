@@ -904,6 +904,21 @@ La primera ficha del Segmento 1 se completó con la grabación de validación de
 <tr><td><b>Resumen</b></td><td>El participante consideró clara la propuesta de la Landing Page y localizó el acceso a la aplicación. Priorizó las mediciones ambientales y las incidencias como funciones relevantes para su trabajo. En el portafolio valoró la información de estado, alertas e incidentes, así como las dos vistas para comparar o profundizar en proyectos. Encontró comprensibles los indicadores y filtros del monitoreo y las alertas, y útiles las evidencias descargables y el historial de mediciones. Como mejora concreta, recomendó mostrar el origen y una descripción breve de cada incidencia y permitir mediciones adicionales cuando el proyecto lo requiera. Al cierre describió la interfaz como clara y fácil de usar, y manifestó disposición a utilizarla.</td></tr>
 </table>
 
+<table>
+<tr><th colspan="2">Entrevista #2 — Segmento 1 — Empresas Constructoras Viales</th></tr>
+<tr><td><b>Nombre</b></td><td>Alexandra</td></tr>
+<tr><td><b>Apellidos</b></td><td>Ojeda</td></tr>
+<tr><td><b>Edad</b></td><td>Dato no especificado en la transcripción.</td></tr>
+<tr><td><b>Distrito</b></td><td>Dato no especificado en la transcripción.</td></tr>
+<tr><td><b>Ocupación o cargo</b></td><td>Representante de empresa constructora vial (sesión realizada bajo el rol de MANAGER).</td></tr>
+<tr><td><b>Aplicaciones o herramientas usadas</b></td><td>Dato no especificado en la transcripción; validó directamente la plataforma RoadWatch OS.</td></tr>
+<tr><td><b>Motivación</b></td><td>Valora tener la información ambiental centralizada en un solo lugar. Destacó la utilidad de la vista de lista para comparar proyectos rápidamente, el uso de filtros en el Centro de alertas para priorizar situaciones críticas y la vista de tablero (Kanban) para entender de un vistazo la etapa y estado de cada incidencia.</td></tr>
+<tr><td><b>Frustración / Oportunidad de mejora</b></td><td>Señaló que, además de mostrar el estado general o crítico, la plataforma debería indicar de forma más visible qué acción o siguientes pasos debe realizar el responsable tras detectar una alerta o una incidencia crítica.</td></tr>
+<tr><td><b>Evidencia de la entrevista</b></td><td>Grabación de pantalla y audio de la evaluación. Se revisaron la Landing Page, portafolio de proyectos, monitoreo ambiental, centro de alertas, incidencias, y evidencias y documentos.<br><br><img src="../assets/images/chapter5/alexandraojeda.png" alt="Entrevista de validación con Alexandra Ojeda" width="700"></td></tr>
+<tr><td><b>Enlace al video</b></td><td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241g031_upc_edu_pe/IQBwKceYtUksQYnne1fwPT9AAdl9I2SEgCI_u-6XKf7DCCg?e=HSHvhS">Ver grabación en SharePoint</a>.</td></tr>
+<tr><td><b>Duración</b></td><td>Aprox. 3 a 5 minutos (tiempo objetivo establecido en la sesión).</td></tr>
+<tr><td><b>Resumen</b></td><td>La participante comprendió rápidamente el propósito de la Landing Page y el público objetivo. Durante la navegación, interactuó fluidamente con el portafolio, indicando su preferencia por la vista de lista para comparar datos. Identificó con éxito los estados de las mediciones y utilizó los filtros del Centro de alertas para aislar los casos críticos. Encontró muy clara la organización por columnas de las incidencias. Como mejora principal, propuso incluir recomendaciones de acción concretas frente a alertas de prioridad alta. Concluyó que RoadWatch OS es muy útil porque centraliza información que típicamente se encuentra dispersa entre reportes y encargados, facilitando enormemente el seguimiento y la toma de decisiones.</td></tr>
+</table>
 **Segmento 2 — Empresas Supervisoras y Consultoras Ambientales**
 
 **Rol utilizado en la prueba:** AUDITOR. El entrevistador llama “Fabio” al participante en la grabación. No corresponde a Angiela Fuentes Alvarez, registrada como entrevista #1 de este segmento en el capítulo 2; por ello, no se trasladan sus datos personales a esta ficha.
@@ -922,4 +937,21 @@ La primera ficha del Segmento 1 se completó con la grabación de validación de
 <tr><td><b>Enlace al video</b></td><td><a href="https://1drv.ms/v/c/113B281D1AF386CE/IQBDCHbWA_ctTLGyzkoQZ6cQAQfKLGio0Fs2fa5OnTfZ1lA?e=ZDMWNZ">Ver grabación en OneDrive</a>.</td></tr>
 <tr><td><b>Duración</b></td><td>4 min 49 s (duración del archivo).</td></tr>
 <tr><td><b>Resumen</b></td><td>El participante identificó el acceso desde la Landing Page y distinguió las áreas dirigidas a constructoras y a supervisión. En el portafolio usaría la búsqueda, el estado y las alertas antes de abrir un proyecto. En el historial de mediciones revisaría agua, fechas y puntos para identificar variaciones; pidió contexto de unidades y límites. Para incidencias críticas priorizó gravedad, estado, fecha, acciones, responsables y evidencias. Encontró comprensible organizar documentos por hitos y configurar el reporte por proyecto, periodo y secciones, aunque recomendó destacar versiones vigentes y verificar la selección antes de generar el expediente. Valoró el resumen de cumplimiento, pero pidió navegación directa hacia las observaciones y sus respaldos. Consideró que RoadWatch OS podría reducir el tiempo de reunir información y facilitar el seguimiento, siempre que los registros estén actualizados y sea posible rastrear el origen de cada dato.</td></tr>
+</table>
+
+<table>
+<tr><th colspan="2">Entrevista #2 — Segmento 2 — Empresas Supervisoras y Consultoras Ambientales</th></tr>
+<tr><td><b>Nombre</b></td><td>Angie</td></tr>
+<tr><td><b>Apellidos</b></td><td>Cuya</td></tr>
+<tr><td><b>Edad</b></td><td>Dato no especificado en la transcripción.</td></tr>
+<tr><td><b>Distrito</b></td><td>Dato no especificado en la transcripción.</td></tr>
+<tr><td><b>Ocupación o cargo</b></td><td>Representante de empresa supervisora y consultora ambiental (sesión realizada bajo el rol de AUDITOR).</td></tr>
+<tr><td><b>Aplicaciones o herramientas usadas</b></td><td>Dato no especificado en la transcripción; validó directamente la plataforma RoadWatch OS.</td></tr>
+<tr><td><b>Motivación</b></td><td>Valora que la plataforma reúna información operativa y de fiscalización en un solo lugar. Destacó la utilidad de ver la evolución temporal mediante filtros (aire, ruido, agua) en el historial de mediciones, la organización clara de los documentos normativos y el proceso guiado paso a paso para generar reportes de auditoría.</td></tr>
+<tr><td><b>Frustración / Oportunidad de mejora</b></td><td>Sugirió mejorar la conexión visual entre las incidencias críticas y sus evidencias o documentos vinculados para un acceso más rápido. En el módulo de reportes, recomendó agregar un buscador o ayuda visual para seleccionar el proyecto, evitando tener que recordar o ingresar manualmente su identificador.</td></tr>
+<tr><td><b>Evidencia de la entrevista</b></td><td>Grabación de pantalla y audio de la evaluación. Se revisaron la Landing Page, portafolio de proyectos, historial de mediciones, incidencias críticas, documentos normativos y reportes de auditoría.<br><br>
+<img src="../assets/images/chapter5/angiecuya.png" alt="Entrevista de validación con Angie Cuya" width="700"></td></tr>
+<tr><td><b>Enlace al video</b></td><td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241g031_upc_edu_pe/IQCNFffK_lqoTZJj9FQ2qr8gATUKWnJMGmx5yxSGesEvLCU?e=ZQPETb">Ver grabación en SharePoint</a>.</td></tr>
+<tr><td><b>Duración</b></td><td>Aprox. 3 a 5 minutos (tiempo objetivo establecido en la sesión).</td></tr>
+<tr><td><b>Resumen</b></td><td>La participante comprendió la propuesta de valor para el perfil de auditoría y fiscalización. Navegó fluidamente por el portafolio y el historial de mediciones, resaltando la practicidad de los filtros y las gráficas de evolución temporal. Localizó rápidamente las incidencias críticas, aunque sugirió que el acceso a sus respectivas evidencias sea más directo. Valoró la separación entre documentos normativos y evidencias operativas. En la generación de reportes, encontró muy lógico el flujo de pasos, pero propuso incluir un buscador de proyectos por nombre. Finalizó destacando que la herramienta facilita enormemente la labor de supervisión al centralizar alertas, mediciones y documentos de soporte en un solo entorno organizado.</td></tr>
 </table>
