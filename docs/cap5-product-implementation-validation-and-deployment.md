@@ -828,26 +828,26 @@ Las sesiones incluirán tareas de validación, preguntas principales y preguntas
 
 ### 5.3.2. Registro de Entrevistas
 
-Se presenta una ficha vacía por segmento para registrar la información comprobada en cada sesión. Si se realizan más entrevistas, se duplicará la ficha correspondiente y se numerará de manera consecutiva. El resumen deberá recoger lo observado durante las tareas de la Landing Page y la aplicación, distinguiendo las opiniones del participante de los hechos observados.
+La primera ficha del Segmento 1 se completó con la grabación de validación del 13 de noviembre de 2026 y con los datos del mismo participante consignados en la entrevista #1 del Segmento 1 del capítulo 2. La navegación de la aplicación fue guiada por el entrevistador; las valoraciones y sugerencias que se atribuyen al participante provienen de sus respuestas. La ficha del Segmento 2 permanece vacía hasta contar con su entrevista de validación.
 
 **Segmento 1 — Empresas Constructoras Viales**
 
-**Rol utilizado en la prueba:** MANAGER.
+**Rol previsto en el diseño:** MANAGER. **Cuenta utilizada en la demostración grabada:** administrador.
 
 <table>
 <tr><th colspan="2">Entrevista #1 — Segmento 1 — Empresas Constructoras Viales</th></tr>
-<tr><td><b>Nombre</b></td><td></td></tr>
-<tr><td><b>Apellidos</b></td><td></td></tr>
-<tr><td><b>Edad</b></td><td></td></tr>
-<tr><td><b>Distrito</b></td><td></td></tr>
-<tr><td><b>Ocupación o cargo</b></td><td></td></tr>
-<tr><td><b>Aplicaciones o herramientas usadas</b></td><td></td></tr>
-<tr><td><b>Motivación</b></td><td></td></tr>
-<tr><td><b>Frustración</b></td><td></td></tr>
-<tr><td><b>Evidencia de la entrevista</b></td><td></td></tr>
-<tr><td><b>Enlace al video</b></td><td></td></tr>
-<tr><td><b>Duración</b></td><td></td></tr>
-<tr><td><b>Resumen</b></td><td></td></tr>
+<tr><td><b>Nombre</b></td><td>Luis Alfonso</td></tr>
+<tr><td><b>Apellidos</b></td><td>Chávez Madueño</td></tr>
+<tr><td><b>Edad</b></td><td>52 años (dato registrado en el capítulo 2).</td></tr>
+<tr><td><b>Distrito</b></td><td>Magdalena (dato registrado en el capítulo 2).</td></tr>
+<tr><td><b>Ocupación o cargo</b></td><td>Líder de gestión de proyectos viales, con 10 años de experiencia en el cargo (capítulo 2).</td></tr>
+<tr><td><b>Aplicaciones o herramientas usadas</b></td><td>MS Project y Primavera para planificar y organizar proyectos; correo electrónico para gestiones formales y WhatsApp para consultas rápidas, según la entrevista del capítulo 2.</td></tr>
+<tr><td><b>Motivación</b></td><td>Valora acceder rápidamente al estado de los proyectos, mediciones, alertas e incidencias. Durante la validación destacó la claridad del portafolio, la posibilidad de comparar proyectos en vista de lista o revisar uno en tarjetas, la lectura por colores de los estados ambientales y el acceso a evidencias e historial.</td></tr>
+<tr><td><b>Frustración</b></td><td>Pidió que cada incidencia muestre una causa u origen y una reseña breve antes de abrir todo el detalle o la evidencia. Señaló que los tipos de medición podrían ampliarse según las características de cada proyecto. Durante la demostración, la vista previa del reporte no se cargó; esto fue observado en la sesión y no se atribuye como una evaluación general del participante.</td></tr>
+<tr><td><b>Evidencia de la entrevista</b></td><td>Grabación de pantalla y audio <code>Grabación 2026-11-13 105754.mp4</code>. Se revisaron la Landing Page y las pantallas de proyectos, monitoreo, alertas, incidencias, evidencias, historial, documentos normativos, reportes y cumplimiento. Captura para publicación pendiente.</td></tr>
+<tr><td><b>Enlace al video</b></td><td>Pendiente de enlace compartible; el archivo proporcionado es local.</td></tr>
+<tr><td><b>Duración</b></td><td>23 min 48 s (duración del archivo).</td></tr>
+<tr><td><b>Resumen</b></td><td>El participante consideró clara la propuesta de la Landing Page y localizó el acceso a la aplicación. Priorizó las mediciones ambientales y las incidencias como funciones relevantes para su trabajo. En el portafolio valoró la información de estado, alertas e incidentes, así como las dos vistas para comparar o profundizar en proyectos. Encontró comprensibles los indicadores y filtros del monitoreo y las alertas, y útiles las evidencias descargables y el historial de mediciones. Como mejora concreta, recomendó mostrar el origen y una descripción breve de cada incidencia y permitir mediciones adicionales cuando el proyecto lo requiera. Al cierre describió la interfaz como clara y fácil de usar, y manifestó disposición a utilizarla.</td></tr>
 </table>
 
 **Segmento 2 — Empresas Supervisoras y Consultoras Ambientales**
