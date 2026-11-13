@@ -650,3 +650,222 @@ En la captura final, **RoadWatch-OS-Backend y MySQL aparecen `Online`** y Railwa
 *Figura: ambos servicios en línea en Railway después de un reinicio exitoso.*
 
 La evidencia visual del despliegue queda incorporada al Sprint Review. Para acreditar el funcionamiento de la API aún se requiere registrar una URL accesible, el commit desplegado, la apertura de `/swagger-ui/index.html` y al menos una prueba REST con persistencia en MySQL. Estas verificaciones no aparecen en las cuatro capturas.
+
+---
+
+## 5.3. Validation Interviews
+
+En esta sección se documenta el diseño de las entrevistas de validación de RoadWatch OS y se preparan los registros para los dos segmentos objetivo. Las respuestas, observaciones y evidencias se completarán a partir de las entrevistas realizadas; las tablas siguientes no representan resultados todavía.
+
+### 5.3.1. Diseño de Entrevistas
+
+Las entrevistas de validación tienen como objetivo evaluar la experiencia de uso de RoadWatch OS mediante la interacción de representantes de los dos segmentos objetivo con el Landing Page y la aplicación web.
+
+Los participantes realizarán tareas específicas utilizando cuentas de prueba con roles diferenciados, de acuerdo con las responsabilidades y funcionalidades correspondientes a cada segmento.
+
+La evaluación permitirá identificar dificultades de navegación, claridad de la información, facilidad de interacción y oportunidades de mejora de la experiencia de usuario.
+
+Las sesiones incluirán tareas de validación, preguntas principales y preguntas complementarias. Se solicitará a los participantes que expresen libremente sus observaciones durante la navegación.
+
+#### Preguntas comunes para ambos segmentos
+
+**Punto a evaluar: Landing Page y acceso a la aplicación.**
+
+**Tarea:** Explorar el Landing Page e identificar la opción de acceso a RoadWatch OS.
+
+1. Al observar la página principal, ¿qué entiendes que ofrece RoadWatch OS?
+2. ¿Los beneficios de la plataforma se presentan de manera clara?
+3. ¿Puedes identificar las principales funcionalidades del producto?
+4. ¿Te resultó sencillo encontrar la opción para ingresar a la plataforma?
+5. ¿Qué información adicional considerarías útil incluir en el Landing Page?
+
+---
+
+#### Segmento 1: Empresas Constructoras Viales
+
+**Rol de validación:** MANAGER.
+
+**Cuenta de prueba:** `camila.cabrera@roadwatch.demo`
+
+##### Preguntas principales
+
+###### Punto 1. Portafolio de proyectos
+
+**Objetivo:** Evaluar la facilidad para localizar proyectos y consultar su información.
+
+**Tarea:** Ingresar a la sección Proyectos, buscar un proyecto, utilizar los filtros disponibles y consultar su detalle.
+
+1. ¿Te resultó sencillo encontrar el proyecto que necesitabas?
+2. ¿La información presentada en el portafolio permite reconocer el estado de los proyectos?
+3. ¿Consideras más clara la visualización en lista o en tarjetas? ¿Por qué?
+
+###### Punto 2. Dashboard de monitoreo ambiental
+
+**Objetivo:** Evaluar la comprensión de los indicadores ambientales y del estado de las mediciones.
+
+**Tarea:** Ingresar a Monitoreo, revisar el dashboard operativo e identificar mediciones que requieran atención.
+
+4. ¿Los indicadores del dashboard permiten comprender el estado ambiental de las mediciones?
+5. ¿Puedes identificar fácilmente cuáles se encuentran en rango, en advertencia o en estado crítico?
+6. ¿La distribución de la información te permite reconocer rápidamente las situaciones prioritarias?
+
+###### Punto 3. Centro de alertas
+
+**Objetivo:** Evaluar la identificación y consulta de alertas ambientales.
+
+**Tarea:** Desde Monitoreo, ingresar al centro de alertas y utilizar los filtros Todas, Advertencias y Críticas.
+
+7. ¿Te resultó sencillo encontrar el centro de alertas?
+8. ¿Los filtros permiten identificar claramente las alertas según su nivel de importancia?
+9. ¿La información presentada en la tabla es suficiente para comprender la situación detectada?
+
+###### Punto 4. Gestión de incidencias
+
+**Objetivo:** Evaluar la consulta y el seguimiento visual de incidencias ambientales.
+
+**Tarea:** Ingresar a Incidencias, revisar el tablero Kanban y seleccionar una incidencia para consultar su detalle.
+
+10. ¿La organización de las incidencias en el tablero resulta clara?
+11. ¿Puedes identificar fácilmente cuáles incidencias están abiertas, en revisión o resueltas?
+12. ¿La pantalla de detalle proporciona información suficiente para comprender el estado de una incidencia?
+
+###### Punto 5. Evidencias y documentos
+
+**Objetivo:** Evaluar la facilidad para consultar evidencias asociadas con la gestión ambiental.
+
+**Tarea:** Ingresar a Evidencias y documentos, revisar los archivos registrados e identificar las opciones disponibles.
+
+13. ¿Te resultó sencillo encontrar las evidencias registradas?
+14. ¿La información presentada permite identificar los archivos y sus estados?
+15. ¿Consideras clara la organización de esta sección?
+
+##### Preguntas complementarias
+
+16. ¿Qué funcionalidad consideras más útil para el seguimiento ambiental de una empresa constructora?
+17. ¿Encontraste dificultades al navegar entre las diferentes pantallas?
+18. ¿Qué información adicional necesitarías para realizar tus actividades?
+19. ¿Qué mejorarías de la organización visual de la plataforma?
+20. ¿Consideras que RoadWatch OS podría facilitar el seguimiento ambiental de proyectos viales? ¿Por qué?
+
+---
+
+#### Segmento 2: Empresas Supervisoras y Consultoras Ambientales
+
+**Rol de validación:** AUDITOR.
+
+**Cuenta de prueba:** `pancho.diaz@roadwatch.demo`
+
+##### Preguntas principales
+
+###### Punto 1. Portafolio de proyectos
+
+**Objetivo:** Evaluar la facilidad para consultar y localizar proyectos sujetos a supervisión.
+
+**Tarea:** Ingresar al Portafolio, localizar un proyecto mediante la búsqueda o los filtros y consultar su información.
+
+1. ¿Puedes identificar fácilmente los proyectos disponibles?
+2. ¿Los filtros facilitan la búsqueda de proyectos específicos?
+3. ¿La información presentada permite comprender el estado de cada proyecto?
+
+###### Punto 2. Historial de mediciones ambientales
+
+**Objetivo:** Evaluar la claridad de los registros históricos y los filtros por indicador ambiental.
+
+**Tarea:** Ingresar a Historial de mediciones y utilizar los filtros Aire, Ruido y Agua para revisar la información registrada.
+
+4. ¿Te resultó sencillo encontrar el historial de mediciones?
+5. ¿Los filtros permiten consultar fácilmente los diferentes indicadores ambientales?
+6. ¿La representación de las mediciones y su evolución temporal resulta clara?
+
+###### Punto 3. Incidencias críticas
+
+**Objetivo:** Evaluar la facilidad para localizar incidencias que requieren revisión prioritaria.
+
+**Tarea:** Ingresar a Incidencias críticas, localizar el listado correspondiente y consultar el detalle de una incidencia.
+
+7. ¿Te resultó sencillo encontrar las incidencias críticas?
+8. ¿La información presentada permite identificar su gravedad y estado?
+9. ¿El detalle de la incidencia contiene información suficiente para realizar el seguimiento ambiental?
+
+###### Punto 4. Documentos normativos
+
+**Objetivo:** Evaluar la consulta de documentos normativos y el estado de los hitos de auditoría.
+
+**Tarea:** Ingresar a Documentos normativos, seleccionar un hito de auditoría y consultar el detalle de uno de los documentos.
+
+10. ¿Puedes identificar fácilmente los documentos disponibles?
+11. ¿La organización por hitos de auditoría resulta comprensible?
+12. ¿La información sobre documentos requeridos y pendientes es clara?
+
+###### Punto 5. Reportes de auditoría
+
+**Objetivo:** Evaluar la facilidad para configurar un expediente de auditoría ambiental.
+
+**Tarea:** Ingresar a Reportes de auditoría, identificar los campos necesarios para seleccionar un proyecto, establecer el periodo y elegir las secciones del expediente.
+
+13. ¿Te resulta claro cómo configurar un nuevo expediente de auditoría?
+14. ¿Las opciones disponibles permiten comprender qué información incluirá el reporte?
+15. ¿El procedimiento de configuración te parece sencillo o modificarías algún paso?
+
+###### Punto 6. Resumen de cumplimiento
+
+**Objetivo:** Evaluar la consulta de indicadores de cumplimiento y la identificación de proyectos que requieren atención.
+
+**Tarea:** Ingresar a Cumplimiento, revisar los indicadores y utilizar los filtros Todos, Con pendientes y Críticos.
+
+16. ¿Los indicadores presentados permiten comprender el estado de cumplimiento ambiental?
+17. ¿Los filtros facilitan la identificación de proyectos que requieren mayor atención?
+18. ¿Qué información adicional considerarías importante para realizar una supervisión?
+
+##### Preguntas complementarias
+
+19. ¿Qué funcionalidad consideras más útil para las actividades de supervisión o auditoría ambiental?
+20. ¿Encontraste dificultades para localizar alguna sección de la plataforma?
+21. ¿Consideras clara la organización de la información entre proyectos, mediciones, incidencias y reportes?
+22. ¿Qué funcionalidad o información adicional incorporarías?
+23. ¿Qué aspectos de la experiencia de navegación mejorarías?
+24. ¿Consideras que RoadWatch OS podría facilitar las actividades de supervisión ambiental? ¿Por qué?
+
+### 5.3.2. Registro de Entrevistas
+
+Se presenta una ficha vacía por segmento para registrar la información comprobada en cada sesión. Si se realizan más entrevistas, se duplicará la ficha correspondiente y se numerará de manera consecutiva. El resumen deberá recoger lo observado durante las tareas de la Landing Page y la aplicación, distinguiendo las opiniones del participante de los hechos observados.
+
+**Segmento 1 — Empresas Constructoras Viales**
+
+**Rol utilizado en la prueba:** MANAGER.
+
+<table>
+<tr><th colspan="2">Entrevista #1 — Segmento 1 — Empresas Constructoras Viales</th></tr>
+<tr><td><b>Nombre</b></td><td></td></tr>
+<tr><td><b>Apellidos</b></td><td></td></tr>
+<tr><td><b>Edad</b></td><td></td></tr>
+<tr><td><b>Distrito</b></td><td></td></tr>
+<tr><td><b>Ocupación o cargo</b></td><td></td></tr>
+<tr><td><b>Aplicaciones o herramientas usadas</b></td><td></td></tr>
+<tr><td><b>Motivación</b></td><td></td></tr>
+<tr><td><b>Frustración</b></td><td></td></tr>
+<tr><td><b>Evidencia de la entrevista</b></td><td></td></tr>
+<tr><td><b>Enlace al video</b></td><td></td></tr>
+<tr><td><b>Duración</b></td><td></td></tr>
+<tr><td><b>Resumen</b></td><td></td></tr>
+</table>
+
+**Segmento 2 — Empresas Supervisoras y Consultoras Ambientales**
+
+**Rol utilizado en la prueba:** AUDITOR.
+
+<table>
+<tr><th colspan="2">Entrevista #1 — Segmento 2 — Empresas Supervisoras y Consultoras Ambientales</th></tr>
+<tr><td><b>Nombre</b></td><td></td></tr>
+<tr><td><b>Apellidos</b></td><td></td></tr>
+<tr><td><b>Edad</b></td><td></td></tr>
+<tr><td><b>Distrito</b></td><td></td></tr>
+<tr><td><b>Ocupación o cargo</b></td><td></td></tr>
+<tr><td><b>Aplicaciones o herramientas usadas</b></td><td></td></tr>
+<tr><td><b>Motivación</b></td><td></td></tr>
+<tr><td><b>Frustración</b></td><td></td></tr>
+<tr><td><b>Evidencia de la entrevista</b></td><td></td></tr>
+<tr><td><b>Enlace al video</b></td><td></td></tr>
+<tr><td><b>Duración</b></td><td></td></tr>
+<tr><td><b>Resumen</b></td><td></td></tr>
+</table>
