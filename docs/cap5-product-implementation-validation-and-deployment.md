@@ -218,7 +218,7 @@ Para el Sprint 1, los aspectos de trabajo se organizan en torno a las secciones 
 | Cabrera Sotelo, Camila Celeste | *whcamm*               | L | C | | | C |
 | Conde Huashuayo, Sebasthian Alex | *SebasthianCH*             | C | | L | C | C |
 | Diaz De La Cruz, Sebastian Gabriel | *tipaso07*               | C | | C | L | |
-| Montes Chang, Piero Francisco | *chang*               | | L | C | | C |
+| Montes Chang, Piero Francisco | *PieroMchang*               | | L | C | | C |
 | Pancorbo Amorós, Italo Raul | *pancorboitalo-design*               | | C | C | | L |
 
 *L = Líder | C = Colaborador*
