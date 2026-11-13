@@ -543,6 +543,18 @@ La asignación siguiente refleja **autoría observada en los commits de las rama
 | Incident & Mitigation Management | `ft-incident-mitigation` | Cabrera Sotelo, Camila Celeste (`whcamm`); Diaz De La Cruz, Sebastian Gabriel (`Sebastián Díaz`) | `b6dc904` modelo de incidencias; `4c7d0dc` API REST; `9760432` revisión de vencimientos. |
 | Document & Evidence / Reports & Compliance Management | `ft-document-reports` | Conde Huashuayo, Sebasthian Alex (`SebasthianCH`); Diaz De La Cruz, Sebastian Gabriel (`Sebastián Díaz`) | `d9c4912` documentos; `8d4d122` reportes; `968fda9` exportación PDF. |
 
+Para mantener el formato de los Sprints anteriores, la matriz siguiente resume las responsabilidades **inferidas de la autoría de commits**: `L` indica quien realizó la implementación principal del aspecto y `C` una contribución registrada. La autoría de los merges atribuye la coordinación técnica de la integración a Sebastián Díaz. El equipo debe confirmar si estos roles coinciden con los acordados en el Sprint Planning.
+
+| Team Member | GitHub Username | Identity & Access | Subscription Mgmt | Project Mgmt | Env. Monitoring | Incident & Mitigation | Document & Evidence | Reports & Compliance | Integración backend |
+|:---|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Diaz De La Cruz, Sebastian Gabriel | *tipaso07* | L | L | C | C | C | C | C | L |
+| Pancorbo Amorós, Italo Raul | *pancorboitalo-design* | | | L | | | | | |
+| Montes Chang, Piero Francisco | *PieroMchang* | | | | L | | | | |
+| Cabrera Sotelo, Camila Celeste | *whcamm* | | | | | L | | | |
+| Conde Huashuayo, Sebasthian Alex | *SebasthianCH* | | | | | | L | L | |
+
+*L = implementación principal observada | C = contribución observada. Las celdas vacías no implican ausencia de colaboración fuera de los commits examinados.*
+
 ---
 
 #### 5.2.3.3. Sprint Backlog 3
