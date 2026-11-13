@@ -623,7 +623,7 @@ La prueba `RoadwatchOsBackendApplicationTests` se excluyó porque requiere inici
 
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review
 
-La siguiente relación se obtuvo de las rutas declaradas por los controladores REST en `origin/develop` al 2026-11-11. Registra la superficie disponible en el código integrado; la visibilidad efectiva de cada endpoint en una instancia de Swagger UI requiere levantar la aplicación y comprobar `/swagger-ui/index.html`.
+La siguiente relación se obtuvo de las rutas declaradas por los controladores REST en `origin/develop` al 2026-11-11. Registra la superficie disponible en el código integrado. Las capturas posteriores muestran Swagger UI publicado en Railway, con endpoints y esquemas visibles; no verifican la ejecución exitosa de cada operación.
 
 | Bounded Context | Rutas representativas implementadas | Alcance verificable en código |
 |:---|:---|:---|
@@ -635,7 +635,17 @@ La siguiente relación se obtuvo de las rutas declaradas por los controladores R
 | Document & Evidence Management | `/api/v1/evidences`; `/api/v1/normative-documents`; `/api/v1/required-documents` | Recursos de evidencias y documentos. |
 | Reports & Compliance Management | `GET /api/v1/reports`; `POST /api/v1/reports`; `GET /api/v1/reports/{reportId}/pdf`; `GET /api/v1/compliance/summary`; `GET /api/v1/compliance/kpis` | Reportes, exportación PDF e indicadores de cumplimiento. |
 
-Las rutas previstas en Sprint 2 eran contratos preliminares. En la implementación integrada, el registro de mediciones usa `/api/v1/environmental-measurements` y el resumen de cumplimiento usa `/api/v1/compliance/summary`; difieren de las rutas proyectadas `/api/v1/measurements` y `/api/v1/reports/compliance`. La documentación de consumo del frontend debe alinearse con las rutas efectivas. La comprobación automatizada de Project Management incluye una prueba de la ruta de Swagger UI en un contexto aislado, pero no sustituye una revisión de la aplicación completa en ejecución.
+Las rutas previstas en Sprint 2 eran contratos preliminares. En la implementación integrada, el registro de mediciones usa `/api/v1/environmental-measurements` y el resumen de cumplimiento usa `/api/v1/compliance/summary`; difieren de las rutas proyectadas `/api/v1/measurements` y `/api/v1/reports/compliance`. La documentación de consumo del frontend debe alinearse con las rutas efectivas. La comprobación automatizada de Project Management incluye una prueba de la ruta de Swagger UI en un contexto aislado. La revisión visual de la instancia desplegada se documenta a continuación.
+
+Las siguientes capturas muestran Swagger UI abierto desde la URL pública `https://roadwatch-os-backend-production.up.railway.app/swagger-ui/swagger-ui/index.html`. En la primera se observan el título RoadWatch OS API, el enlace a `/v3/api-docs` y operaciones de Environmental Measurements y Environmental Alerts, con sus métodos y rutas. La segunda muestra esquemas de recursos, incluidos ProjectResource y MonitoringPointResource. Estas imágenes acreditan la publicación de la documentación interactiva en la instancia desplegada; no muestran respuestas reales de los endpoints ni prueban persistencia.
+
+![Endpoints de RoadWatch OS visibles en Swagger UI desplegado](../assets/images/chapter5/sprint3-swagger-endpoints.png)
+
+*Figura: documentación OpenAPI publicada en Railway con rutas de mediciones y alertas ambientales.*
+
+![Esquemas de recursos visibles en Swagger UI desplegado](../assets/images/chapter5/sprint3-swagger-schemas.png)
+
+*Figura: esquemas de recursos de Project Management y otros contextos en Swagger UI.*
 
 ---
 
@@ -661,7 +671,7 @@ En la captura final, **RoadWatch-OS-Backend y MySQL aparecen `Online`** y Railwa
 
 *Figura: ambos servicios en línea en Railway después de un reinicio exitoso.*
 
-La evidencia visual del despliegue queda incorporada al Sprint Review. Las nuevas capturas muestran la instancia MySQL activa, tablas creadas y actividad de recursos; su alcance se explica a continuación. Para acreditar el funcionamiento de la API aún se requiere registrar una URL accesible, el commit desplegado, la apertura de `/swagger-ui/index.html` y al menos una prueba REST que lea o escriba datos persistidos en MySQL. Estas verificaciones no aparecen en las capturas.
+La evidencia visual del despliegue queda incorporada al Sprint Review. Las nuevas capturas muestran la instancia MySQL activa, tablas creadas y actividad de recursos; su alcance se explica a continuación. La apertura de Swagger UI en la URL pública de Railway se documenta en la sección anterior. Para acreditar el funcionamiento de la API y su persistencia aún se requiere identificar el commit desplegado y registrar una prueba REST exitosa que lea o escriba datos en MySQL.
 
 Las capturas posteriores de Railway muestran el despliegue `mysql:8` con estado `ACTIVE` y el mensaje `Deployment successful`. En la vista de datos se observan tablas de varios Bounded Contexts, entre ellas `users`, `roles`, `plans`, `subscriptions`, `projects`, `monitoring_points`, `evidences` y `audit_reports`. Esto acredita que la instancia MySQL está disponible y que existen estructuras de persistencia; la imagen no permite verificar el contenido de las filas ni identificar qué versión del backend creó cada tabla.
 
