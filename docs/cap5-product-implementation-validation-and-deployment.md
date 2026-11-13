@@ -516,7 +516,7 @@ Evidencia insights del front:
 
 #### 5.2.3.1. Sprint Planning 3
 
-El Sprint 3 se orienta a implementar la **RESTful API** de RoadWatch OS en el repositorio `RoadWatch-OS-Backend`, organizada en los siete *Bounded Contexts* definidos en la arquitectura. La primera versión funcional del frontend del Sprint 2 utiliza adaptadores de datos simulados; este Sprint prepara los servicios de backend que permitirán sustituirlos de manera gradual. Las implementaciones de las ramas feature ya se integraron en `develop`; la validación con MySQL y el despliegue siguen pendientes de evidencia.
+El Sprint 3 se orienta a implementar la **RESTful API** de RoadWatch OS en el repositorio `RoadWatch-OS-Backend`, organizada en los siete *Bounded Contexts* definidos en la arquitectura. La primera versión funcional del frontend del Sprint 2 utiliza adaptadores de datos simulados; este Sprint prepara los servicios de backend que permitirán sustituirlos de manera gradual. Las implementaciones de las ramas feature ya se integraron en `develop`. Las capturas de Railway documentan el despliegue del backend y MySQL; la validación de los flujos REST y de la persistencia desde la API sigue pendiente de evidencia.
 
 | Sprint # | Sprint 3 |
 |:---|:---|
@@ -589,7 +589,7 @@ El historial del repositorio `RoadWatch-OS-Backend` muestra avances en las ramas
 | DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Backend | `ft-document-reports` | `08a9965949f2491b7a8588ae1e5824f8a92d8bf7` | SebasthianCH | `feat(reportscompliance): add REST resources, assembler and controller` | 2026-11-10 |
 | DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Backend | `ft-document-reports` | `968fda94578710e6f368834b69565d5a449c4f6c` | Sebastián Díaz | `feat(reportscompliance): expose report pdf endpoint` | 2026-11-10 |
 
-La evidencia corresponde a las ramas remotas consultadas el 2026-11-11. La integración en `develop` y las pruebas automatizadas se detallan a continuación; aún no se dispone de evidencia de ejecución con MySQL ni de despliegue.
+La evidencia corresponde a las ramas remotas consultadas el 2026-11-11. La integración en `develop` y las pruebas automatizadas se detallan a continuación. Las capturas de Railway documentan el despliegue y la presencia de tablas en MySQL, pero no una operación de la API contra esa base.
 
 
 ---
@@ -649,7 +649,39 @@ En la captura final, **RoadWatch-OS-Backend y MySQL aparecen `Online`** y Railwa
 
 *Figura: ambos servicios en línea en Railway después de un reinicio exitoso.*
 
-La evidencia visual del despliegue queda incorporada al Sprint Review. Para acreditar el funcionamiento de la API aún se requiere registrar una URL accesible, el commit desplegado, la apertura de `/swagger-ui/index.html` y al menos una prueba REST con persistencia en MySQL. Estas verificaciones no aparecen en las cuatro capturas.
+La evidencia visual del despliegue queda incorporada al Sprint Review. Las nuevas capturas muestran la instancia MySQL activa, tablas creadas y actividad de recursos; su alcance se explica a continuación. Para acreditar el funcionamiento de la API aún se requiere registrar una URL accesible, el commit desplegado, la apertura de `/swagger-ui/index.html` y al menos una prueba REST que lea o escriba datos persistidos en MySQL. Estas verificaciones no aparecen en las capturas.
+
+Las capturas posteriores de Railway muestran el despliegue `mysql:8` con estado `ACTIVE` y el mensaje `Deployment successful`. En la vista de datos se observan tablas de varios Bounded Contexts, entre ellas `users`, `roles`, `plans`, `subscriptions`, `projects`, `monitoring_points`, `evidences` y `audit_reports`. Esto acredita que la instancia MySQL está disponible y que existen estructuras de persistencia; la imagen no permite verificar el contenido de las filas ni identificar qué versión del backend creó cada tabla.
+
+![Despliegue activo de MySQL en Railway](../assets/images/chapter5/sprint3-railway-mysql-deployment.png)
+
+*Figura: servicio MySQL activo y despliegue exitoso en Railway.*
+
+![Tablas de RoadWatch OS visibles en MySQL](../assets/images/chapter5/sprint3-railway-mysql-tables.png)
+
+*Figura: tablas de varios Bounded Contexts visibles en la vista de datos de MySQL.*
+
+El panel de métricas registra consumo de memoria y actividad de red de MySQL en el intervalo mostrado. No permite atribuir esa actividad a una petición concreta del backend ni demostrar una operación REST exitosa. La captura de variables de Railway proporcionada por el equipo presenta valores ocultos; no se incorpora al repositorio para evitar publicar información de configuración.
+
+![Métricas de MySQL en Railway](../assets/images/chapter5/sprint3-railway-mysql-metrics.png)
+
+*Figura: métricas de recursos y tráfico del servicio MySQL durante el intervalo observado.*
+
+---
+
+#### 5.2.3.8. Team Collaboration Insights during Sprint
+
+El backend se desarrolló en ramas por Bounded Context y se integró en `develop` mediante cinco merges registrados entre el 10 y el 11 de noviembre de 2026. La distribución siguiente se basa en la autoría de los commits representativos de la sección 5.2.3.4 y en el historial de integración de la sección 5.2.3.5. Describe contribuciones verificables en Git; no atribuye reuniones, revisiones o acuerdos que no estén documentados.
+
+| Miembro del equipo | Contribuciones observadas en el Sprint 3 |
+|:---|:---|
+| Diaz De La Cruz, Sebastian Gabriel | Implementó Identity & Access y Subscription Management; aportó ajustes a otros contextos y registró los merges de las cinco ramas feature en `develop`, además de los cambios de integración entre alertas, incidencias y evidencias. |
+| Pancorbo Amorós, Italo Raul | Desarrolló el modelo, los servicios y los endpoints REST de Project Management y puntos de monitoreo en `ft-project-management`. |
+| Montes Chang, Piero Francisco | Desarrolló el modelo, los servicios y los endpoints REST de Environmental Monitoring en `ft-environmental-monitoring`. |
+| Cabrera Sotelo, Camila Celeste | Desarrolló el modelo y los endpoints REST de Incident & Mitigation Management en `ft-incident-mitigation`. |
+| Conde Huashuayo, Sebasthian Alex | Desarrolló los recursos de Document & Evidence y Reports & Compliance, incluidas las APIs de documentos y reportes en `ft-document-reports`. |
+
+El trabajo por contexto permitió integrar módulos con responsabilidades separadas. Los commits de `develop` muestran dos conexiones entre contextos: la creación de incidencias a partir de alertas ambientales y la validación de evidencias de incidencias. Estas son observaciones del historial de código; las métricas de colaboración de GitHub y los acuerdos de retrospectiva requieren evidencia propia si el equipo decide incluirlos.
 
 ---
 
