@@ -828,7 +828,7 @@ Las sesiones incluirán tareas de validación, preguntas principales y preguntas
 
 ### 5.3.2. Registro de Entrevistas
 
-La primera ficha del Segmento 1 se completó con la grabación de validación del 13 de noviembre de 2026 y con los datos del mismo participante consignados en la entrevista #1 del Segmento 1 del capítulo 2. La navegación de la aplicación fue guiada por el entrevistador; las valoraciones y sugerencias que se atribuyen al participante provienen de sus respuestas. La ficha del Segmento 2 permanece vacía hasta contar con su entrevista de validación.
+La primera ficha del Segmento 1 se completó con la grabación de validación del 13 de noviembre de 2026 y con los datos del mismo participante consignados en la entrevista #1 del Segmento 1 del capítulo 2. La navegación de la aplicación fue guiada por el entrevistador; las valoraciones y sugerencias que se atribuyen al participante provienen de sus respuestas. La segunda ficha se completó con el video de validación del Segmento 2; los datos personales que no aparecen en la grabación se dejan expresamente sin confirmar.
 
 **Segmento 1 — Empresas Constructoras Viales**
 
@@ -852,20 +852,20 @@ La primera ficha del Segmento 1 se completó con la grabación de validación de
 
 **Segmento 2 — Empresas Supervisoras y Consultoras Ambientales**
 
-**Rol utilizado en la prueba:** AUDITOR.
+**Rol utilizado en la prueba:** AUDITOR. El entrevistador llama “Fabio” al participante en la grabación. No corresponde a Angiela Fuentes Alvarez, registrada como entrevista #1 de este segmento en el capítulo 2; por ello, no se trasladan sus datos personales a esta ficha.
 
 <table>
 <tr><th colspan="2">Entrevista #1 — Segmento 2 — Empresas Supervisoras y Consultoras Ambientales</th></tr>
-<tr><td><b>Nombre</b></td><td></td></tr>
-<tr><td><b>Apellidos</b></td><td></td></tr>
-<tr><td><b>Edad</b></td><td></td></tr>
-<tr><td><b>Distrito</b></td><td></td></tr>
-<tr><td><b>Ocupación o cargo</b></td><td></td></tr>
-<tr><td><b>Aplicaciones o herramientas usadas</b></td><td></td></tr>
-<tr><td><b>Motivación</b></td><td></td></tr>
-<tr><td><b>Frustración</b></td><td></td></tr>
-<tr><td><b>Evidencia de la entrevista</b></td><td></td></tr>
-<tr><td><b>Enlace al video</b></td><td></td></tr>
-<tr><td><b>Duración</b></td><td></td></tr>
-<tr><td><b>Resumen</b></td><td></td></tr>
+<tr><td><b>Nombre</b></td><td>Fabio (nombre usado por el entrevistador en el video).</td></tr>
+<tr><td><b>Apellidos</b></td><td>No informados en la grabación.</td></tr>
+<tr><td><b>Edad</b></td><td>No informada en la grabación.</td></tr>
+<tr><td><b>Distrito</b></td><td>No informado en la grabación.</td></tr>
+<tr><td><b>Ocupación o cargo</b></td><td>Participó desde la perspectiva de una empresa supervisora o consultora ambiental; no se indicó su cargo real.</td></tr>
+<tr><td><b>Aplicaciones o herramientas usadas</b></td><td>No mencionó nombres de herramientas que utilice personalmente. Señaló la utilidad de consultar registros y documentos de respaldo sin depender de archivos enviados por separado.</td></tr>
+<tr><td><b>Motivación</b></td><td>Consideró útil centralizar información ambiental para revisar varios proyectos y preparar auditorías. Valoró la búsqueda del portafolio, la separación del historial por componente ambiental, la organización de documentos por hito de auditoría y el resumen de cumplimiento para decidir dónde concentrar la revisión.</td></tr>
+<tr><td><b>Frustración</b></td><td>Pidió mostrar unidades y límites de referencia junto a las mediciones; un historial de acciones de incidencias con fechas, responsables y distinción entre medidas propuestas y ejecutadas; la versión vigente y las observaciones de cada documento; un resumen previo al generar el expediente; y accesos desde los indicadores de cumplimiento hasta los pendientes y documentos que explican cada resultado.</td></tr>
+<tr><td><b>Evidencia de la entrevista</b></td><td>Video <code>Video Project 1.mp4</code> y captura proporcionada de la sesión durante la revisión del portafolio de proyectos. La captura aún no está incorporada al repositorio.</td></tr>
+<tr><td><b>Enlace al video</b></td><td><a href="https://1drv.ms/v/c/113B281D1AF386CE/IQBDCHbWA_ctTLGyzkoQZ6cQAQfKLGio0Fs2fa5OnTfZ1lA?e=ZDMWNZ">Ver grabación en OneDrive</a>.</td></tr>
+<tr><td><b>Duración</b></td><td>4 min 49 s (duración del archivo).</td></tr>
+<tr><td><b>Resumen</b></td><td>El participante identificó el acceso desde la Landing Page y distinguió las áreas dirigidas a constructoras y a supervisión. En el portafolio usaría la búsqueda, el estado y las alertas antes de abrir un proyecto. En el historial de mediciones revisaría agua, fechas y puntos para identificar variaciones; pidió contexto de unidades y límites. Para incidencias críticas priorizó gravedad, estado, fecha, acciones, responsables y evidencias. Encontró comprensible organizar documentos por hitos y configurar el reporte por proyecto, periodo y secciones, aunque recomendó destacar versiones vigentes y verificar la selección antes de generar el expediente. Valoró el resumen de cumplimiento, pero pidió navegación directa hacia las observaciones y sus respaldos. Consideró que RoadWatch OS podría reducir el tiempo de reunir información y facilitar el seguimiento, siempre que los registros estén actualizados y sea posible rastrear el origen de cada dato.</td></tr>
 </table>
