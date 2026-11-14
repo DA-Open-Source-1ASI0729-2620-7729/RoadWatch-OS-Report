@@ -249,7 +249,7 @@ UXPressia. (s. f.). *User vs. Buyer Persona: Differences and free template*. htt
 | Design-Level Event Storming (Miro) | https://miro.com/welcomeonboard/cExUcjF1YWgyNWl6YlpZZHY3N0tVdFVycklvM3g4eTI0SnBGRy9GVFpMLzgvTHozVkkyVGJ2VSs5YTdib2ZWcllpK3p4cDIyVTcxNWlVYi9GV09VYUd1OFVrZDBZWUZnMkpxd3Avcy9NNmlnallxeWRYSWlPdVJzczBCcTVSay9Bd044SHFHaVlWYWk0d3NxeHNmeG9BPT0hdjE=?share_link_id=452333878649 |
 | Sprint Backlog 1 (Trello) |https://trello.com/invite/b/6aaaf893146da1803fa7c582/ATTI953be54ae0a00d9a1f783b712cdcda28CEA7DD62/roadwatch-os-sprint-1  |
 | Sprint Backlog 2 (Trello) | https://trello.com/invite/b/6ac45a47333a77ed1bb96de5/ATTIca8bddcc76ee95806b238f44a0f053fbF89A1419/sprin2-roadwatch |
-| Sprint Backlog 3 (Trello) | |
+| Sprint Backlog 3 (Trello) | https://trello.com/invite/b/6af79e14bc4744f18eca99eb/ATTI2a6f590a79b636427ecbf0a061cf468bBE7268C9/sprin-backlog-roadwatch |
 
 
 

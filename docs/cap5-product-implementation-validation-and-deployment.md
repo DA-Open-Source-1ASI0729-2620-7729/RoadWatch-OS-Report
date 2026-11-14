@@ -582,6 +582,8 @@ Las tareas se trazan a las User Stories del Product Backlog y al trabajo integra
 | US25 / US31 | Swagger y paginación | T08 | Documentación y consultas REST | Publicar los endpoints en `/swagger-ui/index.html`, documentar solicitudes y respuestas, y verificar paginación en los listados aplicables. | Por estimar | Equipo de backend, por BC | Código integrado; revisión de Swagger UI en ejecución pendiente |
 | US26 / US27 / US29 / US30 / US35 | Integración de servicios | T09 | Validación integrada del backend | Integrar las ramas revisadas, resolver contratos entre contextos y comprobar los flujos REST y la persistencia contra la base MySQL del equipo antes del Sprint Review. | Por estimar | Equipo de backend | Ramas integradas; flujo REST y MySQL pendientes de validación |
 
+> **URL del Board en Trello (Sprint 3):** https://trello.com/invite/b/6af79e14bc4744f18eca99eb/ATTI2a6f590a79b636427ecbf0a061cf468bBE7268C9/sprin-backlog-roadwatch
+
 La captura del tablero **Sprint Backlog - RoadWatch** muestra cuatro listas: `To do`, `In process`, `To review` y `Done`. En el momento de la captura, las tres primeras tienen 0 tarjetas y `Done` tiene 10. Se observan las historias US24, US32, US53, US26, US20, US48, US27, US28, US29 y US34. Algunas corresponden a historias agrupadas por tarea técnica en la tabla anterior; la imagen no cubre todas las tareas T01–T09.
 
 ![Tablero Trello del Sprint Backlog 3](../assets/images/chapter5/sprint3-trello-backlog.png)
