@@ -249,6 +249,7 @@ UXPressia. (s. f.). *User vs. Buyer Persona: Differences and free template*. htt
 | Design-Level Event Storming (Miro) | https://miro.com/welcomeonboard/cExUcjF1YWgyNWl6YlpZZHY3N0tVdFVycklvM3g4eTI0SnBGRy9GVFpMLzgvTHozVkkyVGJ2VSs5YTdib2ZWcllpK3p4cDIyVTcxNWlVYi9GV09VYUd1OFVrZDBZWUZnMkpxd3Avcy9NNmlnallxeWRYSWlPdVJzczBCcTVSay9Bd044SHFHaVlWYWk0d3NxeHNmeG9BPT0hdjE=?share_link_id=452333878649 |
 | Sprint Backlog 1 (Trello) |https://trello.com/invite/b/6aaaf893146da1803fa7c582/ATTI953be54ae0a00d9a1f783b712cdcda28CEA7DD62/roadwatch-os-sprint-1  |
 | Sprint Backlog 2 (Trello) | https://trello.com/invite/b/6ac45a47333a77ed1bb96de5/ATTIca8bddcc76ee95806b238f44a0f053fbF89A1419/sprin2-roadwatch |
+| Sprint Backlog 3 (Trello) | |
 
 
 
@@ -256,12 +257,45 @@ UXPressia. (s. f.). *User vs. Buyer Persona: Differences and free template*. htt
 
 
 ### Anexo C: Videos de Exposiciones
-<a id="anexo-d-videos-de-exposiciones"></a>
+<a id="anexo-c-videos-de-exposiciones"></a>
 
 | Entrega | Título | Enlace |
 |---|---|---|
 | AV1 | Exposición AV1 — RoadWatch OS | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410421_upc_edu_pe/IQD_LnHNx-HqRqv-HFAjJ1qpAS--FQJu5dsHsXaKySKqQjY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=UE0Qfp |
 | TB1 | Exposición TB1 — RoadWatch OS | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410421_upc_edu_pe/IQBv2exzNrqBSrXMzGM1jBgYASk-nrAZWRl3pYsNgxF8844?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=66IAzR|
+| AV2 | Exposición AV2 — RoadWatch OS | |
+| TB2 | Exposición TB2 — RoadWatch OS | |
+
+### Anexo D: Repositorios y Despliegues
+<a id="anexo-d-repositorios-y-despliegues"></a>
+
+| Recurso | Enlace |
+|---|---|
+| Organización de GitHub de RoadWatch OS | https://github.com/DA-Open-Source-1ASI0729-2620-7729 |
+| Repositorio de Landing Page | https://github.com/DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-LandingPage |
+| Repositorio de Frontend Web Application | https://github.com/DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Frontend |
+| Repositorio de Web Services (RESTful API) | https://github.com/DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Backend |
+| Repositorio del Project Report | https://github.com/DA-Open-Source-1ASI0729-2620-7729/RoadWatch-OS-Report |
+| Landing Page desplegada | https://da-open-source-1asi0729-2620-7729.github.io/RoadWatch-OS-LandingPage/ |
+| Frontend Web Application (QA, Sprint 2) | https://road-watch-os-frontend.vercel.app/auth/login |
+| Frontend Web Application (validación) | https://roadwatch-os-frontend.vercel.app/monitoring |
+| Swagger UI del backend en Railway | https://roadwatch-os-backend-production.up.railway.app/swagger-ui/swagger-ui/index.html |
+| URL pública de Railway para el backend | https://roadwatch-os-backend-production.up.railway.app/ |
+
+---
+
+### Anexo E: Videos de Validación y Presentación del Producto
+<a id="anexo-e-videos-de-validacion-y-presentacion"></a>
+
+| Recurso | Enlace |
+|---|---|
+| Video de validación — Segmento 1, Luis Alfonso Chávez Madueño | https://1drv.ms/v/c/113B281D1AF386CE/IQCB0f8yxgWfQL5eUdYlqZ4UAQ2dNnxRUecP-YCOKLZu3Yk?e=eRa2tx |
+| Video de validación — Segmento 1, Alexandra Ojeda | https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241g031_upc_edu_pe/IQBwKceYtUksQYnne1fwPT9AAdl9I2SEgCI_u-6XKf7DCCg?e=HSHvhS |
+| Video de validación — Segmento 2, Fabio | https://1drv.ms/v/c/113B281D1AF386CE/IQBDCHbWA_ctTLGyzkoQZ6cQAQfKLGio0Fs2fa5OnTfZ1lA?e=ZDMWNZ |
+| Video de validación — Segmento 2, Angie Cuya | https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241g031_upc_edu_pe/IQCNFffK_lqoTZJj9FQ2qr8gATUKWnJMGmx5yxSGesEvLCU?e=ZQPETb |
+| Video About-the-Product (YouTube) | https://youtu.be/-9enNXuyJ3s |
+| Video About-the-Product (Microsoft Stream) | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410421_upc_edu_pe/IQDrL1dLRqU-SKn2kd0TEq0JAYzZsyz2tN2wUUkIwW8EH7k?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXcifX0%3D&e=AB0p8t |
+| Video About-the-Team | |
 
 </div>
 
