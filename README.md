@@ -40,14 +40,16 @@ Proyecto<br>
 
 <div style="page-break-after: always;"></div>
 
+
 ## Registro de Versiones del Informe
 
 | Versión | Fecha | Autores | Descripción de modificación |
 | :--- | :--- | :--- | :--- |
 | **AV1** | 18/09/2026 | Pancorbo Amorós, Italo Raul<br>Cabrera Sotelo, Camila Celeste<br>Conde Huashuayo, Sebasthian Alex<br>Montes Chang, Piero Francisco<br>Diaz De La Cruz, Sebastian Gabriel | Creación inicial del archivo desde cero y elaboración de la estructura base del **Final Project Documentation Report**. Se incorporaron la carátula, registro de versiones, contenido, Student Outcome, capítulos de Introducción, Requirements Elicitation & Analysis, Requirements Specification, Product Design y Product Implementation, Validation & Deployment, incluyendo la configuración del entorno, gestión del código fuente, guía de estilos, despliegue, implementación de la Landing Page, Sprint 1, Conclusiones, Bibliografía y Anexos. |
 | **TB1** | 06/10/2026 | Pancorbo Amorós, Italo Raul<br>Cabrera Sotelo, Camila Celeste<br>Conde Huashuayo, Sebasthian Alex<br>Montes Chang, Piero Francisco<br>Diaz De La Cruz, Sebastian Gabriel | Actualización general del informe para el hito de evaluación **TB1 (Semana 7)**. Se incorporaron la revisión y corrección de artefactos previamente presentados, la actualización de las secciones de Student Outcome y Project Report Collaboration Insights, y el registro del despliegue de la versión mejorada de la Landing Page y la primera versión funcional de la Frontend Web Application. Se agregó el desarrollo completo de la sección **5.2.2 (Sprint 2)**, incluyendo Sprint Planning 2, Aspect Leaders and Collaborators, Sprint Backlog 2, evidencias de desarrollo, ejecución, documentación de servicios (API RESTful), despliegue e insights de colaboración del equipo, junto con la actualización de Conclusiones, Recomendaciones, Bibliografía y Anexos. |
-| **AV2** | | | |
+| **AV2** | 13/11/2026 | Pancorbo Amorós, Italo Raul<br>Cabrera Sotelo, Camila Celeste<br>Conde Huashuayo, Sebasthian Alex<br>Montes Chang, Piero Francisco<br>Diaz De La Cruz, Sebastian Gabriel | Actualización general del informe para el hito de evaluación **AV2 (Sprint 3)**. Se revisó y actualizó el **Capítulo IV**, incluyendo el Design-Level EventStorming (4.6.1), los diagramas C4 de componentes, los diagramas de clases y los diagramas de base de datos, manteniendo la consistencia arquitectónica entre los siete Bounded Contexts. Se incorporó la sección **5.2.3 (Sprint 3)**, documentando el desarrollo del backend con Spring Boot, la implementación de servicios REST, la integración con MySQL, la configuración de despliegue en Railway y las evidencias de documentación mediante Swagger/OpenAPI. Asimismo, se agregaron las secciones **5.3 (Validation Interviews)**, con el diseño y registro de entrevistas y la evaluación según heurísticas de Nielsen, y **5.4 (Video About-the-Product)**, incluyendo evidencias audiovisuales y enlaces de publicación. Finalmente, se actualizaron el Student Outcome 3, los registros de colaboración del equipo y las secciones correspondientes de Conclusiones, Bibliografía y Anexos. |
 | **TB2** | | | |
+
 
 
 <div style="page-break-after: always;"></div>
