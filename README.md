@@ -297,7 +297,8 @@ UXPressia. (s. f.). *User vs. Buyer Persona: Differences and free template*. htt
 | Video de validación — Segmento 2, Angie Cuya | https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241g031_upc_edu_pe/IQCNFffK_lqoTZJj9FQ2qr8gATUKWnJMGmx5yxSGesEvLCU?e=ZQPETb |
 | Video About-the-Product (YouTube) | https://youtu.be/-9enNXuyJ3s |
 | Video About-the-Product (Microsoft Stream) | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410421_upc_edu_pe/IQDrL1dLRqU-SKn2kd0TEq0JAYzZsyz2tN2wUUkIwW8EH7k?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXcifX0%3D&e=AB0p8t |
-| Video About-the-Team | |
+| Video About-the-Team (YouTube) | https://www.youtube.com/watch?v=Kr4R7j8YgkA&feature=youtu.be |
+| Video About-the-Team (Microsoft Stream) | https://upcedupe-my.sharepoint.com/personal/u202410421_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202410421%5Fupc%5Fedu%5Fpe%2FDocuments%2Fupc%2Dpre%2D202620%2D1asi0729%2D7729%2Droadwatch%2Dos%2Dabout%2Dthe%2Dteam%2Dsprint%2D3%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0=&ga=1 |
 
 </div>
 
