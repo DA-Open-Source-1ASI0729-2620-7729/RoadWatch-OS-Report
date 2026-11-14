@@ -582,6 +582,14 @@ Las tareas se trazan a las User Stories del Product Backlog y al trabajo integra
 | US25 / US31 | Swagger y paginación | T08 | Documentación y consultas REST | Publicar los endpoints en `/swagger-ui/index.html`, documentar solicitudes y respuestas, y verificar paginación en los listados aplicables. | Por estimar | Equipo de backend, por BC | Código integrado; revisión de Swagger UI en ejecución pendiente |
 | US26 / US27 / US29 / US30 / US35 | Integración de servicios | T09 | Validación integrada del backend | Integrar las ramas revisadas, resolver contratos entre contextos y comprobar los flujos REST y la persistencia contra la base MySQL del equipo antes del Sprint Review. | Por estimar | Equipo de backend | Ramas integradas; flujo REST y MySQL pendientes de validación |
 
+La captura del tablero **Sprint Backlog - RoadWatch** muestra cuatro listas: `To do`, `In process`, `To review` y `Done`. En el momento de la captura, las tres primeras tienen 0 tarjetas y `Done` tiene 10. Se observan las historias US24, US32, US53, US26, US20, US48, US27, US28, US29 y US34. Algunas corresponden a historias agrupadas por tarea técnica en la tabla anterior; la imagen no cubre todas las tareas T01–T09.
+
+![Tablero Trello del Sprint Backlog 3](../assets/images/chapter5/sprint3-trello-backlog.png)
+
+*Figura: diez historias visibles en Done y ninguna tarjeta en las otras listas del tablero.*
+
+La organización por estados y sus contadores permite reconocer el avance del tablero; los identificadores US facilitan relacionar las tarjetas con el Product Backlog. La captura no muestra responsables, estimaciones, fechas de movimiento, criterios de aceptación ni resultados de pruebas. Por ello, `Done` se interpreta como el estado asignado en Trello y no como confirmación de aceptación funcional.
+
 ---
 
 #### 5.2.3.4. Development Evidence for Sprint Review
@@ -712,7 +720,27 @@ El backend se desarrolló en ramas por Bounded Context y se integró en `develop
 | Cabrera Sotelo, Camila Celeste | Desarrolló el modelo y los endpoints REST de Incident & Mitigation Management en `ft-incident-mitigation`. |
 | Conde Huashuayo, Sebasthian Alex | Desarrolló los recursos de Document & Evidence y Reports & Compliance, incluidas las APIs de documentos y reportes en `ft-document-reports`. |
 
-El trabajo por contexto permitió integrar módulos con responsabilidades separadas. Los commits de `develop` muestran dos conexiones entre contextos: la creación de incidencias a partir de alertas ambientales y la validación de evidencias de incidencias. Estas son observaciones del historial de código; las métricas de colaboración de GitHub y los acuerdos de retrospectiva requieren evidencia propia si el equipo decide incluirlos.
+El trabajo por contexto permitió integrar módulos con responsabilidades separadas. Los commits de `develop` muestran dos conexiones entre contextos: la creación de incidencias a partir de alertas ambientales y la validación de evidencias de incidencias. Estas son observaciones del historial de código; los acuerdos de retrospectiva requieren evidencia propia si el equipo decide incluirlos.
+
+Las capturas de **GitHub Insights → Contributors** complementan la autoría de commits con una vista de actividad en cuatro repositorios. En el backend, la gráfica corresponde a `develop` y muestra cinco contribuidores visibles: `tipaso07` (64 commits), `SebasthianCH` (23), `pancorboitalo-design` (15), `whcamm` (11) y `PieroMchang` (4). En el frontend, también sobre `develop`, se observan `tipaso07` (79), `whcamm` (7), `pancorboitalo-design` (3) y `SebasthianCH` (1). La captura del Landing Page presenta cuatro contribuidores visibles: `tipaso07` (43), `SebasthianCH` (7), `whcamm` (4) y `pancorboitalo-design` (4). La del reporte corresponde a `main` y muestra `tipaso07` (87), `pancorboitalo-design` (63), `PieroMchang` (21), `whcamm` (13) y `SebasthianCH` (10).
+
+![GitHub Insights de contribuidores del backend](../assets/images/chapter5/sprint3-insights-backend.png)
+
+*Figura: contribuciones al backend mostradas por GitHub Insights para la rama develop.*
+
+![GitHub Insights de contribuidores del frontend](../assets/images/chapter5/sprint3-insights-frontend.png)
+
+*Figura: contribuciones al frontend mostradas por GitHub Insights para la rama develop.*
+
+![GitHub Insights de contribuidores del Landing Page](../assets/images/chapter5/sprint3-insights-landingpage.png)
+
+*Figura: contribuciones al repositorio del Landing Page mostradas por GitHub Insights.*
+
+![GitHub Insights de contribuidores del reporte](../assets/images/chapter5/sprint3-insights-report.png)
+
+*Figura: contribuciones al reporte mostradas por GitHub Insights para la rama main.*
+
+Las cuatro vistas utilizan el filtro `Last 3 months`, la métrica `Commits` y excluyen los merge commits. Por tanto, sus cifras son acumuladas del periodo visible y de las ramas indicadas, no conteos exclusivos del Sprint 3 ni medidas de calidad o carga de trabajo individual. Las barras semanales muestran actividad en distintos momentos de septiembre, octubre y noviembre; la captura del backend concentra la actividad visible en noviembre. Las diferencias entre repositorios son coherentes con el trabajo distribuido entre producto, documentación y backend, pero la atribución de tareas concretas del sprint se sostiene en el historial de commits y merges citado arriba.
 
 ---
 
