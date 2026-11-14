@@ -163,14 +163,19 @@ Proyecto<br>
 ---
 
 ## [Conclusiones](#conclusiones)
+<a id="conclusiones"></a>
 
 ### Conclusiones
 
-* Se logró consolidar una plataforma web que aborda de manera efectiva la dispersión de la información ambiental en los proyectos de infraestructura vial. Al centralizar los registros de proyectos, puntos de monitoreo, mediciones, alertas, incidencias, evidencias y reportes en un solo entorno digital, **RoadWatch OS** permite que las empresas constructoras y supervisoras mantengan un seguimiento ordenado y una trazabilidad clara de la información ambiental registrada en sus obras.
+* RoadWatch OS responde a la necesidad de reunir información ambiental de proyectos viales en una misma experiencia de consulta. La versión de frontend desarrollada y validada permite recorrer proyectos, mediciones, alertas, incidencias, evidencias y reportes para los dos segmentos objetivo. Las entrevistas registradas muestran que los participantes comprendieron la organización general y valoraron la centralización; estas apreciaciones corresponden a las sesiones observadas y no equivalen a una validación de uso a escala.
 
-* La estructuración del sistema basada en el Diseño Guiado por Dominios (DDD) y su descomposición en siete *Bounded Contexts* específicos (*Identity & Access Management*, *Subscription Management*, *Project Management*, *Environmental Monitoring*, *Incident & Mitigation Management*, *Document & Evidence Management* y *Reports & Compliance Management*) permitió organizar con claridad las responsabilidades de la plataforma. Este enfoque modular facilitó el diseño y desarrollo en paralelo de módulos desacoplados, garantizando que el sistema sea mantenible, escalable y adaptable a nuevas exigencias del sector sin comprometer la arquitectura existente.
+* La separación en siete *Bounded Contexts* permitió distribuir la implementación del backend por responsabilidades y ramas de trabajo. En el Sprint 3 se integraron esas ramas en `develop`, se documentaron rutas REST y se registró una compilación y ejecución de pruebas seleccionadas sin fallos. La evidencia técnica acredita el estado del código integrado en esas verificaciones, pero no demuestra por sí sola que todos los flujos de negocio funcionen de extremo a extremo.
 
-* El avance consistente del ciclo de desarrollo radicó en la capacidad de autogestión y en la estrategia colaborativa del equipo ("divide y vencerás"). La definición de una matriz de líderes y colaboradores por *Bounded Context* y el trabajo sobre ramas *feature* independientes bajo *GitFlow* redujeron los conflictos de integración (*merge conflicts*), permitiendo consolidar los flujos de ambos segmentos objetivo (empresas constructoras y supervisoras ambientales) dentro de un *App Shell* unificado.
+* Las capturas de Railway muestran el backend y MySQL en línea, así como tablas de varios contextos. Las de Swagger UI muestran la documentación interactiva publicada y esquemas de recursos visibles. Sigue pendiente registrar una operación REST exitosa sobre el despliegue, comprobar la lectura o escritura de datos persistidos y asociar la instancia a un commit específico. Por ello, la integración funcional con la base de datos no se da por cerrada en esta entrega.
+
+* Las entrevistas de validación identificaron mejoras concretas para ambos segmentos: mostrar unidades y límites junto a las mediciones, explicar el origen y los siguientes pasos de las incidencias, facilitar el acceso a evidencias y documentos, distinguir versiones vigentes y permitir buscar proyectos por nombre al preparar reportes. Estos hallazgos orientan la siguiente iteración de la interfaz y la priorización del Product Backlog.
+
+* El tablero de Trello muestra diez historias en `Done` y GitHub Insights registra actividad de los integrantes en los repositorios. Estas evidencias respaldan el seguimiento y la distribución del trabajo. La aceptación de cada historia requiere contrastar sus criterios con pruebas funcionales y resultados de revisión, ya que el estado del tablero y el número de commits no miden por sí mismos la calidad del producto.
 
 ---
 
