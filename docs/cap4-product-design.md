@@ -16,7 +16,7 @@ Las decisiones de diseño buscan transmitir orden, confianza y relación con el 
 
 ### Colores
 
-![Colores - RoadWatch OS](/assets/images/Colours.png)
+![Colores - RoadWatch OS](../assets/images/Colours.png)
 
 La paleta de colores de RoadWatch OS combina tonos relacionados con el ambiente y la infraestructura vial:
 
@@ -624,26 +624,103 @@ La propuesta busca separar las responsabilidades del sistema en contextos cohere
 ### 4.6.1. Design-Level EventStorming.
 <a id="4-6-1-design-level-eventstorming"></a>
 
-El Design-Level EventStorming permite profundizar el modelo identificado previamente en el Big Picture Event Storming y reconocer actores, comandos, eventos, políticas, consultas y posibles Bounded Contexts.
+El Design-Level EventStorming profundiza el modelo obtenido en el Big Picture EventStorming y lo refina hasta el nivel de diseño de software: para cada flujo del dominio se identifican los **actores**, los **commands**, los **aggregates** que los atienden, los **domain events** resultantes, las **policies** que automatizan reglas de negocio y los **read models / queries** que alimentan las pantallas. A partir de este modelo se delimitan los siete Bounded Contexts de RoadWatch OS, que son la base de los diagramas de arquitectura (4.6.2 a 4.6.4), de clases (4.7.1) y de base de datos (4.8.1).
+
+El alcance corresponde al MVP: las mediciones se registran de forma manual y no se modelan dispositivos IoT ni pagos.
 
 **Global EventStorming Map**
 
 <div align="center">
-  <img src="../assets/images/EventStorming.jpg" alt="RoadWatch Global Event Storming">
+  <img src="../assets/images/EventStorming-global.png" alt="RoadWatch OS - Global EventStorming">
+  <br><sub><em>Figura 1. Mapa global del Design-Level EventStorming de RoadWatch OS: los siete Bounded Contexts y sus relaciones (flechas punteadas numeradas 1 a 7).</em></sub>
 </div>
 
-Durante el refinamiento del Design-Level EventStorming se identificaron siete Bounded Contexts principales para RoadWatch OS:
+El mapa global agrupa en un marco cada Bounded Context. Las flechas continuas muestran el flujo dentro de un contexto; las flechas punteadas numeradas, las relaciones entre contextos (queries síncronas, eventos y referencias por ID), explicadas en la leyenda de la figura.
 
-- **Identity & Access Management**, responsable de la autenticación, usuarios, roles y permisos.
-- **Subscription Management**, responsable de los planes, suscripciones y límites operativos.
-- **Project Management**, responsable de los proyectos viales y sus puntos de monitoreo.
-- **Environmental Monitoring**, responsable del registro de mediciones, evaluación de umbrales y generación de alertas ambientales.
-- **Incident & Mitigation Management**, responsable del seguimiento de incidencias y acciones de mitigación.
-- **Document & Evidence Management**, responsable de evidencias, documentos normativos y sus versiones.
-- **Reports & Compliance Management**, responsable de reportes, indicadores y evaluación del cumplimiento ambiental.
+**EventStorming por Bounded Context**
 
-Estos Bounded Contexts sirven como base para mantener consistencia entre el modelo de dominio, la arquitectura de software, los Class Diagrams y los Database Diagrams.
+Cada contexto se detalla en su propio diagrama (actores → commands → aggregates → eventos → policies → read models):
 
+<div align="center">
+  <img src="../assets/images/BC1-IdentityAccess.png" alt="BC1-IdentityAccess">
+  <br><sub><em>Figura 2. Bounded Context 1 – Identity & Access Management: registro de usuarios, roles, permisos y autenticación.</em></sub>
+</div>
+
+<div align="center">
+  <img src="../assets/images/BC2-Subscription.png" alt="BC2-Subscription">
+  <br><sub><em>Figura 3. Bounded Context 2 – Subscription Management: selección, activación, cambio y cancelación de planes de suscripción.</em></sub>
+</div>
+
+<div align="center">
+  <img src="../assets/images/BC3-ProjectManagement.png" alt="BC3-ProjectManagement">
+  <br><sub><em>Figura 4. Bounded Context 3 – Project Management: proyectos viales, responsables y puntos de monitoreo (con validación de ubicación mediante Maps & Geolocation Service).</em></sub>
+</div>
+
+<div align="center">
+  <img src="../assets/images/BC4-EnvironmentalMonitoring.png" alt="BC4-EnvironmentalMonitoring">
+  <br><sub><em>Figura 5. Bounded Context 4 – Environmental Monitoring: registro de mediciones, evaluación frente a umbrales normativos y generación de alertas.</em></sub>
+</div>
+
+<div align="center">
+  <img src="../assets/images/BC5-IncidentMitigation.png" alt="BC5-IncidentMitigation">
+  <br><sub><em>Figura 6. Bounded Context 5 – Incident & Mitigation Management: ciclo de vida de las incidencias, acciones de mitigación, comentarios y control de vencimiento.</em></sub>
+</div>
+
+<div align="center">
+  <img src="../assets/images/BC6-DocumentEvidence.png" alt="BC6-DocumentEvidence">
+  <br><sub><em>Figura 7. Bounded Context 6 – Document & Evidence Management: evidencias, documentos normativos, versiones y documentos requeridos.</em></sub>
+</div>
+
+<div align="center">
+  <img src="../assets/images/BC7-ReportsCompliance.png" alt="BC7-ReportsCompliance">
+  <br><sub><em>Figura 8. Bounded Context 7 – Reports & Compliance Management: reportes de auditoría, indicadores ambientales y evaluación del cumplimiento.</em></sub>
+</div>
+
+**Leyenda de elementos aplicados**
+
+| Elemento | Color | Significado |
+| :--- | :--- | :--- |
+| Actor / Rol | Amarillo | Quien ejecuta la acción (Admin, Project Manager, Environmental Officer, Auditor). |
+| Command | Azul | Intención o acción que se solicita al sistema. |
+| Aggregate | Amarillo claro con borde oscuro | Raíz de consistencia que valida el command y emite el evento. |
+| Domain Event | Naranja | Hecho relevante que ya ocurrió en el dominio. |
+| Policy | Morado | Regla de negocio o automatización que reacciona a un evento o a una consulta. |
+| Read Model / Query | Verde | Datos proyectados para las pantallas de la aplicación. |
+| Sistema externo | Rosado | Servicio fuera de RoadWatch OS (Maps & Geolocation Service). |
+| Dependencia con otro contexto | Borde rojo discontinuo | Policy que depende de otro Bounded Context. |
+
+#### Bounded Contexts identificados
+
+| # | Bounded Context | Responsabilidad | Aggregates | Commands principales | Domain Events principales | Read models / Queries |
+| :-- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 1 | **Identity & Access Management** | Autenticación, usuarios, roles y permisos (RBAC). | `User` (root), `Role` ◆ `Permission`, `AuthToken` | Register User, Assign Role, Grant Permission to Role, Authenticate, Deactivate User | User Registered, Role Assigned, Permission Granted, Session Token Issued, User Deactivated | User Management Dashboard, Roles & Permissions Matrix |
+| 2 | **Subscription Management** | Planes, suscripciones y límites operativos por cuenta. | `Subscription` (root) → `Plan` | Select Plan, Activate Subscription, Change Plan, Cancel Subscription | Plan Selected, Subscription Activated, Plan Changed, Subscription Cancelled | Plan Catalog, Current Plan & Quota Usage |
+| 3 | **Project Management** | Proyectos viales, responsables y puntos de monitoreo. | `Project` (root) ◆ `MonitoringPoint` | Create Road Project, Assign Responsible, Define Monitoring Point, Update Point Location / Threshold, Archive Project | Road Project Created, Responsible Assigned, Monitoring Point Defined, Monitoring Point Updated, Project Archived | Project Portfolio, Project Detail, Monitoring Points Map |
+| 4 | **Environmental Monitoring** | Registro de mediciones, evaluación frente a umbrales normativos y alertas. | `EnvironmentalMeasurement` (root) → `EnvironmentalAlert`, `NormativeThreshold` | Register Environmental Measurement, Evaluate Measurement, Generate Alert, Acknowledge Alert, Configure Normative Threshold | Measurement Registered, Measurement Classified, Environmental Alert Generated, Alert Acknowledged, Threshold Updated | Monitoring Dashboard, Measurement History, Alert Center |
+| 5 | **Incident & Mitigation Management** | Ciclo de vida de las incidencias y sus acciones de mitigación. | `EnvironmentalIncident` (root) ◆ `MitigationAction`, `IncidentComment`, `IncidentStatusHistory` | Create Environmental Incident, Register Mitigation Action, Add Comment, Change Incident Status, Mark Overdue | Environmental Incident Created, Mitigation Action Registered, Comment Added, Incident Status Changed, Incident Marked Overdue | Incident Kanban Board, Critical Incidents Table, Incident Detail & Status History |
+| 6 | **Document & Evidence Management** | Evidencias, documentos normativos, versiones y documentos requeridos. | `Evidence`, `NormativeDocument` (root) ◆ `DocumentVersion`, `RequiredDocument` | Upload Evidence, Create Normative Document, Upload New Version, Define Required Document, Mark Document Missing | Evidence Uploaded, Normative Document Created, Document Version Uploaded, Required Document Defined, Document Marked Missing | Evidence Library, Normative Documents & Versions, Required Documents Checklist |
+| 7 | **Reports & Compliance Management** | Reportes de auditoría, indicadores y evaluación del cumplimiento. | `AuditReport` (root), `EnvironmentalKpi`, `ComplianceSummary` | Request Audit Report, Generate Audit Report, Recalculate KPIs, Recalculate Compliance | Audit Report Requested, Audit Report Generated / Failed, KPIs Recalculated, Compliance Calculated | Compliance Scorecard, Environmental KPI Panel, Audit Report History |
+
+#### Coreografía entre Bounded Contexts
+
+Los contextos no comparten modelos: se relacionan únicamente mediante identificadores, consultas controladas o eventos de dominio.
+
+| Relación | Tipo | Descripción |
+| :--- | :--- | :--- |
+| Subscription → Identity & Access | Query (síncrona) | `validateUserQuota` antes de registrar un usuario (*User Quota Policy*). |
+| Subscription → Project Management | Query (síncrona) | `validateProjectQuota` antes de crear un proyecto (*Project Quota Policy*). |
+| Project Management → Environmental Monitoring | Referencia por ID | Cada medición guarda el `monitoringPointId` de un punto que pertenece al aggregate `Project`. |
+| Environmental Monitoring → Incident & Mitigation | Evento (asíncrono) | *Environmental Alert Generated* dispara la *Auto-Incident Generation Policy*. |
+| Document & Evidence → Incident & Mitigation | Query (síncrona) | La *Evidence Required Policy* verifica que exista evidencia antes de cambiar el estado de cierre de la incidencia. |
+| Environmental Monitoring / Incident → Reports & Compliance | Evento (asíncrono) | *Measurement Classified* e *Incident Status Changed* alimentan la *KPI Projection Policy*. |
+| Environmental Monitoring / Document & Evidence → Reports & Compliance | Evento (asíncrono) | *Measurement Classified* y *Document Version Uploaded* alimentan la *Compliance Projection Policy*. |
+| Identity & Access → todos los contextos | Token JWT | *Role Assigned* determina qué comandos puede ejecutar cada rol (*Access Control Policy*). |
+
+#### Decisiones de diseño
+
+- **Los puntos de monitoreo pertenecen a Project Management.** `MonitoringPoint` es una entidad dentro del aggregate `Project`. Environmental Monitoring solo los referencia por identificador.
+- **Reports & Compliance no duplica lógica operativa.** Consume eventos de otros contextos y mantiene sus propios indicadores (`EnvironmentalKpi`, `ComplianceSummary`).
+- **Fuera del alcance del MVP:** gestión de dispositivos y sensores IoT, pagos, escaneo de virus y retención de documentos.
 
 ### 4.6.2. Software Architecture Context Diagram.
 <a id="4-6-2-software-architecture-context-diagram"></a>
@@ -672,67 +749,277 @@ El Context Diagram representa a RoadWatch OS como sistema central y muestra a lo
 
 #### Sistemas externos
 
-Los servicios externos utilizados por la solución deben corresponder únicamente a integraciones realmente consideradas en el alcance del proyecto. Entre ellos pueden encontrarse servicios de mapas, notificaciones u otros servicios de apoyo que hayan sido definidos por el equipo.
+- **Servicio de Mapas y Geolocalización:** sistema externo consultado por la plataforma para proporcionar referencias geográficas y representación visual de las ubicaciones de los proyectos viales y de sus puntos de monitoreo ambiental.
 
-![Diagrama de Contexto C4 - RoadWatch OS](/assets/images/ContextDiagram.png)
+![Diagrama de Contexto C4 - RoadWatch OS](../assets/images/ContextDiagram.png)
 
 ### 4.6.3. Software Architecture Container Diagrams.
 <a id="4-6-3-software-architecture-container-diagrams"></a>
 
-El Container Diagram muestra las principales unidades de despliegue de RoadWatch OS, las responsabilidades de cada una y las tecnologías seleccionadas para su implementación.
+El Container Diagram muestra las principales unidades de despliegue (contenedores) de **RoadWatch OS**, las responsabilidades de cada una, los protocolos de comunicación y las tecnologías seleccionadas para su implementación:
+
+#### Landing Page
+
+Sitio web estático desarrollado con **HTML5**, **CSS3** y **JavaScript**, desplegado en **GitHub Pages**. Presenta la propuesta de valor de RoadWatch OS, beneficios, funcionalidades, planes de suscripción y redirige a los usuarios de ambos segmentos hacia la Web Application.
 
 #### Web Application
 
-La aplicación web se desarrollará utilizando **Angular Framework**, con **TypeScript**, HTML5 y CSS3. Para la interfaz se utilizará **Angular Material**, siguiendo los lineamientos de Material Design definidos para el proyecto.
+Aplicación web *Single-Page Application (SPA)* desarrollada utilizando **Angular Framework**, **TypeScript**, HTML5 y CSS3, aplicando **Angular Material** bajo los lineamientos de Material Design.
 
-La aplicación permitirá:
+La aplicación permite a los usuarios:
 
-- Consultar proyectos y puntos de monitoreo.
+- Iniciar sesión y acceder a vistas diferenciadas según su segmento (Constructora Vial o Supervisora / Consultora Ambiental).
+- Consultar proyectos viales y sus puntos de monitoreo.
 - Registrar y consultar mediciones ambientales.
-- Revisar alertas e incidencias.
-- Registrar y consultar evidencias.
-- Consultar información de seguimiento y reportes.
+- Revisar alertas preventivas/críticas y gestionar incidencias en el tablero Kanban.
+- Registrar y consultar evidencias fotográficas y documentos normativos.
+- Consultar el historial de seguimiento y generar reportes de cumplimiento.
 
-La Web Application se comunicará con los servicios backend mediante peticiones HTTPS hacia una API RESTful.
+La Web Application se comunica con los servicios backend mediante peticiones **HTTPS/JSON** hacia la RESTful API.
 
 #### RESTful API
 
-Los servicios backend se desarrollarán utilizando **Java** con **Spring Boot** y **Spring Data JPA**, siguiendo el estilo arquitectónico RESTful definido para el proyecto.
+Servicios backend desarrollados utilizando **Java** con **Spring Boot**, **Spring Security (JWT)** y **Spring Data JPA**, estructurados como un monolito modular alineado a Domain-Driven Design (DDD).
 
-La API será responsable de:
+La API es responsable de:
 
-- Gestionar los datos de proyectos y puntos de monitoreo.
-- Gestionar mediciones ambientales.
-- Evaluar información frente a los parámetros definidos por el negocio.
-- Gestionar alertas e incidencias.
-- Gestionar acciones de seguimiento y evidencias.
-- Proporcionar la información necesaria para los reportes.
-- Gestionar autenticación y autorización según los requerimientos definidos.
+- Gestionar la autenticación, usuarios, roles, permisos y planes de suscripción.
+- Gestionar los datos de proyectos viales y puntos de monitoreo, consultando el servicio externo de mapas y geolocalización cuando se requiere representación geográfica.
+- Gestionar mediciones ambientales y evaluarlas frente a los umbrales normativos configurados.
+- Generar alertas y gestionar el ciclo de vida de las incidencias y acciones de mitigación.
+- Gestionar el repositorio de documentos normativos, versiones y evidencias ambientales.
+- Consolidar indicadores de cumplimiento y estructurar los reportes de auditoría.
 
 #### Database
 
-RoadWatch OS utiliza una base de datos relacional para almacenar de forma persistente la información del sistema.
+**RoadWatch OS** utiliza una base de datos relacional para almacenar de forma persistente e íntegra la información de los siete Bounded Contexts del sistema (usuarios, suscripciones, proyectos, puntos de monitoreo, mediciones, alertas, incidencias, acciones de mitigación, evidencias, documentos y reportes).
 
-La base de datos mantiene información relacionada con:
+La Web Application no accede directamente a la base de datos; todas las operaciones de lectura y escritura son gobernadas por la RESTful API mediante JPA/JDBC.
 
-- Usuarios.
-- Proyectos.
-- Puntos de monitoreo.
-- Mediciones.
-- Alertas e incidencias.
-- Acciones de seguimiento.
-- Evidencias.
-- Reportes y datos relacionados.
-
-La Web Application no accede directamente a la base de datos. Las operaciones de lectura y escritura se realizan a través de la RESTful API.
-
-![Diagrama de Contenedores C4 - RoadWatch OS](/assets/images/ContainerDiagram.png)
+![Diagrama de Contenedores C4 - RoadWatch OS](../assets/images/ContainerDiagram.png)
 
 
 ### 4.6.4. Software Architecture Components Diagrams.
 <a id="4-6-4-software-architecture-components-diagrams"></a>
 
-El Component Diagram representa la descomposición interna del RESTful API de RoadWatch OS. La organización del backend sigue los Bounded Contexts identificados durante el modelado del dominio:
+El Component Diagram descompone el contenedor **RESTful API** de **RoadWatch OS**. Muestra cómo se organiza la lógica del backend en **7 módulos**, uno por cada Bounded Context identificado en el Design-Level EventStorming (4.6.1), y detalla los componentes internos de cada módulo. Las relaciones entre módulos son las mismas de la coreografía definida en 4.6.1: consultas síncronas a través de fachadas, referencias por identificador y domain events publicados en un bus interno.
+
+#### Justificación de la descomposición del contenedor RESTful API
+
+Se descompone el contenedor **RESTful API** porque concentra las reglas de negocio, las políticas de validación normativa, el control de acceso y la orquestación de datos entre la **Web Application**, la **Database** y el **Servicio de Mapas y Geolocalización**.
+
+Cada uno de los siete Bounded Contexts sigue internamente una **arquitectura en capas orientada al dominio (DDD Layered Architecture)** compuesta por cuatro niveles:
+
+1. **Interfaces Layer (`REST Controllers`, `Event Listeners` y `Schedulers`):** Expone los endpoints RESTful (`HTTPS/JSON`) que consume la Web Application, recibe los domain events de otros contextos y ejecuta las políticas programadas (como el control de vencimiento de incidencias).
+2. **Application Layer (`Services`, `Context Facades` y `ACL Clients`):** Coordina los casos de uso del contexto (los *commands* del EventStorming). Las *Context Facades* exponen a otros módulos solo las consultas permitidas y los *ACL Clients* traducen las consultas que el módulo necesita de otro contexto, sin compartir su modelo.
+3. **Domain Layer (`Aggregates`, `Entities`, `Value Objects` y `Repository Interfaces`):** Encapsula las reglas de negocio invariantes, como la clasificación de mediciones frente a umbrales normativos, las transiciones de estado de incidencias o la validación de cuotas de suscripción.
+4. **Infrastructure Layer (`JPA Repositories` y `External Adapters`):** Implementa la persistencia relacional mediante **Spring Data JPA** y los adaptadores técnicos (`JwtTokenProvider`, `PasswordEncoder`, `GeolocationClientAdapter`, `PdfExportService`).
+
+La comunicación asíncrona entre contextos se realiza mediante el **Domain Event Bus** (`ApplicationEventPublisher` de Spring). Así, *Reports & Compliance* proyecta sus indicadores a partir de eventos y no consulta directamente los datos operativos de otros módulos.
+
+**Component Diagram del contenedor RESTful API**
+
+<div align="center">
+  <img src="../assets/images/chapter4/components/c4-component-restful-api.png" alt="C4 Component Diagram - RoadWatch OS RESTful API">
+  <br><sub><em>Figura 11. Component Diagram del contenedor RESTful API: los 7 módulos de Bounded Context, el Domain Event Bus y sus relaciones con la Web Application, la Database y el Servicio de Mapas y Geolocalización.</em></sub>
+</div>
+
+#### Relaciones entre módulos
+
+| Relación (4.6.1) | Componente origen | Componente destino | Mecanismo |
+| :--- | :--- | :--- | :--- |
+| Subscription → Identity & Access | `SubscriptionQuotaClient` (IAM) | `SubscriptionContextFacade` | Llamada interna síncrona `validateUserQuota` (*User Quota Policy*). |
+| Subscription → Project Management | `SubscriptionQuotaClient` (Project) | `SubscriptionContextFacade` | Llamada interna síncrona `validateProjectQuota` (*Project Quota Policy*). |
+| Project Management → Environmental Monitoring | `ProjectPointClient` (Monitoring) | `ProjectContextFacade` | Validación del `monitoringPointId`; la medición solo guarda el identificador. |
+| Environmental Monitoring → Incident & Mitigation | `AlertService` | `AutoIncidentGenerationPolicy` | Evento *Environmental Alert Generated* vía Domain Event Bus. |
+| Document & Evidence → Incident & Mitigation | `EvidenceClient` (Incident) | `EvidenceContextFacade` | Llamada interna síncrona `hasEvidenceForIncident` (*Evidence Required Policy*). |
+| Monitoring / Incident / Document → Reports & Compliance | `ThresholdEvaluationService`, `IncidentService`, `DocumentService` | `ReportingEventHandler` | Eventos *Measurement Classified*, *Incident Status Changed* y *Document Version Uploaded* (*KPI* y *Compliance Projection Policies*). |
+| Identity & Access → todos los contextos | `JwtAuthenticationFilter` | Controladores de los 7 módulos | Validación del token JWT en cada petición (*Access Control Policy*). |
+| Project Management → Servicio de Mapas | `GeolocationClientAdapter` | Servicio de Mapas y Geolocalización | `HTTPS/JSON` (*Geo-validation Policy*). |
+
+#### Especificación de Componentes Internos por Bounded Context
+
+| Bounded Context (Módulo) | Interfaces | Application | Infrastructure | Interacciones con otros Contextos / Sistemas |
+| :--- | :--- | :--- | :--- | :--- |
+| **1. Identity & Access Management** | `JwtAuthenticationFilter`<br>`AuthController`<br>`UserController`<br>`RoleController` | `AuthenticationService`<br>`UserService`<br>`RoleService`<br>`SubscriptionQuotaClient` (ACL) | `UserRepository`<br>`RoleRepository`<br>`PermissionRepository`<br>`PasswordEncoder`<br>`JwtTokenProvider` | Consulta `validateUserQuota` en *Subscription Management* antes de registrar un usuario y valida el JWT de las peticiones a todos los contextos. |
+| **2. Subscription Management** | `PlanController`<br>`SubscriptionController` | `PlanService`<br>`SubscriptionService`<br>`SubscriptionContextFacade` | `PlanRepository`<br>`SubscriptionRepository` | Expone `validateUserQuota` y `validateProjectQuota` a *Identity & Access* y *Project Management*. |
+| **3. Project Management** | `ProjectController`<br>`MonitoringPointController` | `ProjectService`<br>`MonitoringPointService`<br>`ProjectContextFacade`<br>`SubscriptionQuotaClient` (ACL) | `ProjectRepository`<br>`MonitoringPointRepository`<br>`GeolocationClientAdapter` | Consulta la cuota en *Subscription Management*, valida coordenadas con el *Servicio de Mapas y Geolocalización* y expone los puntos de monitoreo a *Environmental Monitoring*. |
+| **4. Environmental Monitoring** | `MeasurementController`<br>`ThresholdController`<br>`AlertController` | `MeasurementService`<br>`ThresholdEvaluationService`<br>`AlertService`<br>`ProjectPointClient` (ACL) | `MeasurementRepository`<br>`ThresholdRepository`<br>`AlertRepository` | Valida el `monitoringPointId` en *Project Management* y publica *Measurement Classified* y *Environmental Alert Generated*. |
+| **5. Incident & Mitigation Management** | `IncidentController`<br>`MitigationActionController`<br>`IncidentCommentController`<br>`AutoIncidentGenerationPolicy` (listener)<br>`OverdueCheckPolicy` (scheduler) | `IncidentService`<br>`MitigationService`<br>`CommentService`<br>`EvidenceClient` (ACL) | `IncidentRepository`<br>`MitigationRepository`<br>`CommentRepository`<br>`IncidentStatusHistoryRepository` | Crea incidencias a partir de *Environmental Alert Generated*, verifica evidencia en *Document & Evidence* antes del cierre y publica *Incident Status Changed*. |
+| **6. Document & Evidence Management** | `EvidenceController`<br>`NormativeDocumentController`<br>`RequiredDocumentController` | `EvidenceService`<br>`DocumentService`<br>`RequiredDocumentService`<br>`EvidenceContextFacade` | `EvidenceRepository`<br>`DocumentRepository`<br>`DocumentVersionRepository`<br>`RequiredDocumentRepository` | Expone `hasEvidenceForIncident` a *Incident & Mitigation* y publica *Document Version Uploaded*. |
+| **7. Reports & Compliance Management** | `AuditReportController`<br>`KpiController`<br>`ComplianceController`<br>`ReportingEventHandler` (listener) | `ReportService`<br>`KpiService`<br>`ComplianceService` | `AuditReportRepository`<br>`EnvironmentalKpiRepository`<br>`ComplianceSummaryRepository`<br>`PdfExportService` | Consume *Measurement Classified*, *Incident Status Changed* y *Document Version Uploaded* para recalcular KPIs y cumplimiento. No consulta directamente los datos de otros contextos. |
+
+#### Component Diagrams por Bounded Context
+
+**Bounded Context 1 – Identity & Access Management**
+
+`JwtAuthenticationFilter` intercepta todas las peticiones de la Web Application y valida el token con `JwtTokenProvider`. `AuthenticationService` verifica credenciales con `PasswordEncoder` y emite el token. Antes de registrar un usuario, `UserService` consulta la cuota del plan mediante `SubscriptionQuotaClient`.
+
+<div align="center">
+  <img src="../assets/images/chapter4/components/c4-component-bc1-identity-access.png" alt="C4 Component Diagram - Identity and Access Management">
+  <br><sub><em>Figura 11.1. Component Diagram de Identity & Access Management.</em></sub>
+</div>
+
+**Bounded Context 2 – Subscription Management**
+
+`SubscriptionService` atiende la selección, activación, cambio y cancelación de planes. `SubscriptionContextFacade` es el único punto de entrada para los otros contextos y expone las validaciones de cuota de usuarios y de proyectos.
+
+<div align="center">
+  <img src="../assets/images/chapter4/components/c4-component-bc2-subscription.png" alt="C4 Component Diagram - Subscription Management">
+  <br><sub><em>Figura 11.2. Component Diagram de Subscription Management.</em></sub>
+</div>
+
+**Bounded Context 3 – Project Management**
+
+`ProjectService` verifica la cuota de proyectos antes de crear una obra. `MonitoringPointService` valida la ubicación de los puntos con `GeolocationClientAdapter`. `ProjectContextFacade` permite que *Environmental Monitoring* valide un `monitoringPointId` sin acceder al aggregate `Project`.
+
+<div align="center">
+  <img src="../assets/images/chapter4/components/c4-component-bc3-project.png" alt="C4 Component Diagram - Project Management">
+  <br><sub><em>Figura 11.3. Component Diagram de Project Management.</em></sub>
+</div>
+
+**Bounded Context 4 – Environmental Monitoring**
+
+`MeasurementService` registra la medición y solicita su evaluación a `ThresholdEvaluationService`, que publica *Measurement Classified*. Si el resultado es `WARNING` o `NON_COMPLIANT`, `AlertService` genera la alerta y publica *Environmental Alert Generated*.
+
+<div align="center">
+  <img src="../assets/images/chapter4/components/c4-component-bc4-environmental-monitoring.png" alt="C4 Component Diagram - Environmental Monitoring">
+  <br><sub><em>Figura 11.4. Component Diagram de Environmental Monitoring.</em></sub>
+</div>
+
+**Bounded Context 5 – Incident & Mitigation Management**
+
+`AutoIncidentGenerationPolicy` recibe *Environmental Alert Generated* y crea la incidencia, y `OverdueCheckPolicy` marca las vencidas. Antes de cerrar una incidencia, `IncidentService` verifica la evidencia con `EvidenceClient`. Cada cambio de estado queda en `IncidentStatusHistoryRepository` y se publica como *Incident Status Changed*.
+
+<div align="center">
+  <img src="../assets/images/chapter4/components/c4-component-bc5-incident-mitigation.png" alt="C4 Component Diagram - Incident and Mitigation Management">
+  <br><sub><em>Figura 11.5. Component Diagram de Incident & Mitigation Management.</em></sub>
+</div>
+
+**Bounded Context 6 – Document & Evidence Management**
+
+`EvidenceService` asocia evidencias a mediciones o incidencias, y `EvidenceContextFacade` responde la consulta de *Evidence Required Policy*. `DocumentService` versiona los documentos normativos y publica *Document Version Uploaded*.
+
+<div align="center">
+  <img src="../assets/images/chapter4/components/c4-component-bc6-document-evidence.png" alt="C4 Component Diagram - Document and Evidence Management">
+  <br><sub><em>Figura 11.6. Component Diagram de Document & Evidence Management.</em></sub>
+</div>
+
+**Bounded Context 7 – Reports & Compliance Management**
+
+`ReportingEventHandler` consume los eventos de los otros contextos y dispara las proyecciones de `KpiService` y `ComplianceService`. `ReportService` aplica la *Data Aggregation Policy* sobre esos indicadores y exporta el reporte de auditoría con `PdfExportService`.
+
+<div align="center">
+  <img src="../assets/images/chapter4/components/c4-component-bc7-reports-compliance.png" alt="C4 Component Diagram - Reports and Compliance Management">
+  <br><sub><em>Figura 11.7. Component Diagram de Reports & Compliance Management.</em></sub>
+</div>
+
+## 4.7. Software Object-Oriented Design.
+<a id="4-7-software-object-oriented-design"></a>
+
+El diseño orientado a objetos de **RoadWatch OS** detalla la estructura interna de clases, interfaces, enumeraciones y asociaciones de los **siete Bounded Contexts** identificados en el **Design-Level EventStorming (4.6.1)** y representados como módulos independientes en el **Component Diagram (4.6.4)**.
+
+Para preservar la autonomía de cada contexto y reflejar fielmente las reglas de negocio del dominio, se aplican los siguientes principios tácticos de *Domain-Driven Design (DDD)*:
+
+- **Raíces de Agregado y Composición Interna:** Cada *Aggregate Root* (`User`, `Subscription`, `Project`, `EnvironmentalMeasurement`, `EnvironmentalIncident`, `NormativeDocument`, `AuditReport`) encapsula sus atributos de estado y gobierna sus entidades internas mediante relaciones de composición (`◆`), exponiendo métodos de negocio alineados con los *commands* del EventStorming.
+- **Referencias entre Contextos por Identificador (ID):** Siguiendo las decisiones de diseño de la arquitectura, ningún agregado mantiene referencias de objeto directas hacia clases de otro Bounded Context. Toda vinculación transversal se realiza mediante claves de referencia inmutables (`accountId`, `projectId`, `responsibleUserId`, `monitoringPointId`, `normativeThresholdId`, `measurementId`, `incidentId`).
+- **Separación entre Dominio, Servicios e Infraestructura:** Los servicios coordinan la lógica de aplicación, las políticas de validación (*Quota Policies*, *Threshold Evaluation Policy*, *Evidence Required Policy*) y los adaptadores externos (`GeolocationClientAdapter`, `JwtTokenProvider`, `PdfExportService`), desacoplando el acceso a datos mediante interfaces de repositorio.
+
+
+### 4.7.1. Class Diagrams.
+<a id="4-7-1-class-diagrams"></a>
+
+A continuación se presentan los Class Diagrams correspondientes a los siete Bounded Contexts definidos para RoadWatch OS, especificando sus clases de dominio, enumeraciones, servicios, interfaces de repositorio y multiplicidades.
+
+#### Bounded Context 1 – Identity & Access Management
+
+Modela el registro de usuarios, el control de acceso basado en roles (*RBAC*) y la autenticación mediante sesiones JWT. El agregado raíz `User` administra su estado (`UserStatus`: `ACTIVE`, `INACTIVE`, `PENDING`) y se asocia con `Role` (`RoleType`: `ADMIN`, `MANAGER`, `ENVIRONMENTAL_OFFICER`, `AUDITOR`), el cual compone (`◆`) los permisos granulares (`Permission`) que determinan qué comandos puede ejecutar cada actor (*Access Control Policy*). `AuthenticationService` verifica credenciales apoyándose en `PasswordEncoder` y emite instancias de `AuthToken` a través de `JwtTokenProvider`. Por su parte, `UserService` y `RoleService` gestionan el ciclo de vida de usuarios, roles y permisos mediante `UserRepository`, `RoleRepository` y `PermissionRepository`.
+
+<div align="center">
+  <img src="..\assets\images\plantuml-diagram (9).png" alt="Class Diagram - Identity and Access">
+  <br><sub><em>Figura 12. Bounded Context 1 – Identity & Access Management: diagrama de clases de dominio, servicios y repositorios.</em></sub>
+</div>
+
+#### Bounded Context 2 – Subscription Management
+
+Representa el catálogo comercial de planes y el control de cuotas operativas por cuenta (`accountId`). El agregado raíz `Subscription` controla la vigencia y estado de la suscripción (`SubscriptionStatus`: `ACTIVE`, `INACTIVE`, `CANCELLED`) y referencia al `Plan` contratado (`PlanType`: `BASE`, `PROFESSIONAL`, `ENTERPRISE`), donde se establecen los topes `maxProjects` y `maxUsers`. `SubscriptionService` procesa la selección, activación, cambio y cancelación de planes, además de exponer los métodos `validateUserQuota` y `validateProjectQuota` requeridos síncronamente por las políticas *User Quota Policy* y *Project Quota Policy*.
+
+<div align="center">
+  <img src="..\assets\images\plantuml-diagram (12).png" alt="Class Diagram - Subscription Management">
+  <br><sub><em>Figura 13. Bounded Context 2 – Subscription Management: diagrama de clases de dominio, servicios y repositorios.</em></sub>
+</div>
+
+#### Bounded Context 3 – Project Management
+
+Gestiona el ciclo de vida de los proyectos viales (`ProjectStatus`: `ACTIVE`, `ARCHIVED`), la asignación del usuario responsable (`responsibleUserId`) y los puntos de monitoreo ambiental. El agregado raíz `Project` compone (`1` a `0..*`) las entidades `MonitoringPoint`, cada una de las cuales almacena sus coordenadas (`latitude`, `longitude`) y la referencia por identificador `normativeThresholdId` hacia el umbral normativo correspondiente. `ProjectService` y `MonitoringPointService` dirigen los comandos del contexto apoyándose en `ProjectRepository`, `MonitoringPointRepository` y `GeolocationClientAdapter`, el cual valida las coordenadas geográficas con el *Servicio de Mapas y Geolocalización* externo (*Geo-validation Policy*).
+
+<div align="center">
+  <img src="..\assets\images\plantuml-diagram (13).png" alt="Class Diagram - Project Management">
+  <br><sub><em>Figura 14. Bounded Context 3 – Project Management: diagrama de clases de dominio, servicios y repositorios.</em></sub>
+</div>
+
+#### Bounded Context 4 – Environmental Monitoring
+
+Encapsula el registro manual de mediciones ambientales (`IndicatorType`: `AIR`, `NOISE`, `WATER`), su evaluación frente a parámetros regulatorios y la gestión de alertas. Al registrarse una medición en `MeasurementService` vinculada a un `monitoringPointId`, `ThresholdEvaluationService` aplica la *Threshold Evaluation Policy* comparando el valor de `EnvironmentalMeasurement` contra los límites `warningLimit` y `maximumLimit` de `NormativeThreshold`, asignando el estado `COMPLIANT`, `WARNING` o `NON_COMPLIANT`. Cuando el resultado es preventivo o crítico, `AlertService` ejecuta la *Alert Generation Policy* creando una `EnvironmentalAlert` (`0..1`), la cual puede ser posteriormente reconocida (`acknowledgeAlert`).
+
+<div align="center">
+  <img src="..\assets\images\plantuml-diagram (14).png" alt="Class Diagram - Environmental Monitoring">
+  <br><sub><em>Figura 15. Bounded Context 4 – Environmental Monitoring: diagrama de clases de dominio, servicios y repositorios.</em></sub>
+</div>
+
+#### Bounded Context 5 – Incident & Mitigation Management
+
+Gobierna el ciclo de vida de las incidencias ambientales originadas automáticamente a partir de alertas críticas (*Auto-Incident Generation Policy*) o registradas durante la supervisión. El agregado raíz `EnvironmentalIncident` controla la severidad (`IncidentSeverity`: `LOW`, `MEDIUM`, `HIGH`, `CRITICAL`) y el estado en el flujo Kanban (`IncidentStatus`: `OPEN`, `IN_PROGRESS`, `RESOLVED`, `CLOSED`, `OVERDUE`), componiendo (`◆`) las acciones correctivas (`MitigationAction`), los comentarios de seguimiento (`IncidentComment`) y el registro auditable de transiciones (`IncidentStatusHistory`). `IncidentService` gestiona los cambios de estado —verificando previamente la *Evidence Required Policy*— y marca como vencidas las incidencias que superan su plazo de atención (*Overdue Check Policy*).
+
+<div align="center">
+  <img src="..\assets\images\plantuml-diagram (15).png" alt="Class Diagram - Incident and Mitigation">
+  <br><sub><em>Figura 16. Bounded Context 5 – Incident & Mitigation Management: diagrama de clases de dominio, servicios y repositorios.</em></sub>
+</div>
+
+#### Bounded Context 6 – Document & Evidence Management
+
+Administra las evidencias operativas de campo y el repositorio de documentos normativos por proyecto. El agregado `Evidence` asocia archivos fotográficos o documentales a mediciones (`measurementId`) o incidencias (`incidentId`), permitiendo a `EvidenceService` validar la existencia de respaldo probatorio (`hasEvidenceForIncident`) antes del cierre de una incidencia. Por su parte, el agregado raíz `NormativeDocument` controla su estado (`DocumentStatus`: `REQUIRED`, `UPLOADED`, `MISSING`) y compone su historial inmutable de versiones (`DocumentVersion` de `1` a `1..*`), mientras que `RequiredDocument` y `RequiredDocumentService` definen y verifican los documentos obligatorios por hito de auditoría.
+
+<div align="center">
+  <img src="..\assets\images\plantuml-diagram (16).png" alt="Class Diagram - Document and Evidence">
+  <br><sub><em>Figura 17. Bounded Context 6 – Document & Evidence Management: diagrama de clases de dominio, servicios y repositorios.</em></sub>
+</div>
+
+#### Bounded Context 7 – Reports & Compliance Management
+
+Consolida los indicadores ambientales, el resumen de cumplimiento y los reportes de auditoría sin duplicar la lógica operativa de los demás módulos. `KpiService` y `ComplianceService` implementan la *KPI Projection Policy* y la *Compliance Projection Policy*, recalculando los agregados `EnvironmentalKpi` y `ComplianceSummary` por proyecto (`projectId`). Finalmente, `ReportService` gestiona la solicitud y generación de `AuditReport` (`ReportStatus`: `REQUESTED`, `GENERATED`, `FAILED`) aplicando la *Data Aggregation Policy* y delegando en `PdfExportService` la exportación del expediente en formato PDF.
+
+<div align="center">
+  <img src="..\assets\images\plantuml-diagram (17).png" alt="Class Diagram - Reports and Compliance">
+  <br><sub><em>Figura 18. Bounded Context 7 – Reports & Compliance Management: diagrama de clases de dominio, servicios y repositorios.</em></sub>
+</div>
+
+#### Síntesis de Clases, Servicios y Repositorios por Bounded Context
+
+| # | Bounded Context | Aggregates y Entidades de Dominio | Enumeraciones | Servicios y Adaptadores | Interfaces de Repositorio |
+| :-- | :--- | :--- | :--- | :--- | :--- |
+| 1 | **Identity & Access Management** | `User` (root), `Role` ◆ `Permission`, `AuthToken` | `UserStatus`, `RoleType` | `AuthenticationService`, `UserService`, `RoleService`, `PasswordEncoder`, `JwtTokenProvider` | `UserRepository`, `RoleRepository`, `PermissionRepository` |
+| 2 | **Subscription Management** | `Subscription` (root) → `Plan` | `SubscriptionStatus`, `PlanType` | `SubscriptionService`, `PlanService` | `SubscriptionRepository`, `PlanRepository` |
+| 3 | **Project Management** | `Project` (root) ◆ `MonitoringPoint` | `ProjectStatus` | `ProjectService`, `MonitoringPointService`, `GeolocationClientAdapter` | `ProjectRepository`, `MonitoringPointRepository` |
+| 4 | **Environmental Monitoring** | `EnvironmentalMeasurement` (root) → `EnvironmentalAlert`, `NormativeThreshold` | `IndicatorType`, `MeasurementStatus` | `MeasurementService`, `ThresholdEvaluationService`, `AlertService` | `MeasurementRepository`, `ThresholdRepository`, `AlertRepository` |
+| 5 | **Incident & Mitigation Management** | `EnvironmentalIncident` (root) ◆ `MitigationAction`, `IncidentComment`, `IncidentStatusHistory` | `IncidentStatus`, `IncidentSeverity` | `IncidentService`, `MitigationService`, `CommentService` | `IncidentRepository`, `MitigationRepository`, `CommentRepository`, `IncidentStatusHistoryRepository` |
+| 6 | **Document & Evidence Management** | `Evidence`, `NormativeDocument` (root) ◆ `DocumentVersion`, `RequiredDocument` | `DocumentStatus` | `EvidenceService`, `DocumentService`, `RequiredDocumentService` | `EvidenceRepository`, `DocumentRepository`, `DocumentVersionRepository`, `RequiredDocumentRepository` |
+| 7 | **Reports & Compliance Management** | `AuditReport` (root), `EnvironmentalKpi`, `ComplianceSummary` | `ReportStatus` | `ReportService`, `KpiService`, `ComplianceService`, `PdfExportService` | `AuditReportRepository`, `EnvironmentalKpiRepository`, `ComplianceSummaryRepository` |
+
+
+## 4.8. Database Design.
+<a id="4-8-database-design"></a>
+
+El diseño de base de datos relacional de **RoadWatch OS** organiza las estructuras persistentes de acuerdo con los siete Bounded Contexts de la arquitectura, garantizando la integridad de los datos y la trazabilidad histórica necesaria para el seguimiento y la fiscalización ambiental:
+
+- **Identity & Access Management:** `users`, `roles`, `permissions`, `user_roles`, `role_permissions`.
+- **Subscription Management:** `plans`, `subscriptions`.
+- **Project Management:** `projects`, `monitoring_points`.
+- **Environmental Monitoring:** `normative_thresholds`, `environmental_measurements`, `environmental_alerts`.
+- **Incident & Mitigation Management:** `environmental_incidents`, `mitigation_actions`, `incident_comments`, `incident_status_history`.
+- **Document & Evidence Management:** `normative_documents`, `document_versions`, `evidences`, `required_documents`.
+- **Reports & Compliance Management:** `audit_reports`, `environmental_kpis`, `compliance_summaries`.
+
 
 - **Identity & Access Management**
 - **Subscription Management**
@@ -742,98 +1029,75 @@ El Component Diagram representa la descomposición interna del RESTful API de Ro
 - **Document & Evidence Management**
 - **Reports & Compliance Management**
 
-Cada componente mantiene una responsabilidad específica dentro del dominio y se comunica con otros componentes únicamente cuando un caso de uso requiere información o acciones pertenecientes a otro contexto.
 
-La Web Application consume los servicios expuestos por el RESTful API mediante HTTPS/JSON, mientras que los componentes backend utilizan la capa de persistencia para almacenar y consultar la información correspondiente.
-
-![Diagrama de Componentes C4 - RoadWatch OS](/assets/images/ComponentDiagram.png)
-
-## 4.7. Software Object-Oriented Design.
-<a id="4-7-software-object-oriented-design"></a>
-
-Esta sección presenta los diagramas de clases utilizados para representar con mayor detalle la estructura de los principales contextos de RoadWatch OS.
-
-Los diagramas deben mantener consistencia con los Bounded Contexts definidos en la arquitectura y representar las clases, interfaces, enumeraciones, atributos, métodos, visibilidad, relaciones y multiplicidades correspondientes.
-
-### 4.7.1. Class Diagrams.
-<a id="4-7-1-class-diagrams"></a>
-
-A continuación se presentan los Class Diagrams correspondientes a los Bounded Contexts definidos para RoadWatch OS. Estos diagramas detallan las principales clases, interfaces, enumeraciones, atributos, métodos y relaciones que permiten representar las responsabilidades de cada contexto.
-
-### Bounded Context - Identity & Access Management
-
-![Class Diagram - Identity and Access](/assets/images/CD-IdentityandAccess.png)
-
-### Bounded Context - Subscription Management
-
-![Class Diagram - Subscription Management](/assets/images/CD-SubscriptionManagement.png)
-
-### Bounded Context - Project Management
-
-![Class Diagram - Project Management](/assets/images/CD-ProjectManagement.png)
-
-### Bounded Context - Environmental Monitoring
-
-![Class Diagram - Environmental Monitoring](/assets/images/CD-EnvironmentalMonitoring.png)
-
-### Bounded Context - Incident & Mitigation Management
-
-![Class Diagram - Incident and Mitigation](/assets/images/CD-IncidentandMitigation.png)
-
-### Bounded Context - Document & Evidence Management
-
-![Class Diagram - Document and Evidence](/assets/images/CD-DocumentandEvidence.png)
-
-### Bounded Context - Reports & Compliance Management
-
-![Class Diagram - Reports and Compliance](/assets/images/CD-ReportsandCompliance.png)
-
-## 4.8. Database Design.
-<a id="4-8-database-design"></a>
-
-El diseño de base de datos de RoadWatch OS se organiza de acuerdo con los siete Bounded Contexts definidos para la solución, manteniendo la integridad de los datos y el registro histórico necesario para el seguimiento ambiental de los proyectos:
-
-La persistencia se organiza de acuerdo con los siete Bounded Contexts definidos para RoadWatch OS:
-
-- Identity & Access Management.
-- Subscription Management.
-- Project Management.
-- Environmental Monitoring.
-- Incident & Mitigation Management.
-- Document & Evidence Management.
-- Reports & Compliance Management.
-
-El diseño relacional debe aplicar claves primarias y foráneas, restricciones de integridad y relaciones consistentes con el modelo de dominio.
+- **Integridad referencial intra-contexto (`«FK»`):** Las relaciones entre tablas que forman parte de un mismo Bounded Context se imponen mediante claves foráneas físicas (`«FK, NOT NULL»`), asegurando la consistencia interna de cada agregado.
+- **Desacoplamiento inter-contexto mediante IDs lógicos:** En concordancia con la coreografía de Bounded Contexts definida en la sección 4.6.1, las referencias hacia entidades gobernadas por otros contextos (`account_id`, `responsible_user_id`, `normative_threshold_id`, `monitoring_point_id`, `measurement_id`, `project_id`) se persisten como columnas `BIGINT` sin restricciones de clave foránea entre esquemas de contextos distintos.
+- **Convenciones de tipos y auditoría:** Todas las tablas utilizan identificadores `BIGINT «PK»`, nomenclatura `snake_case` en plural, tipos `DECIMAL` para coordenadas, mediciones y porcentajes de cumplimiento, `VARCHAR` para estados provenientes de enumeraciones y marcas temporales `TIMESTAMP` (`created_at`, `updated_at`, `measured_at`, `calculated_at`).
 
 ### 4.8.1. Database Diagrams.
 <a id="4-8-1-database-diagrams"></a>
 
-Los Database Diagrams representan las estructuras persistentes correspondientes a cada Bounded Context. En ellos se especifican las tablas, columnas, claves primarias, claves foráneas, restricciones y relaciones necesarias para mantener la integridad de la información de RoadWatch OS.
+Los Database Diagrams representan los esquemas entidad-relación persistentes de cada Bounded Context, especificando sus tablas, columnas, tipos de datos, claves primarias (`«PK»`), claves foráneas (`«FK»`), restricciones de nulidad/unicidad y cardinalidades.
 
-### Bounded Context - Identity & Access Management
+#### Bounded Context 1 – Identity & Access Management
 
-![Database Diagram - Identity and Access](/assets/images/BC1ERD.png)
+Modela las tablas `users`, `roles` y `permissions`, resolviendo las asociaciones muchos a muchos mediante las tablas intermedias `user_roles` (`user_id`, `role_id`) y `role_permissions` (`role_id`, `permission_id`) con claves primarias compuestas (`«PK, FK»`). La clase `AuthToken` no requiere tabla física por gestionarse como sesión stateless mediante JWT.
 
-### Bounded Context - Subscription Management
+<div align="center">
+  <img src="../assets/images/BC1ERD.png" alt="Database Diagram - Identity and Access">
+  <br><sub><em>Figura 19. Bounded Context 1 – Identity & Access Management: diagrama de base de datos.</em></sub>
+</div>
 
-![Database Diagram - Subscription Management](/assets/images/BC2ERD.png)
+#### Bounded Context 2 – Subscription Management
 
-### Bounded Context - Project Management
+Persiste el catálogo comercial en la tabla `plans` (`name «UNIQUE, NOT NULL»`, `max_projects`, `max_users`, `active`) y las suscripciones por cuenta en `subscriptions` (`account_id`, `status`, `start_date`, `updated_at`), vinculadas mediante la clave foránea `plan_id «FK, NOT NULL»` (`defines`).
 
-![Database Diagram - Project Management](/assets/images/BC3ERD.png)
+<div align="center">
+  <img src="../assets/images/BC2ERD.png" alt="Database Diagram - Subscription Management">
+  <br><sub><em>Figura 20. Bounded Context 2 – Subscription Management: diagrama de base de datos.</em></sub>
+</div>
 
-### Bounded Context - Environmental Monitoring
+#### Bounded Context 3 – Project Management
 
-![Database Diagram - Environmental Monitoring](/assets/images/BC4ERD.png)
+Estructura los proyectos viales en la tabla `projects` y sus ubicaciones de control en `monitoring_points`, vinculados mediante la relación uno a muchos `project_id «FK, NOT NULL»` (`contains`). Las coordenadas geográficas (`latitude`, `longitude`) se almacenan con precisión `DECIMAL «NOT NULL»` y el umbral aplicable se referencia mediante `normative_threshold_id`.
 
-### Bounded Context - Incident & Mitigation Management
+<div align="center">
+  <img src="../assets/images/BC3ERD.png" alt="Database Diagram - Project Management">
+  <br><sub><em>Figura 21. Bounded Context 3 – Project Management: diagrama de base de datos.</em></sub>
+</div>
 
-![Database Diagram - Incident and Mitigation](/assets/images/BC5ERD.png)
+#### Bounded Context 4 – Environmental Monitoring
 
-### Bounded Context - Document & Evidence Management
+Contiene la tabla `normative_thresholds` para los límites regulatorios por tipo de indicador (`warning_limit`, `maximum_limit`, `unit`), la tabla `environmental_measurements` para las lecturas registradas en cada punto (`monitoring_point_id`, `value`, `measured_at`, `status`) y la tabla `environmental_alerts`, vinculada a la medición que originó la alerta mediante `measurement_id «FK, NOT NULL»`.
 
-![Database Diagram - Document and Evidence](/assets/images/BC6ERD.png)
+<div align="center">
+  <img src="..\assets\images\plantuml-diagram (8).png" alt="Database Diagram - Environmental Monitoring">
+  <br><sub><em>Figura 22. Bounded Context 4 – Environmental Monitoring: diagrama de base de datos.</em></sub>
+</div>
 
-### Bounded Context - Reports & Compliance Management
+#### Bounded Context 5 – Incident & Mitigation Management
 
-![Database Diagram - Reports and Compliance](/assets/images/BC7ERD.png)
+Organiza el ciclo de vida de las incidencias en torno a la tabla `environmental_incidents` (`measurement_id`, `title`, `status`, `severity`), de la cual dependen mediante clave foránea `incident_id «FK, NOT NULL»` las tablas `mitigation_actions` (`has`), `incident_comments` (`receives`) e `incident_status_history` (`records`).
+
+<div align="center">
+  <img src="../assets/images/BC5ERD.png" alt="Database Diagram - Incident and Mitigation">
+  <br><sub><em>Figura 23. Bounded Context 5 – Incident & Mitigation Management: diagrama de base de datos.</em></sub>
+</div>
+
+#### Bounded Context 6 – Document & Evidence Management
+
+Comprende las tablas `normative_documents` y `document_versions` vinculadas por `document_id «FK, NOT NULL»` (`contains`) con restricción de unicidad compuesta (`UNIQUE: document_id + version_number`), además de la tabla `evidences` para los respaldos probatorios asociados a `incident_id` o `measurement_id` y la tabla `required_documents` para los documentos obligatorios por hito (`milestone_name`).
+
+<div align="center">
+  <img src="../assets/images/BC6ERD.png" alt="Database Diagram - Document and Evidence">
+  <br><sub><em>Figura 24. Bounded Context 6 – Document & Evidence Management: diagrama de base de datos.</em></sub>
+</div>
+
+#### Bounded Context 7 – Reports & Compliance Management
+
+Persiste los reportes de auditoría en `audit_reports` (`project_id`, `status`, `generated_at`, `file_url`), las métricas consolidadas en `environmental_kpis` (`compliance_percentage`, `average_resolution_time`, `open_incidents`, `critical_incidents`) y el balance de mediciones en `compliance_summaries` (`compliant_measurements`, `non_compliant_measurements`, `compliance_percentage`).
+
+<div align="center">
+  <img src="../assets/images/BC7ERD.png" alt="Database Diagram - Reports and Compliance">
+  <br><sub><em>Figura 25. Bounded Context 7 – Reports & Compliance Management: diagrama de base de datos.</em></sub>
+</div>

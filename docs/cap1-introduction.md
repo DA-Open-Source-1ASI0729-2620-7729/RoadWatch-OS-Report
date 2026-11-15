@@ -1,6 +1,5 @@
-# Capítulo 1
-
-## Introducción
+# Capítulo I: Introducción
+<a id="introduccion"></a>
 
 El presente proyecto tiene como finalidad el diseño, desarrollo e implementación de una solución tecnológica distribuida conformada por una API REST y una aplicación web responsiva. La propuesta está orientada a mejorar la gestión y supervisión ambiental en proyectos de infraestructura vial, centralizando información relacionada con proyectos, puntos de monitoreo, mediciones ambientales, incidencias, evidencias, acciones de mitigación y reportes. Para su desarrollo se aplican prácticas de diseño centrado en el usuario mediante Lean UX, metodologías ágiles y una arquitectura orientada a servicios.
 
@@ -12,11 +11,13 @@ Dentro del alcance del MVP, las mediciones ambientales pueden ser registradas me
 
 ---
 
-## 1.1 Startup Profile
+## 1.1. Startup Profile
+<a id="1-1-startup-profile"></a>
 
 En esta sección se expone la estructura institucional de la entidad desarrolladora, detallando su enfoque de negocio, la propuesta de valor integrada y la conformación de su equipo de trabajo.
 
-### 1.1.1 Descripción de la Startup
+### 1.1.1. Descripción de la Startup
+<a id="1-1-1-descripcion-de-la-startup"></a>
 
 **VíaNexo** es una startup tecnológica orientada al desarrollo de soluciones digitales para apoyar la gestión y supervisión ambiental en proyectos de infraestructura vial. Su propuesta busca facilitar el registro, organización y seguimiento de información relacionada con mediciones ambientales, incidencias, evidencias, acciones de mitigación y reportes, permitiendo que los distintos actores involucrados puedan trabajar con información centralizada y organizada.
 
@@ -35,18 +36,20 @@ Desarrollar soluciones digitales que faciliten a las empresas constructoras vial
 Consolidarse como una startup tecnológica reconocida por ofrecer soluciones digitales que contribuyan a mejorar la gestión y supervisión ambiental en proyectos de infraestructura vial, mediante herramientas accesibles, organizadas y adaptables a las necesidades de las empresas del sector.
 
 ### 1.1.2. Perfiles de los Miembros del Equipo
+<a id="1-1-2-perfiles-de-los-miembros-del-equipo"></a>
 
-| Foto | Apellido y Nombre | Rol / Perfil |
-|:---|:---|:---|
-| <img src="../assets/images/chapter1/Italo.jpeg" alt="Italo" width="120" height="120" style="object-fit: cover;"> | Italo Raul Pancorbo Amorós | Me considero una persona responsable, aplicada y me gusta aprender cosas nuevas. |
-| <img src="../assets/images/chapter1/Sebasthian.png" alt="Sebasthian" width="120" height="120" style="object-fit: cover;"> | Sebasthian Alex Conde Huashuayo | Me gusta la programación y el desarrollo de software, buscando soluciones innovadoras mediante buenas prácticas. |
-| <img src="../assets/images/chapter1/Diaz.jpg" alt="Sebastian Diaz" width="120" height="120" style="object-fit: cover;"> | Sebastian Gabriel Díaz De la Cruz | Estudiante de Ingeniería de Software, interesado en el desarrollo de soluciones digitales y el trabajo colaborativo. |
-| <img src="../assets/images/chapter1/perfilpiero.jpg" alt="Piero" width="120" height="120" style="object-fit: cover;"> | Piero Francisco Montes Chang | Desarrollo software para proyectos personales y tengo interés en lógica y machine learning. |
-| <img src="../assets/images/chapter1/cabrera-camila.png" alt="Camila Cabrera" width="120" height="120" style="object-fit: cover;"> | Camila Celeste Cabrera Sotelo | Estudiante de Ingeniería de Software, interesada en aplicaciones, usabilidad y nuevas tecnologías. |
+| Foto | Apellido y Nombre | Código | Rol / Perfil |
+|:---|:---|:---|:---|
+| <img src="../assets/images/chapter1/Italo.jpeg" alt="Italo" width="120" height="120" style="object-fit: cover;"> | Italo Raul Pancorbo Amorós | U202418029 | Estudiante de Ingeniería de Software. Me considero una persona responsable, aplicada y me gusta aprender nuevas tecnologías enfocadas en el desarrollo web y arquitecturas limpias. |
+| <img src="../assets/images/chapter1/Sebasthian.png" alt="Sebasthian" width="120" height="120" style="object-fit: cover;"> | Sebasthian Alex Conde Huashuayo | U20241E356 | Estudiante de Ingeniería de Software. Me gusta la programación y el desarrollo de software, buscando construir soluciones mantenibles mediante buenas prácticas de ingeniería. |
+| <img src="../assets/images/chapter1/Diaz.jpg" alt="Sebastian Diaz" width="120" height="120" style="object-fit: cover;"> | Sebastian Gabriel Díaz De la Cruz | U202410421 | Estudiante de Ingeniería de Software, interesado en el diseño de arquitecturas de software, el desarrollo de soluciones digitales y el trabajo colaborativo. |
+| <img src="../assets/images/chapter1/perfilpiero.jpg" alt="Piero" width="120" height="120" style="object-fit: cover;"> | Piero Francisco Montes Chang | U20241G031 | Estudiante de Ingeniería de Software. Desarrollo software para proyectos académicos y personales, con interés en la lógica de negocio, modelado de dominio y estructuras de datos. |
+| <img src="../assets/images/chapter1/cabrera-camila.png" alt="Camila Cabrera" width="120" height="120" style="object-fit: cover;"> | Camila Celeste Cabrera Sotelo | U202412462 | Estudiante de Ingeniería de Software, interesada en el diseño de experiencias de usuario (UX/UI), desarrollo de aplicaciones web, usabilidad y nuevas tecnologías. |
 
 ---
 
-## 1.2 Solution Profile
+## 1.2. Solution Profile
+<a id="1-2-solution-profile"></a>
 
 **RoadWatch OS** es una plataforma web orientada a apoyar la gestión y supervisión ambiental en proyectos de infraestructura vial. La solución permite centralizar información relacionada con proyectos, puntos de monitoreo, mediciones ambientales, alertas, incidencias, evidencias, acciones de mitigación y reportes dentro de un mismo entorno digital.
 
@@ -128,9 +131,10 @@ La propuesta no se centra únicamente en registrar información, sino también e
 
 ---
 
-### 1.2.1 Antecedentes y Problemática
+### 1.2.1. Antecedentes y Problemática
+<a id="1-2-1-antecedentes-y-problematica"></a>
 
-El desarrollo de infraestructura vial constituye un eje prioritario en el crecimiento económico a nivel nacional, representando una porción sustancial de la inversión pública y privada en construcción (CAPECO, 2025). La ejecución de este tipo de obras se encuentra condicionada al cumplimiento de estrictos Instrumentos de Gestión Ambiental (IGA), cuya fiscalización sectorial es conducida por la Dirección de Gestión Ambiental del Ministerio de Transportes y Comunicaciones (MTC) y por organismos de evaluación ambiental (OEFA, 2025). Paralelamente, la elaboración y seguimiento de los planes ambientales requiere la participación de consultoras debidamente acreditadas en el Registro Nacional de Consultoras Ambientales (RNCA), el cual abarca a más de 1,200 entidades autorizadas (SENACE, 2024).
+El desarrollo de infraestructura vial constituye un eje prioritario en el crecimiento económico a nivel nacional, representando una porción sustancial de la inversión pública y privada en construcción (Cámara Peruana de la Construcción [CAPECO], 2025). La ejecución de este tipo de obras se encuentra condicionada al cumplimiento de estrictos Instrumentos de Gestión Ambiental (IGA), cuya fiscalización sectorial es conducida por la Dirección General de Asuntos Ambientales del Ministerio de Transportes y Comunicaciones (MTC) y por organismos de evaluación y fiscalización ambiental (Organismo de Evaluación y Fiscalización Ambiental [OEFA], 2025). Paralelamente, la elaboración y seguimiento de los planes ambientales requiere la participación de consultoras debidamente acreditadas en el Registro Nacional de Consultoras Ambientales (RNCA), el cual abarca a más de 1,200 entidades autorizadas (Servicio Nacional de Certificación Ambiental para las Inversiones Sostenibles [SENACE], 2024).
 
 A pesar del marco regulatorio vigente, los procedimientos de monitoreo ambiental en obra continúan sufriendo de un bajo nivel de adopción tecnológica. En la mayoría de frentes de trabajo, la toma de datos depende de muestreos periódicos cuyos resultados se compilan manualmente en hojas de cálculo o reportes extemporáneos. Esta desconexión operativa dificulta la adopción de medidas correctivas inmediatas, eleva el riesgo de multas para el contratista y exige que las entidades supervisoras destinen recursos significativos a la verificación presencial de los registros presentados.
 
@@ -168,7 +172,8 @@ Dentro del MVP no se contempla la implementación de una pasarela de pago real. 
 
 ---
 
-### 1.2.2 Lean UX Process
+### 1.2.2. Lean UX Process
+<a id="1-2-2-lean-ux-process"></a>
 
 Actualmente, la gestión y supervisión ambiental en proyectos de infraestructura vial puede involucrar el uso de hojas de cálculo, documentos, fotografías, correos y otros medios separados para registrar y consultar información. Esta forma de trabajo dificulta mantener una visión consolidada de las mediciones, incidencias, evidencias y acciones realizadas durante el desarrollo de un proyecto.
 
@@ -180,7 +185,8 @@ Se considerará que la propuesta genera valor cuando los usuarios puedan encontr
 
 ---
 
-#### 1.2.2.1 Lean UX Problem Statements
+#### 1.2.2.1. Lean UX Problem Statements
+<a id="1-2-2-1-lean-ux-problem-statements"></a>
 
 Actualmente, la gestión y supervisión ambiental en proyectos de infraestructura vial presenta dificultades relacionadas con la dispersión de información entre distintos medios, como hojas de cálculo, documentos, fotografías, correos y reportes independientes. Esta situación dificulta mantener una visión actualizada y organizada de las mediciones ambientales, incidencias, evidencias y acciones realizadas durante la ejecución de un proyecto.
 
@@ -194,7 +200,8 @@ El objetivo es facilitar el seguimiento ambiental de los proyectos y permitir qu
 
 ---
 
-#### 1.2.2.2 Lean UX Assumptions
+#### 1.2.2.2. Lean UX Assumptions
+<a id="1-2-2-2-lean-ux-assumptions"></a>
 
 ##### A. Business Assumptions
 
@@ -250,7 +257,8 @@ El objetivo es facilitar el seguimiento ambiental de los proyectos y permitir qu
    
 ---
 
-#### 1.2.2.3 Lean UX Hypothesis Statements
+#### 1.2.2.3. Lean UX Hypothesis Statements
+<a id="1-2-2-3-lean-ux-hypothesis-statements"></a>
 
 ##### Hipótesis 1: Centralización de información ambiental
 
@@ -296,7 +304,8 @@ El objetivo es facilitar el seguimiento ambiental de los proyectos y permitir qu
   
 ---
 
-#### 1.2.2.4 Lean UX Canvas
+#### 1.2.2.4. Lean UX Canvas
+<a id="1-2-2-4-lean-ux-canvas"></a>
 
 | **Business Problem** | **Solutions (Features)** | **Business Outcomes** |
 | :--- | :--- | :--- |
@@ -312,7 +321,8 @@ El objetivo es facilitar el seguimiento ambiental de los proyectos y permitir qu
 
 ---
 
-## 1.3 Segmentos Objetivos
+## 1.3. Segmentos Objetivo
+<a id="1-3-segmentos-objetivos"></a>
 
 ### Segmento 1: Empresas Constructoras Viales
 
